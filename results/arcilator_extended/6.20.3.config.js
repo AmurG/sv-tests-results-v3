@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/6.20.3'] = [["","parameter_type",1,"logs/Arcilator_extended/chapter-6/6.20.3--parameter_type.sv.log.html","tests/chapter-6/6.20.3--parameter_type.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/18.5.9'] = [["","global_constraints_0",1,"logs/circt_verilog_extended_4state/chapter-18/18.5.9--global-constraints_0.sv.log.html","tests/chapter-18/18.5.9--global-constraints_0.sv.html"]]

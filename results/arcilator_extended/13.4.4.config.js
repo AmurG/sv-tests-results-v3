@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/13.4.4'] = [["","function_fork_invalid",1,"logs/Arcilator_extended/chapter-13/13.4.4--fork-invalid.sv.log.html","tests/chapter-13/13.4.4--fork-invalid.sv.html"],["","function_fork_valid",1,"logs/Arcilator_extended/chapter-13/13.4.4--fork-valid.sv.log.html","tests/chapter-13/13.4.4--fork-valid.sv.html"]]

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-vlg_pr2138979d_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2138979d.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2138979d.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 08:07:45</dd></div>
+        <div><dt>time elapsed</dt><dd>6.145s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2138979d.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2138979d.v</a></pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/driver.cpp  128 2 1 10 regress-vlg_pr2138979d_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53 -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpalh0ak53/wave.vcd</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 00100000</pre>
+      <pre>b   = 00010110</pre>
+      <pre>c   = 000110</pre>
+      <pre>y_mux_uu = 0000000000010110   y_mux_us = 0000000000010110   y_mux_su = 0000000000010110   y_mux_ss = 0000000000010110</pre>
+      <pre>z_mux_uu = 0000000000010110   z_mux_us = 0000000000010110   z_mux_su = 0000000000010110   z_mux_ss = 0000000000010110</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111111001   y_sgn_s  = 1111111111111001</pre>
+      <pre>z_sgn_u  = 1111111111111001   z_sgn_s  = 1111111111111001</pre>
+      <pre>y_add_uu = 0000000000100110   y_add_us = 0000000000100110   y_add_su = 0000000000100110   y_add_ss = 0000000000100110</pre>
+      <pre>z_add_uu = 0000000000100110   z_add_us = 0000000000100110   z_add_su = 0000000000100110   z_add_ss = 0000000000100110</pre>
+      <pre>y_sub_uu = 0000000000011010   y_sub_us = 0000000000011010   y_sub_su = 0000000000011010   y_sub_ss = 0000000000011010</pre>
+      <pre>z_sub_uu = 0000000000011010   z_sub_us = 0000000000011010   z_sub_su = 0000000000011010   z_sub_ss = 0000000000011010</pre>
+      <pre>y_mul_uu = 0000000011000000   y_mul_us = 0000000011000000   y_mul_su = 0000000011000000   y_mul_ss = 0000000011000000</pre>
+      <pre>z_mul_uu = 0000000011000000   z_mul_us = 0000000011000000   z_mul_su = 0000000011000000   z_mul_ss = 0000000011000000</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 11110111</pre>
+      <pre>b   = 01010010</pre>
+      <pre>c   = 110100</pre>
+      <pre>y_mux_uu = 0000000011110111   y_mux_us = 0000000011110111   y_mux_su = 0000000011110111   y_mux_ss = 1111111111110111</pre>
+      <pre>z_mux_uu = 0000000011110111   z_mux_us = 0000000011110111   z_mux_su = 0000000011110111   z_mux_ss = 1111111111110111</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111001011   y_sgn_s  = 0000000000001011</pre>
+      <pre>z_sgn_u  = 1111111111001011   z_sgn_s  = 0000000000001011</pre>
+      <pre>y_add_uu = 0000000100101011   y_add_us = 0000000100101011   y_add_su = 0000000100101011   y_add_ss = 1111111111101011</pre>
+      <pre>z_add_uu = 0000000100101011   z_add_us = 0000000100101011   z_add_su = 0000000100101011   z_add_ss = 1111111111101011</pre>
+      <pre>y_sub_uu = 0000000011000011   y_sub_us = 0000000011000011   y_sub_su = 0000000011000011   y_sub_ss = 0000000000000011</pre>
+      <pre>z_sub_uu = 0000000011000011   z_sub_us = 0000000011000011   z_sub_su = 0000000011000011   z_sub_ss = 0000000000000011</pre>
+      <pre>y_mul_uu = 0011001000101100   y_mul_us = 0011001000101100   y_mul_su = 0011001000101100   y_mul_ss = 0000000001101100</pre>
+      <pre>z_mul_uu = 0011001000101100   z_mul_us = 0011001000101100   z_mul_su = 0011001000101100   z_mul_ss = 0000000001101100</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 00100110</pre>
+      <pre>b   = 11000100</pre>
+      <pre>c   = 010110</pre>
+      <pre>y_mux_uu = 0000000000100110   y_mux_us = 0000000000100110   y_mux_su = 0000000000100110   y_mux_ss = 0000000000100110</pre>
+      <pre>z_mux_uu = 0000000000100110   z_mux_us = 0000000000100110   z_mux_su = 0000000000100110   z_mux_ss = 0000000000100110</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111101001   y_sgn_s  = 1111111111101001</pre>
+      <pre>z_sgn_u  = 1111111111101001   z_sgn_s  = 1111111111101001</pre>
+      <pre>y_add_uu = 0000000000111100   y_add_us = 0000000000111100   y_add_su = 0000000000111100   y_add_ss = 0000000000111100</pre>
+      <pre>z_add_uu = 0000000000111100   z_add_us = 0000000000111100   z_add_su = 0000000000111100   z_add_ss = 0000000000111100</pre>
+      <pre>y_sub_uu = 0000000000010000   y_sub_us = 0000000000010000   y_sub_su = 0000000000010000   y_sub_ss = 0000000000010000</pre>
+      <pre>z_sub_uu = 0000000000010000   z_sub_us = 0000000000010000   z_sub_su = 0000000000010000   z_sub_ss = 0000000000010000</pre>
+      <pre>y_mul_uu = 0000001101000100   y_mul_us = 0000001101000100   y_mul_su = 0000001101000100   y_mul_ss = 0000001101000100</pre>
+      <pre>z_mul_uu = 0000001101000100   z_mul_us = 0000001101000100   z_mul_su = 0000001101000100   z_mul_ss = 0000001101000100</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 11101000</pre>
+      <pre>b   = 01011000</pre>
+      <pre>c   = 000110</pre>
+      <pre>y_mux_uu = 0000000001011000   y_mux_us = 0000000001011000   y_mux_su = 0000000001011000   y_mux_ss = 0000000001011000</pre>
+      <pre>z_mux_uu = 0000000001011000   z_mux_us = 0000000001011000   z_mux_su = 0000000001011000   z_mux_ss = 0000000001011000</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111111001   y_sgn_s  = 1111111111111001</pre>
+      <pre>z_sgn_u  = 1111111111111001   z_sgn_s  = 1111111111111001</pre>
+      <pre>y_add_uu = 0000000011101110   y_add_us = 0000000011101110   y_add_su = 0000000011101110   y_add_ss = 1111111111101110</pre>
+      <pre>z_add_uu = 0000000011101110   z_add_us = 0000000011101110   z_add_su = 0000000011101110   z_add_ss = 1111111111101110</pre>
+      <pre>y_sub_uu = 0000000011100010   y_sub_us = 0000000011100010   y_sub_su = 0000000011100010   y_sub_ss = 1111111111100010</pre>
+      <pre>z_sub_uu = 0000000011100010   z_sub_us = 0000000011100010   z_sub_su = 0000000011100010   z_sub_ss = 1111111111100010</pre>
+      <pre>y_mul_uu = 0000010101110000   y_mul_us = 0000010101110000   y_mul_su = 0000010101110000   y_mul_ss = 1111111101110000</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 1717 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 01100111</pre>
+      <pre>b   = 10111010</pre>
+      <pre>c   = 011101</pre>
+      <pre>y_mux_uu = 0000000010111010   y_mux_us = 0000000010111010   y_mux_su = 0000000010111010   y_mux_ss = 1111111110111010</pre>
+      <pre>z_mux_uu = 0000000010111010   z_mux_us = 0000000010111010   z_mux_su = 0000000010111010   z_mux_ss = 1111111110111010</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111100010   y_sgn_s  = 1111111111100010</pre>
+      <pre>z_sgn_u  = 1111111111100010   z_sgn_s  = 1111111111100010</pre>
+      <pre>y_add_uu = 0000000010000100   y_add_us = 0000000010000100   y_add_su = 0000000010000100   y_add_ss = 0000000010000100</pre>
+      <pre>z_add_uu = 0000000010000100   z_add_us = 0000000010000100   z_add_su = 0000000010000100   z_add_ss = 0000000010000100</pre>
+      <pre>y_sub_uu = 0000000001001010   y_sub_us = 0000000001001010   y_sub_su = 0000000001001010   y_sub_ss = 0000000001001010</pre>
+      <pre>z_sub_uu = 0000000001001010   z_sub_us = 0000000001001010   z_sub_su = 0000000001001010   z_sub_ss = 0000000001001010</pre>
+      <pre>y_mul_uu = 0000101110101011   y_mul_us = 0000101110101011   y_mul_su = 0000101110101011   y_mul_ss = 0000101110101011</pre>
+      <pre>z_mul_uu = 0000101110101011   z_mul_us = 0000101110101011   z_mul_su = 0000101110101011   z_mul_ss = 0000101110101011</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 01001011</pre>
+      <pre>b   = 01010001</pre>
+      <pre>c   = 111111</pre>
+      <pre>y_mux_uu = 0000000001001011   y_mux_us = 0000000001001011   y_mux_su = 0000000001001011   y_mux_ss = 0000000001001011</pre>
+      <pre>z_mux_uu = 0000000001001011   z_mux_us = 0000000001001011   z_mux_su = 0000000001001011   z_mux_ss = 0000000001001011</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111000000   y_sgn_s  = 0000000000000000</pre>
+      <pre>z_sgn_u  = 1111111111000000   z_sgn_s  = 0000000000000000</pre>
+      <pre>y_add_uu = 0000000010001010   y_add_us = 0000000010001010   y_add_su = 0000000010001010   y_add_ss = 0000000001001010</pre>
+      <pre>z_add_uu = 0000000010001010   z_add_us = 0000000010001010   z_add_su = 0000000010001010   z_add_ss = 0000000001001010</pre>
+      <pre>y_sub_uu = 0000000000001100   y_sub_us = 0000000000001100   y_sub_su = 0000000000001100   y_sub_ss = 0000000001001100</pre>
+      <pre>z_sub_uu = 0000000000001100   z_sub_us = 0000000000001100   z_sub_su = 0000000000001100   z_sub_ss = 0000000001001100</pre>
+      <pre>y_mul_uu = 0001001001110101   y_mul_us = 0001001001110101   y_mul_su = 0001001001110101   y_mul_ss = 1111111110110101</pre>
+      <pre>z_mul_uu = 0001001001110101   z_mul_us = 0001001001110101   z_mul_su = 0001001001110101   z_mul_ss = 1111111110110101</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 00101101</pre>
+      <pre>b   = 00001011</pre>
+      <pre>c   = 011110</pre>
+      <pre>y_mux_uu = 0000000000101101   y_mux_us = 0000000000101101   y_mux_su = 0000000000101101   y_mux_ss = 0000000000101101</pre>
+      <pre>z_mux_uu = 0000000000101101   z_mux_us = 0000000000101101   z_mux_su = 0000000000101101   z_mux_ss = 0000000000101101</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111100001   y_sgn_s  = 1111111111100001</pre>
+      <pre>z_sgn_u  = 1111111111100001   z_sgn_s  = 1111111111100001</pre>
+      <pre>y_add_uu = 0000000001001011   y_add_us = 0000000001001011   y_add_su = 0000000001001011   y_add_ss = 0000000001001011</pre>
+      <pre>z_add_uu = 0000000001001011   z_add_us = 0000000001001011   z_add_su = 0000000001001011   z_add_ss = 0000000001001011</pre>
+      <pre>y_sub_uu = 0000000000001111   y_sub_us = 0000000000001111   y_sub_su = 0000000000001111   y_sub_ss = 0000000000001111</pre>
+      <pre>z_sub_uu = 0000000000001111   z_sub_us = 0000000000001111   z_sub_su = 0000000000001111   z_sub_ss = 0000000000001111</pre>
+      <pre>y_mul_uu = 0000010101000110   y_mul_us = 0000010101000110   y_mul_su = 0000010101000110   y_mul_ss = 0000010101000110</pre>
+      <pre>z_mul_uu = 0000010101000110   z_mul_us = 0000010101000110   z_mul_su = 0000010101000110   z_mul_ss = 0000010101000110</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 10000010</pre>
+      <pre>b   = 01111011</pre>
+      <pre>c   = 100111</pre>
+      <pre>y_mux_uu = 0000000001111011   y_mux_us = 0000000001111011   y_mux_su = 0000000001111011   y_mux_ss = 0000000001111011</pre>
+      <pre>z_mux_uu = 0000000001111011   z_mux_us = 0000000001111011   z_mux_su = 0000000001111011   z_mux_ss = 0000000001111011</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111011000   y_sgn_s  = 0000000000011000</pre>
+      <pre>z_sgn_u  = 1111111111011000   z_sgn_s  = 0000000000011000</pre>
+      <pre>y_add_uu = 0000000010101001   y_add_us = 0000000010101001   y_add_su = 0000000010101001   y_add_ss = 1111111101101001</pre>
+      <pre>z_add_uu = 0000000010101001   z_add_us = 0000000010101001   z_add_su = 0000000010101001   z_add_ss = 1111111101101001</pre>
+      <pre>y_sub_uu = 0000000001011011   y_sub_us = 0000000001011011   y_sub_su = 0000000001011011   y_sub_ss = 1111111110011011</pre>
+      <pre>z_sub_uu = 0000000001011011   z_sub_us = 0000000001011011   z_sub_su = 0000000001011011   z_sub_ss = 1111111110011011</pre>
+      <pre>y_mul_uu = 0001001111001110   y_mul_us = 0001001111001110   y_mul_su = 0001001111001110   y_mul_ss = 0000110001001110</pre>
+      <pre>z_mul_uu = 0001001111001110   z_mul_us = 0001001111001110   z_mul_su = 0001001111001110   z_mul_ss = 0000110001001110</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 01001101</pre>
+      <pre>b   = 11101001</pre>
+      <pre>c   = 011110</pre>
+      <pre>y_mux_uu = 0000000001001101   y_mux_us = 0000000001001101   y_mux_su = 0000000001001101   y_mux_ss = 0000000001001101</pre>
+      <pre>z_mux_uu = 0000000001001101   z_mux_us = 0000000001001101   z_mux_su = 0000000001001101   z_mux_ss = 0000000001001101</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111100001   y_sgn_s  = 1111111111100001</pre>
+      <pre>z_sgn_u  = 1111111111100001   z_sgn_s  = 1111111111100001</pre>
+      <pre>y_add_uu = 0000000001101011   y_add_us = 0000000001101011   y_add_su = 0000000001101011   y_add_ss = 0000000001101011</pre>
+      <pre>z_add_uu = 0000000001101011   z_add_us = 0000000001101011   z_add_su = 0000000001101011   z_add_ss = 0000000001101011</pre>
+      <pre>y_sub_uu = 0000000000101111   y_sub_us = 0000000000101111   y_sub_su = 0000000000101111   y_sub_ss = 0000000000101111</pre>
+      <pre>z_sub_uu = 0000000000101111   z_sub_us = 0000000000101111   z_sub_su = 0000000000101111   z_sub_ss = 0000000000101111</pre>
+      <pre>y_mul_uu = 0000100100000110   y_mul_us = 0000100100000110   y_mul_su = 0000100100000110   y_mul_ss = 0000100100000110</pre>
+      <pre>z_mul_uu = 0000100100000110   z_mul_us = 0000100100000110   z_mul_su = 0000100100000110   z_mul_ss = 0000100100000110</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 10000001</pre>
+      <pre>b   = 10011010</pre>
+      <pre>c   = 001010</pre>
+      <pre>y_mux_uu = 0000000010011010   y_mux_us = 0000000010011010   y_mux_su = 0000000010011010   y_mux_ss = 1111111110011010</pre>
+      <pre>z_mux_uu = 0000000010011010   z_mux_us = 0000000010011010   z_mux_su = 0000000010011010   z_mux_ss = 1111111110011010</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111110101   y_sgn_s  = 1111111111110101</pre>
+      <pre>z_sgn_u  = 1111111111110101   z_sgn_s  = 1111111111110101</pre>
+      <pre>y_add_uu = 0000000010001011   y_add_us = 0000000010001011   y_add_su = 0000000010001011   y_add_ss = 1111111110001011</pre>
+      <pre>z_add_uu = 0000000010001011   z_add_us = 0000000010001011   z_add_su = 0000000010001011   z_add_ss = 1111111110001011</pre>
+      <pre>y_sub_uu = 0000000001110111   y_sub_us = 0000000001110111   y_sub_su = 0000000001110111   y_sub_ss = 1111111101110111</pre>
+      <pre>z_sub_uu = 0000000001110111   z_sub_us = 0000000001110111   z_sub_su = 0000000001110111   z_sub_ss = 1111111101110111</pre>
+      <pre>y_mul_uu = 0000010100001010   y_mul_us = 0000010100001010   y_mul_su = 0000010100001010   y_mul_ss = 1111101100001010</pre>
+      <pre>z_mul_uu = 0000010100001010   z_mul_us = 0000010100001010   z_mul_su = 0000010100001010   z_mul_ss = 1111101100001010</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 00010110</pre>
+      <pre>b   = 01110001</pre>
+      <pre>c   = 110011</pre>
+      <pre>y_mux_uu = 0000000000010110   y_mux_us = 0000000000010110   y_mux_su = 0000000000010110   y_mux_ss = 0000000000010110</pre>
+      <pre>z_mux_uu = 0000000000010110   z_mux_us = 0000000000010110   z_mux_su = 0000000000010110   z_mux_ss = 0000000000010110</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111001100   y_sgn_s  = 0000000000001100</pre>
+      <pre>z_sgn_u  = 1111111111001100   z_sgn_s  = 0000000000001100</pre>
+      <pre>y_add_uu = 0000000001001001   y_add_us = 0000000001001001   y_add_su = 0000000001001001   y_add_ss = 0000000000001001</pre>
+      <pre>z_add_uu = 0000000001001001   z_add_us = 0000000001001001   z_add_su = 0000000001001001   z_add_ss = 0000000000001001</pre>
+      <pre>y_sub_uu = 1111111111100011   y_sub_us = 1111111111100011   y_sub_su = 1111111111100011   y_sub_ss = 0000000000100011</pre>
+      <pre>z_sub_uu = 1111111111100011   z_sub_us = 1111111111100011   z_sub_su = 1111111111100011   z_sub_ss = 0000000000100011</pre>
+      <pre>y_mul_uu = 0000010001100010   y_mul_us = 0000010001100010   y_mul_su = 0000010001100010   y_mul_ss = 1111111011100010</pre>
+      <pre>z_mul_uu = 0000010001100010   z_mul_us = 0000010001100010   z_mul_su = 0000010001100010   z_mul_ss = 1111111011100010</pre>
+      <pre>y_ltn_uu = 1   y_ltn_us = 1   y_ltn_su = 1   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 1   z_ltn_us = 1   z_ltn_su = 1   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 1   y_leq_us = 1   y_leq_su = 1   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 1   z_leq_us = 1   z_leq_su = 1   z_leq_ss = 0</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 10111010</pre>
+      <pre>b   = 01110000</pre>
+      <pre>c   = 111111</pre>
+      <pre>y_mux_uu = 0000000001110000   y_mux_us = 0000000001110000   y_mux_su = 0000000001110000   y_mux_ss = 0000000001110000</pre>
+      <pre>z_mux_uu = 0000000001110000   z_mux_us = 0000000001110000   z_mux_su = 0000000001110000   z_mux_ss = 0000000001110000</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111000000   y_sgn_s  = 0000000000000000</pre>
+      <pre>z_sgn_u  = 1111111111000000   z_sgn_s  = 0000000000000000</pre>
+      <pre>y_add_uu = 0000000011111001   y_add_us = 0000000011111001   y_add_su = 0000000011111001   y_add_ss = 1111111110111001</pre>
+      <pre>z_add_uu = 0000000011111001   z_add_us = 0000000011111001   z_add_su = 0000000011111001   z_add_ss = 1111111110111001</pre>
+      <pre>y_sub_uu = 0000000001111011   y_sub_us = 0000000001111011   y_sub_su = 0000000001111011   y_sub_ss = 1111111110111011</pre>
+      <pre>z_sub_uu = 0000000001111011   z_sub_us = 0000000001111011   z_sub_su = 0000000001111011   z_sub_ss = 1111111110111011</pre>
+      <pre>y_mul_uu = 0010110111000110   y_mul_us = 0010110111000110   y_mul_su = 0010110111000110   y_mul_ss = 0000000001000110</pre>
+      <pre>z_mul_uu = 0010110111000110   z_mul_us = 0010110111000110   z_mul_su = 0010110111000110   z_mul_ss = 0000000001000110</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 10001000</pre>
+      <pre>b   = 10110010</pre>
+      <pre>c   = 001110</pre>
+      <pre>y_mux_uu = 0000000010001000   y_mux_us = 0000000010001000   y_mux_su = 0000000010001000   y_mux_ss = 1111111110001000</pre>
+      <pre>z_mux_uu = 0000000010001000   z_mux_us = 0000000010001000   z_mux_su = 0000000010001000   z_mux_ss = 1111111110001000</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111110001   y_sgn_s  = 1111111111110001</pre>
+      <pre>z_sgn_u  = 1111111111110001   z_sgn_s  = 1111111111110001</pre>
+      <pre>y_add_uu = 0000000010010110   y_add_us = 0000000010010110   y_add_su = 0000000010010110   y_add_ss = 1111111110010110</pre>
+      <pre>z_add_uu = 0000000010010110   z_add_us = 0000000010010110   z_add_su = 0000000010010110   z_add_ss = 1111111110010110</pre>
+      <pre>y_sub_uu = 0000000001111010   y_sub_us = 0000000001111010   y_sub_su = 0000000001111010   y_sub_ss = 1111111101111010</pre>
+      <pre>z_sub_uu = 0000000001111010   z_sub_us = 0000000001111010   z_sub_su = 0000000001111010   z_sub_ss = 1111111101111010</pre>
+      <pre>y_mul_uu = 0000011101110000   y_mul_us = 0000011101110000   y_mul_su = 0000011101110000   y_mul_ss = 1111100101110000</pre>
+      <pre>z_mul_uu = 0000011101110000   z_mul_us = 0000011101110000   z_mul_su = 0000011101110000   z_mul_ss = 1111100101110000</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 00001010</pre>
+      <pre>b   = 00111101</pre>
+      <pre>c   = 101100</pre>
+      <pre>y_mux_uu = 0000000000111101   y_mux_us = 0000000000111101   y_mux_su = 0000000000111101   y_mux_ss = 0000000000111101</pre>
+      <pre>z_mux_uu = 0000000000111101   z_mux_us = 0000000000111101   z_mux_su = 0000000000111101   z_mux_ss = 0000000000111101</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111010011   y_sgn_s  = 0000000000010011</pre>
+      <pre>z_sgn_u  = 1111111111010011   z_sgn_s  = 0000000000010011</pre>
+      <pre>y_add_uu = 0000000000110110   y_add_us = 0000000000110110   y_add_su = 0000000000110110   y_add_ss = 1111111111110110</pre>
+      <pre>z_add_uu = 0000000000110110   z_add_us = 0000000000110110   z_add_su = 0000000000110110   z_add_ss = 1111111111110110</pre>
+      <pre>y_sub_uu = 1111111111011110   y_sub_us = 1111111111011110   y_sub_su = 1111111111011110   y_sub_ss = 0000000000011110</pre>
+      <pre>z_sub_uu = 1111111111011110   z_sub_us = 1111111111011110   z_sub_su = 1111111111011110   z_sub_ss = 0000000000011110</pre>
+      <pre>y_mul_uu = 0000000110111000   y_mul_us = 0000000110111000   y_mul_su = 0000000110111000   y_mul_ss = 1111111100111000</pre>
+      <pre>z_mul_uu = 0000000110111000   z_mul_us = 0000000110111000   z_mul_su = 0000000110111000   z_mul_ss = 1111111100111000</pre>
+      <pre>y_ltn_uu = 1   y_ltn_us = 1   y_ltn_su = 1   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 1   z_ltn_us = 1   z_ltn_su = 1   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 1   y_leq_us = 1   y_leq_su = 1   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 1   z_leq_us = 1   z_leq_su = 1   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 00101011</pre>
+      <pre>b   = 01011011</pre>
+      <pre>c   = 010000</pre>
+      <pre>y_mux_uu = 0000000000101011   y_mux_us = 0000000000101011   y_mux_su = 0000000000101011   y_mux_ss = 0000000000101011</pre>
+      <pre>z_mux_uu = 0000000000101011   z_mux_us = 0000000000101011   z_mux_su = 0000000000101011   z_mux_ss = 0000000000101011</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111101111   y_sgn_s  = 1111111111101111</pre>
+      <pre>z_sgn_u  = 1111111111101111   z_sgn_s  = 1111111111101111</pre>
+      <pre>y_add_uu = 0000000000111011   y_add_us = 0000000000111011   y_add_su = 0000000000111011   y_add_ss = 0000000000111011</pre>
+      <pre>z_add_uu = 0000000000111011   z_add_us = 0000000000111011   z_add_su = 0000000000111011   z_add_ss = 0000000000111011</pre>
+      <pre>y_sub_uu = 0000000000011011   y_sub_us = 0000000000011011   y_sub_su = 0000000000011011   y_sub_ss = 0000000000011011</pre>
+      <pre>z_sub_uu = 0000000000011011   z_sub_us = 0000000000011011   z_sub_su = 0000000000011011   z_sub_ss = 0000000000011011</pre>
+      <pre>y_mul_uu = 0000001010110000   y_mul_us = 0000001010110000   y_mul_su = 0000001010110000   y_mul_ss = 0000001010110000</pre>
+      <pre>z_mul_uu = 0000001010110000   z_mul_us = 0000001010110000   z_mul_su = 0000001010110000   z_mul_ss = 0000001010110000</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 01000010</pre>
+      <pre>b   = 01100001</pre>
+      <pre>c   = 000110</pre>
+      <pre>y_mux_uu = 0000000001000010   y_mux_us = 0000000001000010   y_mux_su = 0000000001000010   y_mux_ss = 0000000001000010</pre>
+      <pre>z_mux_uu = 0000000001000010   z_mux_us = 0000000001000010   z_mux_su = 0000000001000010   z_mux_ss = 0000000001000010</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111111001   y_sgn_s  = 1111111111111001</pre>
+      <pre>z_sgn_u  = 1111111111111001   z_sgn_s  = 1111111111111001</pre>
+      <pre>y_add_uu = 0000000001001000   y_add_us = 0000000001001000   y_add_su = 0000000001001000   y_add_ss = 0000000001001000</pre>
+      <pre>z_add_uu = 0000000001001000   z_add_us = 0000000001001000   z_add_su = 0000000001001000   z_add_ss = 0000000001001000</pre>
+      <pre>y_sub_uu = 0000000000111100   y_sub_us = 0000000000111100   y_sub_su = 0000000000111100   y_sub_ss = 0000000000111100</pre>
+      <pre>z_sub_uu = 0000000000111100   z_sub_us = 0000000000111100   z_sub_su = 0000000000111100   z_sub_ss = 0000000000111100</pre>
+      <pre>y_mul_uu = 0000000110001100   y_mul_us = 0000000110001100   y_mul_su = 0000000110001100   y_mul_ss = 0000000110001100</pre>
+      <pre>z_mul_uu = 0000000110001100   z_mul_us = 0000000110001100   z_mul_su = 0000000110001100   z_mul_ss = 0000000110001100</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 11100101</pre>
+      <pre>b   = 11011110</pre>
+      <pre>c   = 111010</pre>
+      <pre>y_mux_uu = 0000000011100101   y_mux_us = 0000000011100101   y_mux_su = 0000000011100101   y_mux_ss = 1111111111100101</pre>
+      <pre>z_mux_uu = 0000000011100101   z_mux_us = 0000000011100101   z_mux_su = 0000000011100101   z_mux_ss = 1111111111100101</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111000101   y_sgn_s  = 0000000000000101</pre>
+      <pre>z_sgn_u  = 1111111111000101   z_sgn_s  = 0000000000000101</pre>
+      <pre>y_add_uu = 0000000100011111   y_add_us = 0000000100011111   y_add_su = 0000000100011111   y_add_ss = 1111111111011111</pre>
+      <pre>z_add_uu = 0000000100011111   z_add_us = 0000000100011111   z_add_su = 0000000100011111   z_add_ss = 1111111111011111</pre>
+      <pre>y_sub_uu = 0000000010101011   y_sub_us = 0000000010101011   y_sub_su = 0000000010101011   y_sub_ss = 1111111111101011</pre>
+      <pre>z_sub_uu = 0000000010101011   z_sub_us = 0000000010101011   z_sub_su = 0000000010101011   z_sub_ss = 1111111111101011</pre>
+      <pre>y_mul_uu = 0011001111100010   y_mul_us = 0011001111100010   y_mul_su = 0011001111100010   y_mul_ss = 0000000010100010</pre>
+      <pre>z_mul_uu = 0011001111100010   z_mul_us = 0011001111100010   z_mul_su = 0011001111100010   z_mul_ss = 0000000010100010</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 01001011</pre>
+      <pre>b   = 11001011</pre>
+      <pre>c   = 001001</pre>
+      <pre>y_mux_uu = 0000000001001011   y_mux_us = 0000000001001011   y_mux_su = 0000000001001011   y_mux_ss = 0000000001001011</pre>
+      <pre>z_mux_uu = 0000000001001011   z_mux_us = 0000000001001011   z_mux_su = 0000000001001011   z_mux_ss = 0000000001001011</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111110110   y_sgn_s  = 1111111111110110</pre>
+      <pre>z_sgn_u  = 1111111111110110   z_sgn_s  = 1111111111110110</pre>
+      <pre>y_add_uu = 0000000001010100   y_add_us = 0000000001010100   y_add_su = 0000000001010100   y_add_ss = 0000000001010100</pre>
+      <pre>z_add_uu = 0000000001010100   z_add_us = 0000000001010100   z_add_su = 0000000001010100   z_add_ss = 0000000001010100</pre>
+      <pre>y_sub_uu = 0000000001000010   y_sub_us = 0000000001000010   y_sub_su = 0000000001000010   y_sub_ss = 0000000001000010</pre>
+      <pre>z_sub_uu = 0000000001000010   z_sub_us = 0000000001000010   z_sub_su = 0000000001000010   z_sub_ss = 0000000001000010</pre>
+      <pre>y_mul_uu = 0000001010100011   y_mul_us = 0000001010100011   y_mul_su = 0000001010100011   y_mul_ss = 0000001010100011</pre>
+      <pre>z_mul_uu = 0000001010100011   z_mul_us = 0000001010100011   z_mul_su = 0000001010100011   z_mul_ss = 0000001010100011</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 01110010</pre>
+      <pre>b   = 11110100</pre>
+      <pre>c   = 100101</pre>
+      <pre>y_mux_uu = 0000000001110010   y_mux_us = 0000000001110010   y_mux_su = 0000000001110010   y_mux_ss = 0000000001110010</pre>
+      <pre>z_mux_uu = 0000000001110010   z_mux_us = 0000000001110010   z_mux_su = 0000000001110010   z_mux_ss = 0000000001110010</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111011010   y_sgn_s  = 0000000000011010</pre>
+      <pre>z_sgn_u  = 1111111111011010   z_sgn_s  = 0000000000011010</pre>
+      <pre>y_add_uu = 0000000010010111   y_add_us = 0000000010010111   y_add_su = 0000000010010111   y_add_ss = 0000000001010111</pre>
+      <pre>z_add_uu = 0000000010010111   z_add_us = 0000000010010111   z_add_su = 0000000010010111   z_add_ss = 0000000001010111</pre>
+      <pre>y_sub_uu = 0000000001001101   y_sub_us = 0000000001001101   y_sub_su = 0000000001001101   y_sub_ss = 0000000010001101</pre>
+      <pre>z_sub_uu = 0000000001001101   z_sub_us = 0000000001001101   z_sub_su = 0000000001001101   z_sub_ss = 0000000010001101</pre>
+      <pre>y_mul_uu = 0001000001111010   y_mul_us = 0001000001111010   y_mul_su = 0001000001111010   y_mul_ss = 1111001111111010</pre>
+      <pre>z_mul_uu = 0001000001111010   z_mul_us = 0001000001111010   z_mul_su = 0001000001111010   z_mul_ss = 1111001111111010</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 0</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 0</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 0</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 0</pre>
+      <pre>sel = 0</pre>
+      <pre>a   = 10000110</pre>
+      <pre>b   = 10001011</pre>
+      <pre>c   = 011011</pre>
+      <pre>y_mux_uu = 0000000010001011   y_mux_us = 0000000010001011   y_mux_su = 0000000010001011   y_mux_ss = 1111111110001011</pre>
+      <pre>z_mux_uu = 0000000010001011   z_mux_us = 0000000010001011   z_mux_su = 0000000010001011   z_mux_ss = 1111111110001011</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111100100   y_sgn_s  = 1111111111100100</pre>
+      <pre>z_sgn_u  = 1111111111100100   z_sgn_s  = 1111111111100100</pre>
+      <pre>y_add_uu = 0000000010100001   y_add_us = 0000000010100001   y_add_su = 0000000010100001   y_add_ss = 1111111110100001</pre>
+      <pre>z_add_uu = 0000000010100001   z_add_us = 0000000010100001   z_add_su = 0000000010100001   z_add_ss = 1111111110100001</pre>
+      <pre>y_sub_uu = 0000000001101011   y_sub_us = 0000000001101011   y_sub_su = 0000000001101011   y_sub_ss = 1111111101101011</pre>
+      <pre>z_sub_uu = 0000000001101011   z_sub_us = 0000000001101011   z_sub_su = 0000000001101011   z_sub_ss = 1111111101101011</pre>
+      <pre>y_mul_uu = 0000111000100010   y_mul_us = 0000111000100010   y_mul_su = 0000111000100010   y_mul_ss = 1111001100100010</pre>
+      <pre>z_mul_uu = 0000111000100010   z_mul_us = 0000111000100010   z_mul_su = 0000111000100010   z_mul_ss = 1111001100100010</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 10110001</pre>
+      <pre>b   = 00101001</pre>
+      <pre>c   = 000101</pre>
+      <pre>y_mux_uu = 0000000010110001   y_mux_us = 0000000010110001   y_mux_su = 0000000010110001   y_mux_ss = 1111111110110001</pre>
+      <pre>z_mux_uu = 0000000010110001   z_mux_us = 0000000010110001   z_mux_su = 0000000010110001   z_mux_ss = 1111111110110001</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111111010   y_sgn_s  = 1111111111111010</pre>
+      <pre>z_sgn_u  = 1111111111111010   z_sgn_s  = 1111111111111010</pre>
+      <pre>y_add_uu = 0000000010110110   y_add_us = 0000000010110110   y_add_su = 0000000010110110   y_add_ss = 1111111110110110</pre>
+      <pre>z_add_uu = 0000000010110110   z_add_us = 0000000010110110   z_add_su = 0000000010110110   z_add_ss = 1111111110110110</pre>
+      <pre>y_sub_uu = 0000000010101100   y_sub_us = 0000000010101100   y_sub_su = 0000000010101100   y_sub_ss = 1111111110101100</pre>
+      <pre>z_sub_uu = 0000000010101100   z_sub_us = 0000000010101100   z_sub_su = 0000000010101100   z_sub_ss = 1111111110101100</pre>
+      <pre>y_mul_uu = 0000001101110101   y_mul_us = 0000001101110101   y_mul_su = 0000001101110101   y_mul_ss = 1111111001110101</pre>
+      <pre>z_mul_uu = 0000001101110101   z_mul_us = 0000001101110101   z_mul_su = 0000001101110101   z_mul_ss = 1111111001110101</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre>sel = 1</pre>
+      <pre>a   = 10110010</pre>
+      <pre>b   = 00101111</pre>
+      <pre>c   = 001001</pre>
+      <pre>y_mux_uu = 0000000010110010   y_mux_us = 0000000010110010   y_mux_su = 0000000010110010   y_mux_ss = 1111111110110010</pre>
+      <pre>z_mux_uu = 0000000010110010   z_mux_us = 0000000010110010   z_mux_su = 0000000010110010   z_mux_ss = 1111111110110010</pre>
+      <pre>y_eql_uu = 0   y_eql_us = 0   y_eql_su = 0   y_eql_ss = 0</pre>
+      <pre>z_eql_uu = 0   z_eql_us = 0   z_eql_su = 0   z_eql_ss = 0</pre>
+      <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
+      <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
+      <pre>y_sgn_u  = 1111111111110110   y_sgn_s  = 1111111111110110</pre>
+      <pre>z_sgn_u  = 1111111111110110   z_sgn_s  = 1111111111110110</pre>
+      <pre>y_add_uu = 0000000010111011   y_add_us = 0000000010111011   y_add_su = 0000000010111011   y_add_ss = 1111111110111011</pre>
+      <pre>z_add_uu = 0000000010111011   z_add_us = 0000000010111011   z_add_su = 0000000010111011   z_add_ss = 1111111110111011</pre>
+      <pre>y_sub_uu = 0000000010101001   y_sub_us = 0000000010101001   y_sub_su = 0000000010101001   y_sub_ss = 1111111110101001</pre>
+      <pre>z_sub_uu = 0000000010101001   z_sub_us = 0000000010101001   z_sub_su = 0000000010101001   z_sub_ss = 1111111110101001</pre>
+      <pre>y_mul_uu = 0000011001000010   y_mul_us = 0000011001000010   y_mul_su = 0000011001000010   y_mul_ss = 1111110101000010</pre>
+      <pre>z_mul_uu = 0000011001000010   z_mul_us = 0000011001000010   z_mul_su = 0000011001000010   z_mul_ss = 1111110101000010</pre>
+      <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
+      <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
+      <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>
+      <pre>z_leq_uu = 0   z_leq_us = 0   z_leq_su = 0   z_leq_ss = 1</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

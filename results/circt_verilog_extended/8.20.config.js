@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/8.20'] = [["","virtual_method",1,"logs/circt_verilog_extended/chapter-8/8.20--virtual_method.sv.log.html","tests/chapter-8/8.20--virtual_method.sv.html"]]

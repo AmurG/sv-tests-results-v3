@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/23.2'] = [["","macromodule_definition",1,"logs/circt_verilog_extended/chapter-23/23.2--macromodule-definition.sv.log.html","tests/chapter-23/23.2--macromodule-definition.sv.html"],["","module_definition",1,"logs/circt_verilog_extended/chapter-23/23.2--module-definition.sv.log.html","tests/chapter-23/23.2--module-definition.sv.html"]]

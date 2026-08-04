@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/11.11'] = [["","min_max_avg_delay",1,"logs/circt_verilog_extended/chapter-11/11.11--min_max_avg_delay.sv.log.html","tests/chapter-11/11.11--min_max_avg_delay.sv.html"]]

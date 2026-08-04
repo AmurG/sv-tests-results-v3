@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/veer-el2'] = [["cores","veer-el2",0,"logs/Arcilator_extended_4state/generated/veer-config/veer-el2_sim/veer-el2_sim.sv.log.html","third_party/cores/veer-el2/design/include/el2_def.sv.html"]]

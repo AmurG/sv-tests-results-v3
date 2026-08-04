@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.4.2.1'] = [["","event_comma_op",1,"logs/circt_verilog_extended_4state/chapter-9/9.4.2.1--event_comma_op.sv.log.html","tests/chapter-9/9.4.2.1--event_comma_op.sv.html"],["","event_or_op",1,"logs/circt_verilog_extended_4state/chapter-9/9.4.2.1--event_or_op.sv.log.html","tests/chapter-9/9.4.2.1--event_or_op.sv.html"]]

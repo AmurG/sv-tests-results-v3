@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/10.6.1'] = [["","assign_deassign",1,"logs/Slang_circt/chapter-10/10.6.1--assign-deassign.sv.log.html","tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

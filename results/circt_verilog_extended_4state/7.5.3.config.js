@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/7.5.3'] = [["","dynamic-arrays-op-delete",1,"logs/circt_verilog_extended_4state/chapter-7/arrays/dynamic/op-delete.sv.log.html","tests/chapter-7/arrays/dynamic/op-delete.sv.html"]]

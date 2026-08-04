@@ -1,0 +1,1 @@
+config_loader_data['arcilator/6.6.2'] = [["","net_uwire",1,"logs/Arcilator/generated/nets/6.6.2--net_uwire.sv.log.html","tests/generated/nets/6.6.2--net_uwire.sv.html"]]

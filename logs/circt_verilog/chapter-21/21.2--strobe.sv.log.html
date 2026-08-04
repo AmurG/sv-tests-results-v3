@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>strobe_task</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>$strobe test</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>uvm-req 21.2</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/chapter-21<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../tests/chapter-21/21.2--strobe.sv.html" target="file-frame">tests/chapter-21/21.2--strobe.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 09:45:00</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>ram usage</dt><dd>25088 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog -o /dev/null -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/chapter-21 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../tests/chapter-21/21.2--strobe.sv.html" target="file-frame">tests/chapter-21/21.2--strobe.sv</a></pre>
+      <pre>../../../tests/chapter-21/21.2--strobe.sv:23:2: warning: `$strobe` is lowered as an immediate `$display`: values are sampled at the execution point, not in the Postponed region at the end of the time step</pre>
+      <pre>        $strobe(a);</pre>
+      <pre>        ^</pre>
+      <pre>../../../tests/chapter-21/21.2--strobe.sv:24:2: warning: `$strobeb` is lowered as an immediate `$display`: values are sampled at the execution point, not in the Postponed region at the end of the time step</pre>
+      <pre>        $strobeb(a);</pre>
+      <pre>        ^</pre>
+      <pre>../../../tests/chapter-21/21.2--strobe.sv:25:2: warning: `$strobeo` is lowered as an immediate `$display`: values are sampled at the execution point, not in the Postponed region at the end of the time step</pre>
+      <pre>        $strobeo(a);</pre>
+      <pre>        ^</pre>
+      <pre>../../../tests/chapter-21/21.2--strobe.sv:26:2: warning: `$strobeh` is lowered as an immediate `$display`: values are sampled at the execution point, not in the Postponed region at the end of the time step</pre>
+      <pre>        $strobeh(a);</pre>
+      <pre>        ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>hdlconvertor_std2017_p168</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 09:47:39</dd></div>
+        <div><dt>time elapsed</dt><dd>0.074s</dd></div>
+        <div><dt>ram usage</dt><dd>18816 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv</a></pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:4:7: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
+      <pre>        byte b[] = { 1, 2, 3, 4 };</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:12:14: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
+      <pre>        logic [7:0] m [2][2] = &#39;{ &#39;{5, 10}, &#39;{15, 20} };</pre>
+      <pre>                    ^</pre>
+      <pre>module {</pre>
+      <pre>  moore.module @top() {</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @fn0() {</pre>
+      <pre>    %0 = moore.get_global_variable @b : &lt;open_uarray&lt;i8&gt;&gt;</pre>
+      <pre>    %1 = moore.get_global_variable @y : &lt;i32&gt;</pre>
+      <pre>    %2 = moore.read %0 : &lt;open_uarray&lt;i8&gt;&gt;</pre>
+      <pre>    %3 = moore.conversion %2 : !moore.open_uarray&lt;i8&gt; -&gt; !moore.queue&lt;i8, 0&gt;</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant 1 : i32</pre>
+      <pre>    %6 = moore.builtin.size %3 : &lt;i8, 0&gt;</pre>
+      <pre>    %7 = moore.constant 0 : i8</pre>
+      <pre>    cf.br ^bb1(%4, %7 : !moore.i32, !moore.i8)</pre>
+      <pre>  ^bb1(%8: !moore.i32, %9: !moore.i8):  // 2 preds: ^bb0, ^bb2</pre>
+      <pre>    %10 = moore.slt %8, %6 : i32 -&gt; i1</pre>
+      <pre>    %11 = moore.to_builtin_int %10 : i1</pre>
+      <pre>    cf.cond_br %11, ^bb2(%8, %9 : !moore.i32, !moore.i8), ^bb3(%9 : !moore.i8)</pre>
+      <pre>  ^bb2(%12: !moore.i32, %13: !moore.i8):  // pred: ^bb1</pre>
+      <pre>    %14 = moore.dyn_queue_extract %3 from %12 to %12 : &lt;i8, 0&gt;, i32 -&gt; i8</pre>
+      <pre>    %15 = moore.add %13, %14 : i8</pre>
+      <pre>    %16 = moore.add %12, %5 : i32</pre>
+      <pre>    cf.br ^bb1(%16, %15 : !moore.i32, !moore.i8)</pre>
+      <pre>  ^bb3(%17: !moore.i8):  // pred: ^bb1</pre>
+      <pre>    %18 = moore.sext %17 : i8 -&gt; i32</pre>
+      <pre>    moore.blocking_assign %1, %18 : i32</pre>
+      <pre>    %19 = moore.read %0 : &lt;open_uarray&lt;i8&gt;&gt;</pre>
+      <pre>    %20 = moore.conversion %19 : !moore.open_uarray&lt;i8&gt; -&gt; !moore.queue&lt;i8, 0&gt;</pre>
+      <pre>    %21 = moore.constant 0 : i32</pre>
+      <pre>    %22 = moore.constant 1 : i32</pre>
+      <pre>    %23 = moore.builtin.size %20 : &lt;i8, 0&gt;</pre>
+      <pre>    %24 = moore.constant 1 : i8</pre>
+      <pre>    cf.br ^bb4(%21, %24 : !moore.i32, !moore.i8)</pre>
+      <pre>  ^bb4(%25: !moore.i32, %26: !moore.i8):  // 2 preds: ^bb3, ^bb5</pre>
+      <pre>    %27 = moore.slt %25, %23 : i32 -&gt; i1</pre>
+      <pre>    %28 = moore.to_builtin_int %27 : i1</pre>
+      <pre>    cf.cond_br %28, ^bb5(%25, %26 : !moore.i32, !moore.i8), ^bb6(%26 : !moore.i8)</pre>
+      <pre>  ^bb5(%29: !moore.i32, %30: !moore.i8):  // pred: ^bb4</pre>
+      <pre>    %31 = moore.dyn_queue_extract %20 from %29 to %29 : &lt;i8, 0&gt;, i32 -&gt; i8</pre>
+      <pre>    %32 = moore.mul %30, %31 : i8</pre>
+      <pre>    %33 = moore.add %29, %22 : i32</pre>
+      <pre>    cf.br ^bb4(%33, %32 : !moore.i32, !moore.i8)</pre>
+      <pre>  ^bb6(%34: !moore.i8):  // pred: ^bb4</pre>
+      <pre>    %35 = moore.sext %34 : i8 -&gt; i32</pre>
+      <pre>    moore.blocking_assign %1, %35 : i32</pre>
+      <pre>    %36 = moore.read %0 : &lt;open_uarray&lt;i8&gt;&gt;</pre>
+      <pre>    %37 = moore.conversion %36 : !moore.open_uarray&lt;i8&gt; -&gt; !moore.queue&lt;i8, 0&gt;</pre>
+      <pre>    %38 = moore.constant 0 : i32</pre>
+      <pre>    %39 = moore.constant 1 : i32</pre>
+      <pre>    %40 = moore.builtin.size %37 : &lt;i8, 0&gt;</pre>
+      <pre>    %41 = moore.constant 0 : i32</pre>
+      <pre>    cf.br ^bb7(%38, %41 : !moore.i32, !moore.i32)</pre>
+      <pre>  ^bb7(%42: !moore.i32, %43: !moore.i32):  // 2 preds: ^bb6, ^bb8</pre>
+      <pre>    %44 = moore.slt %42, %40 : i32 -&gt; i1</pre>
+      <pre>    %45 = moore.to_builtin_int %44 : i1</pre>
+      <pre>    cf.cond_br %45, ^bb8(%42, %43 : !moore.i32, !moore.i32), ^bb9(%43 : !moore.i32)</pre>
+      <pre>  ^bb8(%46: !moore.i32, %47: !moore.i32):  // pred: ^bb7</pre>
+      <pre>    %48 = moore.dyn_queue_extract %37 from %46 to %46 : &lt;i8, 0&gt;, i32 -&gt; i8</pre>
+      <pre>    %49 = moore.sext %48 : i8 -&gt; i32</pre>
+      <pre>    %50 = moore.constant 4 : i32</pre>
+      <pre>    %51 = moore.add %49, %50 : i32</pre>
+      <pre>    %52 = moore.xor %47, %51 : i32</pre>
+      <pre>    %53 = moore.add %46, %39 : i32</pre>
+      <pre>    cf.br ^bb7(%53, %52 : !moore.i32, !moore.i32)</pre>
+      <pre>  ^bb9(%54: !moore.i32):  // pred: ^bb7</pre>
+      <pre>    moore.blocking_assign %1, %54 : i32</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @b : !moore.open_uarray&lt;i8&gt; init {</pre>
+      <pre>    %0 = moore.constant 1 : i32</pre>
+      <pre>    %1 = moore.constant 1 : i8</pre>
+      <pre>    %2 = moore.constant 2 : i32</pre>
+      <pre>    %3 = moore.constant 2 : i8</pre>
+      <pre>    %4 = moore.constant 3 : i32</pre>
+      <pre>    %5 = moore.constant 3 : i8</pre>
+      <pre>    %6 = moore.constant 4 : i32</pre>
+      <pre>    %7 = moore.constant 4 : i8</pre>
+      <pre>    %8 = moore.array_create %1, %3, %5, %7 : !moore.i8, !moore.i8, !moore.i8, !moore.i8 -&gt; uarray&lt;4 x i8&gt;</pre>
+      <pre>    %9 = moore.conversion %8 : !moore.uarray&lt;4 x i8&gt; -&gt; !moore.open_uarray&lt;i8&gt;</pre>
+      <pre>    moore.yield %9 : open_uarray&lt;i8&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @y : !moore.i32</pre>
+      <pre>  func.func private @fn1() {</pre>
+      <pre>    %0 = moore.get_global_variable @m : &lt;uarray&lt;2 x uarray&lt;2 x l8&gt;&gt;&gt;</pre>
+      <pre>    %1 = moore.get_global_variable @y_0 : &lt;i32&gt;</pre>
+      <pre>    %2 = moore.read %0 : &lt;uarray&lt;2 x uarray&lt;2 x l8&gt;&gt;&gt;</pre>
+      <pre>    %3 = moore.extract %2 from 0 : uarray&lt;2 x uarray&lt;2 x l8&gt;&gt; -&gt; uarray&lt;2 x l8&gt;</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.extract %3 from 0 : uarray&lt;2 x l8&gt; -&gt; l8</pre>
+      <pre>    %6 = moore.constant 0 : i32</pre>
+      <pre>    %7 = moore.extract %3 from 1 : uarray&lt;2 x l8&gt; -&gt; l8</pre>
+      <pre>    %8 = moore.constant 1 : i32</pre>
+      <pre>    %9 = moore.add %5, %7 : l8</pre>
+      <pre>    %10 = moore.extract %2 from 1 : uarray&lt;2 x uarray&lt;2 x l8&gt;&gt; -&gt; uarray&lt;2 x l8&gt;</pre>
+      <pre>    %11 = moore.constant 1 : i32</pre>
+      <pre>    %12 = moore.extract %10 from 0 : uarray&lt;2 x l8&gt; -&gt; l8</pre>
+      <pre>    %13 = moore.constant 0 : i32</pre>
+      <pre>    %14 = moore.extract %10 from 1 : uarray&lt;2 x l8&gt; -&gt; l8</pre>
+      <pre>    %15 = moore.constant 1 : i32</pre>
+      <pre>    %16 = moore.add %12, %14 : l8</pre>
+      <pre>    %17 = moore.add %9, %16 : l8</pre>
+      <pre>    %18 = moore.zext %17 : l8 -&gt; l32</pre>
+      <pre>    %19 = moore.logic_to_int %18 : l32</pre>
+      <pre>    moore.blocking_assign %1, %19 : i32</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @m : !moore.uarray&lt;2 x uarray&lt;2 x l8&gt;&gt; init {</pre>
+      <pre>    %0 = moore.constant 5 : i32</pre>
+      <pre>    %1 = moore.constant 5 : l32</pre>
+      <pre>    %2 = moore.constant 5 : l8</pre>
+      <pre>    %3 = moore.constant 10 : i32</pre>
+      <pre>    %4 = moore.constant 10 : l32</pre>
+      <pre>    %5 = moore.constant 10 : l8</pre>
+      <pre>    %6 = moore.array_create %2, %5 : !moore.l8, !moore.l8 -&gt; uarray&lt;2 x l8&gt;</pre>
+      <pre>    %7 = moore.constant 15 : i32</pre>
+      <pre>    %8 = moore.constant 15 : l32</pre>
+      <pre>    %9 = moore.constant 15 : l8</pre>
+      <pre>    %10 = moore.constant 20 : i32</pre>
+      <pre>    %11 = moore.constant 20 : l32</pre>
+      <pre>    %12 = moore.constant 20 : l8</pre>
+      <pre>    %13 = moore.array_create %9, %12 : !moore.l8, !moore.l8 -&gt; uarray&lt;2 x l8&gt;</pre>
+      <pre>    %14 = moore.array_create %6, %13 : !moore.uarray&lt;2 x l8&gt;, !moore.uarray&lt;2 x l8&gt; -&gt; uarray&lt;2 x uarray&lt;2 x l8&gt;&gt;</pre>
+      <pre>    moore.yield %14 : uarray&lt;2 x uarray&lt;2 x l8&gt;&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @y_0 : !moore.i32</pre>
+      <pre>  func.func private @fn2() {</pre>
+      <pre>    %0 = moore.get_global_variable @bit_arr : &lt;uarray&lt;1024 x l1&gt;&gt;</pre>
+      <pre>    %1 = moore.get_global_variable @y_1 : &lt;i32&gt;</pre>
+      <pre>    %2 = moore.read %0 : &lt;uarray&lt;1024 x l1&gt;&gt;</pre>
+      <pre>    %3 = moore.extract %2 from 0 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.zext %3 : l1 -&gt; l32</pre>
+      <pre>    %6 = moore.logic_to_int %5 : l32</pre>
+      <pre>    %7 = moore.extract %2 from 1 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %8 = moore.constant 1 : i32</pre>
+      <pre>    %9 = moore.zext %7 : l1 -&gt; l32</pre>
+      <pre>    %10 = moore.logic_to_int %9 : l32</pre>
+      <pre>    %11 = moore.add %6, %10 : i32</pre>
+      <pre>    %12 = moore.extract %2 from 2 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %13 = moore.constant 2 : i32</pre>
+      <pre>    %14 = moore.zext %12 : l1 -&gt; l32</pre>
+      <pre>    %15 = moore.logic_to_int %14 : l32</pre>
+      <pre>    %16 = moore.add %11, %15 : i32</pre>
+      <pre>    %17 = moore.extract %2 from 3 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %18 = moore.constant 3 : i32</pre>
+      <pre>    %19 = moore.zext %17 : l1 -&gt; l32</pre>
+      <pre>    %20 = moore.logic_to_int %19 : l32</pre>
+      <pre>    %21 = moore.add %16, %20 : i32</pre>
+      <pre>    %22 = moore.extract %2 from 4 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %23 = moore.constant 4 : i32</pre>
+      <pre>    %24 = moore.zext %22 : l1 -&gt; l32</pre>
+      <pre>    %25 = moore.logic_to_int %24 : l32</pre>
+      <pre>    %26 = moore.add %21, %25 : i32</pre>
+      <pre>    %27 = moore.extract %2 from 5 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %28 = moore.constant 5 : i32</pre>
+      <pre>    %29 = moore.zext %27 : l1 -&gt; l32</pre>
+      <pre>    %30 = moore.logic_to_int %29 : l32</pre>
+      <pre>    %31 = moore.add %26, %30 : i32</pre>
+      <pre>    %32 = moore.extract %2 from 6 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %33 = moore.constant 6 : i32</pre>
+      <pre>    %34 = moore.zext %32 : l1 -&gt; l32</pre>
+      <pre>    %35 = moore.logic_to_int %34 : l32</pre>
+      <pre>    %36 = moore.add %31, %35 : i32</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 4691 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>    %4728 = moore.constant 945 : i32</pre>
+      <pre>    %4729 = moore.zext %4727 : l1 -&gt; l32</pre>
+      <pre>    %4730 = moore.logic_to_int %4729 : l32</pre>
+      <pre>    %4731 = moore.add %4726, %4730 : i32</pre>
+      <pre>    %4732 = moore.extract %2 from 946 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4733 = moore.constant 946 : i32</pre>
+      <pre>    %4734 = moore.zext %4732 : l1 -&gt; l32</pre>
+      <pre>    %4735 = moore.logic_to_int %4734 : l32</pre>
+      <pre>    %4736 = moore.add %4731, %4735 : i32</pre>
+      <pre>    %4737 = moore.extract %2 from 947 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4738 = moore.constant 947 : i32</pre>
+      <pre>    %4739 = moore.zext %4737 : l1 -&gt; l32</pre>
+      <pre>    %4740 = moore.logic_to_int %4739 : l32</pre>
+      <pre>    %4741 = moore.add %4736, %4740 : i32</pre>
+      <pre>    %4742 = moore.extract %2 from 948 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4743 = moore.constant 948 : i32</pre>
+      <pre>    %4744 = moore.zext %4742 : l1 -&gt; l32</pre>
+      <pre>    %4745 = moore.logic_to_int %4744 : l32</pre>
+      <pre>    %4746 = moore.add %4741, %4745 : i32</pre>
+      <pre>    %4747 = moore.extract %2 from 949 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4748 = moore.constant 949 : i32</pre>
+      <pre>    %4749 = moore.zext %4747 : l1 -&gt; l32</pre>
+      <pre>    %4750 = moore.logic_to_int %4749 : l32</pre>
+      <pre>    %4751 = moore.add %4746, %4750 : i32</pre>
+      <pre>    %4752 = moore.extract %2 from 950 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4753 = moore.constant 950 : i32</pre>
+      <pre>    %4754 = moore.zext %4752 : l1 -&gt; l32</pre>
+      <pre>    %4755 = moore.logic_to_int %4754 : l32</pre>
+      <pre>    %4756 = moore.add %4751, %4755 : i32</pre>
+      <pre>    %4757 = moore.extract %2 from 951 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4758 = moore.constant 951 : i32</pre>
+      <pre>    %4759 = moore.zext %4757 : l1 -&gt; l32</pre>
+      <pre>    %4760 = moore.logic_to_int %4759 : l32</pre>
+      <pre>    %4761 = moore.add %4756, %4760 : i32</pre>
+      <pre>    %4762 = moore.extract %2 from 952 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4763 = moore.constant 952 : i32</pre>
+      <pre>    %4764 = moore.zext %4762 : l1 -&gt; l32</pre>
+      <pre>    %4765 = moore.logic_to_int %4764 : l32</pre>
+      <pre>    %4766 = moore.add %4761, %4765 : i32</pre>
+      <pre>    %4767 = moore.extract %2 from 953 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4768 = moore.constant 953 : i32</pre>
+      <pre>    %4769 = moore.zext %4767 : l1 -&gt; l32</pre>
+      <pre>    %4770 = moore.logic_to_int %4769 : l32</pre>
+      <pre>    %4771 = moore.add %4766, %4770 : i32</pre>
+      <pre>    %4772 = moore.extract %2 from 954 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4773 = moore.constant 954 : i32</pre>
+      <pre>    %4774 = moore.zext %4772 : l1 -&gt; l32</pre>
+      <pre>    %4775 = moore.logic_to_int %4774 : l32</pre>
+      <pre>    %4776 = moore.add %4771, %4775 : i32</pre>
+      <pre>    %4777 = moore.extract %2 from 955 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4778 = moore.constant 955 : i32</pre>
+      <pre>    %4779 = moore.zext %4777 : l1 -&gt; l32</pre>
+      <pre>    %4780 = moore.logic_to_int %4779 : l32</pre>
+      <pre>    %4781 = moore.add %4776, %4780 : i32</pre>
+      <pre>    %4782 = moore.extract %2 from 956 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4783 = moore.constant 956 : i32</pre>
+      <pre>    %4784 = moore.zext %4782 : l1 -&gt; l32</pre>
+      <pre>    %4785 = moore.logic_to_int %4784 : l32</pre>
+      <pre>    %4786 = moore.add %4781, %4785 : i32</pre>
+      <pre>    %4787 = moore.extract %2 from 957 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4788 = moore.constant 957 : i32</pre>
+      <pre>    %4789 = moore.zext %4787 : l1 -&gt; l32</pre>
+      <pre>    %4790 = moore.logic_to_int %4789 : l32</pre>
+      <pre>    %4791 = moore.add %4786, %4790 : i32</pre>
+      <pre>    %4792 = moore.extract %2 from 958 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4793 = moore.constant 958 : i32</pre>
+      <pre>    %4794 = moore.zext %4792 : l1 -&gt; l32</pre>
+      <pre>    %4795 = moore.logic_to_int %4794 : l32</pre>
+      <pre>    %4796 = moore.add %4791, %4795 : i32</pre>
+      <pre>    %4797 = moore.extract %2 from 959 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4798 = moore.constant 959 : i32</pre>
+      <pre>    %4799 = moore.zext %4797 : l1 -&gt; l32</pre>
+      <pre>    %4800 = moore.logic_to_int %4799 : l32</pre>
+      <pre>    %4801 = moore.add %4796, %4800 : i32</pre>
+      <pre>    %4802 = moore.extract %2 from 960 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4803 = moore.constant 960 : i32</pre>
+      <pre>    %4804 = moore.zext %4802 : l1 -&gt; l32</pre>
+      <pre>    %4805 = moore.logic_to_int %4804 : l32</pre>
+      <pre>    %4806 = moore.add %4801, %4805 : i32</pre>
+      <pre>    %4807 = moore.extract %2 from 961 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4808 = moore.constant 961 : i32</pre>
+      <pre>    %4809 = moore.zext %4807 : l1 -&gt; l32</pre>
+      <pre>    %4810 = moore.logic_to_int %4809 : l32</pre>
+      <pre>    %4811 = moore.add %4806, %4810 : i32</pre>
+      <pre>    %4812 = moore.extract %2 from 962 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4813 = moore.constant 962 : i32</pre>
+      <pre>    %4814 = moore.zext %4812 : l1 -&gt; l32</pre>
+      <pre>    %4815 = moore.logic_to_int %4814 : l32</pre>
+      <pre>    %4816 = moore.add %4811, %4815 : i32</pre>
+      <pre>    %4817 = moore.extract %2 from 963 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4818 = moore.constant 963 : i32</pre>
+      <pre>    %4819 = moore.zext %4817 : l1 -&gt; l32</pre>
+      <pre>    %4820 = moore.logic_to_int %4819 : l32</pre>
+      <pre>    %4821 = moore.add %4816, %4820 : i32</pre>
+      <pre>    %4822 = moore.extract %2 from 964 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4823 = moore.constant 964 : i32</pre>
+      <pre>    %4824 = moore.zext %4822 : l1 -&gt; l32</pre>
+      <pre>    %4825 = moore.logic_to_int %4824 : l32</pre>
+      <pre>    %4826 = moore.add %4821, %4825 : i32</pre>
+      <pre>    %4827 = moore.extract %2 from 965 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4828 = moore.constant 965 : i32</pre>
+      <pre>    %4829 = moore.zext %4827 : l1 -&gt; l32</pre>
+      <pre>    %4830 = moore.logic_to_int %4829 : l32</pre>
+      <pre>    %4831 = moore.add %4826, %4830 : i32</pre>
+      <pre>    %4832 = moore.extract %2 from 966 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4833 = moore.constant 966 : i32</pre>
+      <pre>    %4834 = moore.zext %4832 : l1 -&gt; l32</pre>
+      <pre>    %4835 = moore.logic_to_int %4834 : l32</pre>
+      <pre>    %4836 = moore.add %4831, %4835 : i32</pre>
+      <pre>    %4837 = moore.extract %2 from 967 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4838 = moore.constant 967 : i32</pre>
+      <pre>    %4839 = moore.zext %4837 : l1 -&gt; l32</pre>
+      <pre>    %4840 = moore.logic_to_int %4839 : l32</pre>
+      <pre>    %4841 = moore.add %4836, %4840 : i32</pre>
+      <pre>    %4842 = moore.extract %2 from 968 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4843 = moore.constant 968 : i32</pre>
+      <pre>    %4844 = moore.zext %4842 : l1 -&gt; l32</pre>
+      <pre>    %4845 = moore.logic_to_int %4844 : l32</pre>
+      <pre>    %4846 = moore.add %4841, %4845 : i32</pre>
+      <pre>    %4847 = moore.extract %2 from 969 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4848 = moore.constant 969 : i32</pre>
+      <pre>    %4849 = moore.zext %4847 : l1 -&gt; l32</pre>
+      <pre>    %4850 = moore.logic_to_int %4849 : l32</pre>
+      <pre>    %4851 = moore.add %4846, %4850 : i32</pre>
+      <pre>    %4852 = moore.extract %2 from 970 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4853 = moore.constant 970 : i32</pre>
+      <pre>    %4854 = moore.zext %4852 : l1 -&gt; l32</pre>
+      <pre>    %4855 = moore.logic_to_int %4854 : l32</pre>
+      <pre>    %4856 = moore.add %4851, %4855 : i32</pre>
+      <pre>    %4857 = moore.extract %2 from 971 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4858 = moore.constant 971 : i32</pre>
+      <pre>    %4859 = moore.zext %4857 : l1 -&gt; l32</pre>
+      <pre>    %4860 = moore.logic_to_int %4859 : l32</pre>
+      <pre>    %4861 = moore.add %4856, %4860 : i32</pre>
+      <pre>    %4862 = moore.extract %2 from 972 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4863 = moore.constant 972 : i32</pre>
+      <pre>    %4864 = moore.zext %4862 : l1 -&gt; l32</pre>
+      <pre>    %4865 = moore.logic_to_int %4864 : l32</pre>
+      <pre>    %4866 = moore.add %4861, %4865 : i32</pre>
+      <pre>    %4867 = moore.extract %2 from 973 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4868 = moore.constant 973 : i32</pre>
+      <pre>    %4869 = moore.zext %4867 : l1 -&gt; l32</pre>
+      <pre>    %4870 = moore.logic_to_int %4869 : l32</pre>
+      <pre>    %4871 = moore.add %4866, %4870 : i32</pre>
+      <pre>    %4872 = moore.extract %2 from 974 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4873 = moore.constant 974 : i32</pre>
+      <pre>    %4874 = moore.zext %4872 : l1 -&gt; l32</pre>
+      <pre>    %4875 = moore.logic_to_int %4874 : l32</pre>
+      <pre>    %4876 = moore.add %4871, %4875 : i32</pre>
+      <pre>    %4877 = moore.extract %2 from 975 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4878 = moore.constant 975 : i32</pre>
+      <pre>    %4879 = moore.zext %4877 : l1 -&gt; l32</pre>
+      <pre>    %4880 = moore.logic_to_int %4879 : l32</pre>
+      <pre>    %4881 = moore.add %4876, %4880 : i32</pre>
+      <pre>    %4882 = moore.extract %2 from 976 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4883 = moore.constant 976 : i32</pre>
+      <pre>    %4884 = moore.zext %4882 : l1 -&gt; l32</pre>
+      <pre>    %4885 = moore.logic_to_int %4884 : l32</pre>
+      <pre>    %4886 = moore.add %4881, %4885 : i32</pre>
+      <pre>    %4887 = moore.extract %2 from 977 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4888 = moore.constant 977 : i32</pre>
+      <pre>    %4889 = moore.zext %4887 : l1 -&gt; l32</pre>
+      <pre>    %4890 = moore.logic_to_int %4889 : l32</pre>
+      <pre>    %4891 = moore.add %4886, %4890 : i32</pre>
+      <pre>    %4892 = moore.extract %2 from 978 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4893 = moore.constant 978 : i32</pre>
+      <pre>    %4894 = moore.zext %4892 : l1 -&gt; l32</pre>
+      <pre>    %4895 = moore.logic_to_int %4894 : l32</pre>
+      <pre>    %4896 = moore.add %4891, %4895 : i32</pre>
+      <pre>    %4897 = moore.extract %2 from 979 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4898 = moore.constant 979 : i32</pre>
+      <pre>    %4899 = moore.zext %4897 : l1 -&gt; l32</pre>
+      <pre>    %4900 = moore.logic_to_int %4899 : l32</pre>
+      <pre>    %4901 = moore.add %4896, %4900 : i32</pre>
+      <pre>    %4902 = moore.extract %2 from 980 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4903 = moore.constant 980 : i32</pre>
+      <pre>    %4904 = moore.zext %4902 : l1 -&gt; l32</pre>
+      <pre>    %4905 = moore.logic_to_int %4904 : l32</pre>
+      <pre>    %4906 = moore.add %4901, %4905 : i32</pre>
+      <pre>    %4907 = moore.extract %2 from 981 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4908 = moore.constant 981 : i32</pre>
+      <pre>    %4909 = moore.zext %4907 : l1 -&gt; l32</pre>
+      <pre>    %4910 = moore.logic_to_int %4909 : l32</pre>
+      <pre>    %4911 = moore.add %4906, %4910 : i32</pre>
+      <pre>    %4912 = moore.extract %2 from 982 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4913 = moore.constant 982 : i32</pre>
+      <pre>    %4914 = moore.zext %4912 : l1 -&gt; l32</pre>
+      <pre>    %4915 = moore.logic_to_int %4914 : l32</pre>
+      <pre>    %4916 = moore.add %4911, %4915 : i32</pre>
+      <pre>    %4917 = moore.extract %2 from 983 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4918 = moore.constant 983 : i32</pre>
+      <pre>    %4919 = moore.zext %4917 : l1 -&gt; l32</pre>
+      <pre>    %4920 = moore.logic_to_int %4919 : l32</pre>
+      <pre>    %4921 = moore.add %4916, %4920 : i32</pre>
+      <pre>    %4922 = moore.extract %2 from 984 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4923 = moore.constant 984 : i32</pre>
+      <pre>    %4924 = moore.zext %4922 : l1 -&gt; l32</pre>
+      <pre>    %4925 = moore.logic_to_int %4924 : l32</pre>
+      <pre>    %4926 = moore.add %4921, %4925 : i32</pre>
+      <pre>    %4927 = moore.extract %2 from 985 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4928 = moore.constant 985 : i32</pre>
+      <pre>    %4929 = moore.zext %4927 : l1 -&gt; l32</pre>
+      <pre>    %4930 = moore.logic_to_int %4929 : l32</pre>
+      <pre>    %4931 = moore.add %4926, %4930 : i32</pre>
+      <pre>    %4932 = moore.extract %2 from 986 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4933 = moore.constant 986 : i32</pre>
+      <pre>    %4934 = moore.zext %4932 : l1 -&gt; l32</pre>
+      <pre>    %4935 = moore.logic_to_int %4934 : l32</pre>
+      <pre>    %4936 = moore.add %4931, %4935 : i32</pre>
+      <pre>    %4937 = moore.extract %2 from 987 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4938 = moore.constant 987 : i32</pre>
+      <pre>    %4939 = moore.zext %4937 : l1 -&gt; l32</pre>
+      <pre>    %4940 = moore.logic_to_int %4939 : l32</pre>
+      <pre>    %4941 = moore.add %4936, %4940 : i32</pre>
+      <pre>    %4942 = moore.extract %2 from 988 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4943 = moore.constant 988 : i32</pre>
+      <pre>    %4944 = moore.zext %4942 : l1 -&gt; l32</pre>
+      <pre>    %4945 = moore.logic_to_int %4944 : l32</pre>
+      <pre>    %4946 = moore.add %4941, %4945 : i32</pre>
+      <pre>    %4947 = moore.extract %2 from 989 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4948 = moore.constant 989 : i32</pre>
+      <pre>    %4949 = moore.zext %4947 : l1 -&gt; l32</pre>
+      <pre>    %4950 = moore.logic_to_int %4949 : l32</pre>
+      <pre>    %4951 = moore.add %4946, %4950 : i32</pre>
+      <pre>    %4952 = moore.extract %2 from 990 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4953 = moore.constant 990 : i32</pre>
+      <pre>    %4954 = moore.zext %4952 : l1 -&gt; l32</pre>
+      <pre>    %4955 = moore.logic_to_int %4954 : l32</pre>
+      <pre>    %4956 = moore.add %4951, %4955 : i32</pre>
+      <pre>    %4957 = moore.extract %2 from 991 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4958 = moore.constant 991 : i32</pre>
+      <pre>    %4959 = moore.zext %4957 : l1 -&gt; l32</pre>
+      <pre>    %4960 = moore.logic_to_int %4959 : l32</pre>
+      <pre>    %4961 = moore.add %4956, %4960 : i32</pre>
+      <pre>    %4962 = moore.extract %2 from 992 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4963 = moore.constant 992 : i32</pre>
+      <pre>    %4964 = moore.zext %4962 : l1 -&gt; l32</pre>
+      <pre>    %4965 = moore.logic_to_int %4964 : l32</pre>
+      <pre>    %4966 = moore.add %4961, %4965 : i32</pre>
+      <pre>    %4967 = moore.extract %2 from 993 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4968 = moore.constant 993 : i32</pre>
+      <pre>    %4969 = moore.zext %4967 : l1 -&gt; l32</pre>
+      <pre>    %4970 = moore.logic_to_int %4969 : l32</pre>
+      <pre>    %4971 = moore.add %4966, %4970 : i32</pre>
+      <pre>    %4972 = moore.extract %2 from 994 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4973 = moore.constant 994 : i32</pre>
+      <pre>    %4974 = moore.zext %4972 : l1 -&gt; l32</pre>
+      <pre>    %4975 = moore.logic_to_int %4974 : l32</pre>
+      <pre>    %4976 = moore.add %4971, %4975 : i32</pre>
+      <pre>    %4977 = moore.extract %2 from 995 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4978 = moore.constant 995 : i32</pre>
+      <pre>    %4979 = moore.zext %4977 : l1 -&gt; l32</pre>
+      <pre>    %4980 = moore.logic_to_int %4979 : l32</pre>
+      <pre>    %4981 = moore.add %4976, %4980 : i32</pre>
+      <pre>    %4982 = moore.extract %2 from 996 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4983 = moore.constant 996 : i32</pre>
+      <pre>    %4984 = moore.zext %4982 : l1 -&gt; l32</pre>
+      <pre>    %4985 = moore.logic_to_int %4984 : l32</pre>
+      <pre>    %4986 = moore.add %4981, %4985 : i32</pre>
+      <pre>    %4987 = moore.extract %2 from 997 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4988 = moore.constant 997 : i32</pre>
+      <pre>    %4989 = moore.zext %4987 : l1 -&gt; l32</pre>
+      <pre>    %4990 = moore.logic_to_int %4989 : l32</pre>
+      <pre>    %4991 = moore.add %4986, %4990 : i32</pre>
+      <pre>    %4992 = moore.extract %2 from 998 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4993 = moore.constant 998 : i32</pre>
+      <pre>    %4994 = moore.zext %4992 : l1 -&gt; l32</pre>
+      <pre>    %4995 = moore.logic_to_int %4994 : l32</pre>
+      <pre>    %4996 = moore.add %4991, %4995 : i32</pre>
+      <pre>    %4997 = moore.extract %2 from 999 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %4998 = moore.constant 999 : i32</pre>
+      <pre>    %4999 = moore.zext %4997 : l1 -&gt; l32</pre>
+      <pre>    %5000 = moore.logic_to_int %4999 : l32</pre>
+      <pre>    %5001 = moore.add %4996, %5000 : i32</pre>
+      <pre>    %5002 = moore.extract %2 from 1000 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5003 = moore.constant 1000 : i32</pre>
+      <pre>    %5004 = moore.zext %5002 : l1 -&gt; l32</pre>
+      <pre>    %5005 = moore.logic_to_int %5004 : l32</pre>
+      <pre>    %5006 = moore.add %5001, %5005 : i32</pre>
+      <pre>    %5007 = moore.extract %2 from 1001 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5008 = moore.constant 1001 : i32</pre>
+      <pre>    %5009 = moore.zext %5007 : l1 -&gt; l32</pre>
+      <pre>    %5010 = moore.logic_to_int %5009 : l32</pre>
+      <pre>    %5011 = moore.add %5006, %5010 : i32</pre>
+      <pre>    %5012 = moore.extract %2 from 1002 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5013 = moore.constant 1002 : i32</pre>
+      <pre>    %5014 = moore.zext %5012 : l1 -&gt; l32</pre>
+      <pre>    %5015 = moore.logic_to_int %5014 : l32</pre>
+      <pre>    %5016 = moore.add %5011, %5015 : i32</pre>
+      <pre>    %5017 = moore.extract %2 from 1003 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5018 = moore.constant 1003 : i32</pre>
+      <pre>    %5019 = moore.zext %5017 : l1 -&gt; l32</pre>
+      <pre>    %5020 = moore.logic_to_int %5019 : l32</pre>
+      <pre>    %5021 = moore.add %5016, %5020 : i32</pre>
+      <pre>    %5022 = moore.extract %2 from 1004 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5023 = moore.constant 1004 : i32</pre>
+      <pre>    %5024 = moore.zext %5022 : l1 -&gt; l32</pre>
+      <pre>    %5025 = moore.logic_to_int %5024 : l32</pre>
+      <pre>    %5026 = moore.add %5021, %5025 : i32</pre>
+      <pre>    %5027 = moore.extract %2 from 1005 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5028 = moore.constant 1005 : i32</pre>
+      <pre>    %5029 = moore.zext %5027 : l1 -&gt; l32</pre>
+      <pre>    %5030 = moore.logic_to_int %5029 : l32</pre>
+      <pre>    %5031 = moore.add %5026, %5030 : i32</pre>
+      <pre>    %5032 = moore.extract %2 from 1006 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5033 = moore.constant 1006 : i32</pre>
+      <pre>    %5034 = moore.zext %5032 : l1 -&gt; l32</pre>
+      <pre>    %5035 = moore.logic_to_int %5034 : l32</pre>
+      <pre>    %5036 = moore.add %5031, %5035 : i32</pre>
+      <pre>    %5037 = moore.extract %2 from 1007 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5038 = moore.constant 1007 : i32</pre>
+      <pre>    %5039 = moore.zext %5037 : l1 -&gt; l32</pre>
+      <pre>    %5040 = moore.logic_to_int %5039 : l32</pre>
+      <pre>    %5041 = moore.add %5036, %5040 : i32</pre>
+      <pre>    %5042 = moore.extract %2 from 1008 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5043 = moore.constant 1008 : i32</pre>
+      <pre>    %5044 = moore.zext %5042 : l1 -&gt; l32</pre>
+      <pre>    %5045 = moore.logic_to_int %5044 : l32</pre>
+      <pre>    %5046 = moore.add %5041, %5045 : i32</pre>
+      <pre>    %5047 = moore.extract %2 from 1009 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5048 = moore.constant 1009 : i32</pre>
+      <pre>    %5049 = moore.zext %5047 : l1 -&gt; l32</pre>
+      <pre>    %5050 = moore.logic_to_int %5049 : l32</pre>
+      <pre>    %5051 = moore.add %5046, %5050 : i32</pre>
+      <pre>    %5052 = moore.extract %2 from 1010 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5053 = moore.constant 1010 : i32</pre>
+      <pre>    %5054 = moore.zext %5052 : l1 -&gt; l32</pre>
+      <pre>    %5055 = moore.logic_to_int %5054 : l32</pre>
+      <pre>    %5056 = moore.add %5051, %5055 : i32</pre>
+      <pre>    %5057 = moore.extract %2 from 1011 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5058 = moore.constant 1011 : i32</pre>
+      <pre>    %5059 = moore.zext %5057 : l1 -&gt; l32</pre>
+      <pre>    %5060 = moore.logic_to_int %5059 : l32</pre>
+      <pre>    %5061 = moore.add %5056, %5060 : i32</pre>
+      <pre>    %5062 = moore.extract %2 from 1012 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5063 = moore.constant 1012 : i32</pre>
+      <pre>    %5064 = moore.zext %5062 : l1 -&gt; l32</pre>
+      <pre>    %5065 = moore.logic_to_int %5064 : l32</pre>
+      <pre>    %5066 = moore.add %5061, %5065 : i32</pre>
+      <pre>    %5067 = moore.extract %2 from 1013 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5068 = moore.constant 1013 : i32</pre>
+      <pre>    %5069 = moore.zext %5067 : l1 -&gt; l32</pre>
+      <pre>    %5070 = moore.logic_to_int %5069 : l32</pre>
+      <pre>    %5071 = moore.add %5066, %5070 : i32</pre>
+      <pre>    %5072 = moore.extract %2 from 1014 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5073 = moore.constant 1014 : i32</pre>
+      <pre>    %5074 = moore.zext %5072 : l1 -&gt; l32</pre>
+      <pre>    %5075 = moore.logic_to_int %5074 : l32</pre>
+      <pre>    %5076 = moore.add %5071, %5075 : i32</pre>
+      <pre>    %5077 = moore.extract %2 from 1015 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5078 = moore.constant 1015 : i32</pre>
+      <pre>    %5079 = moore.zext %5077 : l1 -&gt; l32</pre>
+      <pre>    %5080 = moore.logic_to_int %5079 : l32</pre>
+      <pre>    %5081 = moore.add %5076, %5080 : i32</pre>
+      <pre>    %5082 = moore.extract %2 from 1016 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5083 = moore.constant 1016 : i32</pre>
+      <pre>    %5084 = moore.zext %5082 : l1 -&gt; l32</pre>
+      <pre>    %5085 = moore.logic_to_int %5084 : l32</pre>
+      <pre>    %5086 = moore.add %5081, %5085 : i32</pre>
+      <pre>    %5087 = moore.extract %2 from 1017 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5088 = moore.constant 1017 : i32</pre>
+      <pre>    %5089 = moore.zext %5087 : l1 -&gt; l32</pre>
+      <pre>    %5090 = moore.logic_to_int %5089 : l32</pre>
+      <pre>    %5091 = moore.add %5086, %5090 : i32</pre>
+      <pre>    %5092 = moore.extract %2 from 1018 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5093 = moore.constant 1018 : i32</pre>
+      <pre>    %5094 = moore.zext %5092 : l1 -&gt; l32</pre>
+      <pre>    %5095 = moore.logic_to_int %5094 : l32</pre>
+      <pre>    %5096 = moore.add %5091, %5095 : i32</pre>
+      <pre>    %5097 = moore.extract %2 from 1019 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5098 = moore.constant 1019 : i32</pre>
+      <pre>    %5099 = moore.zext %5097 : l1 -&gt; l32</pre>
+      <pre>    %5100 = moore.logic_to_int %5099 : l32</pre>
+      <pre>    %5101 = moore.add %5096, %5100 : i32</pre>
+      <pre>    %5102 = moore.extract %2 from 1020 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5103 = moore.constant 1020 : i32</pre>
+      <pre>    %5104 = moore.zext %5102 : l1 -&gt; l32</pre>
+      <pre>    %5105 = moore.logic_to_int %5104 : l32</pre>
+      <pre>    %5106 = moore.add %5101, %5105 : i32</pre>
+      <pre>    %5107 = moore.extract %2 from 1021 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5108 = moore.constant 1021 : i32</pre>
+      <pre>    %5109 = moore.zext %5107 : l1 -&gt; l32</pre>
+      <pre>    %5110 = moore.logic_to_int %5109 : l32</pre>
+      <pre>    %5111 = moore.add %5106, %5110 : i32</pre>
+      <pre>    %5112 = moore.extract %2 from 1022 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5113 = moore.constant 1022 : i32</pre>
+      <pre>    %5114 = moore.zext %5112 : l1 -&gt; l32</pre>
+      <pre>    %5115 = moore.logic_to_int %5114 : l32</pre>
+      <pre>    %5116 = moore.add %5111, %5115 : i32</pre>
+      <pre>    %5117 = moore.extract %2 from 1023 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
+      <pre>    %5118 = moore.constant 1023 : i32</pre>
+      <pre>    %5119 = moore.zext %5117 : l1 -&gt; l32</pre>
+      <pre>    %5120 = moore.logic_to_int %5119 : l32</pre>
+      <pre>    %5121 = moore.add %5116, %5120 : i32</pre>
+      <pre>    moore.blocking_assign %1, %5121 : i32</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @bit_arr : !moore.uarray&lt;1024 x l1&gt;</pre>
+      <pre>  moore.global_variable @y_1 : !moore.i32</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

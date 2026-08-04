@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/sanity'] = [["","sanity",1,"logs/circt_verilog_extended_4state/sanity.sv.log.html","tests/sanity.sv.html"]]

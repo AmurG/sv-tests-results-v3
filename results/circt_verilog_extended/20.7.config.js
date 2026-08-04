@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/20.7'] = [["","array_queries",1,"logs/circt_verilog_extended/chapter-20/20.7--array-queries.sv.log.html","tests/chapter-20/20.7--array-queries.sv.html"],["","array_queries_multi_dim",1,"logs/circt_verilog_extended/chapter-20/20.7--array-queries-multi-dim.sv.log.html","tests/chapter-20/20.7--array-queries-multi-dim.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/12.5.4'] = [["","case_set",1,"logs/Arcilator_extended_4state/chapter-12/12.5.4--case_set.sv.log.html","tests/chapter-12/12.5.4--case_set.sv.html"]]

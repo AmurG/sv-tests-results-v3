@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/8.26.7'] = [["","partial_implementation",1,"logs/Slang_circt/chapter-8/8.26.7--partial_implementation.sv.log.html","tests/chapter-8/8.26.7--partial_implementation.sv.html"]]

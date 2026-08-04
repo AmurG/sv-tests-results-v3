@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>hdlconvertor_std2017_p770</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p770.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p770.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p770.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p770.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:01:12</dd></div>
+        <div><dt>time elapsed</dt><dd>0.041s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=parsing top=</pre>
+      <pre>[Arcilator] mode=parsing top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p770.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p770.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p770.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p770.sv</a></pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p770.sv:6:7: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>class SBusTransactor;</pre>
+      <pre>      ^</pre>
+      <pre>module {</pre>
+      <pre>  moore.class.classdecl @SBusTransactor {</pre>
+      <pre>    moore.class.propertydecl @bus : !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @&#34;SBusTransactor::new&#34;(%arg0: !moore.class&lt;@SBusTransactor&gt;, %arg1: !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;) {</pre>
+      <pre>    %0 = moore.class.property_ref %arg0[@bus] : &lt;@SBusTransactor&gt; -&gt; &lt;ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;&gt;</pre>
+      <pre>    moore.blocking_assign %0, %arg1 : ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.coroutine private @&#34;SBusTransactor::request&#34;(%arg0: !moore.class&lt;@SBusTransactor&gt;) {</pre>
+      <pre>    %0 = moore.class.property_ref %arg0[@bus] : &lt;@SBusTransactor&gt; -&gt; &lt;ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;&gt;</pre>
+      <pre>    %1 = moore.read %0 : &lt;ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;&gt;</pre>
+      <pre>    %2 = moore.struct_extract %1, &#34;req&#34; : ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt; -&gt; ref&lt;l1&gt;</pre>
+      <pre>    %3 = moore.constant 1 : i1</pre>
+      <pre>    %4 = moore.constant 1 : l1</pre>
+      <pre>    moore.nonblocking_assign %2, %4 : l1</pre>
+      <pre>    moore.return</pre>
+      <pre>  }</pre>
+      <pre>  moore.coroutine private @&#34;SBusTransactor::wait_for_bus&#34;(%arg0: !moore.class&lt;@SBusTransactor&gt;) {</pre>
+      <pre>    moore.wait_event {</pre>
+      <pre>      %0 = moore.class.property_ref %arg0[@bus] : &lt;@SBusTransactor&gt; -&gt; &lt;ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;&gt;</pre>
+      <pre>      %1 = moore.read %0 : &lt;ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;&gt;</pre>
+      <pre>      %2 = moore.struct_extract %1, &#34;grant&#34; : ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt; -&gt; ref&lt;l1&gt;</pre>
+      <pre>      %3 = moore.read %2 : &lt;l1&gt;</pre>
+      <pre>      moore.detect_event posedge %3 : l1</pre>
+      <pre>    }</pre>
+      <pre>    moore.return</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @devA(in %s_req : !moore.ref&lt;l1&gt;, in %s_grant : !moore.ref&lt;l1&gt;, in %s_addr : !moore.ref&lt;l8&gt;, in %s_data : !moore.ref&lt;l8&gt;) {</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @devB(in %s_req : !moore.ref&lt;l1&gt;, in %s_grant : !moore.ref&lt;l1&gt;, in %s_addr : !moore.ref&lt;l8&gt;, in %s_data : !moore.ref&lt;l8&gt;) {</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @top() {</pre>
+      <pre>    %s_0_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_0_grant = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_0_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_0_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_1_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_1_grant = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_1_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_1_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_2_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_2_grant = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_2_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_2_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_3_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_3_grant = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %s_3_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %s_3_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    moore.instance &#34;a1&#34; @devA(s_req: %s_0_req: !moore.ref&lt;l1&gt;, s_grant: %s_0_grant: !moore.ref&lt;l1&gt;, s_addr: %s_0_addr: !moore.ref&lt;l8&gt;, s_data: %s_0_data: !moore.ref&lt;l8&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;b1&#34; @devB(s_req: %s_1_req: !moore.ref&lt;l1&gt;, s_grant: %s_1_grant: !moore.ref&lt;l1&gt;, s_addr: %s_1_addr: !moore.ref&lt;l8&gt;, s_data: %s_1_data: !moore.ref&lt;l8&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;a2&#34; @devA(s_req: %s_2_req: !moore.ref&lt;l1&gt;, s_grant: %s_2_grant: !moore.ref&lt;l1&gt;, s_addr: %s_2_addr: !moore.ref&lt;l8&gt;, s_data: %s_2_data: !moore.ref&lt;l8&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;b2&#34; @devB(s_req: %s_3_req: !moore.ref&lt;l1&gt;, s_grant: %s_3_grant: !moore.ref&lt;l1&gt;, s_addr: %s_3_addr: !moore.ref&lt;l8&gt;, s_data: %s_3_data: !moore.ref&lt;l8&gt;) -&gt; ()</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %t = moore.variable : &lt;uarray&lt;4 x class&lt;@SBusTransactor&gt;&gt;&gt;</pre>
+      <pre>      %0 = moore.extract_ref %t from 3 : &lt;uarray&lt;4 x class&lt;@SBusTransactor&gt;&gt;&gt; -&gt; &lt;class&lt;@SBusTransactor&gt;&gt;</pre>
+      <pre>      %1 = moore.class.new : &lt;@SBusTransactor&gt;</pre>
+      <pre>      %2 = moore.struct_create %s_0_req, %s_0_grant, %s_0_addr, %s_0_data : !moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;, !moore.ref&lt;l8&gt;, !moore.ref&lt;l8&gt; -&gt; ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>      func.call @&#34;SBusTransactor::new&#34;(%1, %2) : (!moore.class&lt;@SBusTransactor&gt;, !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;) -&gt; ()</pre>
+      <pre>      %3 = builtin.unrealized_conversion_cast to !moore.void</pre>
+      <pre>      moore.blocking_assign %0, %1 : class&lt;@SBusTransactor&gt;</pre>
+      <pre>      %4 = moore.extract_ref %t from 2 : &lt;uarray&lt;4 x class&lt;@SBusTransactor&gt;&gt;&gt; -&gt; &lt;class&lt;@SBusTransactor&gt;&gt;</pre>
+      <pre>      %5 = moore.class.new : &lt;@SBusTransactor&gt;</pre>
+      <pre>      %6 = moore.struct_create %s_1_req, %s_1_grant, %s_1_addr, %s_1_data : !moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;, !moore.ref&lt;l8&gt;, !moore.ref&lt;l8&gt; -&gt; ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>      func.call @&#34;SBusTransactor::new&#34;(%5, %6) : (!moore.class&lt;@SBusTransactor&gt;, !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;) -&gt; ()</pre>
+      <pre>      %7 = builtin.unrealized_conversion_cast to !moore.void</pre>
+      <pre>      moore.blocking_assign %4, %5 : class&lt;@SBusTransactor&gt;</pre>
+      <pre>      %8 = moore.extract_ref %t from 1 : &lt;uarray&lt;4 x class&lt;@SBusTransactor&gt;&gt;&gt; -&gt; &lt;class&lt;@SBusTransactor&gt;&gt;</pre>
+      <pre>      %9 = moore.class.new : &lt;@SBusTransactor&gt;</pre>
+      <pre>      %10 = moore.struct_create %s_2_req, %s_2_grant, %s_2_addr, %s_2_data : !moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;, !moore.ref&lt;l8&gt;, !moore.ref&lt;l8&gt; -&gt; ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>      func.call @&#34;SBusTransactor::new&#34;(%9, %10) : (!moore.class&lt;@SBusTransactor&gt;, !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;) -&gt; ()</pre>
+      <pre>      %11 = builtin.unrealized_conversion_cast to !moore.void</pre>
+      <pre>      moore.blocking_assign %8, %9 : class&lt;@SBusTransactor&gt;</pre>
+      <pre>      %12 = moore.extract_ref %t from 0 : &lt;uarray&lt;4 x class&lt;@SBusTransactor&gt;&gt;&gt; -&gt; &lt;class&lt;@SBusTransactor&gt;&gt;</pre>
+      <pre>      %13 = moore.class.new : &lt;@SBusTransactor&gt;</pre>
+      <pre>      %14 = moore.struct_create %s_3_req, %s_3_grant, %s_3_addr, %s_3_data : !moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;, !moore.ref&lt;l8&gt;, !moore.ref&lt;l8&gt; -&gt; ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;</pre>
+      <pre>      func.call @&#34;SBusTransactor::new&#34;(%13, %14) : (!moore.class&lt;@SBusTransactor&gt;, !moore.ustruct&lt;{req: ref&lt;l1&gt;, grant: ref&lt;l1&gt;, addr: ref&lt;l8&gt;, data: ref&lt;l8&gt;}&gt;) -&gt; ()</pre>
+      <pre>      %15 = builtin.unrealized_conversion_cast to !moore.void</pre>
+      <pre>      moore.blocking_assign %12, %13 : class&lt;@SBusTransactor&gt;</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

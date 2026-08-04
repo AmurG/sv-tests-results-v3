@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.3.4'] = [["","block_names_par",1,"logs/circt_verilog_extended_4state/chapter-9/9.3.4--block_names_par.sv.log.html","tests/chapter-9/9.3.4--block_names_par.sv.html"],["","block_names_seq",1,"logs/circt_verilog_extended_4state/chapter-9/9.3.4--block_names_seq.sv.log.html","tests/chapter-9/9.3.4--block_names_seq.sv.html"]]

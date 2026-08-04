@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/5.13'] = [["","builtin-methods-string",1,"logs/circt_verilog_extended_4state/chapter-5/5.13-builtin-methods-strings.sv.log.html","tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]

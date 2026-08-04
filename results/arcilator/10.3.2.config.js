@@ -1,0 +1,1 @@
+config_loader_data['arcilator/10.3.2'] = [["","cont_assignment",1,"logs/Arcilator/chapter-10/10.3.2--cont-assignment.sv.log.html","tests/chapter-10/10.3.2--cont-assignment.sv.html"]]

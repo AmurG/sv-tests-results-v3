@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/6.16.7'] = [["","string_icompare",1,"logs/Arcilator_extended_4state/chapter-6/6.16.7--string_icompare.sv.log.html","tests/chapter-6/6.16.7--string_icompare.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/fx68k'] = [["cores","fx68k",0,"logs/Arcilator_extended/generated/fx68k/fx68k.sv.log.html","third_party/cores/fx68k/fx68k.sv.html"]]

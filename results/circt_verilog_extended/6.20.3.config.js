@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.20.3'] = [["","parameter_type",1,"logs/circt_verilog_extended/chapter-6/6.20.3--parameter_type.sv.log.html","tests/chapter-6/6.20.3--parameter_type.sv.html"]]

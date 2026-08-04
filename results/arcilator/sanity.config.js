@@ -1,0 +1,1 @@
+config_loader_data['arcilator/sanity'] = [["","sanity",1,"logs/Arcilator/sanity.sv.log.html","tests/sanity.sv.html"]]

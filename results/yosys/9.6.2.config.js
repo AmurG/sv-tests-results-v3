@@ -1,0 +1,1 @@
+config_loader_data['yosys/9.6.2'] = [["","disable",0,"logs/Yosys/chapter-9/9.6.2--disable.sv.log.html","tests/chapter-9/9.6.2--disable.sv.html"]]

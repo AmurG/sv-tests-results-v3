@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.2.2.4'] = [["","always_ff",1,"logs/circt_verilog_extended_4state/chapter-9/9.2.2.4--always_ff.sv.log.html","tests/chapter-9/9.2.2.4--always_ff.sv.html"]]

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-vlg_stask_parm2_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/stask_parm2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/stask_parm2.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:35:39</dd></div>
+        <div><dt>time elapsed</dt><dd>6.151s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/stask_parm2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/stask_parm2.v</a></pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/driver.cpp  128 2 1 10 regress-vlg_stask_parm2_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85 -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp65mi6l85/wave.vcd</pre>
+      <pre>{a, b} == 0</pre>
+      <pre>{a, b} == 1</pre>
+      <pre>{a, b} == 10</pre>
+      <pre>{a, b} == 11</pre>
+      <pre>{a, b} == 100</pre>
+      <pre>{a, b} == 101</pre>
+      <pre>{a, b} == 110</pre>
+      <pre>{a, b} == 111</pre>
+      <pre>{a, b} == 1000</pre>
+      <pre>{a, b} == 1001</pre>
+      <pre>{a, b} == 1010</pre>
+      <pre>{a, b} == 1011</pre>
+      <pre>{a, b} == 1100</pre>
+      <pre>{a, b} == 1101</pre>
+      <pre>{a, b} == 1110</pre>
+      <pre>{a, b} == 10000</pre>
+      <pre>{a, b} == 10001</pre>
+      <pre>{a, b} == 10010</pre>
+      <pre>{a, b} == 10011</pre>
+      <pre>{a, b} == 10100</pre>
+      <pre>{a, b} == 10101</pre>
+      <pre>{a, b} == 10110</pre>
+      <pre>{a, b} == 10111</pre>
+      <pre>{a, b} == 11000</pre>
+      <pre>{a, b} == 11001</pre>
+      <pre>{a, b} == 11010</pre>
+      <pre>{a, b} == 11011</pre>
+      <pre>{a, b} == 11100</pre>
+      <pre>{a, b} == 11101</pre>
+      <pre>{a, b} == 11110</pre>
+      <pre>{a, b} == 100000</pre>
+      <pre>{a, b} == 100001</pre>
+      <pre>{a, b} == 100010</pre>
+      <pre>{a, b} == 100011</pre>
+      <pre>{a, b} == 100100</pre>
+      <pre>{a, b} == 100101</pre>
+      <pre>{a, b} == 100110</pre>
+      <pre>{a, b} == 100111</pre>
+      <pre>{a, b} == 101000</pre>
+      <pre>{a, b} == 101001</pre>
+      <pre>{a, b} == 101010</pre>
+      <pre>{a, b} == 101011</pre>
+      <pre>{a, b} == 101100</pre>
+      <pre>{a, b} == 101101</pre>
+      <pre>{a, b} == 101110</pre>
+      <pre>{a, b} == 110000</pre>
+      <pre>{a, b} == 110001</pre>
+      <pre>{a, b} == 110010</pre>
+      <pre>{a, b} == 110011</pre>
+      <pre>{a, b} == 110100</pre>
+      <pre>{a, b} == 110101</pre>
+      <pre>{a, b} == 110110</pre>
+      <pre>{a, b} == 110111</pre>
+      <pre>{a, b} == 111000</pre>
+      <pre>{a, b} == 111001</pre>
+      <pre>{a, b} == 111010</pre>
+      <pre>{a, b} == 111011</pre>
+      <pre>{a, b} == 111100</pre>
+      <pre>{a, b} == 111101</pre>
+      <pre>{a, b} == 111110</pre>
+      <pre>{a, b} == 1000000</pre>
+      <pre>{a, b} == 1000001</pre>
+      <pre>{a, b} == 1000010</pre>
+      <pre>{a, b} == 1000011</pre>
+      <pre>{a, b} == 1000100</pre>
+      <pre>{a, b} == 1000101</pre>
+      <pre>{a, b} == 1000110</pre>
+      <pre>{a, b} == 1000111</pre>
+      <pre>{a, b} == 1001000</pre>
+      <pre>{a, b} == 1001001</pre>
+      <pre>{a, b} == 1001010</pre>
+      <pre>{a, b} == 1001011</pre>
+      <pre>{a, b} == 1001100</pre>
+      <pre>{a, b} == 1001101</pre>
+      <pre>{a, b} == 1001110</pre>
+      <pre>{a, b} == 1010000</pre>
+      <pre>{a, b} == 1010001</pre>
+      <pre>{a, b} == 1010010</pre>
+      <pre>{a, b} == 1010011</pre>
+      <pre>{a, b} == 1010100</pre>
+      <pre>{a, b} == 1010101</pre>
+      <pre>{a, b} == 1010110</pre>
+      <pre>{a, b} == 1010111</pre>
+      <pre>{a, b} == 1011000</pre>
+      <pre>{a, b} == 1011001</pre>
+      <pre>{a, b} == 1011010</pre>
+      <pre>{a, b} == 1011011</pre>
+      <pre>{a, b} == 1011100</pre>
+      <pre>{a, b} == 1011101</pre>
+      <pre>{a, b} == 1011110</pre>
+      <pre>{a, b} == 1100000</pre>
+      <pre>{a, b} == 1100001</pre>
+      <pre>{a, b} == 1100010</pre>
+      <pre>{a, b} == 1100011</pre>
+      <pre>{a, b} == 1100100</pre>
+      <pre>{a, b} == 1100101</pre>
+      <pre>{a, b} == 1100110</pre>
+      <pre>{a, b} == 1100111</pre>
+      <pre>{a, b} == 1101000</pre>
+      <pre>{a, b} == 1101001</pre>
+      <pre>{a, b} == 1101010</pre>
+      <pre>{a, b} == 1101011</pre>
+      <pre>{a, b} == 1101100</pre>
+      <pre>{a, b} == 1101101</pre>
+      <pre>{a, b} == 1101110</pre>
+      <pre>{a, b} == 1110000</pre>
+      <pre>{a, b} == 1110001</pre>
+      <pre>{a, b} == 1110010</pre>
+      <pre>{a, b} == 1110011</pre>
+      <pre>{a, b} == 1110100</pre>
+      <pre>{a, b} == 1110101</pre>
+      <pre>{a, b} == 1110110</pre>
+      <pre>{a, b} == 1110111</pre>
+      <pre>{a, b} == 1111000</pre>
+      <pre>{a, b} == 1111001</pre>
+      <pre>{a, b} == 1111010</pre>
+      <pre>{a, b} == 1111011</pre>
+      <pre>{a, b} == 1111100</pre>
+      <pre>{a, b} == 1111101</pre>
+      <pre>{a, b} == 1111110</pre>
+      <pre>{a, b} == 10000000</pre>
+      <pre>{a, b} == 10000001</pre>
+      <pre>{a, b} == 10000010</pre>
+      <pre>{a, b} == 10000011</pre>
+      <pre>{a, b} == 10000100</pre>
+      <pre>{a, b} == 10000101</pre>
+      <pre>{a, b} == 10000110</pre>
+      <pre>{a, b} == 10000111</pre>
+      <pre>{a, b} == 10001000</pre>
+      <pre>{a, b} == 10001001</pre>
+      <pre>{a, b} == 10001010</pre>
+      <pre>{a, b} == 10001011</pre>
+      <pre>{a, b} == 10001100</pre>
+      <pre>{a, b} == 10001101</pre>
+      <pre>{a, b} == 10001110</pre>
+      <pre>{a, b} == 10010000</pre>
+      <pre>{a, b} == 10010001</pre>
+      <pre>{a, b} == 10010010</pre>
+      <pre>{a, b} == 10010011</pre>
+      <pre>{a, b} == 10010100</pre>
+      <pre>{a, b} == 10010101</pre>
+      <pre>{a, b} == 10010110</pre>
+      <pre>{a, b} == 10010111</pre>
+      <pre>{a, b} == 10011000</pre>
+      <pre>{a, b} == 10011001</pre>
+      <pre>{a, b} == 10011010</pre>
+      <pre>{a, b} == 10011011</pre>
+      <pre>{a, b} == 10011100</pre>
+      <pre>{a, b} == 10011101</pre>
+      <pre>{a, b} == 10011110</pre>
+      <pre>{a, b} == 10100000</pre>
+      <pre>{a, b} == 10100001</pre>
+      <pre>{a, b} == 10100010</pre>
+      <pre>{a, b} == 10100011</pre>
+      <pre>{a, b} == 10100100</pre>
+      <pre>{a, b} == 10100101</pre>
+      <pre>{a, b} == 10100110</pre>
+      <pre>{a, b} == 10100111</pre>
+      <pre>{a, b} == 10101000</pre>
+      <pre>{a, b} == 10101001</pre>
+      <pre>{a, b} == 10101010</pre>
+      <pre>{a, b} == 10101011</pre>
+      <pre>{a, b} == 10101100</pre>
+      <pre>{a, b} == 10101101</pre>
+      <pre>{a, b} == 10101110</pre>
+      <pre>{a, b} == 10110000</pre>
+      <pre>{a, b} == 10110001</pre>
+      <pre>{a, b} == 10110010</pre>
+      <pre>{a, b} == 10110011</pre>
+      <pre>{a, b} == 10110100</pre>
+      <pre>{a, b} == 10110101</pre>
+      <pre>{a, b} == 10110110</pre>
+      <pre>{a, b} == 10110111</pre>
+      <pre>{a, b} == 10111000</pre>
+      <pre>{a, b} == 10111001</pre>
+      <pre>{a, b} == 10111010</pre>
+      <pre>{a, b} == 10111011</pre>
+      <pre>{a, b} == 10111100</pre>
+      <pre>{a, b} == 10111101</pre>
+      <pre>{a, b} == 10111110</pre>
+      <pre>{a, b} == 11000000</pre>
+      <pre>{a, b} == 11000001</pre>
+      <pre>{a, b} == 11000010</pre>
+      <pre>{a, b} == 11000011</pre>
+      <pre>{a, b} == 11000100</pre>
+      <pre>{a, b} == 11000101</pre>
+      <pre>{a, b} == 11000110</pre>
+      <pre>{a, b} == 11000111</pre>
+      <pre>{a, b} == 11001000</pre>
+      <pre>{a, b} == 11001001</pre>
+      <pre>{a, b} == 11001010</pre>
+      <pre>{a, b} == 11001011</pre>
+      <pre>{a, b} == 11001100</pre>
+      <pre>{a, b} == 11001101</pre>
+      <pre>{a, b} == 11001110</pre>
+      <pre>{a, b} == 11010000</pre>
+      <pre>{a, b} == 11010001</pre>
+      <pre>{a, b} == 11010010</pre>
+      <pre>{a, b} == 11010011</pre>
+      <pre>{a, b} == 11010100</pre>
+      <pre>{a, b} == 11010101</pre>
+      <pre>{a, b} == 11010110</pre>
+      <pre>{a, b} == 11010111</pre>
+      <pre>{a, b} == 11011000</pre>
+      <pre>{a, b} == 11011001</pre>
+      <pre>{a, b} == 11011010</pre>
+      <pre>{a, b} == 11011011</pre>
+      <pre>{a, b} == 11011100</pre>
+      <pre>{a, b} == 11011101</pre>
+      <pre>{a, b} == 11011110</pre>
+      <pre>{a, b} == 11100000</pre>
+      <pre>{a, b} == 11100001</pre>
+      <pre>{a, b} == 11100010</pre>
+      <pre>{a, b} == 11100011</pre>
+      <pre>{a, b} == 11100100</pre>
+      <pre>{a, b} == 11100101</pre>
+      <pre>{a, b} == 11100110</pre>
+      <pre>{a, b} == 11100111</pre>
+      <pre>{a, b} == 11101000</pre>
+      <pre>{a, b} == 11101001</pre>
+      <pre>{a, b} == 11101010</pre>
+      <pre>{a, b} == 11101011</pre>
+      <pre>{a, b} == 11101100</pre>
+      <pre>{a, b} == 11101101</pre>
+      <pre>{a, b} == 11101110</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/7.6'] = [["","array-unpacked-assignments",1,"logs/circt_verilog_extended/chapter-7/arrays/unpacked/assignments.sv.log.html","tests/chapter-7/arrays/unpacked/assignments.sv.html"]]

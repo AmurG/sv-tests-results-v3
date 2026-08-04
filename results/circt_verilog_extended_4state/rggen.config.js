@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/rggen'] = [["cores","RgGen",1,"logs/circt_verilog_extended_4state/generated/rggen/rggen.sv.log.html","third_party/cores/rggen-sv-rtl/rggen_rtl_pkg.sv.html"]]

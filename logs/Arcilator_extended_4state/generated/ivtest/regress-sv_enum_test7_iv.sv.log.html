@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-sv_enum_test7_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/enum_test7.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/enum_test7.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:33:13</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>ram usage</dt><dd>14336 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmph9jsa0ix/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/enum_test7.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/enum_test7.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/enum_test7.v:3:21: error: value of 32&#39;dx is invalid for enum with base type &#39;int&#39;</pre>
+      <pre>  enum {VAL5, XX5 = &#39;bx} en5;</pre>
+      <pre>                    ^</pre>
+      <pre>+ exit 1</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

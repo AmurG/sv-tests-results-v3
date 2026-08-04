@@ -1,0 +1,1 @@
+config_loader_data['arcilator/9.6.3'] = [["","disable_fork",1,"logs/Arcilator/chapter-9/9.6.3--disable_fork.sv.log.html","tests/chapter-9/9.6.3--disable_fork.sv.html"]]

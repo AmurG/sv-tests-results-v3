@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/7.5.2'] = [["","dynamic-arrays-op-size",1,"logs/circt_verilog_extended_4state/chapter-7/arrays/dynamic/op-size.sv.log.html","tests/chapter-7/arrays/dynamic/op-size.sv.html"]]

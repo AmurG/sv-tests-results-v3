@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/18.4.1'] = [["","rand_modifier",1,"logs/circt_verilog_extended_4state/chapter-18/18.4.1--rand-modifier.sv.log.html","tests/chapter-18/18.4.1--rand-modifier.sv.html"]]

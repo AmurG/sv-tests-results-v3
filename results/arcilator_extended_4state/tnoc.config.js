@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/tnoc'] = [["cores","TNoC",0,"logs/Arcilator_extended_4state/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/8.19'] = [["","global_constant",1,"logs/Arcilator_extended_4state/chapter-8/8.19--global_constant.sv.log.html","tests/chapter-8/8.19--global_constant.sv.html"],["","instance_constant",1,"logs/Arcilator_extended_4state/chapter-8/8.19--instance_constant.sv.log.html","tests/chapter-8/8.19--instance_constant.sv.html"]]

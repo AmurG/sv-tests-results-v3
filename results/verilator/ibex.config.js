@@ -1,0 +1,1 @@
+config_loader_data['verilator/ibex'] = [["cores","ibex",1,"logs/Verilator/generated/fusesoc/ibex-sim.sv.log.html","build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv.html"]]

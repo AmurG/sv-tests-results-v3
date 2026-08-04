@@ -1,0 +1,1 @@
+config_loader_data['arcilator/rsd'] = [["cores","rsd",0,"logs/Arcilator/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

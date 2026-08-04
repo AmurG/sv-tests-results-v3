@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/10.3.1'] = [["","net_decl_assignment",1,"logs/Arcilator_extended_4state/chapter-10/10.3.1--net-decl-assignment.sv.log.html","tests/chapter-10/10.3.1--net-decl-assignment.sv.html"],["","one_net_assign",0,"logs/Arcilator_extended_4state/chapter-10/10.3.1--one-net.sv.log.html","tests/chapter-10/10.3.1--one-net.sv.html"]]

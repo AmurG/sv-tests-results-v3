@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/6.6.1'] = [["","net_tri",1,"logs/circt_verilog_extended_4state/generated/nets/6.6.1--net_tri.sv.log.html","tests/generated/nets/6.6.1--net_tri.sv.html"],["","net_wire",1,"logs/circt_verilog_extended_4state/generated/nets/6.6.1--net_wire.sv.log.html","tests/generated/nets/6.6.1--net_wire.sv.html"]]

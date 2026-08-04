@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>hdlconvertor_std2017_p754</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p754.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p754.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p754.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p754.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:01:13</dd></div>
+        <div><dt>time elapsed</dt><dd>0.039s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=parsing top=</pre>
+      <pre>[Arcilator] mode=parsing top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p754.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p754.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p754.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p754.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.module private @memMod(in %a_clk : !moore.ref&lt;l1&gt;, in %a_req : !moore.ref&lt;l1&gt;, in %a_gnt : !moore.ref&lt;l1&gt;, in %a_addr : !moore.ref&lt;l8&gt;, in %a_data : !moore.ref&lt;l8&gt;, in %a_mode : !moore.ref&lt;l2&gt;, in %a_start : !moore.ref&lt;l1&gt;, in %a_rdy : !moore.ref&lt;l1&gt;) {</pre>
+      <pre>    %avail = moore.variable : &lt;l1&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %3 = moore.read %a_clk : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event posedge %3 : l1</pre>
+      <pre>      }</pre>
+      <pre>      %0 = moore.read %a_req : &lt;l1&gt;</pre>
+      <pre>      %1 = moore.read %avail : &lt;l1&gt;</pre>
+      <pre>      %2 = moore.and %0, %1 : l1</pre>
+      <pre>      moore.nonblocking_assign %a_gnt, %2 : l1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @cpuMod(in %b_clk : !moore.ref&lt;l1&gt;, in %b_req : !moore.ref&lt;l1&gt;, in %b_gnt : !moore.ref&lt;l1&gt;, in %b_addr : !moore.ref&lt;l8&gt;, in %b_data : !moore.ref&lt;l8&gt;, in %b_mode : !moore.ref&lt;l2&gt;, in %b_start : !moore.ref&lt;l1&gt;, in %b_rdy : !moore.ref&lt;l1&gt;) {</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @top() {</pre>
+      <pre>    %clk = moore.variable %2 : &lt;l1&gt;</pre>
+      <pre>    %sb_intf1_clk = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %sb_intf1_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf1_gnt = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf1_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %sb_intf1_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %sb_intf1_mode = moore.variable : &lt;l2&gt;</pre>
+      <pre>    %sb_intf1_start = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf1_rdy = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf2_clk = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %sb_intf2_req = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf2_gnt = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf2_addr = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %sb_intf2_data = moore.variable : &lt;l8&gt;</pre>
+      <pre>    %sb_intf2_mode = moore.variable : &lt;l2&gt;</pre>
+      <pre>    %sb_intf2_start = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %sb_intf2_rdy = moore.variable : &lt;l1&gt;</pre>
+      <pre>    moore.instance &#34;mem1&#34; @memMod(a_clk: %clk: !moore.ref&lt;l1&gt;, a_req: %sb_intf1_req: !moore.ref&lt;l1&gt;, a_gnt: %sb_intf1_gnt: !moore.ref&lt;l1&gt;, a_addr: %sb_intf1_addr: !moore.ref&lt;l8&gt;, a_data: %sb_intf1_data: !moore.ref&lt;l8&gt;, a_mode: %sb_intf1_mode: !moore.ref&lt;l2&gt;, a_start: %sb_intf1_start: !moore.ref&lt;l1&gt;, a_rdy: %sb_intf1_rdy: !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;cpu1&#34; @cpuMod(b_clk: %clk: !moore.ref&lt;l1&gt;, b_req: %sb_intf1_req: !moore.ref&lt;l1&gt;, b_gnt: %sb_intf1_gnt: !moore.ref&lt;l1&gt;, b_addr: %sb_intf1_addr: !moore.ref&lt;l8&gt;, b_data: %sb_intf1_data: !moore.ref&lt;l8&gt;, b_mode: %sb_intf1_mode: !moore.ref&lt;l2&gt;, b_start: %sb_intf1_start: !moore.ref&lt;l1&gt;, b_rdy: %sb_intf1_rdy: !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;mem2&#34; @memMod(a_clk: %clk: !moore.ref&lt;l1&gt;, a_req: %sb_intf2_req: !moore.ref&lt;l1&gt;, a_gnt: %sb_intf2_gnt: !moore.ref&lt;l1&gt;, a_addr: %sb_intf2_addr: !moore.ref&lt;l8&gt;, a_data: %sb_intf2_data: !moore.ref&lt;l8&gt;, a_mode: %sb_intf2_mode: !moore.ref&lt;l2&gt;, a_start: %sb_intf2_start: !moore.ref&lt;l1&gt;, a_rdy: %sb_intf2_rdy: !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>    moore.instance &#34;cpu2&#34; @cpuMod(b_clk: %clk: !moore.ref&lt;l1&gt;, b_req: %sb_intf2_req: !moore.ref&lt;l1&gt;, b_gnt: %sb_intf2_gnt: !moore.ref&lt;l1&gt;, b_addr: %sb_intf2_addr: !moore.ref&lt;l8&gt;, b_data: %sb_intf2_data: !moore.ref&lt;l8&gt;, b_mode: %sb_intf2_mode: !moore.ref&lt;l2&gt;, b_start: %sb_intf2_start: !moore.ref&lt;l1&gt;, b_rdy: %sb_intf2_rdy: !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>    %0 = moore.constant 0 : i32</pre>
+      <pre>    %1 = moore.constant 0 : l32</pre>
+      <pre>    %2 = moore.constant 0 : l1</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

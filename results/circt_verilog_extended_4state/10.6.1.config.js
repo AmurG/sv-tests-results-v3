@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/10.6.1'] = [["","assign_deassign",1,"logs/circt_verilog_extended_4state/chapter-10/10.6.1--assign-deassign.sv.log.html","tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

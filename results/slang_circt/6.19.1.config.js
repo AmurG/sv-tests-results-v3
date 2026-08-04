@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/6.19.1'] = [["","enum_typedef",1,"logs/Slang_circt/chapter-6/6.19.1--enum_typedef.sv.log.html","tests/chapter-6/6.19.1--enum_typedef.sv.html"]]

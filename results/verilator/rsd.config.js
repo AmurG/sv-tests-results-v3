@@ -1,0 +1,1 @@
+config_loader_data['verilator/rsd'] = [["cores","rsd",1,"logs/Verilator/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

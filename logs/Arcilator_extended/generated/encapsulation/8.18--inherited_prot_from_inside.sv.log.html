@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>inherited_prot_from_inside</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>encapsulation test</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>8.18</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/generated/encapsulation<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/encapsulation/8.18--inherited_prot_from_inside.sv.html" target="file-frame">tests/generated/encapsulation/8.18--inherited_prot_from_inside.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:50:25</dd></div>
+        <div><dt>time elapsed</dt><dd>6.194s</dd></div>
+        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/generated/encapsulation -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/encapsulation/8.18--inherited_prot_from_inside.sv.html" target="file-frame">tests/generated/encapsulation/8.18--inherited_prot_from_inside.sv</a></pre>
+      <pre>../../../tests/generated/encapsulation/8.18--inherited_prot_from_inside.sv:8:7: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>class a_cls;</pre>
+      <pre>      ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/driver.cpp  128 2 1 10 inherited_prot_from_inside 8.18 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpnz1ce2ur/wave.vcd</pre>
+      <pre>         33</pre>
+      <pre>         22</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

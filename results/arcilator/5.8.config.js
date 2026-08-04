@@ -1,0 +1,1 @@
+config_loader_data['arcilator/5.8'] = [["","time-literals",1,"logs/Arcilator/chapter-5/5.8-time-literals.sv.log.html","tests/chapter-5/5.8-time-literals.sv.html"]]

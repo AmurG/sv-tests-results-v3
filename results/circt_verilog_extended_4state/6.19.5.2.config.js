@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/6.19.5.2'] = [["","enum_last",1,"logs/circt_verilog_extended_4state/chapter-6/6.19.5.2--enum_last.sv.log.html","tests/chapter-6/6.19.5.2--enum_last.sv.html"]]

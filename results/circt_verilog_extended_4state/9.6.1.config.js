@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.6.1'] = [["","wait_fork",1,"logs/circt_verilog_extended_4state/chapter-9/9.6.1--wait_fork.sv.log.html","tests/chapter-9/9.6.1--wait_fork.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['arcilator/9.6.1'] = [["","wait_fork",1,"logs/Arcilator/chapter-9/9.6.1--wait_fork.sv.log.html","tests/chapter-9/9.6.1--wait_fork.sv.html"]]

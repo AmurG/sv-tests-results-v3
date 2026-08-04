@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/7.9.6'] = [["","associative-arrays-next",1,"logs/Arcilator_extended_4state/chapter-7/arrays/associative/methods/next.sv.log.html","tests/chapter-7/arrays/associative/methods/next.sv.html"]]

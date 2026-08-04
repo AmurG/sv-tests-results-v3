@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.4.2.2'] = [["","event_implicit",1,"logs/circt_verilog_extended_4state/chapter-9/9.4.2.2--event_implicit.sv.log.html","tests/chapter-9/9.4.2.2--event_implicit.sv.html"]]

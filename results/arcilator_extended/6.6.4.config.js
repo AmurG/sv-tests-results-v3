@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/6.6.4'] = [["","net_trireg",1,"logs/Arcilator_extended/generated/nets/6.6.4--net_trireg.sv.log.html","tests/generated/nets/6.6.4--net_trireg.sv.html"]]

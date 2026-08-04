@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>hdlconvertor_std2017_p728</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p728.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p728.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p728.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p728.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:56:31</dd></div>
+        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=parsing top=</pre>
+      <pre>[Arcilator] mode=parsing top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p728.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p728.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p728.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p728.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.module private @a(out i : !moore.ref&lt;l32&gt;, out a_b1.i : !moore.ref&lt;l32&gt;, out a_b1.b_c1.i : !moore.ref&lt;l32&gt;, out a_b1.b_c2.i : !moore.ref&lt;l32&gt;) {</pre>
+      <pre>    %i = moore.variable : &lt;l32&gt;</pre>
+      <pre>    %a_b1.i, %a_b1.b_c1.i, %a_b1.b_c2.i = moore.instance &#34;a_b1&#34; @b() -&gt; (i: !moore.ref&lt;l32&gt;, b_c1.i: !moore.ref&lt;l32&gt;, b_c2.i: !moore.ref&lt;l32&gt;)</pre>
+      <pre>    moore.output %i, %a_b1.i, %a_b1.b_c1.i, %a_b1.b_c2.i : !moore.ref&lt;l32&gt;, !moore.ref&lt;l32&gt;, !moore.ref&lt;l32&gt;, !moore.ref&lt;l32&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @b(out i : !moore.ref&lt;l32&gt;, out b_c1.i : !moore.ref&lt;l32&gt;, out b_c2.i : !moore.ref&lt;l32&gt;) {</pre>
+      <pre>    %i = moore.variable : &lt;l32&gt;</pre>
+      <pre>    %b_c1.i = moore.instance &#34;b_c1&#34; @c(a_b1.i: %i: !moore.ref&lt;l32&gt;) -&gt; (i: !moore.ref&lt;l32&gt;)</pre>
+      <pre>    %b_c2.i = moore.instance &#34;b_c2&#34; @c_0(a_b1.i: %i: !moore.ref&lt;l32&gt;) -&gt; (i: !moore.ref&lt;l32&gt;)</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %0 = moore.constant 10 : i32</pre>
+      <pre>      %1 = moore.constant 10 : i64</pre>
+      <pre>      %2 = moore.constant 10 : l64</pre>
+      <pre>      %3 = moore.constant 1000000 : l64</pre>
+      <pre>      %4 = moore.constant 10000000 : l64</pre>
+      <pre>      %5 = moore.constant_time 10000000 fs</pre>
+      <pre>      moore.wait_delay %5</pre>
+      <pre>      %6 = moore.constant 2 : i32</pre>
+      <pre>      %7 = moore.constant 2 : l32</pre>
+      <pre>      moore.blocking_assign %b_c1.i, %7 : l32</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output %i, %b_c1.i, %b_c2.i : !moore.ref&lt;l32&gt;, !moore.ref&lt;l32&gt;, !moore.ref&lt;l32&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @c(in %a_b1.i : !moore.ref&lt;l32&gt;, out i : !moore.ref&lt;l32&gt;) {</pre>
+      <pre>    %i = moore.variable : &lt;l32&gt;</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %0 = moore.constant 1 : i32</pre>
+      <pre>      %1 = moore.constant 1 : l32</pre>
+      <pre>      moore.blocking_assign %i, %1 : l32</pre>
+      <pre>      %2 = moore.constant 1 : i32</pre>
+      <pre>      %3 = moore.constant 1 : l32</pre>
+      <pre>      moore.blocking_assign %a_b1.i, %3 : l32</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output %i : !moore.ref&lt;l32&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @c_0(in %a_b1.i : !moore.ref&lt;l32&gt;, out i : !moore.ref&lt;l32&gt;) {</pre>
+      <pre>    %i = moore.variable : &lt;l32&gt;</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %0 = moore.constant 1 : i32</pre>
+      <pre>      %1 = moore.constant 1 : l32</pre>
+      <pre>      moore.blocking_assign %i, %1 : l32</pre>
+      <pre>      %2 = moore.constant 1 : i32</pre>
+      <pre>      %3 = moore.constant 1 : l32</pre>
+      <pre>      moore.blocking_assign %a_b1.i, %3 : l32</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output %i : !moore.ref&lt;l32&gt;</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @d(in %a.i : !moore.ref&lt;l32&gt;, in %a_b1.i : !moore.ref&lt;l32&gt;, in %b_c1.i : !moore.ref&lt;l32&gt;, in %b_c2.i : !moore.ref&lt;l32&gt;) {</pre>
+      <pre>    %i = moore.variable : &lt;l32&gt;</pre>
+      <pre>    %d_b1.i, %d_b1.b_c1.i, %d_b1.b_c2.i = moore.instance &#34;d_b1&#34; @b() -&gt; (i: !moore.ref&lt;l32&gt;, b_c1.i: !moore.ref&lt;l32&gt;, b_c2.i: !moore.ref&lt;l32&gt;)</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %0 = moore.constant 1 : i32</pre>
+      <pre>      %1 = moore.constant 1 : l32</pre>
+      <pre>      moore.blocking_assign %a.i, %1 : l32</pre>
+      <pre>      %2 = moore.constant 2 : i32</pre>
+      <pre>      %3 = moore.constant 2 : l32</pre>
+      <pre>      moore.blocking_assign %a_b1.i, %3 : l32</pre>
+      <pre>      %4 = moore.constant 3 : i32</pre>
+      <pre>      %5 = moore.constant 3 : l32</pre>
+      <pre>      moore.blocking_assign %b_c1.i, %5 : l32</pre>
+      <pre>      %6 = moore.constant 4 : i32</pre>
+      <pre>      %7 = moore.constant 4 : l32</pre>
+      <pre>      moore.blocking_assign %b_c2.i, %7 : l32</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.coroutine private @t() {</pre>
+      <pre>    %x = moore.variable : &lt;i32&gt;</pre>
+      <pre>    %0 = moore.constant 1 : i32</pre>
+      <pre>    %1 = func.call @f(%0) : (!moore.i32) -&gt; !moore.i32</pre>
+      <pre>    moore.blocking_assign %x, %1 : i32</pre>
+      <pre>    moore.return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @f(%arg0: !moore.i32) -&gt; !moore.i32 {</pre>
+      <pre>    %0 = moore.constant 1 : i32</pre>
+      <pre>    %1 = moore.add %arg0, %0 : i32</pre>
+      <pre>    return %1 : !moore.i32</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @&#34;$root&#34;() {</pre>
+      <pre>    %a.i, %a.a_b1.i, %a.a_b1.b_c1.i, %a.a_b1.b_c2.i = moore.instance &#34;a&#34; @a() -&gt; (i: !moore.ref&lt;l32&gt;, a_b1.i: !moore.ref&lt;l32&gt;, a_b1.b_c1.i: !moore.ref&lt;l32&gt;, a_b1.b_c2.i: !moore.ref&lt;l32&gt;)</pre>
+      <pre>    moore.instance &#34;d&#34; @d(a.i: %a.i: !moore.ref&lt;l32&gt;, a_b1.i: %a.a_b1.i: !moore.ref&lt;l32&gt;, b_c1.i: %a.a_b1.b_c1.i: !moore.ref&lt;l32&gt;, b_c2.i: %a.a_b1.b_c2.i: !moore.ref&lt;l32&gt;) -&gt; ()</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @f_1 : !moore.i32</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/tnoc'] = [["cores","TNoC",1,"logs/Slang_circt/generated/tnoc/tnoc.sv.log.html","third_party/cores/tnoc/rtl/bcm/tbcm_counter.sv.html"]]

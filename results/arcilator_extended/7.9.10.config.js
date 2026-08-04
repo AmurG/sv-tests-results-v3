@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/7.9.10'] = [["","associative-arrays-as-arguments",1,"logs/Arcilator_extended/chapter-7/arrays/associative/arguments.sv.log.html","tests/chapter-7/arrays/associative/arguments.sv.html"]]

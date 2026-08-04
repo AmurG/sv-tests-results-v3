@@ -1,0 +1,4753 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-vlg_pic_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/contrib/pic.v.html" target="file-frame">third_party/tools/icarus/ivtest/contrib/pic.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:26:53</dd></div>
+        <div><dt>time elapsed</dt><dd>7.651s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/contrib/pic.v.html" target="file-frame">third_party/tools/icarus/ivtest/contrib/pic.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:565:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:565:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:633:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:633:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:655:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:655:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:685:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:685:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:703:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:703:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:737:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:737:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:752:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:752:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:766:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:766:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:776:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:776:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:792:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:792:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:808:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:808:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:819:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:819:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:830:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:830:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:869:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:869:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:911:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:911:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:954:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:954:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:995:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:995:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1323:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(negedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1323:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(negedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1461:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1461:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1507:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1507:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1561:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1561:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1616:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1616:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1675:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:1675:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2060:6: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   @(negedge reset);</pre>
+      <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2060:6: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   @(negedge reset);</pre>
+      <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2063:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      @(posedge clk);</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2063:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      @(posedge clk);</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2103:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>         @(negedge clk);</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2103:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>         @(negedge clk);</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2115:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>         @(negedge clk);</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2115:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>         @(negedge clk);</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2125:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2125:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2132:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        @(negedge clk);</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/contrib/pic.v:2132:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        @(negedge clk);</pre>
+      <pre>          ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/model.ll</pre>
+      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/design.mlir:3584:12: warning: four-valued aggregate signal &#39;rom&#39; of type &#39;!hw.array&lt;512xstruct&lt;value: i12, unknown: i12&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %rom = llhd.sig %77 : !hw.array&lt;512xstruct&lt;value: i12, unknown: i12&gt;&gt;</pre>
+      <pre>           ^</pre>
+      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/design.mlir:3584:12: note: see current operation: %rom = llhd.sig %727 : !hw.array&lt;512xstruct&lt;value: i12, unknown: i12&gt;&gt;</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/driver.cpp  128 2 1 10 regress-vlg_pic_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/wave.vcd</pre>
+      <pre>Clearing SRAM.</pre>
+      <pre>SYNTHETIC PIC 2.0.  This is TEST #9</pre>
+      <pre>Warning: $readmemh: address 0x200 in &#34;/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmhqac6bu/../../../third_party/tools/icarus/ivtest/contrib/TEST9.ROM&#34; is outside the range of the memory</pre>
+      <pre>50: portb changes to: 0</pre>
+      <pre>50: portc changes to: 0</pre>
+      <pre>PC = 1ff</pre>
+      <pre>xxx NOP</pre>
+      <pre>PC = 1ff</pre>
+      <pre>1ff NOP</pre>
+      <pre>PC = 0</pre>
+      <pre>1ff XORLW,  k=0xff</pre>
+      <pre>W = ff</pre>
+      <pre>PC = 1</pre>
+      <pre>0 MOVLW,  k=0xff</pre>
+      <pre>PC = 2</pre>
+      <pre>1 TRIS,  f=0x5</pre>
+      <pre>PC = 3</pre>
+      <pre>2 CLRW</pre>
+      <pre>W = 0</pre>
+      <pre>PC = 4</pre>
+      <pre>3 TRIS,  f=0x6</pre>
+      <pre>PC = 5</pre>
+      <pre>4 TRIS,  f=0x7</pre>
+      <pre>PC = 6</pre>
+      <pre>5 CLRF  f=0x9</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 0</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 7</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>1650: portb changes to: 7</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 9</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>2150: portb changes to: 9</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>2650: portb changes to: c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>3150: portb changes to: e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 11</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>3650: portb changes to: 11</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 13</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>4150: portb changes to: 13</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 16</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>4650: portb changes to: 16</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 18</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>5150: portb changes to: 18</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>5650: portb changes to: 1b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>6150: portb changes to: 1d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 20</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>6650: portb changes to: 20</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 22</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>7150: portb changes to: 22</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 25</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>7650: portb changes to: 25</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 27</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>8150: portb changes to: 27</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>8650: portb changes to: 2a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>9150: portb changes to: 2c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>9650: portb changes to: 2f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 31</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>10150: portb changes to: 31</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 34</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>10650: portb changes to: 34</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 36</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>11150: portb changes to: 36</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 1</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>12350: portc changes to: 1</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 3d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>12550: portb changes to: 3d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 3e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>13050: portb changes to: 3e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 3f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>13550: portb changes to: 3f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 41</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>14050: portb changes to: 41</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 42</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>14550: portb changes to: 42</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 43</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>15050: portb changes to: 43</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 44</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>15550: portb changes to: 44</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 46</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>16050: portb changes to: 46</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 47</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>16550: portb changes to: 47</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 48</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>17050: portb changes to: 48</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 49</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>17550: portb changes to: 49</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 4b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>18050: portb changes to: 4b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 4c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>18550: portb changes to: 4c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 4d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>19050: portb changes to: 4d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 4e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>19550: portb changes to: 4e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 50</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>20050: portb changes to: 50</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 51</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>20550: portb changes to: 51</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 52</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>21050: portb changes to: 52</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 53</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>21550: portb changes to: 53</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 55</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>22050: portb changes to: 55</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 2</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>23250: portc changes to: 2</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 58</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>23450: portb changes to: 58</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 59</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>23950: portb changes to: 59</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>24450: portb changes to: 5a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>25450: portb changes to: 5b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>26450: portb changes to: 5c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>26950: portb changes to: 5d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>27950: portb changes to: 5e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>28450: portb changes to: 5f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 60</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>29450: portb changes to: 60</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 61</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>30450: portb changes to: 61</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 62</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>30950: portb changes to: 62</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 63</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>31950: portb changes to: 63</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 64</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>32450: portb changes to: 64</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 3</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>34150: portc changes to: 3</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 66</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>34350: portb changes to: 66</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 67</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>35850: portb changes to: 67</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 68</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>37350: portb changes to: 68</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 69</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>38850: portb changes to: 69</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>40850: portb changes to: 6a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>42350: portb changes to: 6b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>43850: portb changes to: 6c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 4</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>45050: portc changes to: 4</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>45250: portb changes to: 6d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>48750: portb changes to: 6e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 6f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>51750: portb changes to: 6f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 5</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>55950: portc changes to: 5</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 70</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>56150: portb changes to: 70</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 71</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>58150: portb changes to: 71</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 72</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>64650: portb changes to: 72</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 6</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>66850: portc changes to: 6</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 72</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 7</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>77750: portc changes to: 7</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 73</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>77950: portb changes to: 73</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 0</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>88650: portc changes to: 0</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 74</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>88850: portb changes to: 74</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 76</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>89350: portb changes to: 76</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 79</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>89850: portb changes to: 79</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 7b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>90350: portb changes to: 7b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 7e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>90850: portb changes to: 7e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 80</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>91350: portb changes to: 80</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 83</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>91850: portb changes to: 83</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 85</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>92350: portb changes to: 85</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 88</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>92850: portb changes to: 88</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 8a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>93350: portb changes to: 8a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 8d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>93850: portb changes to: 8d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 8f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>94350: portb changes to: 8f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 92</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>94850: portb changes to: 92</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 94</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>95350: portb changes to: 94</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 97</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>95850: portb changes to: 97</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 99</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>96350: portb changes to: 99</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 9c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>96850: portb changes to: 9c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 9e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>97350: portb changes to: 9e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = a1</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>97850: portb changes to: a1</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = a3</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>98350: portb changes to: a3</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 1</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>99550: portc changes to: 1</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = aa</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>99750: portb changes to: aa</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ab</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>100250: portb changes to: ab</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ac</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>100750: portb changes to: ac</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ae</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>101250: portb changes to: ae</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = af</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>101750: portb changes to: af</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b0</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>102250: portb changes to: b0</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b1</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>102750: portb changes to: b1</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b3</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>103250: portb changes to: b3</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b4</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>103750: portb changes to: b4</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b5</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>104250: portb changes to: b5</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b6</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>104750: portb changes to: b6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b8</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>105250: portb changes to: b8</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = b9</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>105750: portb changes to: b9</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ba</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>106250: portb changes to: ba</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = bb</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>106750: portb changes to: bb</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = bd</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>107250: portb changes to: bd</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = be</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>107750: portb changes to: be</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = bf</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>108250: portb changes to: bf</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c0</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>108750: portb changes to: c0</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c2</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>109250: portb changes to: c2</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 2</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>110450: portc changes to: 2</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c5</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>110650: portb changes to: c5</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c6</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>111150: portb changes to: c6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c7</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>111650: portb changes to: c7</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c8</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>112650: portb changes to: c8</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = c9</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>113650: portb changes to: c9</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ca</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>114150: portb changes to: ca</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = cb</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>115150: portb changes to: cb</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = cc</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>115650: portb changes to: cc</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = cd</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>116650: portb changes to: cd</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ce</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>117650: portb changes to: ce</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = cf</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>118150: portb changes to: cf</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d0</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>119150: portb changes to: d0</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d1</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>119650: portb changes to: d1</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 3</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>121350: portc changes to: 3</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d3</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>121550: portb changes to: d3</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d4</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>122050: portb changes to: d4</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d5</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>124050: portb changes to: d5</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d6</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>125550: portb changes to: d6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d7</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>127050: portb changes to: d7</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d8</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>128550: portb changes to: d8</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d9</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>130050: portb changes to: d9</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 4</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>132250: portc changes to: 4</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = da</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>132450: portb changes to: da</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = db</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>134950: portb changes to: db</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = dc</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>138450: portb changes to: dc</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = dd</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>141450: portb changes to: dd</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 5</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>143150: portc changes to: 5</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = dd</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = de</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>147850: portb changes to: de</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 6</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>154050: portc changes to: 6</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = df</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>154250: portb changes to: df</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 7</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>164950: portc changes to: 7</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = df</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 0</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>175850: portc changes to: 0</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = e0</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>176050: portb changes to: e0</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = e2</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>176550: portb changes to: e2</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = e5</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>177050: portb changes to: e5</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = e7</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>177550: portb changes to: e7</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ea</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>178050: portb changes to: ea</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ec</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>178550: portb changes to: ec</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = ef</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>179050: portb changes to: ef</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = f1</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>179550: portb changes to: f1</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = f4</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>180050: portb changes to: f4</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = f6</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>180550: portb changes to: f6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = f9</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>181050: portb changes to: f9</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = fb</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>181550: portb changes to: fb</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = fe</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>182050: portb changes to: fe</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 0</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>182550: portb changes to: 0</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 3</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>183050: portb changes to: 3</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 5</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>183550: portb changes to: 5</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 8</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>184050: portb changes to: 8</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>184550: portb changes to: a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>185050: portb changes to: d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>185550: portb changes to: f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 1</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>186750: portc changes to: 1</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 16</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>186950: portb changes to: 16</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 17</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>187450: portb changes to: 17</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 18</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>187950: portb changes to: 18</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>188450: portb changes to: 1a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>188950: portb changes to: 1b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>189450: portb changes to: 1c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1d</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>189950: portb changes to: 1d</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 1f</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>190450: portb changes to: 1f</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 20</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>190950: portb changes to: 20</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 21</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>191450: portb changes to: 21</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 22</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>191950: portb changes to: 22</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 24</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>192450: portb changes to: 24</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 25</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>192950: portb changes to: 25</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 26</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>193450: portb changes to: 26</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 27</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>193950: portb changes to: 27</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 29</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>194450: portb changes to: 29</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2a</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>194950: portb changes to: 2a</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2b</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>195450: portb changes to: 2b</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2c</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>195950: portb changes to: 2c</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 2e</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>196450: portb changes to: 2e</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e NOP</pre>
+      <pre>PC = 10</pre>
+      <pre>f INCF  f=0x9, f</pre>
+      <pre>PC = 11</pre>
+      <pre>10 MOVLW,  k=0x7</pre>
+      <pre>W = 7</pre>
+      <pre>PC = 12</pre>
+      <pre>11 ANDWF  f=0x9, f</pre>
+      <pre>PC = 13</pre>
+      <pre>12 GOTO,  k=0x6</pre>
+      <pre>PC = 6</pre>
+      <pre>13 NOP</pre>
+      <pre>PC = 7</pre>
+      <pre>6 MOVLW,  k=0x14</pre>
+      <pre>W = 14</pre>
+      <pre>PC = 8</pre>
+      <pre>7 MOVWF  f=0x8</pre>
+      <pre>PC = 9</pre>
+      <pre>8 MOVF  f=0x9, W</pre>
+      <pre>W = 2</pre>
+      <pre>PC = a</pre>
+      <pre>9 OPTION</pre>
+      <pre>PC = b</pre>
+      <pre>a MOVWF  f=0x7</pre>
+      <pre>197650: portc changes to: 2</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 31</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>197850: portb changes to: 31</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 32</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>198350: portb changes to: 32</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 33</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>198850: portb changes to: 33</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>W = 34</pre>
+      <pre>PC = d</pre>
+      <pre>c MOVWF  f=0x6</pre>
+      <pre>199850: portb changes to: 34</pre>
+      <pre>PC = e</pre>
+      <pre>d DECFSZ  f=0x8, f</pre>
+      <pre>PC = f</pre>
+      <pre>e GOTO,  k=0xb</pre>
+      <pre>PC = b</pre>
+      <pre>f NOP</pre>
+      <pre>PC = c</pre>
+      <pre>b MOVF  f=0x1, W</pre>
+      <pre>Maximum cycles (2000) Exceeded.  Halting simulation.</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

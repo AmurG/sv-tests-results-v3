@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/6.16.2'] = [["","string_putc",1,"logs/circt_verilog_extended_4state/chapter-6/6.16.2--string_putc.sv.log.html","tests/chapter-6/6.16.2--string_putc.sv.html"]]

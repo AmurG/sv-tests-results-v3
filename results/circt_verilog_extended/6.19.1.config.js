@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.19.1'] = [["","enum_typedef",1,"logs/circt_verilog_extended/chapter-6/6.19.1--enum_typedef.sv.log.html","tests/chapter-6/6.19.1--enum_typedef.sv.html"]]

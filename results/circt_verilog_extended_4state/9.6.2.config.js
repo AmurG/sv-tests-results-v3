@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/9.6.2'] = [["","disable",1,"logs/circt_verilog_extended_4state/chapter-9/9.6.2--disable.sv.log.html","tests/chapter-9/9.6.2--disable.sv.html"],["","disable_other",1,"logs/circt_verilog_extended_4state/chapter-9/9.6.2--disable_other.sv.log.html","tests/chapter-9/9.6.2--disable_other.sv.html"]]

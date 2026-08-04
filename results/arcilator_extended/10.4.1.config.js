@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/10.4.1'] = [["","blocking_assignment",1,"logs/Arcilator_extended/chapter-10/10.4.1--blocking-assignment.sv.log.html","tests/chapter-10/10.4.1--blocking-assignment.sv.html"]]

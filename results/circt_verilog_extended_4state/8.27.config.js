@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/8.27'] = [["","forward_declaration",1,"logs/circt_verilog_extended_4state/chapter-8/8.27--forward_declaration.sv.log.html","tests/chapter-8/8.27--forward_declaration.sv.html"]]

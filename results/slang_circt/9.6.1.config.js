@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/9.6.1'] = [["","wait_fork",1,"logs/Slang_circt/chapter-9/9.6.1--wait_fork.sv.log.html","tests/chapter-9/9.6.1--wait_fork.sv.html"]]

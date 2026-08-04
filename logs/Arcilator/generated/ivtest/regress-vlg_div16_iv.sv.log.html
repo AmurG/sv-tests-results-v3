@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-vlg_div16_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/contrib/div16.v.html" target="file-frame">third_party/tools/icarus/ivtest/contrib/div16.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 10:15:30</dd></div>
+        <div><dt>time elapsed</dt><dd>6.447s</dd></div>
+        <div><dt>ram usage</dt><dd>200704 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/contrib/div16.v.html" target="file-frame">third_party/tools/icarus/ivtest/contrib/div16.v</a></pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/driver.cpp  128 2 1 10 regress-vlg_div16_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/driver.cpp /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4 -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-runtime.h:14:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:932:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:944:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1189:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1195:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1201:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1207:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1640:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1764:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1774:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1872:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:2746:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3400:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3515:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3598:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3602:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4135:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4770:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4855:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:5368:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmproppwey4/wave.vcd</pre>
+      <pre>16-bit Dividend, 8-bit divisor</pre>
+      <pre>Circuit: 13604 / 129 = 105, rem = 59		......... Reality: 105, rem = 59</pre>
+      <pre>Circuit: 54793 / 99 = 553, rem = 46		......... Reality: 553, rem = 46</pre>
+      <pre>Circuit: 31501 / 141 = 223, rem = 58		......... Reality: 223, rem = 58</pre>
+      <pre>Circuit: 33893 / 18 = 1882, rem = 17		......... Reality: 1882, rem = 17</pre>
+      <pre>Circuit: 58113 / 13 = 4470, rem = 3		......... Reality: 4470, rem = 3</pre>
+      <pre>Circuit: 61814 / 61 = 1013, rem = 21		......... Reality: 1013, rem = 21</pre>
+      <pre>Circuit: 22509 / 140 = 160, rem = 109		......... Reality: 160, rem = 109</pre>
+      <pre>Circuit: 59897 / 198 = 302, rem = 101		......... Reality: 302, rem = 101</pre>
+      <pre>Circuit: 33989 / 170 = 199, rem = 159		......... Reality: 199, rem = 159</pre>
+      <pre>Circuit: 63461 / 119 = 533, rem = 34		......... Reality: 533, rem = 34</pre>
+      <pre>Circuit: 54802 / 143 = 383, rem = 33		......... Reality: 383, rem = 33</pre>
+      <pre>Circuit: 27122 / 206 = 131, rem = 136		......... Reality: 131, rem = 136</pre>
+      <pre>Circuit: 31464 / 197 = 159, rem = 141		......... Reality: 159, rem = 141</pre>
+      <pre>Circuit: 18780 / 189 = 99, rem = 69		......... Reality: 99, rem = 69</pre>
+      <pre>Circuit: 22573 / 101 = 223, rem = 50		......... Reality: 223, rem = 50</pre>
+      <pre>Circuit: 25187 / 10 = 2518, rem = 7		......... Reality: 2518, rem = 7</pre>
+      <pre>Circuit: 8832 / 32 = 276, rem = 0		......... Reality: 276, rem = 0</pre>
+      <pre>Circuit: 17834 / 157 = 113, rem = 93		......... Reality: 113, rem = 93</pre>
+      <pre>Circuit: 16022 / 19 = 843, rem = 5		......... Reality: 843, rem = 5</pre>
+      <pre>Circuit: 14349 / 83 = 172, rem = 73		......... Reality: 172, rem = 73</pre>
+      <pre>Circuit: 56683 / 213 = 266, rem = 25		......... Reality: 266, rem = 25</pre>
+      <pre>Circuit: 18946 / 174 = 108, rem = 154		......... Reality: 108, rem = 154</pre>
+      <pre>Circuit: 59677 / 207 = 288, rem = 61		......... Reality: 288, rem = 61</pre>
+      <pre>Circuit: 18723 / 10 = 1872, rem = 3		......... Reality: 1872, rem = 3</pre>
+      <pre>Circuit: 2762 / 60 = 46, rem = 2		......... Reality: 46, rem = 2</pre>
+      <pre></pre>
+      <pre>16-bit Dividend, 12-bit divisor</pre>
+      <pre>Circuit: 48626 / 394 = 123, rem = 164		......... Reality: 123, rem = 164</pre>
+      <pre>Circuit: 45889 / 1240 = 37, rem = 9		......... Reality: 37, rem = 9</pre>
+      <pre>Circuit: 62328 / 649 = 96, rem = 24		......... Reality: 96, rem = 24</pre>
+      <pre>Circuit: 3563 / 1462 = 2, rem = 639		......... Reality: 2, rem = 639</pre>
+      <pre>Circuit: 63942 / 942 = 67, rem = 828		......... Reality: 67, rem = 828</pre>
+      <pre>Circuit: 700 / 3370 = 0, rem = 700		......... Reality: 0, rem = 700</pre>
+      <pre>Circuit: 39435 / 3697 = 10, rem = 2465		......... Reality: 10, rem = 2465</pre>
+      <pre>Circuit: 16773 / 1359 = 12, rem = 465		......... Reality: 12, rem = 465</pre>
+      <pre>Circuit: 24635 / 826 = 29, rem = 681		......... Reality: 29, rem = 681</pre>
+      <pre>Circuit: 12926 / 2837 = 4, rem = 1578		......... Reality: 4, rem = 1578</pre>
+      <pre>Circuit: 39921 / 3033 = 13, rem = 492		......... Reality: 13, rem = 492</pre>
+      <pre>Circuit: 1890 / 2892 = 0, rem = 1890		......... Reality: 0, rem = 1890</pre>
+      <pre>Circuit: 21919 / 399 = 54, rem = 373		......... Reality: 54, rem = 373</pre>
+      <pre>Circuit: 43512 / 183 = 237, rem = 141		......... Reality: 237, rem = 141</pre>
+      <pre>Circuit: 22175 / 1116 = 19, rem = 971		......... Reality: 19, rem = 971</pre>
+      <pre>Circuit: 49243 / 1929 = 25, rem = 1018		......... Reality: 25, rem = 1018</pre>
+      <pre>Circuit: 12873 / 3792 = 3, rem = 1497		......... Reality: 3, rem = 1497</pre>
+      <pre>Circuit: 49367 / 3153 = 15, rem = 2072		......... Reality: 15, rem = 2072</pre>
+      <pre>Circuit: 12182 / 3852 = 3, rem = 626		......... Reality: 3, rem = 626</pre>
+      <pre>Circuit: 52930 / 3528 = 15, rem = 10		......... Reality: 15, rem = 10</pre>
+      <pre>Circuit: 23159 / 3389 = 6, rem = 2825		......... Reality: 6, rem = 2825</pre>
+      <pre>Circuit: 56082 / 126 = 445, rem = 12		......... Reality: 445, rem = 12</pre>
+      <pre>Circuit: 33133 / 1849 = 17, rem = 1700		......... Reality: 17, rem = 1700</pre>
+      <pre>Circuit: 36639 / 1747 = 20, rem = 1699		......... Reality: 20, rem = 1699</pre>
+      <pre>Circuit: 12165 / 2168 = 5, rem = 1325		......... Reality: 5, rem = 1325</pre>
+      <pre></pre>
+      <pre>16-bit Dividend, 16-bit divisor</pre>
+      <pre>Circuit: 22875 / 19273 = 1, rem = 3602		......... Reality: 1, rem = 3602</pre>
+      <pre>Circuit: 44607 / 44842 = 0, rem = 44607		......... Reality: 0, rem = 44607</pre>
+      <pre>Circuit: 25432 / 14470 = 1, rem = 10962		......... Reality: 1, rem = 10962</pre>
+      <pre>Circuit: 3214 / 62108 = 0, rem = 3214		......... Reality: 0, rem = 3214</pre>
+      <pre>Circuit: 39418 / 48166 = 0, rem = 39418		......... Reality: 0, rem = 39418</pre>
+      <pre>Circuit: 6003 / 46243 = 0, rem = 6003		......... Reality: 0, rem = 6003</pre>
+      <pre>Circuit: 43055 / 37555 = 1, rem = 5500		......... Reality: 1, rem = 5500</pre>
+      <pre>Circuit: 22111 / 3396 = 6, rem = 1735		......... Reality: 6, rem = 1735</pre>
+      <pre>Circuit: 65015 / 14027 = 4, rem = 8907		......... Reality: 4, rem = 8907</pre>
+      <pre>Circuit: 6886 / 56154 = 0, rem = 6886		......... Reality: 0, rem = 6886</pre>
+      <pre>Circuit: 49449 / 58093 = 0, rem = 49449		......... Reality: 0, rem = 49449</pre>
+      <pre>Circuit: 27866 / 46693 = 0, rem = 27866		......... Reality: 0, rem = 27866</pre>
+      <pre>Circuit: 58037 / 38111 = 1, rem = 19926		......... Reality: 1, rem = 19926</pre>
+      <pre>Circuit: 6521 / 65348 = 0, rem = 6521		......... Reality: 0, rem = 6521</pre>
+      <pre>Circuit: 3280 / 2858 = 1, rem = 422		......... Reality: 1, rem = 422</pre>
+      <pre>Circuit: 44459 / 53006 = 0, rem = 44459		......... Reality: 0, rem = 44459</pre>
+      <pre>Circuit: 44508 / 48282 = 0, rem = 44508		......... Reality: 0, rem = 44508</pre>
+      <pre>Circuit: 29437 / 707 = 41, rem = 450		......... Reality: 41, rem = 450</pre>
+      <pre>Circuit: 60758 / 59726 = 1, rem = 1032		......... Reality: 1, rem = 1032</pre>
+      <pre>Circuit: 30311 / 13322 = 2, rem = 3667		......... Reality: 2, rem = 3667</pre>
+      <pre>Circuit: 47542 / 35384 = 1, rem = 12158		......... Reality: 1, rem = 12158</pre>
+      <pre>Circuit: 34681 / 50360 = 0, rem = 34681		......... Reality: 0, rem = 34681</pre>
+      <pre>Circuit: 49044 / 23955 = 2, rem = 1134		......... Reality: 2, rem = 1134</pre>
+      <pre>Circuit: 11268 / 51801 = 0, rem = 11268		......... Reality: 0, rem = 11268</pre>
+      <pre>Circuit: 27099 / 56909 = 0, rem = 27099		......... Reality: 0, rem = 27099</pre>
+      <pre></pre>
+      <pre>Special Cases:</pre>
+      <pre>Circuit: 65535 / 65535 = 1, rem = 0		......... Reality: 1, rem = 0</pre>
+      <pre>Circuit: 312 / 1 = 312, rem = 0		......... Reality: 312, rem = 0</pre>
+      <pre>Circuit: 0 / 42 = 0, rem = 0		......... Reality: 0, rem = 0</pre>
+      <pre>Circuit: 312 / 0 = 65535, rem = 312		......... Reality: 0, rem = 0</pre>
+      <pre></pre>
+      <pre></pre>
+      <pre>PASSED</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

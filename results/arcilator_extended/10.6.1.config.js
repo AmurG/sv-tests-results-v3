@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/10.6.1'] = [["","assign_deassign",1,"logs/Arcilator_extended/chapter-10/10.6.1--assign-deassign.sv.log.html","tests/chapter-10/10.6.1--assign-deassign.sv.html"]]

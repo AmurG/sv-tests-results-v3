@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>hdlconvertor_std2017_p475</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p475.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p475.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 09:47:40</dd></div>
+        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
+        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p475.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p475.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.module @examples_with_default(in %a : !moore.l1, in %b : !moore.l1, in %clk : !moore.l1, in %rst : !moore.l1, in %rst1 : !moore.l1) {</pre>
+      <pre>    %a_0 = moore.net name &#34;a&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %b_1 = moore.net name &#34;b&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %clk_2 = moore.net name &#34;clk&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %rst_3 = moore.net name &#34;rst&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %rst1_4 = moore.net name &#34;rst1&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %1 = moore.logic_to_int %0 : l1</pre>
+      <pre>    %__sva_prev = moore.variable %1 : &lt;i1&gt;</pre>
+      <pre>    %2 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist = moore.variable %2 : &lt;i1&gt;</pre>
+      <pre>    %3 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>    %__sva_prev_5 = moore.variable name &#34;__sva_prev&#34; %4 : &lt;i1&gt;</pre>
+      <pre>    %5 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_6 = moore.variable name &#34;__sva_hist&#34; %5 : &lt;i1&gt;</pre>
+      <pre>    %6 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %7 = moore.logic_to_int %6 : l1</pre>
+      <pre>    %__sva_prevclk = moore.variable %7 : &lt;i1&gt;</pre>
+      <pre>    %8 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt = moore.variable %8 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %73 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %73 : l1</pre>
+      <pre>        %74 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %75 = moore.logic_to_int %74 : l1</pre>
+      <pre>        moore.detect_event any %75 : i1</pre>
+      <pre>        %76 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %77 = moore.logic_to_int %76 : l1</pre>
+      <pre>        moore.detect_event any %77 : i1</pre>
+      <pre>        %78 = moore.read %rst1_4 : &lt;l1&gt;</pre>
+      <pre>        %79 = moore.logic_to_int %78 : l1</pre>
+      <pre>        moore.detect_event any %79 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %36 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %37 = moore.logic_to_int %36 : l1</pre>
+      <pre>      %38 = moore.read %__sva_prevclk : &lt;i1&gt;</pre>
+      <pre>      %39 = moore.not %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.constant 0 : i1</pre>
+      <pre>      %42 = moore.read %rst1_4 : &lt;l1&gt;</pre>
+      <pre>      %43 = moore.logic_to_int %42 : l1</pre>
+      <pre>      %44 = moore.read %__sva_cnt : &lt;i32&gt;</pre>
+      <pre>      %45 = moore.constant 1 : i32</pre>
+      <pre>      %46 = moore.uge %44, %45 : i32 -&gt; i1</pre>
+      <pre>      %47 = moore.not %43 : i1</pre>
+      <pre>      %48 = moore.and %40, %47 : i1</pre>
+      <pre>      %49 = moore.and %48, %46 : i1</pre>
+      <pre>      %50 = moore.read %__sva_hist : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.not %50 : i1</pre>
+      <pre>      %52 = moore.read %__sva_prev_5 : &lt;i1&gt;</pre>
+      <pre>      %53 = moore.or %51, %52 : i1</pre>
+      <pre>      %54 = moore.not %53 : i1</pre>
+      <pre>      %55 = moore.and %49, %54 : i1</pre>
+      <pre>      %56 = moore.and %49, %53 : i1</pre>
+      <pre>      %57 = moore.not %55 : i1</pre>
+      <pre>      moore.assert immediate %57 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:7&#34; : i1</pre>
+      <pre>      %58 = moore.read %__sva_hist : &lt;i1&gt;</pre>
+      <pre>      %59 = moore.read %__sva_prev : &lt;i1&gt;</pre>
+      <pre>      %60 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %59 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %58 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist, %60 : i1</pre>
+      <pre>      %61 = moore.read %__sva_hist_6 : &lt;i1&gt;</pre>
+      <pre>      %62 = moore.read %__sva_prev_5 : &lt;i1&gt;</pre>
+      <pre>      %63 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %62 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %61 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_6, %63 : i1</pre>
+      <pre>      %64 = moore.constant 1 : i32</pre>
+      <pre>      %65 = moore.add %44, %64 : i32</pre>
+      <pre>      %66 = moore.conditional %40 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %65 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %44 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %67 = moore.constant 0 : i32</pre>
+      <pre>      %68 = moore.conditional %43 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %67 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %66 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt, %68 : i32</pre>
+      <pre>      %69 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %70 = moore.logic_to_int %69 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev, %70 : i1</pre>
+      <pre>      %71 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %72 = moore.logic_to_int %71 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_5, %72 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk, %37 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %9 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %10 = moore.logic_to_int %9 : l1</pre>
+      <pre>    %__sva_prev_7 = moore.variable name &#34;__sva_prev&#34; %10 : &lt;i1&gt;</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_8 = moore.variable name &#34;__sva_hist&#34; %11 : &lt;i1&gt;</pre>
+      <pre>    %12 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %13 = moore.logic_to_int %12 : l1</pre>
+      <pre>    %__sva_prev_9 = moore.variable name &#34;__sva_prev&#34; %13 : &lt;i1&gt;</pre>
+      <pre>    %14 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_10 = moore.variable name &#34;__sva_hist&#34; %14 : &lt;i1&gt;</pre>
+      <pre>    %15 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %16 = moore.logic_to_int %15 : l1</pre>
+      <pre>    %__sva_prevclk_11 = moore.variable name &#34;__sva_prevclk&#34; %16 : &lt;i1&gt;</pre>
+      <pre>    %17 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt_12 = moore.variable name &#34;__sva_cnt&#34; %17 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %73 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %73 : l1</pre>
+      <pre>        %74 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %75 = moore.logic_to_int %74 : l1</pre>
+      <pre>        moore.detect_event any %75 : i1</pre>
+      <pre>        %76 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %77 = moore.logic_to_int %76 : l1</pre>
+      <pre>        moore.detect_event any %77 : i1</pre>
+      <pre>        %78 = moore.read %rst1_4 : &lt;l1&gt;</pre>
+      <pre>        %79 = moore.logic_to_int %78 : l1</pre>
+      <pre>        moore.detect_event any %79 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %36 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %37 = moore.logic_to_int %36 : l1</pre>
+      <pre>      %38 = moore.read %__sva_prevclk_11 : &lt;i1&gt;</pre>
+      <pre>      %39 = moore.not %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.constant 0 : i1</pre>
+      <pre>      %42 = moore.read %rst1_4 : &lt;l1&gt;</pre>
+      <pre>      %43 = moore.logic_to_int %42 : l1</pre>
+      <pre>      %44 = moore.read %__sva_cnt_12 : &lt;i32&gt;</pre>
+      <pre>      %45 = moore.constant 1 : i32</pre>
+      <pre>      %46 = moore.uge %44, %45 : i32 -&gt; i1</pre>
+      <pre>      %47 = moore.not %43 : i1</pre>
+      <pre>      %48 = moore.and %40, %47 : i1</pre>
+      <pre>      %49 = moore.and %48, %46 : i1</pre>
+      <pre>      %50 = moore.read %__sva_hist_8 : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.not %50 : i1</pre>
+      <pre>      %52 = moore.read %__sva_prev_9 : &lt;i1&gt;</pre>
+      <pre>      %53 = moore.or %51, %52 : i1</pre>
+      <pre>      %54 = moore.not %53 : i1</pre>
+      <pre>      %55 = moore.and %49, %54 : i1</pre>
+      <pre>      %56 = moore.and %49, %53 : i1</pre>
+      <pre>      %57 = moore.not %55 : i1</pre>
+      <pre>      moore.assert immediate %57 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:9&#34; : i1</pre>
+      <pre>      %58 = moore.read %__sva_hist_8 : &lt;i1&gt;</pre>
+      <pre>      %59 = moore.read %__sva_prev_7 : &lt;i1&gt;</pre>
+      <pre>      %60 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %59 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %58 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_8, %60 : i1</pre>
+      <pre>      %61 = moore.read %__sva_hist_10 : &lt;i1&gt;</pre>
+      <pre>      %62 = moore.read %__sva_prev_9 : &lt;i1&gt;</pre>
+      <pre>      %63 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %62 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %61 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_10, %63 : i1</pre>
+      <pre>      %64 = moore.constant 1 : i32</pre>
+      <pre>      %65 = moore.add %44, %64 : i32</pre>
+      <pre>      %66 = moore.conditional %40 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %65 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %44 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %67 = moore.constant 0 : i32</pre>
+      <pre>      %68 = moore.conditional %43 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %67 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %66 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt_12, %68 : i32</pre>
+      <pre>      %69 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %70 = moore.logic_to_int %69 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_7, %70 : i1</pre>
+      <pre>      %71 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %72 = moore.logic_to_int %71 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_9, %72 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk_11, %37 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %18 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %19 = moore.logic_to_int %18 : l1</pre>
+      <pre>    %__sva_prev_13 = moore.variable name &#34;__sva_prev&#34; %19 : &lt;i1&gt;</pre>
+      <pre>    %20 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_14 = moore.variable name &#34;__sva_hist&#34; %20 : &lt;i1&gt;</pre>
+      <pre>    %21 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %22 = moore.logic_to_int %21 : l1</pre>
+      <pre>    %__sva_prev_15 = moore.variable name &#34;__sva_prev&#34; %22 : &lt;i1&gt;</pre>
+      <pre>    %23 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_16 = moore.variable name &#34;__sva_hist&#34; %23 : &lt;i1&gt;</pre>
+      <pre>    %24 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %25 = moore.logic_to_int %24 : l1</pre>
+      <pre>    %__sva_prevclk_17 = moore.variable name &#34;__sva_prevclk&#34; %25 : &lt;i1&gt;</pre>
+      <pre>    %26 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt_18 = moore.variable name &#34;__sva_cnt&#34; %26 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %73 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %73 : l1</pre>
+      <pre>        %74 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %75 = moore.logic_to_int %74 : l1</pre>
+      <pre>        moore.detect_event any %75 : i1</pre>
+      <pre>        %76 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %77 = moore.logic_to_int %76 : l1</pre>
+      <pre>        moore.detect_event any %77 : i1</pre>
+      <pre>        %78 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>        %79 = moore.logic_to_int %78 : l1</pre>
+      <pre>        moore.detect_event any %79 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %36 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %37 = moore.logic_to_int %36 : l1</pre>
+      <pre>      %38 = moore.read %__sva_prevclk_17 : &lt;i1&gt;</pre>
+      <pre>      %39 = moore.not %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.constant 0 : i1</pre>
+      <pre>      %42 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>      %43 = moore.logic_to_int %42 : l1</pre>
+      <pre>      %44 = moore.read %__sva_cnt_18 : &lt;i32&gt;</pre>
+      <pre>      %45 = moore.constant 1 : i32</pre>
+      <pre>      %46 = moore.uge %44, %45 : i32 -&gt; i1</pre>
+      <pre>      %47 = moore.not %43 : i1</pre>
+      <pre>      %48 = moore.and %40, %47 : i1</pre>
+      <pre>      %49 = moore.and %48, %46 : i1</pre>
+      <pre>      %50 = moore.read %__sva_hist_14 : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.not %50 : i1</pre>
+      <pre>      %52 = moore.read %__sva_prev_15 : &lt;i1&gt;</pre>
+      <pre>      %53 = moore.or %51, %52 : i1</pre>
+      <pre>      %54 = moore.not %53 : i1</pre>
+      <pre>      %55 = moore.and %49, %54 : i1</pre>
+      <pre>      %56 = moore.and %49, %53 : i1</pre>
+      <pre>      %57 = moore.not %55 : i1</pre>
+      <pre>      moore.assert immediate %57 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:12&#34; : i1</pre>
+      <pre>      %58 = moore.read %__sva_hist_14 : &lt;i1&gt;</pre>
+      <pre>      %59 = moore.read %__sva_prev_13 : &lt;i1&gt;</pre>
+      <pre>      %60 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %59 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %58 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_14, %60 : i1</pre>
+      <pre>      %61 = moore.read %__sva_hist_16 : &lt;i1&gt;</pre>
+      <pre>      %62 = moore.read %__sva_prev_15 : &lt;i1&gt;</pre>
+      <pre>      %63 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %62 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %61 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_16, %63 : i1</pre>
+      <pre>      %64 = moore.constant 1 : i32</pre>
+      <pre>      %65 = moore.add %44, %64 : i32</pre>
+      <pre>      %66 = moore.conditional %40 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %65 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %44 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %67 = moore.constant 0 : i32</pre>
+      <pre>      %68 = moore.conditional %43 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %67 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %66 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt_18, %68 : i32</pre>
+      <pre>      %69 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %70 = moore.logic_to_int %69 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_13, %70 : i1</pre>
+      <pre>      %71 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %72 = moore.logic_to_int %71 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_15, %72 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk_17, %37 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %27 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %28 = moore.logic_to_int %27 : l1</pre>
+      <pre>    %__sva_prev_19 = moore.variable name &#34;__sva_prev&#34; %28 : &lt;i1&gt;</pre>
+      <pre>    %29 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_20 = moore.variable name &#34;__sva_hist&#34; %29 : &lt;i1&gt;</pre>
+      <pre>    %30 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %31 = moore.logic_to_int %30 : l1</pre>
+      <pre>    %__sva_prev_21 = moore.variable name &#34;__sva_prev&#34; %31 : &lt;i1&gt;</pre>
+      <pre>    %32 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_22 = moore.variable name &#34;__sva_hist&#34; %32 : &lt;i1&gt;</pre>
+      <pre>    %33 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %34 = moore.logic_to_int %33 : l1</pre>
+      <pre>    %__sva_prevclk_23 = moore.variable name &#34;__sva_prevclk&#34; %34 : &lt;i1&gt;</pre>
+      <pre>    %35 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt_24 = moore.variable name &#34;__sva_cnt&#34; %35 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %72 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %72 : l1</pre>
+      <pre>        %73 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %74 = moore.logic_to_int %73 : l1</pre>
+      <pre>        moore.detect_event any %74 : i1</pre>
+      <pre>        %75 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %76 = moore.logic_to_int %75 : l1</pre>
+      <pre>        moore.detect_event any %76 : i1</pre>
+      <pre>        %77 = moore.constant 0 : i1</pre>
+      <pre>        moore.detect_event any %77 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %36 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %37 = moore.logic_to_int %36 : l1</pre>
+      <pre>      %38 = moore.read %__sva_prevclk_23 : &lt;i1&gt;</pre>
+      <pre>      %39 = moore.not %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.constant 0 : i1</pre>
+      <pre>      %42 = moore.constant 0 : i1</pre>
+      <pre>      %43 = moore.read %__sva_cnt_24 : &lt;i32&gt;</pre>
+      <pre>      %44 = moore.constant 1 : i32</pre>
+      <pre>      %45 = moore.uge %43, %44 : i32 -&gt; i1</pre>
+      <pre>      %46 = moore.not %42 : i1</pre>
+      <pre>      %47 = moore.and %40, %46 : i1</pre>
+      <pre>      %48 = moore.and %47, %45 : i1</pre>
+      <pre>      %49 = moore.read %__sva_hist_20 : &lt;i1&gt;</pre>
+      <pre>      %50 = moore.not %49 : i1</pre>
+      <pre>      %51 = moore.read %__sva_prev_21 : &lt;i1&gt;</pre>
+      <pre>      %52 = moore.or %50, %51 : i1</pre>
+      <pre>      %53 = moore.not %52 : i1</pre>
+      <pre>      %54 = moore.and %48, %53 : i1</pre>
+      <pre>      %55 = moore.and %48, %52 : i1</pre>
+      <pre>      %56 = moore.not %54 : i1</pre>
+      <pre>      moore.assert immediate %56 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:15&#34; : i1</pre>
+      <pre>      %57 = moore.read %__sva_hist_20 : &lt;i1&gt;</pre>
+      <pre>      %58 = moore.read %__sva_prev_19 : &lt;i1&gt;</pre>
+      <pre>      %59 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %58 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %57 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_20, %59 : i1</pre>
+      <pre>      %60 = moore.read %__sva_hist_22 : &lt;i1&gt;</pre>
+      <pre>      %61 = moore.read %__sva_prev_21 : &lt;i1&gt;</pre>
+      <pre>      %62 = moore.conditional %40 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %61 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %60 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_22, %62 : i1</pre>
+      <pre>      %63 = moore.constant 1 : i32</pre>
+      <pre>      %64 = moore.add %43, %63 : i32</pre>
+      <pre>      %65 = moore.conditional %40 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %64 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %43 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %66 = moore.constant 0 : i32</pre>
+      <pre>      %67 = moore.conditional %42 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %66 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %65 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt_24, %67 : i32</pre>
+      <pre>      %68 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %69 = moore.logic_to_int %68 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_19, %69 : i1</pre>
+      <pre>      %70 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %71 = moore.logic_to_int %70 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_21, %71 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk_23, %37 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.assign %a_0, %a : l1</pre>
+      <pre>    moore.assign %b_1, %b : l1</pre>
+      <pre>    moore.assign %clk_2, %clk : l1</pre>
+      <pre>    moore.assign %rst_3, %rst : l1</pre>
+      <pre>    moore.assign %rst1_4, %rst1 : l1</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @examples_without_default(in %a : !moore.l1, in %b : !moore.l1, in %clk : !moore.l1, in %rst : !moore.l1) {</pre>
+      <pre>    %a_0 = moore.net name &#34;a&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %b_1 = moore.net name &#34;b&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %clk_2 = moore.net name &#34;clk&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %rst_3 = moore.net name &#34;rst&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %1 = moore.logic_to_int %0 : l1</pre>
+      <pre>    %__sva_prev = moore.variable %1 : &lt;i1&gt;</pre>
+      <pre>    %2 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist = moore.variable %2 : &lt;i1&gt;</pre>
+      <pre>    %3 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>    %__sva_prev_4 = moore.variable name &#34;__sva_prev&#34; %4 : &lt;i1&gt;</pre>
+      <pre>    %5 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_5 = moore.variable name &#34;__sva_hist&#34; %5 : &lt;i1&gt;</pre>
+      <pre>    %6 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %7 = moore.logic_to_int %6 : l1</pre>
+      <pre>    %__sva_prevclk = moore.variable %7 : &lt;i1&gt;</pre>
+      <pre>    %8 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt = moore.variable %8 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %64 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %64 : l1</pre>
+      <pre>        %65 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %66 = moore.logic_to_int %65 : l1</pre>
+      <pre>        moore.detect_event any %66 : i1</pre>
+      <pre>        %67 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %68 = moore.logic_to_int %67 : l1</pre>
+      <pre>        moore.detect_event any %68 : i1</pre>
+      <pre>        %69 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>        %70 = moore.logic_to_int %69 : l1</pre>
+      <pre>        moore.detect_event any %70 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %27 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %28 = moore.logic_to_int %27 : l1</pre>
+      <pre>      %29 = moore.read %__sva_prevclk : &lt;i1&gt;</pre>
+      <pre>      %30 = moore.not %29 : i1</pre>
+      <pre>      %31 = moore.and %30, %28 : i1</pre>
+      <pre>      %32 = moore.constant 0 : i1</pre>
+      <pre>      %33 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>      %34 = moore.logic_to_int %33 : l1</pre>
+      <pre>      %35 = moore.read %__sva_cnt : &lt;i32&gt;</pre>
+      <pre>      %36 = moore.constant 1 : i32</pre>
+      <pre>      %37 = moore.uge %35, %36 : i32 -&gt; i1</pre>
+      <pre>      %38 = moore.not %34 : i1</pre>
+      <pre>      %39 = moore.and %31, %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.read %__sva_hist : &lt;i1&gt;</pre>
+      <pre>      %42 = moore.not %41 : i1</pre>
+      <pre>      %43 = moore.read %__sva_prev_4 : &lt;i1&gt;</pre>
+      <pre>      %44 = moore.or %42, %43 : i1</pre>
+      <pre>      %45 = moore.not %44 : i1</pre>
+      <pre>      %46 = moore.and %40, %45 : i1</pre>
+      <pre>      %47 = moore.and %40, %44 : i1</pre>
+      <pre>      %48 = moore.not %46 : i1</pre>
+      <pre>      moore.assert immediate %48 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:22&#34; : i1</pre>
+      <pre>      %49 = moore.read %__sva_hist : &lt;i1&gt;</pre>
+      <pre>      %50 = moore.read %__sva_prev : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %50 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %49 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist, %51 : i1</pre>
+      <pre>      %52 = moore.read %__sva_hist_5 : &lt;i1&gt;</pre>
+      <pre>      %53 = moore.read %__sva_prev_4 : &lt;i1&gt;</pre>
+      <pre>      %54 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %53 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %52 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_5, %54 : i1</pre>
+      <pre>      %55 = moore.constant 1 : i32</pre>
+      <pre>      %56 = moore.add %35, %55 : i32</pre>
+      <pre>      %57 = moore.conditional %31 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %56 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %35 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %58 = moore.constant 0 : i32</pre>
+      <pre>      %59 = moore.conditional %34 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %58 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %57 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt, %59 : i32</pre>
+      <pre>      %60 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %61 = moore.logic_to_int %60 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev, %61 : i1</pre>
+      <pre>      %62 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %63 = moore.logic_to_int %62 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_4, %63 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk, %28 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %9 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %10 = moore.logic_to_int %9 : l1</pre>
+      <pre>    %__sva_prev_6 = moore.variable name &#34;__sva_prev&#34; %10 : &lt;i1&gt;</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_7 = moore.variable name &#34;__sva_hist&#34; %11 : &lt;i1&gt;</pre>
+      <pre>    %12 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %13 = moore.logic_to_int %12 : l1</pre>
+      <pre>    %__sva_prev_8 = moore.variable name &#34;__sva_prev&#34; %13 : &lt;i1&gt;</pre>
+      <pre>    %14 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_9 = moore.variable name &#34;__sva_hist&#34; %14 : &lt;i1&gt;</pre>
+      <pre>    %15 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %16 = moore.logic_to_int %15 : l1</pre>
+      <pre>    %__sva_prevclk_10 = moore.variable name &#34;__sva_prevclk&#34; %16 : &lt;i1&gt;</pre>
+      <pre>    %17 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt_11 = moore.variable name &#34;__sva_cnt&#34; %17 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %64 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %64 : l1</pre>
+      <pre>        %65 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %66 = moore.logic_to_int %65 : l1</pre>
+      <pre>        moore.detect_event any %66 : i1</pre>
+      <pre>        %67 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %68 = moore.logic_to_int %67 : l1</pre>
+      <pre>        moore.detect_event any %68 : i1</pre>
+      <pre>        %69 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>        %70 = moore.logic_to_int %69 : l1</pre>
+      <pre>        moore.detect_event any %70 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %27 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %28 = moore.logic_to_int %27 : l1</pre>
+      <pre>      %29 = moore.read %__sva_prevclk_10 : &lt;i1&gt;</pre>
+      <pre>      %30 = moore.not %29 : i1</pre>
+      <pre>      %31 = moore.and %30, %28 : i1</pre>
+      <pre>      %32 = moore.constant 0 : i1</pre>
+      <pre>      %33 = moore.read %rst_3 : &lt;l1&gt;</pre>
+      <pre>      %34 = moore.logic_to_int %33 : l1</pre>
+      <pre>      %35 = moore.read %__sva_cnt_11 : &lt;i32&gt;</pre>
+      <pre>      %36 = moore.constant 1 : i32</pre>
+      <pre>      %37 = moore.uge %35, %36 : i32 -&gt; i1</pre>
+      <pre>      %38 = moore.not %34 : i1</pre>
+      <pre>      %39 = moore.and %31, %38 : i1</pre>
+      <pre>      %40 = moore.and %39, %37 : i1</pre>
+      <pre>      %41 = moore.read %__sva_hist_7 : &lt;i1&gt;</pre>
+      <pre>      %42 = moore.not %41 : i1</pre>
+      <pre>      %43 = moore.read %__sva_prev_8 : &lt;i1&gt;</pre>
+      <pre>      %44 = moore.or %42, %43 : i1</pre>
+      <pre>      %45 = moore.not %44 : i1</pre>
+      <pre>      %46 = moore.and %40, %45 : i1</pre>
+      <pre>      %47 = moore.and %40, %44 : i1</pre>
+      <pre>      %48 = moore.not %46 : i1</pre>
+      <pre>      moore.assert immediate %48 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:24&#34; : i1</pre>
+      <pre>      %49 = moore.read %__sva_hist_7 : &lt;i1&gt;</pre>
+      <pre>      %50 = moore.read %__sva_prev_6 : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %50 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %49 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_7, %51 : i1</pre>
+      <pre>      %52 = moore.read %__sva_hist_9 : &lt;i1&gt;</pre>
+      <pre>      %53 = moore.read %__sva_prev_8 : &lt;i1&gt;</pre>
+      <pre>      %54 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %53 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %52 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_9, %54 : i1</pre>
+      <pre>      %55 = moore.constant 1 : i32</pre>
+      <pre>      %56 = moore.add %35, %55 : i32</pre>
+      <pre>      %57 = moore.conditional %31 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %56 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %35 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %58 = moore.constant 0 : i32</pre>
+      <pre>      %59 = moore.conditional %34 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %58 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %57 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt_11, %59 : i32</pre>
+      <pre>      %60 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %61 = moore.logic_to_int %60 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_6, %61 : i1</pre>
+      <pre>      %62 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %63 = moore.logic_to_int %62 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_8, %63 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk_10, %28 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %18 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>    %19 = moore.logic_to_int %18 : l1</pre>
+      <pre>    %__sva_prev_12 = moore.variable name &#34;__sva_prev&#34; %19 : &lt;i1&gt;</pre>
+      <pre>    %20 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_13 = moore.variable name &#34;__sva_hist&#34; %20 : &lt;i1&gt;</pre>
+      <pre>    %21 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>    %22 = moore.logic_to_int %21 : l1</pre>
+      <pre>    %__sva_prev_14 = moore.variable name &#34;__sva_prev&#34; %22 : &lt;i1&gt;</pre>
+      <pre>    %23 = moore.constant 0 : i1</pre>
+      <pre>    %__sva_hist_15 = moore.variable name &#34;__sva_hist&#34; %23 : &lt;i1&gt;</pre>
+      <pre>    %24 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>    %25 = moore.logic_to_int %24 : l1</pre>
+      <pre>    %__sva_prevclk_16 = moore.variable name &#34;__sva_prevclk&#34; %25 : &lt;i1&gt;</pre>
+      <pre>    %26 = moore.constant 0 : i32</pre>
+      <pre>    %__sva_cnt_17 = moore.variable name &#34;__sva_cnt&#34; %26 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %62 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %62 : l1</pre>
+      <pre>        %63 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>        %64 = moore.logic_to_int %63 : l1</pre>
+      <pre>        moore.detect_event any %64 : i1</pre>
+      <pre>        %65 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>        %66 = moore.logic_to_int %65 : l1</pre>
+      <pre>        moore.detect_event any %66 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %27 = moore.read %clk_2 : &lt;l1&gt;</pre>
+      <pre>      %28 = moore.logic_to_int %27 : l1</pre>
+      <pre>      %29 = moore.read %__sva_prevclk_16 : &lt;i1&gt;</pre>
+      <pre>      %30 = moore.not %29 : i1</pre>
+      <pre>      %31 = moore.and %30, %28 : i1</pre>
+      <pre>      %32 = moore.constant 0 : i1</pre>
+      <pre>      %33 = moore.read %__sva_cnt_17 : &lt;i32&gt;</pre>
+      <pre>      %34 = moore.constant 1 : i32</pre>
+      <pre>      %35 = moore.uge %33, %34 : i32 -&gt; i1</pre>
+      <pre>      %36 = moore.not %32 : i1</pre>
+      <pre>      %37 = moore.and %31, %36 : i1</pre>
+      <pre>      %38 = moore.and %37, %35 : i1</pre>
+      <pre>      %39 = moore.read %__sva_hist_13 : &lt;i1&gt;</pre>
+      <pre>      %40 = moore.not %39 : i1</pre>
+      <pre>      %41 = moore.read %__sva_prev_14 : &lt;i1&gt;</pre>
+      <pre>      %42 = moore.or %40, %41 : i1</pre>
+      <pre>      %43 = moore.not %42 : i1</pre>
+      <pre>      %44 = moore.and %38, %43 : i1</pre>
+      <pre>      %45 = moore.and %38, %42 : i1</pre>
+      <pre>      %46 = moore.not %44 : i1</pre>
+      <pre>      moore.assert immediate %46 label &#34;../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p475.sv:26&#34; : i1</pre>
+      <pre>      %47 = moore.read %__sva_hist_13 : &lt;i1&gt;</pre>
+      <pre>      %48 = moore.read %__sva_prev_12 : &lt;i1&gt;</pre>
+      <pre>      %49 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %48 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %47 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_13, %49 : i1</pre>
+      <pre>      %50 = moore.read %__sva_hist_15 : &lt;i1&gt;</pre>
+      <pre>      %51 = moore.read %__sva_prev_14 : &lt;i1&gt;</pre>
+      <pre>      %52 = moore.conditional %31 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %51 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %50 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_hist_15, %52 : i1</pre>
+      <pre>      %53 = moore.constant 1 : i32</pre>
+      <pre>      %54 = moore.add %33, %53 : i32</pre>
+      <pre>      %55 = moore.conditional %31 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %54 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %33 : i32</pre>
+      <pre>      }</pre>
+      <pre>      %56 = moore.constant 0 : i32</pre>
+      <pre>      %57 = moore.conditional %32 : i1 -&gt; i32 {</pre>
+      <pre>        moore.yield %56 : i32</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %55 : i32</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__sva_cnt_17, %57 : i32</pre>
+      <pre>      %58 = moore.read %a_0 : &lt;l1&gt;</pre>
+      <pre>      %59 = moore.logic_to_int %58 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_12, %59 : i1</pre>
+      <pre>      %60 = moore.read %b_1 : &lt;l1&gt;</pre>
+      <pre>      %61 = moore.logic_to_int %60 : l1</pre>
+      <pre>      moore.blocking_assign %__sva_prev_14, %61 : i1</pre>
+      <pre>      moore.blocking_assign %__sva_prevclk_16, %28 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.assign %a_0, %a : l1</pre>
+      <pre>    moore.assign %b_1, %b : l1</pre>
+      <pre>    moore.assign %clk_2, %clk : l1</pre>
+      <pre>    moore.assign %rst_3, %rst : l1</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

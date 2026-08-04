@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/6.24.3'] = [["","bitstream_cast",1,"logs/Arcilator_extended/chapter-6/6.24.3--bitstream_cast.sv.log.html","tests/chapter-6/6.24.3--bitstream_cast.sv.html"]]

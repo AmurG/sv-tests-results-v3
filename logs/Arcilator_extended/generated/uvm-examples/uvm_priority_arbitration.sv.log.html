@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>uvm_priority_arbitration</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>UVM example - uvm_priority_arbitration</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:48:30</dd></div>
+        <div><dt>time elapsed</dt><dd>41.653s</dd></div>
+        <div><dt>ram usage</dt><dd>207684 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ printf %s\n [Arcilator policy] UVM heartbeat harness bound into top (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
+      <pre>[Arcilator policy] UVM heartbeat harness bound into top (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=top <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv</a> <a href="../../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
+      <pre>../../../third_party/tests/uvm/src/uvm_pkg.sv:57:2: note: included from here</pre>
+      <pre> `include &#34;base/uvm_base.svh&#34;</pre>
+      <pre> ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
+      <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_misc.svh:56:15: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>virtual class uvm_void;</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh:901:0: warning: unreachable code</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_mem_mam.svh:717:9: remark: class randomize solver: 1 constraint construct(s) (unique/dynamic-foreach) are not enforced</pre>
+      <pre>   if (!alloc.randomize()) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tests/uvm/src/seq/uvm_sequencer_param_base.svh:313:12: warning: class randomize solver: rand field `value` of unsupported type is NOT drawn; it keeps its previous value while randomize() still returns 1</pre>
+      <pre>      if (!param_t.randomize()) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_packer.svh:849:27: warning: in uvm_pkg::uvm_packer::unpack_time: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>function time uvm_packer::unpack_time();</pre>
+      <pre>                          ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:889:10: warning: in uvm_pkg::uvm_root::m_do_timeout_settings: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>    time timeout_int;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:1015:21: warning: in uvm_pkg::uvm_root::m_process_config: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>    uvm_bitstream_t v;</pre>
+      <pre>                    ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ ulimit -v 10485760</pre>
+      <pre>+ printf %s\n [Arcilator] simvariant AOT mode: single compile, 6 argv-plusarg runs</pre>
+      <pre>[Arcilator] simvariant AOT mode: single compile, 6 argv-plusarg runs</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.cpp  50000 2 1 10 uvm_priority_arbitration uvm-examples uvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3 -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ status=0</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
+      <pre>[Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_FIFO</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_FIFO</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:1 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:1 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:2 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:2 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:3 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:3 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:3 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/6 0</pre>
+      <pre>[Arcilator] simvariant 1/6 wall 0s</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
+      <pre>[Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_WEIGHTED</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:2 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:2 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:3 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:3 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:4 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:3 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 2/6 0</pre>
+      <pre>[Arcilator] simvariant 2/6 wall 0s</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
+      <pre>[Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_RANDOM</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_RANDOM</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:0 SEQ_3:1 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:1 SEQ_3:1 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:1 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:3 SEQ_3:2 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:3 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:2 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:3 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 3/6 0</pre>
+      <pre>[Arcilator] simvariant 3/6 wall 0s</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
+      <pre>[Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_STRICT_FIFO</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:2 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:2 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:1 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:2 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:3 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 4/6 0</pre>
+      <pre>[Arcilator] simvariant 4/6 wall 0s</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
+      <pre>[Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_STRICT_RANDOM</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:2 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:3 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:1 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:2 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:3 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 5/6 0</pre>
+      <pre>[Arcilator] simvariant 5/6 wall 0s</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
+      <pre>[Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829710</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmpbe3eq8y3/wave.vcd +ARB_TYPE=SEQ_ARB_USER</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test arb_test...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_USER</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:2</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 31: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:3</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 41: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 51: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 61: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:2 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 71: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:3 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 81: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 91: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:1 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 101: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:2 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 111: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:3 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 121: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 131: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 141: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:3 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 151: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:4 SEQ_2:4 SEQ_3:4 SEQ_4:4</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(101) @ 251: uvm_test_top.m_driver [SEQ_ARB_TEST] * UVM TEST PASSED *</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 251: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :   21</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RCVD]    16</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SEQ_ARB_TEST]     1</pre>
+      <pre>[Sequencer Arbitration selected:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 6/6 0</pre>
+      <pre>[Arcilator] simvariant 6/6 wall 0s</pre>
+      <pre>+ exit 0</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

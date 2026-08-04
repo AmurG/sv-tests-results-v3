@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.24.3'] = [["","bitstream_cast",1,"logs/circt_verilog_extended/chapter-6/6.24.3--bitstream_cast.sv.log.html","tests/chapter-6/6.24.3--bitstream_cast.sv.html"]]

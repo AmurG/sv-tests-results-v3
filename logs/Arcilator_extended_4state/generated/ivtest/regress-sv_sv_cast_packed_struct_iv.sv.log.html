@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-sv_sv_cast_packed_struct_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:30:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpaa3e5pw5/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v:30:21: error: &#39;hw.bitcast&#39; op Bitwidth of input must match result</pre>
+      <pre>      var_64 = s64&#39;(var_32);    if (var_64 !== 64&#39;sh05) begin $display(&#34;FAILED -- var_64 =  &#39;h%0h != 64&#39;h05&#34;, var_64); err=1; end</pre>
+      <pre>                    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/sv_cast_packed_struct.v:30:21: note: see current operation: %138 = &#34;hw.bitcast&#34;(%137) : (!hw.struct&lt;value: i64, unknown: i64&gt;) -&gt; !hw.struct&lt;x: i32, y: i16, z: i8, w: !hw.struct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>+ exit 1</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

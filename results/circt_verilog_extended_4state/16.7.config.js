@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/16.7'] = [["","sequence_test",1,"logs/circt_verilog_extended_4state/chapter-16/16.7--sequence.sv.log.html","tests/chapter-16/16.7--sequence.sv.html"]]

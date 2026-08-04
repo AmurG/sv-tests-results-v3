@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.6.7'] = [["","nettype",1,"logs/circt_verilog_extended/chapter-6/6.6.7--nettype.sv.log.html","tests/chapter-6/6.6.7--nettype.sv.html"],["","nettype_resolution_fn",1,"logs/circt_verilog_extended/chapter-6/6.6.7--nettype_resolution_fn.sv.log.html","tests/chapter-6/6.6.7--nettype_resolution_fn.sv.html"]]

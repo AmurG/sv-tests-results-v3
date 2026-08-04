@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.16.1'] = [["","string_len",1,"logs/circt_verilog_extended/chapter-6/6.16.1--string_len.sv.log.html","tests/chapter-6/6.16.1--string_len.sv.html"]]

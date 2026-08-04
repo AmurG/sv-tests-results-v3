@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>uvm_env_2</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>uvm_env class test</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>uvm uvm-classes</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/generated/uvm_classes_2<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a><li>
+            <li><a href="../../../../tests/generated/uvm_classes_2/uvm_env_class_2.sv.html" target="file-frame">tests/generated/uvm_classes_2/uvm_env_class_2.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:50:37</dd></div>
+        <div><dt>time elapsed</dt><dd>7.343s</dd></div>
+        <div><dt>ram usage</dt><dd>155708 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=parsing top=</pre>
+      <pre>[Arcilator] mode=parsing top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/tests/generated/uvm_classes_2 -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../tests/generated/uvm_classes_2/uvm_env_class_2.sv.html" target="file-frame">tests/generated/uvm_classes_2/uvm_env_class_2.sv</a></pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
+      <pre>../../../third_party/tests/uvm/src/uvm_pkg.sv:57:2: note: included from here</pre>
+      <pre> `include &#34;base/uvm_base.svh&#34;</pre>
+      <pre> ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
+      <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_misc.svh:56:15: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>virtual class uvm_void;</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh:901:0: warning: unreachable code</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_mem_mam.svh:717:9: remark: class randomize solver: 1 constraint construct(s) (unique/dynamic-foreach) are not enforced</pre>
+      <pre>   if (!alloc.randomize()) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tests/uvm/src/seq/uvm_sequencer_param_base.svh:313:12: warning: class randomize solver: rand field `value` of unsupported type is NOT drawn; it keeps its previous value while randomize() still returns 1</pre>
+      <pre>      if (!param_t.randomize()) begin</pre>
+      <pre>           ^</pre>
+      <pre>module attributes {circt.dpi_export_funcs = [[&#34;m__uvm_report_dpi&#34;, &#34;uvm_pkg::m__uvm_report_dpi&#34;], [&#34;uvm_polling_value_change_notify&#34;, &#34;uvm_pkg::uvm_polling_value_change_notify&#34;]]} {</pre>
+      <pre>  func.func private @circt_uvm_mailbox_try_peek_ptr(!moore.chandle) -&gt; (!moore.i64, !moore.i1)</pre>
+      <pre>  func.func private @circt_uvm_mailbox_try_get_ptr(!moore.chandle) -&gt; (!moore.i64, !moore.i1)</pre>
+      <pre>  func.func private @circt_uvm_mailbox_try_put_ptr(!moore.chandle, !moore.i64) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_mailbox_num(!moore.chandle) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_mailbox_new(!moore.i32) -&gt; !moore.chandle</pre>
+      <pre>  func.func private @circt_uvm_resource_db_get_by_name_ptr(!moore.string, !moore.string) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_sv_obj_urandom_range(!moore.chandle, !moore.i32, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_resource_db_read_by_name_i32(!moore.string, !moore.string) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_uvm_resource_db_set_i32(!moore.string, !moore.string, !moore.i32)</pre>
+      <pre>  func.func private @circt_sv_rand_mode_get(!moore.chandle, !moore.string) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_sv_rand_mode_set(!moore.chandle, !moore.string, !moore.i32)</pre>
+      <pre>  func.func private @circt_uvm_semaphore_put(!moore.chandle, !moore.i32)</pre>
+      <pre>  func.func private @circt_uvm_semaphore_try_get(!moore.chandle, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_semaphore_new(!moore.i32) -&gt; !moore.chandle</pre>
+      <pre>  func.func private @circt_uvm_resource_read_ptr(!moore.i64) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_uvm_config_db_get_i32(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_sim_model_progress()</pre>
+      <pre>  func.func private @circt_sim_park_sync()</pre>
+      <pre>  func.func private @circt_uvm_process_await(!moore.chandle)</pre>
+      <pre>  func.func private @circt_uvm_process_status(!moore.chandle) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_config_db_get_ptr(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string) -&gt; (!moore.i64, !moore.i1)</pre>
+      <pre>  func.func private @circt_uvm_config_db_get_string(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string) -&gt; (!moore.string, !moore.i1)</pre>
+      <pre>  func.func private @circt_uvm_config_db_get_wide_chunk(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string, !moore.i32, !moore.i32, !moore.i32) -&gt; (!moore.i64, !moore.i1)</pre>
+      <pre>  func.func private @circt_uvm_config_db_set_ptr(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string, !moore.i64)</pre>
+      <pre>  func.func private @circt_uvm_config_db_set_string(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string, !moore.string)</pre>
+      <pre>  func.func private @circt_uvm_config_db_set_wide_chunk(!moore.class&lt;@&#34;uvm_pkg::uvm_component&#34;&gt;, !moore.string, !moore.string, !moore.string, !moore.i32, !moore.i32, !moore.i32, !moore.i64)</pre>
+      <pre>  func.func private @circt_uvm_resource_read_wide_chunk(!moore.i64, !moore.i32, !moore.i32, !moore.i32) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_uvm_resource_read_i64(!moore.i64) -&gt; !moore.i64</pre>
+      <pre>  func.func private @circt_uvm_process_srandom(!moore.chandle, !moore.i32)</pre>
+      <pre>  func.func private @circt_uvm_process_kill(!moore.chandle)</pre>
+      <pre>  func.func private @circt_uvm_resource_read_string(!moore.i64) -&gt; !moore.string</pre>
+      <pre>  func.func private @circt_uvm_resource_read_i32(!moore.i64) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_uvm_resource_is_read_only(!moore.i64) -&gt; !moore.i1</pre>
+      <pre>  func.func private @circt_uvm_resource_get_scope(!moore.i64) -&gt; !moore.string</pre>
+      <pre>  func.func private @circt_uvm_resource_write_ptr(!moore.i64, !moore.i64)</pre>
+      <pre>  func.func private @circt_uvm_resource_write_string(!moore.i64, !moore.string)</pre>
+      <pre>  func.func private @circt_uvm_resource_write_wide_chunk(!moore.i64, !moore.i32, !moore.i32, !moore.i32, !moore.i64)</pre>
+      <pre>  func.func private @circt_sv_obj_srandom(!moore.chandle, !moore.i32)</pre>
+      <pre>  func.func private @circt_uvm_process_set_randstate(!moore.chandle, !moore.string)</pre>
+      <pre>  func.func private @circt_uvm_process_get_randstate(!moore.chandle) -&gt; !moore.string</pre>
+      <pre>  func.func private @circt_uvm_process_self() -&gt; !moore.chandle</pre>
+      <pre>  func.func @&#34;uvm_pkg::uvm_polling_value_change_notify&#34;(%arg0: !moore.i32) attributes {circt.dpi.export = &#34;uvm_polling_value_change_notify&#34;} {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_POLLING&#34; : i120</pre>
+      <pre>    %1 = moore.int_to_string %0 : i120</pre>
+      <pre>    %2 = moore.constant_string &#34;VPI access is disabled. Recompile without +define+UVM_HDL_NO_DPI&#34; : i512</pre>
+      <pre>    %3 = moore.int_to_string %2 : i512</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.class.classdecl @C extends @&#34;uvm_pkg::uvm_env&#34; {</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @&#34;uvm_pkg::uvm_hdl_check_path&#34;(%arg0: !moore.string) -&gt; !moore.i32 {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_CHECK_PATH&#34; : i144</pre>
+      <pre>    %1 = moore.int_to_string %0 : i144</pre>
+      <pre>    %2 = moore.constant_string &#34;uvm_hdl DPI routines are compiled off. Recompile without +define+UVM_HDL_NO_DPI&#34; : i632</pre>
+      <pre>    %3 = moore.int_to_string %2 : i632</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    %12 = moore.constant 0 : i32</pre>
+      <pre>    return %12 : !moore.i32</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @uvm_hdl_check_path : !moore.i32</pre>
+      <pre>  func.func private @&#34;uvm_pkg::uvm_hdl_deposit&#34;(%arg0: !moore.string, %arg1: !moore.l1024) -&gt; !moore.i32 {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_DEPOSIT&#34; : i120</pre>
+      <pre>    %1 = moore.int_to_string %0 : i120</pre>
+      <pre>    %2 = moore.constant_string &#34;uvm_hdl DPI routines are compiled off. Recompile without +define+UVM_HDL_NO_DPI&#34; : i632</pre>
+      <pre>    %3 = moore.int_to_string %2 : i632</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    %12 = moore.constant 0 : i32</pre>
+      <pre>    return %12 : !moore.i32</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @uvm_hdl_deposit : !moore.i32</pre>
+      <pre>  func.func private @&#34;uvm_pkg::uvm_hdl_force&#34;(%arg0: !moore.string, %arg1: !moore.l1024) -&gt; !moore.i32 {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_FORCE&#34; : i104</pre>
+      <pre>    %1 = moore.int_to_string %0 : i104</pre>
+      <pre>    %2 = moore.constant_string &#34;uvm_hdl DPI routines are compiled off. Recompile without +define+UVM_HDL_NO_DPI&#34; : i632</pre>
+      <pre>    %3 = moore.int_to_string %2 : i632</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    %12 = moore.constant 0 : i32</pre>
+      <pre>    return %12 : !moore.i32</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @uvm_hdl_force : !moore.i32</pre>
+      <pre>  moore.coroutine private @&#34;uvm_pkg::uvm_hdl_force_time&#34;(%arg0: !moore.string, %arg1: !moore.l1024, %arg2: !moore.time) {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_FORCE_TIME&#34; : i144</pre>
+      <pre>    %1 = moore.int_to_string %0 : i144</pre>
+      <pre>    %2 = moore.constant_string &#34;uvm_hdl DPI routines are compiled off. Recompile without +define+UVM_HDL_NO_DPI&#34; : i632</pre>
+      <pre>    %3 = moore.int_to_string %2 : i632</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    func.call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    moore.return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @&#34;uvm_pkg::uvm_hdl_release&#34;(%arg0: !moore.string) -&gt; !moore.i32 {</pre>
+      <pre>    %0 = moore.constant_string &#34;UVM_HDL_RELEASE&#34; : i120</pre>
+      <pre>    %1 = moore.int_to_string %0 : i120</pre>
+      <pre>    %2 = moore.constant_string &#34;uvm_hdl DPI routines are compiled off. Recompile without +define+UVM_HDL_NO_DPI&#34; : i632</pre>
+      <pre>    %3 = moore.int_to_string %2 : i632</pre>
+      <pre>    %4 = moore.constant 0 : i32</pre>
+      <pre>    %5 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %6 = moore.int_to_string %5 : i8</pre>
+      <pre>    %7 = moore.constant 0 : i32</pre>
+      <pre>    %8 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %9 = moore.int_to_string %8 : i8</pre>
+      <pre>    %10 = moore.constant 0 : i32</pre>
+      <pre>    %11 = moore.constant 0 : i1</pre>
+      <pre>    call @&#34;uvm_pkg::uvm_report_fatal&#34;(%1, %3, %4, %6, %7, %9, %11) : (!moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    %12 = moore.constant 0 : i32</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 267120 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>    %970 = moore.handle_eq %968, %969 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %971 = moore.class.dyncast %968 : &lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>    %972 = moore.handle_ne %971, %969 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %973 = moore.or %970, %972 : i1</pre>
+      <pre>    %974 = moore.read %__tmp_rsrc___10 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;&gt;</pre>
+      <pre>    %975 = moore.conditional %973 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt; {</pre>
+      <pre>      %1167 = moore.conversion %969 : !moore.null -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>      %1168 = moore.conditional %970 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt; {</pre>
+      <pre>        moore.yield %1167 : class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %971 : class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>      }</pre>
+      <pre>      moore.yield %1168 : class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %974 : class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %__tmp_rsrc___10, %975 : class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
+      <pre>    %976 = moore.zext %973 : i1 -&gt; i32</pre>
+      <pre>    %977 = moore.trunc %976 : i32 -&gt; i1</pre>
+      <pre>    moore.blocking_assign %local_success__, %977 : i1</pre>
+      <pre>    %978 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %979 = moore.to_builtin_int %978 : i1</pre>
+      <pre>    cf.cond_br %979, ^bb177, ^bb178</pre>
+      <pre>  ^bb177:  // pred: ^bb176</pre>
+      <pre>    %980 = moore.read %__tmp_rsrc___10 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;&gt;</pre>
+      <pre>    %981 = builtin.unrealized_conversion_cast %980 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt; to !moore.i64</pre>
+      <pre>    %982 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_object&#34;&gt;</pre>
+      <pre>    %983 = call @circt_uvm_resource_read_i32(%981) : (!moore.i64) -&gt; !moore.i32</pre>
+      <pre>    moore.blocking_assign %local_size__, %983 : i32</pre>
+      <pre>    cf.br ^bb178</pre>
+      <pre>  ^bb178:  // 2 preds: ^bb176, ^bb177</pre>
+      <pre>    cf.br ^bb179</pre>
+      <pre>  ^bb179:  // 2 preds: ^bb175, ^bb178</pre>
+      <pre>    %984 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %985 = moore.not %984 : i1</pre>
+      <pre>    %986 = moore.to_builtin_int %985 : i1</pre>
+      <pre>    cf.cond_br %986, ^bb180, ^bb183</pre>
+      <pre>  ^bb180:  // pred: ^bb179</pre>
+      <pre>    %__tmp_rsrc___11 = moore.variable name &#34;__tmp_rsrc__&#34; : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;&gt;</pre>
+      <pre>    %987 = moore.read %local_rsrc__ : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt;&gt;</pre>
+      <pre>    %988 = moore.null</pre>
+      <pre>    %989 = moore.handle_eq %987, %988 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %990 = moore.class.dyncast %987 : &lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>    %991 = moore.handle_ne %990, %988 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %992 = moore.or %989, %991 : i1</pre>
+      <pre>    %993 = moore.read %__tmp_rsrc___11 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;&gt;</pre>
+      <pre>    %994 = moore.conditional %992 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt; {</pre>
+      <pre>      %1167 = moore.conversion %988 : !moore.null -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>      %1168 = moore.conditional %989 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt; {</pre>
+      <pre>        moore.yield %1167 : class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %990 : class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>      }</pre>
+      <pre>      moore.yield %1168 : class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %993 : class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %__tmp_rsrc___11, %994 : class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;</pre>
+      <pre>    %995 = moore.zext %992 : i1 -&gt; i32</pre>
+      <pre>    %996 = moore.trunc %995 : i32 -&gt; i1</pre>
+      <pre>    moore.blocking_assign %local_success__, %996 : i1</pre>
+      <pre>    %997 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %998 = moore.to_builtin_int %997 : i1</pre>
+      <pre>    cf.cond_br %998, ^bb181, ^bb182</pre>
+      <pre>  ^bb181:  // pred: ^bb180</pre>
+      <pre>    %999 = moore.read %__tmp_rsrc___11 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt;&gt;</pre>
+      <pre>    %1000 = builtin.unrealized_conversion_cast %999 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_891&#34;&gt; to !moore.i64</pre>
+      <pre>    %1001 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_object&#34;&gt;</pre>
+      <pre>    %1002 = call @circt_uvm_resource_read_i32(%1000) : (!moore.i64) -&gt; !moore.i32</pre>
+      <pre>    moore.blocking_assign %local_size__, %1002 : i32</pre>
+      <pre>    cf.br ^bb182</pre>
+      <pre>  ^bb182:  // 2 preds: ^bb180, ^bb181</pre>
+      <pre>    cf.br ^bb183</pre>
+      <pre>  ^bb183:  // 2 preds: ^bb179, ^bb182</pre>
+      <pre>    %1003 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %1004 = moore.to_builtin_int %1003 : i1</pre>
+      <pre>    cf.cond_br %1004, ^bb184, ^bb191</pre>
+      <pre>  ^bb184:  // pred: ^bb183</pre>
+      <pre>    %1005 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1006 = moore.read %1005 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1007 = moore.builtin.size %1006 : &lt;string, 0&gt;</pre>
+      <pre>    %1008 = moore.read %local_size__ : &lt;i32&gt;</pre>
+      <pre>    %1009 = moore.sgt %1007, %1008 : i32 -&gt; i1</pre>
+      <pre>    %1010 = moore.to_builtin_int %1009 : i1</pre>
+      <pre>    cf.cond_br %1010, ^bb185, ^bb186</pre>
+      <pre>  ^bb185:  // pred: ^bb184</pre>
+      <pre>    %1011 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1012 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1013 = moore.read %1012 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1014 = moore.constant 0 : i32</pre>
+      <pre>    %1015 = moore.read %local_size__ : &lt;i32&gt;</pre>
+      <pre>    %1016 = moore.constant 1 : i32</pre>
+      <pre>    %1017 = moore.sub %1015, %1016 : i32</pre>
+      <pre>    %1018 = moore.dyn_queue_extract %1013 from %1014 to %1017 : &lt;string, 0&gt;, i32 -&gt; queue&lt;string, 0&gt;</pre>
+      <pre>    moore.blocking_assign %1011, %1018 : queue&lt;string, 0&gt;</pre>
+      <pre>    cf.br ^bb190</pre>
+      <pre>  ^bb186:  // pred: ^bb184</pre>
+      <pre>    cf.br ^bb187</pre>
+      <pre>  ^bb187:  // 2 preds: ^bb186, ^bb188</pre>
+      <pre>    %1019 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1020 = moore.read %1019 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1021 = moore.builtin.size %1020 : &lt;string, 0&gt;</pre>
+      <pre>    %1022 = moore.read %local_size__ : &lt;i32&gt;</pre>
+      <pre>    %1023 = moore.slt %1021, %1022 : i32 -&gt; i1</pre>
+      <pre>    %1024 = moore.to_builtin_int %1023 : i1</pre>
+      <pre>    cf.cond_br %1024, ^bb188, ^bb189</pre>
+      <pre>  ^bb188:  // pred: ^bb187</pre>
+      <pre>    %1025 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1026 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1027 = moore.read %1026 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1028 = moore.read %local_size__ : &lt;i32&gt;</pre>
+      <pre>    %1029 = moore.dyn_queue_extract %1027 from %1028 to %1028 : &lt;string, 0&gt;, i32 -&gt; string</pre>
+      <pre>    moore.push_back %1029 into %1025 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    cf.br ^bb187</pre>
+      <pre>  ^bb189:  // pred: ^bb187</pre>
+      <pre>    cf.br ^bb190</pre>
+      <pre>  ^bb190:  // 2 preds: ^bb185, ^bb189</pre>
+      <pre>    cf.br ^bb191</pre>
+      <pre>  ^bb191:  // 2 preds: ^bb183, ^bb190</pre>
+      <pre>    cf.br ^bb216</pre>
+      <pre>  ^bb192:  // pred: ^bb168</pre>
+      <pre>    %1030 = moore.constant_string &#34;abstractions&#34; : i96</pre>
+      <pre>    %1031 = moore.constant_string &#34;[&#34; : i8</pre>
+      <pre>    %1032 = moore.concat %1030, %1031 : (!moore.i96, !moore.i8) -&gt; i104</pre>
+      <pre>    %1033 = moore.int_to_string %1032 : i104</pre>
+      <pre>    %local_name__ = moore.variable %1033 : &lt;string&gt;</pre>
+      <pre>    %1034 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>    %1035 = moore.string.len %1034</pre>
+      <pre>    %1036 = moore.bool_cast %1035 : i32 -&gt; i1</pre>
+      <pre>    %1037 = moore.conditional %1036 : i1 -&gt; i1 {</pre>
+      <pre>      %1167 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>      %1168 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>      %1169 = moore.string.len %1168</pre>
+      <pre>      %1170 = moore.constant 1 : i32</pre>
+      <pre>      %1171 = moore.sub %1169, %1170 : i32</pre>
+      <pre>      %1172 = moore.string.get %1167[%1171]</pre>
+      <pre>      %1173 = moore.constant_string &#34;]&#34; : i8</pre>
+      <pre>      %1174 = moore.eq %1172, %1173 : i8 -&gt; i1</pre>
+      <pre>      moore.yield %1174 : i1</pre>
+      <pre>    } {</pre>
+      <pre>      %1167 = moore.constant 0 : i1</pre>
+      <pre>      moore.yield %1167 : i1</pre>
+      <pre>    }</pre>
+      <pre>    %1038 = moore.conditional %1037 : i1 -&gt; i1 {</pre>
+      <pre>      %1167 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>      %1168 = moore.constant 0 : i32</pre>
+      <pre>      %1169 = moore.read %local_name__ : &lt;string&gt;</pre>
+      <pre>      %1170 = moore.string.len %1169</pre>
+      <pre>      %1171 = moore.constant 1 : i32</pre>
+      <pre>      %1172 = moore.sub %1170, %1171 : i32</pre>
+      <pre>      %1173 = moore.string.substr %1167[%1168 : %1172]</pre>
+      <pre>      %1174 = moore.read %local_name__ : &lt;string&gt;</pre>
+      <pre>      %1175 = moore.string_cmp eq %1173, %1174 : string -&gt; i1</pre>
+      <pre>      moore.yield %1175 : i1</pre>
+      <pre>    } {</pre>
+      <pre>      %1167 = moore.constant 0 : i1</pre>
+      <pre>      moore.yield %1167 : i1</pre>
+      <pre>    }</pre>
+      <pre>    %1039 = moore.to_builtin_int %1038 : i1</pre>
+      <pre>    cf.cond_br %1039, ^bb193, ^bb215</pre>
+      <pre>  ^bb193:  // pred: ^bb192</pre>
+      <pre>    %1040 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>    %1041 = moore.read %local_name__ : &lt;string&gt;</pre>
+      <pre>    %1042 = moore.string.len %1041</pre>
+      <pre>    %1043 = moore.read %local_rsrc_name__ : &lt;string&gt;</pre>
+      <pre>    %1044 = moore.string.len %1043</pre>
+      <pre>    %1045 = moore.constant 2 : i32</pre>
+      <pre>    %1046 = moore.sub %1044, %1045 : i32</pre>
+      <pre>    %1047 = moore.string.substr %1040[%1042 : %1046]</pre>
+      <pre>    %local_index_str__ = moore.variable %1047 : &lt;string&gt;</pre>
+      <pre>    %local_index__ = moore.variable : &lt;i32&gt;</pre>
+      <pre>    %1048 = moore.read %local_index_str__ : &lt;string&gt;</pre>
+      <pre>    %1049 = moore.scan.begin_sscanf %1048</pre>
+      <pre>    %remaining, %value, %matched = moore.scan.int %1049 decimal : i32, !moore.i1</pre>
+      <pre>    %1050 = moore.from_builtin_int %value : i32</pre>
+      <pre>    %1051 = moore.to_builtin_int %matched : i1</pre>
+      <pre>    cf.cond_br %1051, ^bb194, ^bb195</pre>
+      <pre>  ^bb194:  // pred: ^bb193</pre>
+      <pre>    moore.blocking_assign %local_index__, %1050 : i32</pre>
+      <pre>    cf.br ^bb195</pre>
+      <pre>  ^bb195:  // 2 preds: ^bb193, ^bb194</pre>
+      <pre>    %1052 = moore.scan.end %remaining</pre>
+      <pre>    %1053 = moore.int_to_logic %1052 : i32</pre>
+      <pre>    %local_code__ = moore.variable %1052 : &lt;i32&gt;</pre>
+      <pre>    %1054 = moore.read %local_code__ : &lt;i32&gt;</pre>
+      <pre>    %1055 = moore.constant 0 : i32</pre>
+      <pre>    %1056 = moore.sgt %1054, %1055 : i32 -&gt; i1</pre>
+      <pre>    %1057 = moore.to_builtin_int %1056 : i1</pre>
+      <pre>    cf.cond_br %1057, ^bb196, ^bb214</pre>
+      <pre>  ^bb196:  // pred: ^bb195</pre>
+      <pre>    %1058 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1059 = moore.constant 0 : i32</pre>
+      <pre>    %1060 = moore.slt %1058, %1059 : i32 -&gt; i1</pre>
+      <pre>    %1061 = moore.to_builtin_int %1060 : i1</pre>
+      <pre>    cf.cond_br %1061, ^bb197, ^bb200</pre>
+      <pre>  ^bb197:  // pred: ^bb196</pre>
+      <pre>    %_local_report_object__12 = moore.variable name &#34;_local_report_object_&#34; : &lt;class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;&gt;</pre>
+      <pre>    %1062 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;</pre>
+      <pre>    %1063 = moore.vtable.load_method %1062 : @uvm_get_report_object of &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt; -&gt; (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;) -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;</pre>
+      <pre>    %1064 = call_indirect %1063(%1062) : (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;) -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;</pre>
+      <pre>    %1065 = call @&#34;uvm_pkg::uvm_report_object::uvm_get_report_object&#34;(%1064) : (!moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;) -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;</pre>
+      <pre>    moore.blocking_assign %_local_report_object__12, %1065 : class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;</pre>
+      <pre>    %1066 = moore.read %_local_report_object__12 : &lt;class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;&gt;</pre>
+      <pre>    %1067 = moore.constant 1 : i2</pre>
+      <pre>    %1068 = moore.constant_string &#34;UVM/FIELDS/QDA_IDX&#34; : i144</pre>
+      <pre>    %1069 = moore.int_to_string %1068 : i144</pre>
+      <pre>    %1070 = call @&#34;uvm_pkg::uvm_report_object::get_report_verbosity_level&#34;(%1066, %1067, %1069) : (!moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;, !moore.i2, !moore.string) -&gt; !moore.i32</pre>
+      <pre>    %1071 = moore.constant 0 : i32</pre>
+      <pre>    %1072 = moore.sge %1070, %1071 : i32 -&gt; i1</pre>
+      <pre>    %1073 = moore.conditional %1072 : i1 -&gt; i1 {</pre>
+      <pre>      %1167 = moore.read %_local_report_object__12 : &lt;class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;&gt;</pre>
+      <pre>      %1168 = moore.constant 1 : i2</pre>
+      <pre>      %1169 = moore.constant_string &#34;UVM/FIELDS/QDA_IDX&#34; : i144</pre>
+      <pre>      %1170 = moore.int_to_string %1169 : i144</pre>
+      <pre>      %1171 = func.call @&#34;uvm_pkg::uvm_report_object::get_report_action&#34;(%1167, %1168, %1170) : (!moore.class&lt;@&#34;uvm_pkg::uvm_report_object&#34;&gt;, !moore.i2, !moore.string) -&gt; !moore.i32</pre>
+      <pre>      %1172 = moore.constant 0 : i32</pre>
+      <pre>      %1173 = moore.ne %1171, %1172 : i32 -&gt; i1</pre>
+      <pre>      moore.yield %1173 : i1</pre>
+      <pre>    } {</pre>
+      <pre>      %1167 = moore.constant 0 : i1</pre>
+      <pre>      moore.yield %1167 : i1</pre>
+      <pre>    }</pre>
+      <pre>    %1074 = moore.to_builtin_int %1073 : i1</pre>
+      <pre>    cf.cond_br %1074, ^bb198, ^bb199</pre>
+      <pre>  ^bb198:  // pred: ^bb197</pre>
+      <pre>    %1075 = moore.constant_string &#34;UVM/FIELDS/QDA_IDX&#34; : i144</pre>
+      <pre>    %1076 = moore.int_to_string %1075 : i144</pre>
+      <pre>    %1077 = moore.fmt.literal &#34;Index &#39;&#34;</pre>
+      <pre>    %1078 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1079 = moore.fmt.int decimal %1078, align right, pad space width 0 signed : i32</pre>
+      <pre>    %1080 = moore.fmt.literal &#34;&#39; is not valid for field &#39;&#34;</pre>
+      <pre>    %1081 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;</pre>
+      <pre>    %1082 = moore.vtable.load_method %1081 : @get_full_name of &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt; -&gt; (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;) -&gt; !moore.string</pre>
+      <pre>    %1083 = call_indirect %1082(%1081) : (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;) -&gt; !moore.string</pre>
+      <pre>    %1084 = moore.fmt.string %1083</pre>
+      <pre>    %1085 = moore.fmt.literal &#34;.&#34;</pre>
+      <pre>    %1086 = moore.fmt.literal &#34; abstractions&#34;</pre>
+      <pre>    %1087 = moore.fmt.literal &#34;&#39; of size &#39;&#34;</pre>
+      <pre>    %1088 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1089 = moore.read %1088 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1090 = moore.builtin.size %1089 : &lt;string, 0&gt;</pre>
+      <pre>    %1091 = moore.fmt.int decimal %1090, align right, pad space width 0 signed : i32</pre>
+      <pre>    %1092 = moore.fmt.literal &#34;&#39;&#34;</pre>
+      <pre>    %1093 = moore.fmt.concat (%1077, %1079, %1080, %1084, %1085, %1086, %1087, %1091, %1092)</pre>
+      <pre>    %1094 = moore.fstring_to_string %1093</pre>
+      <pre>    %1095 = moore.constant 0 : i32</pre>
+      <pre>    %1096 = moore.constant_string &#34;../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh&#34; : i624</pre>
+      <pre>    %1097 = moore.int_to_string %1096 : i624</pre>
+      <pre>    %1098 = moore.constant 67 : i32</pre>
+      <pre>    %1099 = moore.constant_string &#34;&#34; : i8</pre>
+      <pre>    %1100 = moore.int_to_string %1099 : i8</pre>
+      <pre>    %1101 = moore.constant 1 : i32</pre>
+      <pre>    %1102 = moore.constant 1 : i1</pre>
+      <pre>    %1103 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;</pre>
+      <pre>    %1104 = moore.vtable.load_method %1103 : @uvm_report_warning of &lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt; -&gt; (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;, !moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    call_indirect %1104(%1103, %1076, %1094, %1095, %1097, %1098, %1100, %1102) : (!moore.class&lt;@&#34;uvm_pkg::uvm_sequence_item&#34;&gt;, !moore.string, !moore.string, !moore.i32, !moore.string, !moore.i32, !moore.string, !moore.i1) -&gt; ()</pre>
+      <pre>    cf.br ^bb199</pre>
+      <pre>  ^bb199:  // 2 preds: ^bb197, ^bb198</pre>
+      <pre>    cf.br ^bb213</pre>
+      <pre>  ^bb200:  // pred: ^bb196</pre>
+      <pre>    %tmp_string__ = moore.variable : &lt;string&gt;</pre>
+      <pre>    %__tmp_rsrc___13 = moore.variable name &#34;__tmp_rsrc__&#34; : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;&gt;</pre>
+      <pre>    %1105 = moore.read %local_rsrc__ : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt;&gt;</pre>
+      <pre>    %1106 = moore.null</pre>
+      <pre>    %1107 = moore.handle_eq %1105, %1106 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %1108 = moore.class.dyncast %1105 : &lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>    %1109 = moore.handle_ne %1108, %1106 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt; : !moore.null -&gt; i1</pre>
+      <pre>    %1110 = moore.or %1107, %1109 : i1</pre>
+      <pre>    %1111 = moore.read %__tmp_rsrc___13 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;&gt;</pre>
+      <pre>    %1112 = moore.conditional %1110 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt; {</pre>
+      <pre>      %1167 = moore.conversion %1106 : !moore.null -&gt; !moore.class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>      %1168 = moore.conditional %1107 : i1 -&gt; class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt; {</pre>
+      <pre>        moore.yield %1167 : class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %1108 : class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>      }</pre>
+      <pre>      moore.yield %1168 : class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %1111 : class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %__tmp_rsrc___13, %1112 : class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;</pre>
+      <pre>    %1113 = moore.zext %1110 : i1 -&gt; i32</pre>
+      <pre>    %1114 = moore.trunc %1113 : i32 -&gt; i1</pre>
+      <pre>    moore.blocking_assign %local_success__, %1114 : i1</pre>
+      <pre>    %1115 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %1116 = moore.to_builtin_int %1115 : i1</pre>
+      <pre>    cf.cond_br %1116, ^bb201, ^bb202</pre>
+      <pre>  ^bb201:  // pred: ^bb200</pre>
+      <pre>    %1117 = moore.read %__tmp_rsrc___13 : &lt;class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt;&gt;</pre>
+      <pre>    %1118 = builtin.unrealized_conversion_cast %1117 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_15&#34;&gt; to !moore.i64</pre>
+      <pre>    %1119 = moore.class.upcast %arg0 : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_object&#34;&gt;</pre>
+      <pre>    %1120 = call @circt_uvm_resource_read_string(%1118) : (!moore.i64) -&gt; !moore.string</pre>
+      <pre>    moore.blocking_assign %tmp_string__, %1120 : string</pre>
+      <pre>    cf.br ^bb202</pre>
+      <pre>  ^bb202:  // 2 preds: ^bb200, ^bb201</pre>
+      <pre>    %1121 = moore.read %local_success__ : &lt;i1&gt;</pre>
+      <pre>    %1122 = moore.to_builtin_int %1121 : i1</pre>
+      <pre>    cf.cond_br %1122, ^bb203, ^bb212</pre>
+      <pre>  ^bb203:  // pred: ^bb202</pre>
+      <pre>    %1123 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1124 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1125 = moore.read %1124 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1126 = moore.builtin.size %1125 : &lt;string, 0&gt;</pre>
+      <pre>    %1127 = moore.sge %1123, %1126 : i32 -&gt; i1</pre>
+      <pre>    %1128 = moore.to_builtin_int %1127 : i1</pre>
+      <pre>    cf.cond_br %1128, ^bb204, ^bb211</pre>
+      <pre>  ^bb204:  // pred: ^bb203</pre>
+      <pre>    %1129 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1130 = moore.read %1129 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1131 = moore.builtin.size %1130 : &lt;string, 0&gt;</pre>
+      <pre>    %1132 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1133 = moore.constant 1 : i32</pre>
+      <pre>    %1134 = moore.add %1132, %1133 : i32</pre>
+      <pre>    %1135 = moore.sgt %1131, %1134 : i32 -&gt; i1</pre>
+      <pre>    %1136 = moore.to_builtin_int %1135 : i1</pre>
+      <pre>    cf.cond_br %1136, ^bb205, ^bb206</pre>
+      <pre>  ^bb205:  // pred: ^bb204</pre>
+      <pre>    %1137 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1138 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1139 = moore.read %1138 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1140 = moore.constant 0 : i32</pre>
+      <pre>    %1141 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1142 = moore.constant 1 : i32</pre>
+      <pre>    %1143 = moore.add %1141, %1142 : i32</pre>
+      <pre>    %1144 = moore.constant 1 : i32</pre>
+      <pre>    %1145 = moore.sub %1143, %1144 : i32</pre>
+      <pre>    %1146 = moore.dyn_queue_extract %1139 from %1140 to %1145 : &lt;string, 0&gt;, i32 -&gt; queue&lt;string, 0&gt;</pre>
+      <pre>    moore.blocking_assign %1137, %1146 : queue&lt;string, 0&gt;</pre>
+      <pre>    cf.br ^bb210</pre>
+      <pre>  ^bb206:  // pred: ^bb204</pre>
+      <pre>    cf.br ^bb207</pre>
+      <pre>  ^bb207:  // 2 preds: ^bb206, ^bb208</pre>
+      <pre>    %1147 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1148 = moore.read %1147 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1149 = moore.builtin.size %1148 : &lt;string, 0&gt;</pre>
+      <pre>    %1150 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1151 = moore.constant 1 : i32</pre>
+      <pre>    %1152 = moore.add %1150, %1151 : i32</pre>
+      <pre>    %1153 = moore.slt %1149, %1152 : i32 -&gt; i1</pre>
+      <pre>    %1154 = moore.to_builtin_int %1153 : i1</pre>
+      <pre>    cf.cond_br %1154, ^bb208, ^bb209</pre>
+      <pre>  ^bb208:  // pred: ^bb207</pre>
+      <pre>    %1155 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1156 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1157 = moore.read %1156 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1158 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1159 = moore.constant 1 : i32</pre>
+      <pre>    %1160 = moore.add %1158, %1159 : i32</pre>
+      <pre>    %1161 = moore.dyn_queue_extract %1157 from %1160 to %1160 : &lt;string, 0&gt;, i32 -&gt; string</pre>
+      <pre>    moore.push_back %1161 into %1155 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    cf.br ^bb207</pre>
+      <pre>  ^bb209:  // pred: ^bb207</pre>
+      <pre>    cf.br ^bb210</pre>
+      <pre>  ^bb210:  // 2 preds: ^bb205, ^bb209</pre>
+      <pre>    cf.br ^bb211</pre>
+      <pre>  ^bb211:  // 2 preds: ^bb203, ^bb210</pre>
+      <pre>    %1162 = moore.class.property_ref %arg0[@abstractions] : &lt;@&#34;uvm_pkg::uvm_reg_mem_hdl_paths_seq&#34;&gt; -&gt; &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1163 = moore.read %1162 : &lt;queue&lt;string, 0&gt;&gt;</pre>
+      <pre>    %1164 = moore.read %local_index__ : &lt;i32&gt;</pre>
+      <pre>    %1165 = moore.dyn_queue_ref_element %1162 from %1164 : &lt;queue&lt;string, 0&gt;&gt;, i32 -&gt; &lt;string&gt;</pre>
+      <pre>    %1166 = moore.read %tmp_string__ : &lt;string&gt;</pre>
+      <pre>    moore.blocking_assign %1165, %1166 : string</pre>
+      <pre>    cf.br ^bb212</pre>
+      <pre>  ^bb212:  // 2 preds: ^bb202, ^bb211</pre>
+      <pre>    cf.br ^bb213</pre>
+      <pre>  ^bb213:  // 2 preds: ^bb199, ^bb212</pre>
+      <pre>    cf.br ^bb214</pre>
+      <pre>  ^bb214:  // 2 preds: ^bb195, ^bb213</pre>
+      <pre>    cf.br ^bb215</pre>
+      <pre>  ^bb215:  // 2 preds: ^bb192, ^bb214</pre>
+      <pre>    cf.br ^bb216</pre>
+      <pre>  ^bb216:  // 2 preds: ^bb191, ^bb215</pre>
+      <pre>    cf.br ^bb217</pre>
+      <pre>  ^bb217:  // 2 preds: ^bb167, ^bb216</pre>
+      <pre>    cf.br ^bb219</pre>
+      <pre>  ^bb218:  // pred: ^bb166</pre>
+      <pre>    cf.br ^bb219</pre>
+      <pre>  ^bb219:  // 9 preds: ^bb31, ^bb35, ^bb64, ^bb72, ^bb86, ^bb135, ^bb165, ^bb217, ^bb218</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @dont_warn_if_no_positive_ops : !moore.i1</pre>
+      <pre>  func.func private @pre_randomize() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @post_randomize() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @pre_randomize_919() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @post_randomize_920() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @pre_randomize_1268() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @post_randomize_1269() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

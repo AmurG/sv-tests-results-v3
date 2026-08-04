@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-synth_br_gh99v_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>139 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99v.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99v.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:02:24</dd></div>
+        <div><dt>time elapsed</dt><dd>0.126s</dd></div>
+        <div><dt>ram usage</dt><dd>25984 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmwp66xik/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99v.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99v.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh99v.v:10:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh99v.v:10:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge clk) begin</pre>
+      <pre>         ^</pre>
+      <pre>PLEASE submit a bug report to https://github.com/llvm/circt and include the crash backtrace.</pre>
+      <pre>Stack dump:</pre>
+      <pre>0.	Program arguments: /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog.real --four-valued -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpmwp66xik/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99v.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99v.v</a></pre>
+      <pre>Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):</pre>
+      <pre>0  circt-verilog.real 0x000055843a3b6860</pre>
+      <pre>1  circt-verilog.real 0x000055843a3b3abd</pre>
+      <pre>2  libc.so.6          0x00007a1578e42520</pre>
+      <pre>3  circt-verilog.real 0x00005584399a1999</pre>
+      <pre>4  circt-verilog.real 0x00005584399829e1</pre>
+      <pre>5  circt-verilog.real 0x000055843a163941</pre>
+      <pre>6  circt-verilog.real 0x000055843a164bd2</pre>
+      <pre>7  circt-verilog.real 0x000055843a124262</pre>
+      <pre>8  circt-verilog.real 0x000055843a22fde1</pre>
+      <pre>9  circt-verilog.real 0x000055843a230079</pre>
+      <pre>10 circt-verilog.real 0x000055843a22f1eb</pre>
+      <pre>11 circt-verilog.real 0x000055843a22fd77</pre>
+      <pre>12 circt-verilog.real 0x000055843a230079</pre>
+      <pre>13 circt-verilog.real 0x000055843a230ebf</pre>
+      <pre>14 circt-verilog.real 0x00005584390ce792</pre>
+      <pre>15 circt-verilog.real 0x000055843908bfb2</pre>
+      <pre>16 libc.so.6          0x00007a1578e29d90</pre>
+      <pre>17 libc.so.6          0x00007a1578e29e40 __libc_start_main + 128</pre>
+      <pre>18 circt-verilog.real 0x00005584390c5655</pre>
+      <pre>Segmentation fault (core dumped)</pre>
+      <pre>+ exit 139</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

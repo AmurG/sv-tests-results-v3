@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/10.4.2'] = [["","non_blocking_assignment",1,"logs/circt_verilog_extended_4state/chapter-10/10.4.2--non-blocking-assignment.sv.log.html","tests/chapter-10/10.4.2--non-blocking-assignment.sv.html"]]

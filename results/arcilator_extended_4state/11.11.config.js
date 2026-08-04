@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/11.11'] = [["","min_max_avg_delay",1,"logs/Arcilator_extended_4state/chapter-11/11.11--min_max_avg_delay.sv.log.html","tests/chapter-11/11.11--min_max_avg_delay.sv.html"]]

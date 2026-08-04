@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/9.3.1'] = [["","sequential_block",1,"logs/Arcilator_extended/chapter-9/9.3.1--sequential_block.sv.log.html","tests/chapter-9/9.3.1--sequential_block.sv.html"]]

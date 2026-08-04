@@ -1,0 +1,1 @@
+config_loader_data['arcilator/12.6.3'] = [["","conditional_pattern",1,"logs/Arcilator/chapter-12/12.6.3--conditional_pattern.sv.log.html","tests/chapter-12/12.6.3--conditional_pattern.sv.html"]]

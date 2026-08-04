@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>hdlconvertor_std2017_p835</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p835.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p835.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p835.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p835.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 05:50:07</dd></div>
+        <div><dt>time elapsed</dt><dd>0.028s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p835.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p835.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p835.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p835.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.module @dff(out q : !moore.l1, out qb : !moore.l1, in %clk : !moore.l1, in %d : !moore.l1) {</pre>
+      <pre>    %d_0 = moore.net name &#34;d&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %clk_1 = moore.net name &#34;clk&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %qb = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %q = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %qi = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.constant 1 : i1</pre>
+      <pre>    %__udp_state = moore.variable %0 : &lt;i1&gt;</pre>
+      <pre>    %1 = moore.read %clk_1 : &lt;l1&gt;</pre>
+      <pre>    %2 = moore.logic_to_int %1 : l1</pre>
+      <pre>    %__udp_prev = moore.variable %2 : &lt;i1&gt;</pre>
+      <pre>    %3 = moore.read %d_0 : &lt;l1&gt;</pre>
+      <pre>    %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>    %__udp_prev_2 = moore.variable name &#34;__udp_prev&#34; %4 : &lt;i1&gt;</pre>
+      <pre>    %5 = moore.read %__udp_state : &lt;i1&gt;</pre>
+      <pre>    %6 = moore.int_to_logic %5 : i1</pre>
+      <pre>    moore.assign %qi, %6 : l1</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %66 = moore.read %clk_1 : &lt;l1&gt;</pre>
+      <pre>        %67 = moore.logic_to_int %66 : l1</pre>
+      <pre>        moore.detect_event any %67 : i1</pre>
+      <pre>        %68 = moore.read %d_0 : &lt;l1&gt;</pre>
+      <pre>        %69 = moore.logic_to_int %68 : l1</pre>
+      <pre>        moore.detect_event any %69 : i1</pre>
+      <pre>      }</pre>
+      <pre>      %25 = moore.read %clk_1 : &lt;l1&gt;</pre>
+      <pre>      %26 = moore.logic_to_int %25 : l1</pre>
+      <pre>      %27 = moore.read %__udp_prev : &lt;i1&gt;</pre>
+      <pre>      %28 = moore.read %d_0 : &lt;l1&gt;</pre>
+      <pre>      %29 = moore.logic_to_int %28 : l1</pre>
+      <pre>      %30 = moore.read %__udp_prev_2 : &lt;i1&gt;</pre>
+      <pre>      %31 = moore.read %__udp_state : &lt;i1&gt;</pre>
+      <pre>      %32 = moore.xor %30, %29 : i1</pre>
+      <pre>      %33 = moore.and %32, %31 : i1</pre>
+      <pre>      %34 = moore.not %32 : i1</pre>
+      <pre>      %35 = moore.and %34, %31 : i1</pre>
+      <pre>      %36 = moore.or %33, %35 : i1</pre>
+      <pre>      %37 = moore.xor %27, %26 : i1</pre>
+      <pre>      %38 = moore.and %37, %27 : i1</pre>
+      <pre>      %39 = moore.not %26 : i1</pre>
+      <pre>      %40 = moore.and %38, %39 : i1</pre>
+      <pre>      %41 = moore.and %40, %31 : i1</pre>
+      <pre>      %42 = moore.not %40 : i1</pre>
+      <pre>      %43 = moore.and %42, %36 : i1</pre>
+      <pre>      %44 = moore.or %41, %43 : i1</pre>
+      <pre>      %45 = moore.xor %27, %26 : i1</pre>
+      <pre>      %46 = moore.not %27 : i1</pre>
+      <pre>      %47 = moore.and %45, %46 : i1</pre>
+      <pre>      %48 = moore.and %47, %26 : i1</pre>
+      <pre>      %49 = moore.and %48, %29 : i1</pre>
+      <pre>      %50 = moore.constant 1 : i1</pre>
+      <pre>      %51 = moore.and %49, %50 : i1</pre>
+      <pre>      %52 = moore.not %49 : i1</pre>
+      <pre>      %53 = moore.and %52, %44 : i1</pre>
+      <pre>      %54 = moore.or %51, %53 : i1</pre>
+      <pre>      %55 = moore.xor %27, %26 : i1</pre>
+      <pre>      %56 = moore.not %27 : i1</pre>
+      <pre>      %57 = moore.and %55, %56 : i1</pre>
+      <pre>      %58 = moore.and %57, %26 : i1</pre>
+      <pre>      %59 = moore.not %29 : i1</pre>
+      <pre>      %60 = moore.and %58, %59 : i1</pre>
+      <pre>      %61 = moore.constant 0 : i1</pre>
+      <pre>      %62 = moore.and %60, %61 : i1</pre>
+      <pre>      %63 = moore.not %60 : i1</pre>
+      <pre>      %64 = moore.and %63, %54 : i1</pre>
+      <pre>      %65 = moore.or %62, %64 : i1</pre>
+      <pre>      moore.blocking_assign %__udp_state, %65 : i1</pre>
+      <pre>      moore.blocking_assign %__udp_prev, %26 : i1</pre>
+      <pre>      moore.blocking_assign %__udp_prev_2, %29 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    %7 = moore.read %qi : &lt;l1&gt;</pre>
+      <pre>    %8 = moore.bool_cast %7 : l1 -&gt; l1</pre>
+      <pre>    %9 = moore.constant 3 : i32</pre>
+      <pre>    %10 = moore.constant 3 : i64</pre>
+      <pre>    %11 = moore.constant 3 : l64</pre>
+      <pre>    %12 = moore.constant 1000000 : l64</pre>
+      <pre>    %13 = moore.constant 3000000 : l64</pre>
+      <pre>    %14 = moore.constant_time 3000000 fs</pre>
+      <pre>    moore.delayed_assign %q, %8, %14 : l1</pre>
+      <pre>    %15 = moore.read %qi : &lt;l1&gt;</pre>
+      <pre>    %16 = moore.not %15 : l1</pre>
+      <pre>    %17 = moore.constant 5 : i32</pre>
+      <pre>    %18 = moore.constant 5 : i64</pre>
+      <pre>    %19 = moore.constant 5 : l64</pre>
+      <pre>    %20 = moore.constant 1000000 : l64</pre>
+      <pre>    %21 = moore.constant 5000000 : l64</pre>
+      <pre>    %22 = moore.constant_time 5000000 fs</pre>
+      <pre>    moore.delayed_assign %qb, %16, %22 : l1</pre>
+      <pre>    %23 = moore.read %q : &lt;l1&gt;</pre>
+      <pre>    %24 = moore.read %qb : &lt;l1&gt;</pre>
+      <pre>    moore.assign %clk_1, %clk : l1</pre>
+      <pre>    moore.assign %d_0, %d : l1</pre>
+      <pre>    moore.output %23, %24 : !moore.l1, !moore.l1</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

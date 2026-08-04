@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>hdlconvertor_std2017_p243</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p243.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p243.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p243.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p243.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 09:47:40</dd></div>
+        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p243.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p243.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p243.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p243.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.global_variable @__monitor_last_1 : !moore.string init {</pre>
+      <pre>    %0 = moore.constant_string &#34;&#34; : i0</pre>
+      <pre>    %1 = moore.int_to_string %0 : i0</pre>
+      <pre>    moore.yield %1 : string</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @__monitor_primed_1 : !moore.i1 init {</pre>
+      <pre>    %0 = moore.constant 0 : i1</pre>
+      <pre>    moore.yield %0 : i1</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @__monitor_active_id : !moore.i32 init {</pre>
+      <pre>    %0 = moore.constant 0 : i32</pre>
+      <pre>    moore.yield %0 : i32</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @__monitor_enabled : !moore.i1 init {</pre>
+      <pre>    %0 = moore.constant 1 : i1</pre>
+      <pre>    moore.yield %0 : i1</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @test() {</pre>
+      <pre>    %a = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %b = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %c = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %d = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %e = moore.net wire : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>    %1 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>    %2 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>    %3 = moore.and %0, %1 : l1</pre>
+      <pre>    %4 = moore.and %3, %2 : l1</pre>
+      <pre>    moore.assign %e, %4 : l1</pre>
+      <pre>    %5 = moore.constant 0 : i32</pre>
+      <pre>    %6 = moore.variable %5 : &lt;i32&gt;</pre>
+      <pre>    moore.procedure always_comb {</pre>
+      <pre>      %7 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>      %8 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>      %9 = moore.and %7, %8 : l1</pre>
+      <pre>      %10 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %11 = moore.and %9, %10 : l1</pre>
+      <pre>      %12 = moore.read %6 : &lt;i32&gt;</pre>
+      <pre>      %13 = moore.constant 1 : i32</pre>
+      <pre>      %14 = moore.eq %12, %13 : i32 -&gt; i1</pre>
+      <pre>      %15 = moore.to_builtin_int %14 : i1</pre>
+      <pre>      cf.cond_br %15, ^bb1, ^bb2</pre>
+      <pre>    ^bb1:  // pred: ^bb0</pre>
+      <pre>      moore.blocking_assign %d, %11 : l1</pre>
+      <pre>      cf.br ^bb2</pre>
+      <pre>    ^bb2:  // 2 preds: ^bb0, ^bb1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %7 = moore.constant 1 : i32</pre>
+      <pre>      %8 = moore.get_global_variable @__monitor_active_id : &lt;i32&gt;</pre>
+      <pre>      moore.blocking_assign %8, %7 : i32</pre>
+      <pre>      %9 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>      %10 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>      %11 = moore.and %9, %10 : l1</pre>
+      <pre>      %12 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %13 = moore.and %11, %12 : l1</pre>
+      <pre>      moore.procedural_assign %d, %13 : l1</pre>
+      <pre>      %14 = moore.constant 1 : i32</pre>
+      <pre>      moore.blocking_assign %6, %14 : i32</pre>
+      <pre>      %15 = moore.constant 1 : i32</pre>
+      <pre>      %16 = moore.constant 1 : l32</pre>
+      <pre>      %17 = moore.constant 1 : l1</pre>
+      <pre>      moore.blocking_assign %a, %17 : l1</pre>
+      <pre>      %18 = moore.constant 0 : i32</pre>
+      <pre>      %19 = moore.constant 0 : l32</pre>
+      <pre>      %20 = moore.constant 0 : l1</pre>
+      <pre>      moore.blocking_assign %b, %20 : l1</pre>
+      <pre>      %21 = moore.constant 1 : i32</pre>
+      <pre>      %22 = moore.constant 1 : l32</pre>
+      <pre>      %23 = moore.constant 1 : l1</pre>
+      <pre>      moore.blocking_assign %c, %23 : l1</pre>
+      <pre>      %24 = moore.constant 10 : i32</pre>
+      <pre>      %25 = moore.constant 10 : i64</pre>
+      <pre>      %26 = moore.constant 10 : l64</pre>
+      <pre>      %27 = moore.constant 1000000 : l64</pre>
+      <pre>      %28 = moore.constant 10000000 : l64</pre>
+      <pre>      %29 = moore.constant_time 10000000 fs</pre>
+      <pre>      moore.wait_delay %29</pre>
+      <pre>      %30 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>      %31 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>      %32 = moore.or %30, %31 : l1</pre>
+      <pre>      %33 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %34 = moore.or %32, %33 : l1</pre>
+      <pre>      moore.procedural_assign force %d, %34 : l1</pre>
+      <pre>      %35 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>      %36 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>      %37 = moore.or %35, %36 : l1</pre>
+      <pre>      %38 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %39 = moore.or %37, %38 : l1</pre>
+      <pre>      moore.procedural_assign force %e, %39 : l1</pre>
+      <pre>      %40 = moore.constant 10 : i32</pre>
+      <pre>      %41 = moore.constant 10 : i64</pre>
+      <pre>      %42 = moore.constant 10 : l64</pre>
+      <pre>      %43 = moore.constant 1000000 : l64</pre>
+      <pre>      %44 = moore.constant 10000000 : l64</pre>
+      <pre>      %45 = moore.constant_time 10000000 fs</pre>
+      <pre>      moore.wait_delay %45</pre>
+      <pre>      moore.procedural_deassign release %d : &lt;l1&gt;</pre>
+      <pre>      moore.procedural_deassign release %e : &lt;l1&gt;</pre>
+      <pre>      %46 = moore.constant 10 : i32</pre>
+      <pre>      %47 = moore.constant 10 : i64</pre>
+      <pre>      %48 = moore.constant 10 : l64</pre>
+      <pre>      %49 = moore.constant 1000000 : l64</pre>
+      <pre>      %50 = moore.constant 10000000 : l64</pre>
+      <pre>      %51 = moore.constant_time 10000000 fs</pre>
+      <pre>      moore.wait_delay %51</pre>
+      <pre>      moore.builtin.finish_message false</pre>
+      <pre>      moore.builtin.finish 0</pre>
+      <pre>      moore.unreachable</pre>
+      <pre>    }</pre>
+      <pre>    moore.procedure always_comb {</pre>
+      <pre>      %7 = moore.builtin.time</pre>
+      <pre>      %8 = moore.time_to_logic %7</pre>
+      <pre>      %9 = moore.constant 1000000 : l64</pre>
+      <pre>      %10 = moore.constant 500000 : l64</pre>
+      <pre>      %11 = moore.add %8, %10 : l64</pre>
+      <pre>      %12 = moore.divu %11, %9 : l64</pre>
+      <pre>      %13 = moore.trunc %12 : l64 -&gt; l32</pre>
+      <pre>      %14 = moore.logic_to_int %13 : l32</pre>
+      <pre>      %15 = moore.fmt.int decimal %14, align right, pad space : i32</pre>
+      <pre>      %16 = moore.fmt.literal &#34; d=&#34;</pre>
+      <pre>      %17 = moore.read %d : &lt;l1&gt;</pre>
+      <pre>      %18 = moore.fmt.int binary %17, align right, pad zero : l1</pre>
+      <pre>      %19 = moore.fmt.literal &#34;,e=&#34;</pre>
+      <pre>      %20 = moore.read %e : &lt;l1&gt;</pre>
+      <pre>      %21 = moore.fmt.int binary %20, align right, pad zero : l1</pre>
+      <pre>      %22 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %23 = moore.fmt.concat (%15, %16, %18, %19, %21, %22)</pre>
+      <pre>      %24 = moore.constant 1 : i32</pre>
+      <pre>      %25 = moore.get_global_variable @__monitor_active_id : &lt;i32&gt;</pre>
+      <pre>      %26 = moore.read %25 : &lt;i32&gt;</pre>
+      <pre>      %27 = moore.eq %26, %24 : i32 -&gt; i1</pre>
+      <pre>      %28 = moore.get_global_variable @__monitor_enabled : &lt;i1&gt;</pre>
+      <pre>      %29 = moore.read %28 : &lt;i1&gt;</pre>
+      <pre>      %30 = moore.and %27, %29 : i1</pre>
+      <pre>      %31 = moore.fstring_to_string %23</pre>
+      <pre>      %32 = moore.get_global_variable @__monitor_last_1 : &lt;string&gt;</pre>
+      <pre>      %33 = moore.read %32 : &lt;string&gt;</pre>
+      <pre>      %34 = moore.string_cmp ne %31, %33 : string -&gt; i1</pre>
+      <pre>      %35 = moore.get_global_variable @__monitor_primed_1 : &lt;i1&gt;</pre>
+      <pre>      %36 = moore.read %35 : &lt;i1&gt;</pre>
+      <pre>      %37 = moore.not %36 : i1</pre>
+      <pre>      %38 = moore.or %34, %37 : i1</pre>
+      <pre>      %39 = moore.and %30, %38 : i1</pre>
+      <pre>      %40 = moore.to_builtin_int %39 : i1</pre>
+      <pre>      cf.cond_br %40, ^bb1, ^bb2</pre>
+      <pre>    ^bb1:  // pred: ^bb0</pre>
+      <pre>      moore.builtin.display %23 {moore.monitor_id = 1 : i32}</pre>
+      <pre>      %41 = moore.get_global_variable @__monitor_last_1 : &lt;string&gt;</pre>
+      <pre>      moore.blocking_assign %41, %31 : string</pre>
+      <pre>      %42 = moore.get_global_variable @__monitor_primed_1 : &lt;i1&gt;</pre>
+      <pre>      %43 = moore.constant 1 : i1</pre>
+      <pre>      moore.blocking_assign %42, %43 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    ^bb2:  // pred: ^bb0</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

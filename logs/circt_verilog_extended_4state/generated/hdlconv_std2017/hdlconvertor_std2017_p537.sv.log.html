@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>hdlconvertor_std2017_p537</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>parsing</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p537.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p537.sv</a><li>
+            <li><a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p537.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p537.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:21:02</dd></div>
+        <div><dt>time elapsed</dt><dd>0.038s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p537.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p537.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p537.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p537.sv</a></pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p537.sv:14:7: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>class stimc;</pre>
+      <pre>      ^</pre>
+      <pre>module {</pre>
+      <pre>  func.func private @circt_sv_rand_mode_get(!moore.chandle, !moore.string) -&gt; !moore.i32</pre>
+      <pre>  func.func private @circt_sv_obj_urandom_range(!moore.chandle, !moore.i32, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>  moore.module @stim() {</pre>
+      <pre>    %addr = moore.variable : &lt;i16&gt;</pre>
+      <pre>    %data = moore.variable : &lt;i32&gt;</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @gen_stim_0(%arg0: !moore.ref&lt;i16&gt;, %arg1: !moore.ref&lt;i32&gt;) -&gt; !moore.i1 {</pre>
+      <pre>    %0 = moore.get_global_variable @success_3 : &lt;i1&gt;</pre>
+      <pre>    %1 = moore.get_global_variable @rd_wr : &lt;i1&gt;</pre>
+      <pre>    %2 = moore.constant 0 : i32</pre>
+      <pre>    %3 = moore.constant -1 : i32</pre>
+      <pre>    %4 = moore.builtin.urandom_range %2, %3</pre>
+      <pre>    %5 = moore.trunc %4 : i32 -&gt; i16</pre>
+      <pre>    moore.blocking_assign %arg0, %5 : i16</pre>
+      <pre>    %6 = moore.builtin.urandom_range %2, %3</pre>
+      <pre>    moore.blocking_assign %arg1, %6 : i32</pre>
+      <pre>    %7 = moore.builtin.urandom_range %2, %3</pre>
+      <pre>    %8 = moore.trunc %7 : i32 -&gt; i1</pre>
+      <pre>    moore.blocking_assign %1, %8 : i1</pre>
+      <pre>    %9 = moore.constant 1 : i1</pre>
+      <pre>    %10 = moore.constant 1 : i32</pre>
+      <pre>    %11 = moore.constant 1 : i1</pre>
+      <pre>    moore.blocking_assign %0, %11 : i1</pre>
+      <pre>    %12 = moore.read %1 : &lt;i1&gt;</pre>
+      <pre>    return %12 : !moore.i1</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @gen_stim_2 : !moore.i1</pre>
+      <pre>  moore.global_variable @success_3 : !moore.i1</pre>
+      <pre>  moore.global_variable @rd_wr : !moore.i1</pre>
+      <pre>  moore.class.classdecl @stimc {</pre>
+      <pre>    moore.class.propertydecl @addr : !moore.i16</pre>
+      <pre>    moore.class.propertydecl @data : !moore.i32</pre>
+      <pre>    moore.class.propertydecl @rd_wr : !moore.i1</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @gen_stim(%arg0: !moore.class&lt;@stimc&gt;) -&gt; !moore.i1 {</pre>
+      <pre>    %0 = moore.get_global_variable @addr : &lt;i16&gt;</pre>
+      <pre>    %1 = moore.get_global_variable @data : &lt;i32&gt;</pre>
+      <pre>    %2 = moore.get_global_variable @success : &lt;i1&gt;</pre>
+      <pre>    %3 = builtin.unrealized_conversion_cast %arg0 : !moore.class&lt;@stimc&gt; to !moore.chandle</pre>
+      <pre>    %4 = moore.variable : &lt;i16&gt;</pre>
+      <pre>    %5 = moore.variable : &lt;i32&gt;</pre>
+      <pre>    %6 = moore.variable : &lt;i1&gt;</pre>
+      <pre>    %7 = moore.constant 0 : i1</pre>
+      <pre>    %8 = moore.variable %7 : &lt;i1&gt;</pre>
+      <pre>    %9 = moore.constant 0 : i32</pre>
+      <pre>    %10 = moore.variable %9 : &lt;i32&gt;</pre>
+      <pre>    %11 = moore.read %8 : &lt;i1&gt;</pre>
+      <pre>    %12 = moore.not %11 : i1</pre>
+      <pre>    %13 = moore.to_builtin_int %12 : i1</pre>
+      <pre>    cf.cond_br %13, ^bb1, ^bb5</pre>
+      <pre>  ^bb1:  // 2 preds: ^bb0, ^bb3</pre>
+      <pre>    %14 = moore.read %10 : &lt;i32&gt;</pre>
+      <pre>    %15 = moore.constant 512 : i32</pre>
+      <pre>    %16 = moore.slt %14, %15 : i32 -&gt; i1</pre>
+      <pre>    %17 = moore.to_builtin_int %16 : i1</pre>
+      <pre>    cf.cond_br %17, ^bb2, ^bb5</pre>
+      <pre>  ^bb2:  // pred: ^bb1</pre>
+      <pre>    %18 = moore.constant 0 : i32</pre>
+      <pre>    %19 = moore.constant 65535 : i32</pre>
+      <pre>    %20 = call @circt_sv_obj_urandom_range(%3, %18, %19) : (!moore.chandle, !moore.i32, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>    %21 = moore.trunc %20 : i32 -&gt; i16</pre>
+      <pre>    %22 = moore.constant_string &#34;stimc::addr&#34; : i88</pre>
+      <pre>    %23 = moore.int_to_string %22 : i88</pre>
+      <pre>    %24 = call @circt_sv_rand_mode_get(%3, %23) : (!moore.chandle, !moore.string) -&gt; !moore.i32</pre>
+      <pre>    %25 = moore.bool_cast %24 : i32 -&gt; i1</pre>
+      <pre>    %26 = moore.class.property_ref %arg0[@addr] : &lt;@stimc&gt; -&gt; &lt;i16&gt;</pre>
+      <pre>    %27 = moore.read %26 : &lt;i16&gt;</pre>
+      <pre>    %28 = moore.conditional %25 : i1 -&gt; i16 {</pre>
+      <pre>      moore.yield %21 : i16</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %27 : i16</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %4, %28 : i16</pre>
+      <pre>    %29 = moore.constant 0 : i32</pre>
+      <pre>    %30 = moore.constant -1 : i32</pre>
+      <pre>    %31 = call @circt_sv_obj_urandom_range(%3, %29, %30) : (!moore.chandle, !moore.i32, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>    %32 = moore.constant_string &#34;stimc::data&#34; : i88</pre>
+      <pre>    %33 = moore.int_to_string %32 : i88</pre>
+      <pre>    %34 = call @circt_sv_rand_mode_get(%3, %33) : (!moore.chandle, !moore.string) -&gt; !moore.i32</pre>
+      <pre>    %35 = moore.bool_cast %34 : i32 -&gt; i1</pre>
+      <pre>    %36 = moore.class.property_ref %arg0[@data] : &lt;@stimc&gt; -&gt; &lt;i32&gt;</pre>
+      <pre>    %37 = moore.read %36 : &lt;i32&gt;</pre>
+      <pre>    %38 = moore.conditional %35 : i1 -&gt; i32 {</pre>
+      <pre>      moore.yield %31 : i32</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %37 : i32</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %5, %38 : i32</pre>
+      <pre>    %39 = moore.constant 0 : i32</pre>
+      <pre>    %40 = moore.constant 1 : i32</pre>
+      <pre>    %41 = call @circt_sv_obj_urandom_range(%3, %39, %40) : (!moore.chandle, !moore.i32, !moore.i32) -&gt; !moore.i32</pre>
+      <pre>    %42 = moore.trunc %41 : i32 -&gt; i1</pre>
+      <pre>    %43 = moore.constant_string &#34;stimc::rd_wr&#34; : i96</pre>
+      <pre>    %44 = moore.int_to_string %43 : i96</pre>
+      <pre>    %45 = call @circt_sv_rand_mode_get(%3, %44) : (!moore.chandle, !moore.string) -&gt; !moore.i32</pre>
+      <pre>    %46 = moore.bool_cast %45 : i32 -&gt; i1</pre>
+      <pre>    %47 = moore.class.property_ref %arg0[@rd_wr] : &lt;@stimc&gt; -&gt; &lt;i1&gt;</pre>
+      <pre>    %48 = moore.read %47 : &lt;i1&gt;</pre>
+      <pre>    %49 = moore.conditional %46 : i1 -&gt; i1 {</pre>
+      <pre>      moore.yield %42 : i1</pre>
+      <pre>    } {</pre>
+      <pre>      moore.yield %48 : i1</pre>
+      <pre>    }</pre>
+      <pre>    moore.blocking_assign %6, %49 : i1</pre>
+      <pre>    %50 = moore.constant 1 : i1</pre>
+      <pre>    %51 = moore.to_builtin_int %50 : i1</pre>
+      <pre>    cf.cond_br %51, ^bb4, ^bb3</pre>
+      <pre>  ^bb3:  // pred: ^bb2</pre>
+      <pre>    %52 = moore.read %10 : &lt;i32&gt;</pre>
+      <pre>    %53 = moore.constant 1 : i32</pre>
+      <pre>    %54 = moore.add %52, %53 : i32</pre>
+      <pre>    moore.blocking_assign %10, %54 : i32</pre>
+      <pre>    cf.br ^bb1</pre>
+      <pre>  ^bb4:  // pred: ^bb2</pre>
+      <pre>    %55 = moore.constant 1 : i1</pre>
+      <pre>    moore.blocking_assign %8, %55 : i1</pre>
+      <pre>    cf.br ^bb5</pre>
+      <pre>  ^bb5:  // 3 preds: ^bb0, ^bb1, ^bb4</pre>
+      <pre>    %56 = moore.read %8 : &lt;i1&gt;</pre>
+      <pre>    %57 = moore.to_builtin_int %56 : i1</pre>
+      <pre>    cf.cond_br %57, ^bb6, ^bb7</pre>
+      <pre>  ^bb6:  // pred: ^bb5</pre>
+      <pre>    %58 = moore.class.property_ref %arg0[@addr] : &lt;@stimc&gt; -&gt; &lt;i16&gt;</pre>
+      <pre>    %59 = moore.read %4 : &lt;i16&gt;</pre>
+      <pre>    moore.blocking_assign %58, %59 : i16</pre>
+      <pre>    %60 = moore.class.property_ref %arg0[@data] : &lt;@stimc&gt; -&gt; &lt;i32&gt;</pre>
+      <pre>    %61 = moore.read %5 : &lt;i32&gt;</pre>
+      <pre>    moore.blocking_assign %60, %61 : i32</pre>
+      <pre>    %62 = moore.class.property_ref %arg0[@rd_wr] : &lt;@stimc&gt; -&gt; &lt;i1&gt;</pre>
+      <pre>    %63 = moore.read %6 : &lt;i1&gt;</pre>
+      <pre>    moore.blocking_assign %62, %63 : i1</pre>
+      <pre>    cf.br ^bb7</pre>
+      <pre>  ^bb7:  // 2 preds: ^bb5, ^bb6</pre>
+      <pre>    %64 = moore.read %8 : &lt;i1&gt;</pre>
+      <pre>    %65 = moore.zext %64 : i1 -&gt; i32</pre>
+      <pre>    %66 = moore.trunc %65 : i32 -&gt; i1</pre>
+      <pre>    moore.blocking_assign %2, %66 : i1</pre>
+      <pre>    %67 = moore.class.property_ref %arg0[@addr] : &lt;@stimc&gt; -&gt; &lt;i16&gt;</pre>
+      <pre>    %68 = moore.read %67 : &lt;i16&gt;</pre>
+      <pre>    moore.blocking_assign %0, %68 : i16</pre>
+      <pre>    %69 = moore.class.property_ref %arg0[@data] : &lt;@stimc&gt; -&gt; &lt;i32&gt;</pre>
+      <pre>    %70 = moore.read %69 : &lt;i32&gt;</pre>
+      <pre>    moore.blocking_assign %1, %70 : i32</pre>
+      <pre>    %71 = moore.class.property_ref %arg0[@rd_wr] : &lt;@stimc&gt; -&gt; &lt;i1&gt;</pre>
+      <pre>    %72 = moore.read %71 : &lt;i1&gt;</pre>
+      <pre>    return %72 : !moore.i1</pre>
+      <pre>  }</pre>
+      <pre>  moore.global_variable @gen_stim_1 : !moore.i1</pre>
+      <pre>  moore.global_variable @addr : !moore.i16</pre>
+      <pre>  moore.global_variable @data : !moore.i32</pre>
+      <pre>  moore.global_variable @success : !moore.i1</pre>
+      <pre>  func.func private @pre_randomize() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>  func.func private @post_randomize() {</pre>
+      <pre>    return</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

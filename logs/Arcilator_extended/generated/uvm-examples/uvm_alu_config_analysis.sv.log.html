@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>uvm_alu_config_analysis</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>UVM example - uvm_alu_config_analysis</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd><em></em></dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv</a><li>
+            <li><a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 07:49:16</dd></div>
+        <div><dt>time elapsed</dt><dd>45.561s</dd></div>
+        <div><dt>ram usage</dt><dd>209520 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ printf %s\n [Arcilator policy] UVM heartbeat harness bound into hvl_top (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
+      <pre>[Arcilator policy] UVM heartbeat harness bound into hvl_top (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm/src -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/agent -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=hvl_top <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/alu/alu_rtl.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_tb_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hdl_top.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_alu_config_analysis/tb/hvl_top.sv</a> <a href="../../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
+      <pre>../../../third_party/tests/uvm/src/uvm_pkg.sv:57:2: note: included from here</pre>
+      <pre> `include &#34;base/uvm_base.svh&#34;</pre>
+      <pre> ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
+      <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_misc.svh:56:15: remark: Class builtin functions (needed for randomization, constraints, and covergroups) are not yet supported and will be dropped during lowering.</pre>
+      <pre>virtual class uvm_void;</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh:901:0: warning: unreachable code</pre>
+      <pre>../../../third_party/tests/uvm/src/reg/uvm_mem_mam.svh:717:9: remark: class randomize solver: 1 constraint construct(s) (unique/dynamic-foreach) are not enforced</pre>
+      <pre>   if (!alloc.randomize()) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tests/uvm/src/seq/uvm_sequencer_param_base.svh:313:12: warning: class randomize solver: rand field `value` of unsupported type is NOT drawn; it keeps its previous value while randomize() still returns 1</pre>
+      <pre>      if (!param_t.randomize()) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_packer.svh:849:27: warning: in uvm_pkg::uvm_packer::unpack_time: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>function time uvm_packer::unpack_time();</pre>
+      <pre>                          ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:889:10: warning: in uvm_pkg::uvm_root::m_do_timeout_settings: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>    time timeout_int;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:1015:21: warning: in uvm_pkg::uvm_root::m_process_config: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>    uvm_bitstream_t v;</pre>
+      <pre>                    ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ ulimit -v 10485760</pre>
+      <pre>+ printf %s\n [Arcilator] simvariant AOT mode: single compile, 1 argv-plusarg runs</pre>
+      <pre>[Arcilator] simvariant AOT mode: single compile, 1 argv-plusarg runs</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/driver.cpp  50000 2 1 10 uvm_alu_config_analysis uvm-examples uvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-off/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ status=0</pre>
+      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=test_all_parallel</pre>
+      <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=test_all_parallel</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ __svtests_variant_t0=1785829753</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_off_arc/tmp/tmp7ebwrb2p/wave.vcd +UVM_TESTNAME=test_all_parallel</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
+      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre></pre>
+      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
+      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
+      <pre>  for more details.</pre>
+      <pre></pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
+      <pre></pre>
+      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
+      <pre>All Rights Reserved Worldwide</pre>
+      <pre>----------------------------------------------------------------</pre>
+      <pre></pre>
+      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
+      <pre></pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI</pre>
+      <pre>UVM_INFO @ 0: reporter [RNTST] Running test test_all_parallel...</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/main_seq.svh(35) @ 0: uvm_test_top.t_env.alu_if_agent.sequencer@@m_seq [COMPOSITE SEQUENCE] Starting add, sub, Mul, div sequences</pre>
+      <pre>here 1</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/init_seq.svh(32) @ 0: uvm_test_top.t_env.alu_if_agent.sequencer@@m_seq.init_s [INIT_SEQ] Initialization Sequence</pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1 alu_txns,</pre>
+      <pre>     Current coverage ADD = 0.000000%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 300: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 2 alu_txns,</pre>
+      <pre>     Current coverage SUB = 0.000000%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 3 alu_txns,</pre>
+      <pre>     Current coverage MUL = 0.000000%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 500: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 4 alu_txns,</pre>
+      <pre>     Current coverage DIV = 0.000000%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 5 alu_txns,</pre>
+      <pre>     Current coverage ADD = 0.000000%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 700: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 6 alu_txns,</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 2205 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 125400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1105 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 125600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1106 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 125800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1107 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 126000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1108 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 126200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1109 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 126400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1110 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 126600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1111 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 126800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1112 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 127000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1113 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 127200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1114 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 127400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1115 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 127600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1116 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 127800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1117 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 128000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1118 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 128200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1119 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 128400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1120 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 128600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1121 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 128800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1122 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 129000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1123 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 129200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1124 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 129400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1125 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 129600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1126 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 129800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1127 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 130000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1128 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 130200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1129 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 130400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1130 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 130600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1131 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 130800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1132 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 131000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1133 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 131200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1134 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 131400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1135 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 131600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1136 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 131800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1137 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 132000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1138 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 132200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1139 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 132400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1140 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 132600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1141 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 132800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1142 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 133000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1143 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 133200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1144 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 133400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1145 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 133600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1146 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 133800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1147 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 134000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1148 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 134200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1149 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 134400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1150 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 134600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1151 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 134800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1152 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 135000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1153 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 135200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1154 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 135400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1155 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 135600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1156 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 135800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1157 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 136000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1158 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 136200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1159 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 136400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1160 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 136600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1161 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 136800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1162 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 137000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1163 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 137200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1164 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 137400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1165 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 137600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1166 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 137800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1167 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 138000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1168 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 138200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1169 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 138400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1170 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 138600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1171 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 138800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1172 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 139000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1173 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 139200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1174 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 139400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1175 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 139600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1176 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 139800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1177 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 140000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1178 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 140200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1179 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 140400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1180 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 140600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1181 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 140800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1182 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 141000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1183 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 141200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1184 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 141400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1185 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 141600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1186 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 141800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1187 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 142000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1188 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 142200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1189 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 142400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1190 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 142600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1191 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 142800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1192 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 143000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1193 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 143200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1194 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 143400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1195 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 143600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1196 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 143800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1197 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 144000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1198 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 144200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1199 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 144400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1200 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 144600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1201 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 144800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1202 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 145000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1203 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 145200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1204 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 145400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1205 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 145600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1206 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 145800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1207 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 146000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1208 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 146200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1209 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 146400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1210 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 146600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1211 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 146800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1212 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 147000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1213 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 147200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1214 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 147400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1215 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 147600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1216 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 147800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1217 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 148000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1218 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 148200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1219 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 148400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1220 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 148600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1221 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 148800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1222 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 149000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1223 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 149200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1224 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 149400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1225 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 149600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1226 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 149800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1227 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 150000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1228 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 150200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1229 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 150400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1230 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 150600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1231 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 150800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1232 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 151000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1233 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 151200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1234 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 151400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1235 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 151600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1236 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 151800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1237 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 152000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1238 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 152200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1239 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 152400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1240 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 152600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1241 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 152800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1242 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 153000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1243 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 153200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1244 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 153400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1245 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 153600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1246 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 153800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1247 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 154000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1248 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 154200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1249 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 154400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1250 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 154600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1251 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 154800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1252 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 155000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1253 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 155200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1254 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 155400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1255 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 155600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1256 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 155800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1257 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 156000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1258 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 156200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1259 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 156400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1260 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 156600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1261 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 156800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1262 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 157000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1263 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 157200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1264 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 157400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1265 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 157600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1266 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 157800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1267 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 158000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1268 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 158200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1269 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 158400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1270 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 158600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1271 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 158800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1272 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 159000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1273 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 159200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1274 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 159400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1275 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 159600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1276 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 159800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1277 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 160000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1278 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 160200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1279 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 160400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1280 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 160600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1281 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 160800: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1282 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 161000: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1283 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 161200: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1284 alu_txns,</pre>
+      <pre>     Current coverage MUL = 66.666667%</pre>
+      <pre>Mode = 1111</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(115) @ 161400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] </pre>
+      <pre>*********************************************</pre>
+      <pre>  100% coverage of MUL acheived</pre>
+      <pre>*********************************************</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/cleanup_seq.svh(34) @ 161400: uvm_test_top.t_env.alu_if_agent.sequencer@@m_seq.cleanup_s [CLEANUP] Cleanup Sequence</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_env.svh(56) @ 161400: uvm_test_top.t_env [alu_env] Finished Test </pre>
+      <pre></pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/scoreboard_ooo_imps.svh(58) @ 161400: uvm_test_top.t_env.sb [SCOREBOARD] 	Matches = 1285</pre>
+      <pre>		Mismatches = 0</pre>
+      <pre>		Missing = 0</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/uvm_tb/alu_seq_test_base.svh(55) @ 161400: uvm_test_top [** UVM TEST PASSED **] PASSED: Congratulations!</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 161400: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
+      <pre></pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO : 1295</pre>
+      <pre>UVM_WARNING :    2</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[** UVM TEST PASSED **]     1</pre>
+      <pre>[CLEANUP]     1</pre>
+      <pre>[COMPOSITE SEQUENCE]     1</pre>
+      <pre>[INIT_SEQ]     1</pre>
+      <pre>[NO_DPI_TSTNAME]     1</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SCOREBOARD]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
+      <pre>[alu_env]     1</pre>
+      <pre>[cov_msg]  1285</pre>
+      <pre></pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 2</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 2s</pre>
+      <pre>+ exit 0</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

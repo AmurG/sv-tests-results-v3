@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/8.26.7'] = [["","partial_implementation",1,"logs/circt_verilog_extended_4state/chapter-8/8.26.7--partial_implementation.sv.log.html","tests/chapter-8/8.26.7--partial_implementation.sv.html"]]

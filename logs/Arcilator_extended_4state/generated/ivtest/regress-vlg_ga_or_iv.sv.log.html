@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-vlg_ga_or_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/ga_or.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/ga_or.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-04 09:22:27</dd></div>
+        <div><dt>time elapsed</dt><dd>6.121s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/ga_or.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/ga_or.v</a></pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/model.ll</pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/state.json</pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/driver.cpp  128 2 1 10 regress-vlg_ga_or_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/design.mlir [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/model.o</pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/driver.cpp /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/driver.bin -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/driver.cpp:17:</pre>
+      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/model.hpp:8:</pre>
+      <pre>In file included from /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-runtime.h:15:</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:986:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:998:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1243:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1249:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1255:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1261:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1694:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1818:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1828:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:1926:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:2779:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3433:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3548:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3631:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:3635:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4192:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4808:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:4893:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre>/home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-uvm-runtime.h:5406:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>19 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpy__niwzf/wave.vcd</pre>
+      <pre>FAILED - GA OR a=1,b=8000,expct=8001 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=1,b=4000,expct=4001 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=2000,expct=2001 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=1000,expct=1001 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=800,expct=801 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=400,expct=401 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=200,expct=201 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=100,expct=101 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=80,expct=81 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=40,expct=41 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=20,expct=21 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=10,expct=11 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=8,expct=9 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=4,expct=5 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=2,expct=3 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1,b=1,expct=1 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=8000,expct=8002 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=2,b=4000,expct=4002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=2000,expct=2002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=1000,expct=1002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=800,expct=802 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=400,expct=402 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=200,expct=202 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=100,expct=102 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=80,expct=82 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=40,expct=42 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=20,expct=22 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=10,expct=12 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=8,expct=a - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=4,expct=6 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=2,expct=2 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2,b=1,expct=3 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=8000,expct=8004 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=4,b=4000,expct=4004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=2000,expct=2004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=1000,expct=1004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=800,expct=804 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=400,expct=404 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=200,expct=204 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=100,expct=104 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=80,expct=84 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=40,expct=44 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=20,expct=24 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=10,expct=14 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=8,expct=c - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=4,expct=4 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=2,expct=6 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4,b=1,expct=5 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=8000,expct=8008 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=8,b=4000,expct=4008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=2000,expct=2008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=1000,expct=1008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=800,expct=808 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=400,expct=408 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=200,expct=208 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=100,expct=108 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=80,expct=88 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=40,expct=48 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=20,expct=28 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=10,expct=18 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=8,expct=8 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=4,expct=c - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=2,expct=a - rcvd=0</pre>
+      <pre>FAILED - GA OR a=8,b=1,expct=9 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=8000,expct=8010 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=10,b=4000,expct=4010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=2000,expct=2010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=1000,expct=1010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=800,expct=810 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=400,expct=410 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=200,expct=210 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=100,expct=110 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=80,expct=90 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=40,expct=50 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=20,expct=30 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=10,expct=10 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=8,expct=18 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=4,expct=14 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=2,expct=12 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=10,b=1,expct=11 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=8000,expct=8020 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=20,b=4000,expct=4020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=2000,expct=2020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=1000,expct=1020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=800,expct=820 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=400,expct=420 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=200,expct=220 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=100,expct=120 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=80,expct=a0 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=40,expct=60 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=20,expct=20 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=10,expct=30 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=8,expct=28 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=4,expct=24 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=2,expct=22 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=20,b=1,expct=21 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=8000,expct=8040 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=40,b=4000,expct=4040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=2000,expct=2040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=1000,expct=1040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=800,expct=840 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=400,expct=440 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=200,expct=240 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=100,expct=140 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=80,expct=c0 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=40,expct=40 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=20,expct=60 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=10,expct=50 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=8,expct=48 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=4,expct=44 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=2,expct=42 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=40,b=1,expct=41 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=8000,expct=8080 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=80,b=4000,expct=4080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=2000,expct=2080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=1000,expct=1080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=800,expct=880 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=400,expct=480 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=200,expct=280 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=100,expct=180 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=80,expct=80 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=40,expct=c0 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=20,expct=a0 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=10,expct=90 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=8,expct=88 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=4,expct=84 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=2,expct=82 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=80,b=1,expct=81 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=8000,expct=8100 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=100,b=4000,expct=4100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=2000,expct=2100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=1000,expct=1100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=800,expct=900 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=400,expct=500 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=200,expct=300 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=100,expct=100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=80,expct=180 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=40,expct=140 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=20,expct=120 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=10,expct=110 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=8,expct=108 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=4,expct=104 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=2,expct=102 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=100,b=1,expct=101 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=8000,expct=8200 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=200,b=4000,expct=4200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=2000,expct=2200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=1000,expct=1200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=800,expct=a00 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=400,expct=600 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=200,expct=200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=100,expct=300 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=80,expct=280 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=40,expct=240 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=20,expct=220 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=10,expct=210 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=8,expct=208 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=4,expct=204 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=2,expct=202 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=200,b=1,expct=201 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=8000,expct=8400 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=400,b=4000,expct=4400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=2000,expct=2400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=1000,expct=1400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=800,expct=c00 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=400,expct=400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=200,expct=600 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=100,expct=500 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=80,expct=480 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=40,expct=440 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=20,expct=420 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=10,expct=410 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=8,expct=408 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=4,expct=404 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=2,expct=402 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=400,b=1,expct=401 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=8000,expct=8800 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=800,b=4000,expct=4800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=2000,expct=2800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=1000,expct=1800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=800,expct=800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=400,expct=c00 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=200,expct=a00 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=100,expct=900 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=80,expct=880 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=40,expct=840 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=20,expct=820 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=10,expct=810 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=8,expct=808 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=4,expct=804 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=2,expct=802 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=800,b=1,expct=801 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=8000,expct=9000 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=1000,b=4000,expct=5000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=2000,expct=3000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=1000,expct=1000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=800,expct=1800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=400,expct=1400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=200,expct=1200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=100,expct=1100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=80,expct=1080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=40,expct=1040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=20,expct=1020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=10,expct=1010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=8,expct=1008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=4,expct=1004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=2,expct=1002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=1000,b=1,expct=1001 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=8000,expct=a000 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=2000,b=4000,expct=6000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=2000,expct=2000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=1000,expct=3000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=800,expct=2800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=400,expct=2400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=200,expct=2200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=100,expct=2100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=80,expct=2080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=40,expct=2040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=20,expct=2020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=10,expct=2010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=8,expct=2008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=4,expct=2004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=2,expct=2002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=2000,b=1,expct=2001 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=8000,expct=c000 - rcvd=8000</pre>
+      <pre>FAILED - GA OR a=4000,b=4000,expct=4000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=2000,expct=6000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=1000,expct=5000 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=800,expct=4800 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=400,expct=4400 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=200,expct=4200 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=100,expct=4100 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=80,expct=4080 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=40,expct=4040 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=20,expct=4020 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=10,expct=4010 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=8,expct=4008 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=4,expct=4004 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=2,expct=4002 - rcvd=0</pre>
+      <pre>FAILED - GA OR a=4000,b=1,expct=4001 - rcvd=0</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 242, sim time 251000000 fs; natural end of simulation</pre>
+      <pre></pre>
+      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

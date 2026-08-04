@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-failed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>Arcilator</h1></a>
+        <h2>regress-sv_pv_wr_vec2a_nb_ec_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>simulation</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 10:14:08</dd></div>
+        <div><dt>time elapsed</dt><dd>0.105s</dd></div>
+        <div><dt>ram usage</dt><dd>30464 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>sh scr.sh</pre>
+      <pre>+ printf %s\n [Arcilator] mode=simulation top=</pre>
+      <pre>[Arcilator] mode=simulation top=</pre>
+      <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
+      <pre>[Arcilator] CIRCT frontend stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:30:10: warning: cannot select range of [4:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0][4:-1] &lt;= @e 6&#39;b101010;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:36:10: warning: cannot select range of [0:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0][0:-1] &lt;= @e 2&#39;b10;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:42:10: warning: cannot select range of [4:3] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0][4:3] &lt;= @e 2&#39;b01;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:10: warning: cannot select range of [-1:-2] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0][-1:-2] &lt;= @e 2&#39;b11;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:10: warning: cannot select range of [6:5] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0][6:5] &lt;= @e 2&#39;b11;</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:70:13: warning: cannot select range of 6 elements from &#39;bit[3:0]&#39; [-Wrange-width-oob]</pre>
+      <pre>    x[0][i+:6] &lt;= @e 6&#39;b101010;</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:70:5: remark: dynamic part-select is wider than the addressed vector; out-of-range bits of the write are discarded (IEEE 1800-2017 11.5.1)</pre>
+      <pre>    x[0][i+:6] &lt;= @e 6&#39;b101010;</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:70:5: note: see current operation: %136 = moore.dyn_extract_ref %17 from %135 : &lt;i4&gt;, l32 -&gt; &lt;i6&gt;</pre>
+      <pre>&lt;unknown&gt;:0: warning: in test: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
+      <pre>    x[0][-1:-2] &lt;= @e 2&#39;b11;</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:5: note: see current operation: %339 = &#34;moore.extract_ref&#34;(%80) &lt;{lowBit = -2 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
+      <pre>    x[0][6:5] &lt;= @e 2&#39;b11;</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:5: note: see current operation: %400 = &#34;moore.extract_ref&#34;(%80) &lt;{lowBit = 5 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/model.ll</pre>
+      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/design.mlir:584:13: error: failed to legalize operation &#39;llhd.sig.extract&#39;: %44 = &#34;llhd.sig.extract&#34;(%43, %35) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
+      <pre>      %15 = llhd.sig.extract %14 from %c1_i2 : &lt;i4&gt; -&gt; &lt;i2&gt;</pre>
+      <pre>            ^</pre>
+      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmp534y1yev/design.mlir:584:13: note: see current operation: %44 = &#34;llhd.sig.extract&#34;(%43, %35) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
+      <pre>+ exit 1</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

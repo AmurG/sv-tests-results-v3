@@ -1,0 +1,1 @@
+config_loader_data['sv2v_zachjs/veer-el2'] = [["cores","veer-el2",0,"logs/Sv2v_zachjs/generated/veer-config/veer-el2_sim/veer-el2_sim.sv.log.html","third_party/cores/veer-el2/design/include/el2_def.sv.html"]]

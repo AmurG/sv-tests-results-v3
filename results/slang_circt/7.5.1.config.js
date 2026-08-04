@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/7.5.1'] = [["","dynamic-arrays-op-new",1,"logs/Slang_circt/chapter-7/arrays/dynamic/op-new.sv.log.html","tests/chapter-7/arrays/dynamic/op-new.sv.html"]]

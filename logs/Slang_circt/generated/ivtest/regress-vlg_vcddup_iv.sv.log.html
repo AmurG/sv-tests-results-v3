@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../../log.css">
+  </head>
+  <body>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <h2>regress-vlg_vcddup_iv</h2>
+    </header>
+    <section class="property-list">
+      <dl>
+        <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>tags</dt><dd>ivtest</dd></div>
+        <div>
+          <dt>incdirs</dt>
+          <dd><ul>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
+            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+          </ul></dd>
+        </div>
+        <div><dt>top module</dt><dd></dd></div>
+        <div><dt>type</dt><dd>simulation elaboration parsing</dd></div>
+        <div><dt>results group</dt><dd>imported</dd></div>
+        <div><dt>mode</dt><dd>elaboration</dd></div>
+        <div>
+          <dt>files</dt>
+          <dd><ul>
+            <li><a href="../../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/vcd-dup.v</a><li>
+          </ul></dd>
+        </div>
+        <div><dt>defines</dt><dd><code></code></dd></div>
+        <div><dt>completed</dt><dd>2026-08-02 20:12:50</dd></div>
+        <div><dt>time elapsed</dt><dd>0.080s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+      </dl>
+    </section>
+    <section class="log">
+      <pre></pre>
+      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -o /dev/null -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/vcd-dup.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:19:2: warning: `$dumpfile` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        $dumpfile(&#34;work/vcd-dup.vcd&#34;);</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:20:2: warning: `$dumpvars` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        $dumpvars(2, test);             // test, test.m1, test.m2</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:21:2: warning: `$dumpvars` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        $dumpvars(3, m2.c1, m1.mm1.c1); // duplicate signals</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:24:2: warning: `$dumpvars` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        $dumpvars(0, m1);               // (test.m1), test.m1.mm1, test.m1.mm2</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:26:2: warning: `$dumpvars` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        $dumpvars(0, m2);               // ignored</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:36:5: warning: `$dumpoff` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        #1 $dumpoff;</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:40:5: warning: `$dumpon` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        #1 $dumpon;</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/vcd-dup.v:48:5: warning: `$dumpall` is ignored: VCD dumping is provided by the simulation engine, not the compiled model</pre>
+      <pre>        #1 $dumpall;</pre>
+      <pre>           ^</pre>
+      <pre></pre>
+    </section>
+  </body>
+</html>

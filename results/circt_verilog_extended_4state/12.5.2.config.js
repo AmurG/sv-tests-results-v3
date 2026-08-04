@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/12.5.2'] = [["","case_constant",1,"logs/circt_verilog_extended_4state/chapter-12/12.5.2--case_const.sv.log.html","tests/chapter-12/12.5.2--case_const.sv.html"]]

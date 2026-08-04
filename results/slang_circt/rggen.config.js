@@ -1,0 +1,1 @@
+config_loader_data['slang_circt/rggen'] = [["cores","RgGen",1,"logs/Slang_circt/generated/rggen/rggen.sv.log.html","third_party/cores/rggen-sv-rtl/rggen_rtl_pkg.sv.html"]]

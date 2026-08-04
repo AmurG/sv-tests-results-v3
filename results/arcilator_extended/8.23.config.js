@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/8.23'] = [["","scope_resolution",1,"logs/Arcilator_extended/chapter-8/8.23--scope_resolution.sv.log.html","tests/chapter-8/8.23--scope_resolution.sv.html"]]

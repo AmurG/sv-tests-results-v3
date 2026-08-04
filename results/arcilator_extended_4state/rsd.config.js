@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended_4state/rsd'] = [["cores","rsd",0,"logs/Arcilator_extended_4state/generated/rsd/rsd.sv.log.html","tests/generated/rsd/rsd.sv.html"]]

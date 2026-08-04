@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/5.13'] = [["","builtin-methods-string",1,"logs/Arcilator_extended/chapter-5/5.13-builtin-methods-strings.sv.log.html","tests/chapter-5/5.13-builtin-methods-strings.sv.html"]]

@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended/6.6.4'] = [["","net_trireg",1,"logs/circt_verilog_extended/generated/nets/6.6.4--net_trireg.sv.log.html","tests/generated/nets/6.6.4--net_trireg.sv.html"]]

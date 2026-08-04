@@ -1,0 +1,1 @@
+config_loader_data['arcilator_extended/7.6'] = [["","array-unpacked-assignments",1,"logs/Arcilator_extended/chapter-7/arrays/unpacked/assignments.sv.log.html","tests/chapter-7/arrays/unpacked/assignments.sv.html"]]

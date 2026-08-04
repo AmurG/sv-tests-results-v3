@@ -1,0 +1,1 @@
+config_loader_data['circt_verilog_extended_4state/18.5.4'] = [["","distribution_0",1,"logs/circt_verilog_extended_4state/chapter-18/18.5.4--distribution_0.sv.log.html","tests/chapter-18/18.5.4--distribution_0.sv.html"],["","distribution_2",1,"logs/circt_verilog_extended_4state/chapter-18/18.5.4--distribution_2.sv.log.html","tests/chapter-18/18.5.4--distribution_2.sv.html"]]
