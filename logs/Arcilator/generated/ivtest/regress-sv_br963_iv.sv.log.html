@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_br963_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-02 10:11:54</dd></div>
-        <div><dt>time elapsed</dt><dd>6.173s</dd></div>
-        <div><dt>ram usage</dt><dd>200704 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 06:06:40</dd></div>
+        <div><dt>time elapsed</dt><dd>6.148s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,152 +44,152 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br963.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br963.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br963.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br963.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/model.ll</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/state.json</pre>
+      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
       <pre>+ echo [Arcilator] gen-driver stage</pre>
       <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/driver.cpp  128 2 1 10 regress-sv_br963_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/design.mlir [] 0</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-sv_br963_iv ivtest <redacted-local-path> [] 0</pre>
       <pre>+ echo [Arcilator] llc stage</pre>
       <pre>[Arcilator] llc stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/model.o</pre>
+      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
       <pre>+ echo [Arcilator] driver link stage</pre>
       <pre>[Arcilator] driver link stage</pre>
-      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/driver.cpp /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/driver.bin -no-pie -latomic -lz -ltinfo</pre>
-      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/driver.cpp:17:</pre>
-      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/model.hpp:8:</pre>
-      <pre>In file included from /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-runtime.h:14:</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:932:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> -I<redacted-local-path> -I<redacted-local-path> -o <redacted-local-path> -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::string renderScalarI64(int64_t v) {</pre>
       <pre>                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:944:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
       <pre>                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1189:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1195:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1201:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1207:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1640:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1764:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
       <pre>                                 ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1774:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
       <pre>               ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1872:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
       <pre>                                                         ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:2746:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
       <pre>                                        ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3400:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
       <pre>^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3515:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline const char *&amp;currentSvScope() {</pre>
       <pre>                    ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3598:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
       <pre>                                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3602:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
       <pre>                ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4135:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4770:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4855:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
       <pre>                                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:5368:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
       <pre>19 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
-      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmpx24zdyva/wave.vcd</pre>
-      <pre>sum1 =    303379748  sum2 =    303379748</pre>
-      <pre>sum1 =   3533607845  sum2 =   3533607845</pre>
-      <pre>sum1 =   5756905902  sum2 =   5756905902</pre>
-      <pre>sum1 =   8742223889  sum2 =   8742223889</pre>
-      <pre>sum1 =   8855042846  sum2 =   8855042846</pre>
-      <pre>sum1 =  10044101803  sum2 =  10044101803</pre>
-      <pre>sum1 =  13043194128  sum2 =  13043194128</pre>
-      <pre>sum1 =  15345298210  sum2 =  15345298210</pre>
-      <pre>sum1 =  15361281571  sum2 =  15361281571</pre>
-      <pre>sum1 =  15476087600  sum2 =  15476087600</pre>
-      <pre>sum1 =  16468298918  sum2 =  16468298918</pre>
-      <pre>sum1 =  16980908515  sum2 =  16980908515</pre>
-      <pre>sum1 =  18974536144  sum2 =  18974536144</pre>
-      <pre>sum1 =  20151953756  sum2 =  20151953756</pre>
-      <pre>sum1 =  22248969045  sum2 =  22248969045</pre>
-      <pre>sum1 =  26061010971  sum2 =  26061010971</pre>
-      <pre>sum1 =  29868883168  sum2 =  29868883168</pre>
-      <pre>sum1 =  33443729290  sum2 =  33443729290</pre>
-      <pre>sum1 =  35367864175  sum2 =  35367864175</pre>
-      <pre>sum1 =  38518995430  sum2 =  38518995430</pre>
-      <pre>sum1 =  40820805624  sum2 =  40820805624</pre>
-      <pre>sum1 =  42027510663  sum2 =  42027510663</pre>
-      <pre>sum1 =  44060726649  sum2 =  44060726649</pre>
-      <pre>sum1 =  47944035399  sum2 =  47944035399</pre>
-      <pre>sum1 =  52037707567  sum2 =  52037707567</pre>
-      <pre>sum1 =  55842616820  sum2 =  55842616820</pre>
-      <pre>sum1 =  56620154704  sum2 =  56620154704</pre>
-      <pre>sum1 =  60354013197  sum2 =  60354013197</pre>
-      <pre>sum1 =  62881824826  sum2 =  62881824826</pre>
-      <pre>sum1 =  65879123615  sum2 =  65879123615</pre>
-      <pre>sum1 =  68864379138  sum2 =  68864379138</pre>
-      <pre>sum1 =  68955836428  sum2 =  68955836428</pre>
-      <pre>sum1 =  71877557608  sum2 =  71877557608</pre>
-      <pre>sum1 =  68922327047  sum2 =  68922327047</pre>
-      <pre>sum1 =  68132974504  sum2 =  68132974504</pre>
-      <pre>sum1 =  68617184738  sum2 =  68617184738</pre>
-      <pre>sum1 =  71912253803  sum2 =  71912253803</pre>
-      <pre>sum1 =  73030305777  sum2 =  73030305777</pre>
-      <pre>sum1 =  72291695513  sum2 =  72291695513</pre>
-      <pre>sum1 =  72835940314  sum2 =  72835940314</pre>
-      <pre>sum1 =  73719626308  sum2 =  73719626308</pre>
-      <pre>sum1 =  77541578764  sum2 =  77541578764</pre>
-      <pre>sum1 =  78715154584  sum2 =  78715154584</pre>
-      <pre>sum1 =  81815298569  sum2 =  81815298569</pre>
-      <pre>sum1 =  80073323321  sum2 =  80073323321</pre>
-      <pre>sum1 =  82784382588  sum2 =  82784382588</pre>
-      <pre>sum1 =  80981249446  sum2 =  80981249446</pre>
-      <pre>sum1 =  77253709290  sum2 =  77253709290</pre>
-      <pre>sum1 =  77295358959  sum2 =  77295358959</pre>
-      <pre>sum1 =  76374543745  sum2 =  76374543745</pre>
-      <pre>sum1 =  76487316366  sum2 =  76487316366</pre>
-      <pre>sum1 =  74496852641  sum2 =  74496852641</pre>
-      <pre>sum1 =  72744804304  sum2 =  72744804304</pre>
-      <pre>sum1 =  75502450969  sum2 =  75502450969</pre>
-      <pre>sum1 =  74478027423  sum2 =  74478027423</pre>
-      <pre>sum1 =  73892101722  sum2 =  73892101722</pre>
-      <pre>sum1 =  71774277981  sum2 =  71774277981</pre>
-      <pre>sum1 =  69496252494  sum2 =  69496252494</pre>
-      <pre>sum1 =  70384638136  sum2 =  70384638136</pre>
-      <pre>sum1 =  68111778729  sum2 =  68111778729</pre>
-      <pre>sum1 =  69316177464  sum2 =  69316177464</pre>
-      <pre>sum1 =  66672239869  sum2 =  66672239869</pre>
-      <pre>sum1 =  65932483749  sum2 =  65932483749</pre>
-      <pre>sum1 =  68937978892  sum2 =  68937978892</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path></pre>
+      <pre>sum1 =   3263275120  sum2 =   3263275120</pre>
+      <pre>sum1 =   7320954256  sum2 =   7320954256</pre>
+      <pre>sum1 =   8386003110  sum2 =   8386003110</pre>
+      <pre>sum1 =   9667612588  sum2 =   9667612588</pre>
+      <pre>sum1 =  10400329139  sum2 =  10400329139</pre>
+      <pre>sum1 =  11497455018  sum2 =  11497455018</pre>
+      <pre>sum1 =  13719695100  sum2 =  13719695100</pre>
+      <pre>sum1 =  17935955568  sum2 =  17935955568</pre>
+      <pre>sum1 =  20649730835  sum2 =  20649730835</pre>
+      <pre>sum1 =  23265860409  sum2 =  23265860409</pre>
+      <pre>sum1 =  24220467197  sum2 =  24220467197</pre>
+      <pre>sum1 =  26907393043  sum2 =  26907393043</pre>
+      <pre>sum1 =  29234363703  sum2 =  29234363703</pre>
+      <pre>sum1 =  30925768735  sum2 =  30925768735</pre>
+      <pre>sum1 =  32496439671  sum2 =  32496439671</pre>
+      <pre>sum1 =  34166649597  sum2 =  34166649597</pre>
+      <pre>sum1 =  37056284501  sum2 =  37056284501</pre>
+      <pre>sum1 =  38394988928  sum2 =  38394988928</pre>
+      <pre>sum1 =  39137821885  sum2 =  39137821885</pre>
+      <pre>sum1 =  39856687267  sum2 =  39856687267</pre>
+      <pre>sum1 =  43921120344  sum2 =  43921120344</pre>
+      <pre>sum1 =  44926359779  sum2 =  44926359779</pre>
+      <pre>sum1 =  45675907987  sum2 =  45675907987</pre>
+      <pre>sum1 =  47967771235  sum2 =  47967771235</pre>
+      <pre>sum1 =  49959175734  sum2 =  49959175734</pre>
+      <pre>sum1 =  50192351890  sum2 =  50192351890</pre>
+      <pre>sum1 =  52530311075  sum2 =  52530311075</pre>
+      <pre>sum1 =  54129171921  sum2 =  54129171921</pre>
+      <pre>sum1 =  56172288468  sum2 =  56172288468</pre>
+      <pre>sum1 =  58061124098  sum2 =  58061124098</pre>
+      <pre>sum1 =  58362959754  sum2 =  58362959754</pre>
+      <pre>sum1 =  61545537811  sum2 =  61545537811</pre>
+      <pre>sum1 =  59583033168  sum2 =  59583033168</pre>
+      <pre>sum1 =  56098432265  sum2 =  56098432265</pre>
+      <pre>sum1 =  55646085391  sum2 =  55646085391</pre>
+      <pre>sum1 =  58632317012  sum2 =  58632317012</pre>
+      <pre>sum1 =  60870920303  sum2 =  60870920303</pre>
+      <pre>sum1 =  60815808558  sum2 =  60815808558</pre>
+      <pre>sum1 =  62869320817  sum2 =  62869320817</pre>
+      <pre>sum1 =  62702213012  sum2 =  62702213012</pre>
+      <pre>sum1 =  61970837546  sum2 =  61970837546</pre>
+      <pre>sum1 =  60747886612  sum2 =  60747886612</pre>
+      <pre>sum1 =  60652974467  sum2 =  60652974467</pre>
+      <pre>sum1 =  60222377553  sum2 =  60222377553</pre>
+      <pre>sum1 =  59430524876  sum2 =  59430524876</pre>
+      <pre>sum1 =  59997279804  sum2 =  59997279804</pre>
+      <pre>sum1 =  61075701266  sum2 =  61075701266</pre>
+      <pre>sum1 =  60176402282  sum2 =  60176402282</pre>
+      <pre>sum1 =  57644974511  sum2 =  57644974511</pre>
+      <pre>sum1 =  59623997081  sum2 =  59623997081</pre>
+      <pre>sum1 =  60229539652  sum2 =  60229539652</pre>
+      <pre>sum1 =  61655064092  sum2 =  61655064092</pre>
+      <pre>sum1 =  58900704660  sum2 =  58900704660</pre>
+      <pre>sum1 =  59479421288  sum2 =  59479421288</pre>
+      <pre>sum1 =  61103332247  sum2 =  61103332247</pre>
+      <pre>sum1 =  62685424109  sum2 =  62685424109</pre>
+      <pre>sum1 =  64324509977  sum2 =  64324509977</pre>
+      <pre>sum1 =  66701911863  sum2 =  66701911863</pre>
+      <pre>sum1 =  65153969803  sum2 =  65153969803</pre>
+      <pre>sum1 =  63828845288  sum2 =  63828845288</pre>
+      <pre>sum1 =  65410627649  sum2 =  65410627649</pre>
+      <pre>sum1 =  67450175196  sum2 =  67450175196</pre>
+      <pre>sum1 =  68523443558  sum2 =  68523443558</pre>
+      <pre>sum1 =  67916030181  sum2 =  67916030181</pre>
       <pre>PASSED</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
       <pre></pre>

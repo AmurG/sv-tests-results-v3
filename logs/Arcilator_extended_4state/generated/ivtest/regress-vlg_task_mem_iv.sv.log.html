@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_task_mem_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-04 09:14:18</dd></div>
-        <div><dt>time elapsed</dt><dd>141.055s</dd></div>
-        <div><dt>ram usage</dt><dd>84144656 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 09:39:00</dd></div>
+        <div><dt>time elapsed</dt><dd>144.349s</dd></div>
+        <div><dt>ram usage</dt><dd>84147136 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,48 +44,48 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/task_mem.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/task_mem.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/task_mem.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/task_mem.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.ll</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/state.json</pre>
+      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
       <pre>+ echo [Arcilator] gen-driver stage</pre>
       <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/driver.cpp  128 2 1 10 regress-vlg_task_mem_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/design.mlir [] 0</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-vlg_task_mem_iv ivtest <redacted-local-path> [] 0</pre>
       <pre>+ echo [Arcilator] llc stage</pre>
       <pre>[Arcilator] llc stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.o</pre>
+      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
       <pre>PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace and instructions to reproduce the bug.</pre>
       <pre>Stack dump:</pre>
-      <pre>0.	Program arguments: /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.o</pre>
-      <pre>1.	Running pass &#39;Function Pass Manager&#39; on module &#39;/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp1qojzxuo/model.ll&#39;.</pre>
+      <pre>0.	Program arguments: <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
+      <pre>1.	Running pass &#39;Function Pass Manager&#39; on module &#39;<redacted-local-path></pre>
       <pre>2.	Running pass &#39;X86 DAG-&gt;DAG Instruction Selection&#39; on function &#39;@loadram&#39;</pre>
       <pre>Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):</pre>
-      <pre>0  llc       0x000061a207f53990 llvm::sys::PrintStackTrace(llvm::raw_ostream&amp;, int) + 240</pre>
-      <pre>1  llc       0x000061a207f50add</pre>
-      <pre>2  libc.so.6 0x000078a180842520</pre>
-      <pre>3  llc       0x000061a207ccc0b6 llvm::SelectionDAG::ReplaceAllUsesWith(llvm::SDNode*, llvm::SDValue const*) + 310</pre>
-      <pre>4  llc       0x000061a207b964bf</pre>
-      <pre>5  llc       0x000061a207b977cb</pre>
-      <pre>6  llc       0x000061a207b98e2d llvm::SelectionDAG::Combine(llvm::CombineLevel, llvm::BatchAAResults*, llvm::CodeGenOptLevel) + 2317</pre>
-      <pre>7  llc       0x000061a207ce6456 llvm::SelectionDAGISel::CodeGenAndEmitDAG() + 198</pre>
-      <pre>8  llc       0x000061a207ce864b llvm::SelectionDAGISel::SelectAllBasicBlocks(llvm::Function const&amp;) + 2507</pre>
-      <pre>9  llc       0x000061a207cea0cc llvm::SelectionDAGISel::runOnMachineFunction(llvm::MachineFunction&amp;) + 236</pre>
-      <pre>10 llc       0x000061a207ce589d llvm::SelectionDAGISelLegacy::runOnMachineFunction(llvm::MachineFunction&amp;) + 381</pre>
-      <pre>11 llc       0x000061a206fe5de5 llvm::MachineFunctionPass::runOnFunction(llvm::Function&amp;) + 373</pre>
-      <pre>12 llc       0x000061a20751b522 llvm::FPPassManager::runOnFunction(llvm::Function&amp;) + 1810</pre>
-      <pre>13 llc       0x000061a20751b914 llvm::FPPassManager::runOnModule(llvm::Module&amp;) + 52</pre>
-      <pre>14 llc       0x000061a20751c3bd</pre>
-      <pre>15 llc       0x000061a20751ca8d llvm::legacy::PassManagerImpl::run(llvm::Module&amp;) + 205</pre>
-      <pre>16 llc       0x000061a2066da27a</pre>
-      <pre>17 llc       0x000061a20662dbec main + 1148</pre>
-      <pre>18 libc.so.6 0x000078a180829d90</pre>
-      <pre>19 libc.so.6 0x000078a180829e40 __libc_start_main + 128</pre>
-      <pre>20 llc       0x000061a2066d0575 _start + 37</pre>
+      <pre>0  llc       0x000060e9b9fd8990 llvm::sys::PrintStackTrace(llvm::raw_ostream&amp;, int) + 240</pre>
+      <pre>1  llc       0x000060e9b9fd5add</pre>
+      <pre>2  libc.so.6 0x00007a46fb042520</pre>
+      <pre>3  llc       0x000060e9b9d510b6 llvm::SelectionDAG::ReplaceAllUsesWith(llvm::SDNode*, llvm::SDValue const*) + 310</pre>
+      <pre>4  llc       0x000060e9b9c1b4bf</pre>
+      <pre>5  llc       0x000060e9b9c1c7cb</pre>
+      <pre>6  llc       0x000060e9b9c1de2d llvm::SelectionDAG::Combine(llvm::CombineLevel, llvm::BatchAAResults*, llvm::CodeGenOptLevel) + 2317</pre>
+      <pre>7  llc       0x000060e9b9d6b456 llvm::SelectionDAGISel::CodeGenAndEmitDAG() + 198</pre>
+      <pre>8  llc       0x000060e9b9d6d64b llvm::SelectionDAGISel::SelectAllBasicBlocks(llvm::Function const&amp;) + 2507</pre>
+      <pre>9  llc       0x000060e9b9d6f0cc llvm::SelectionDAGISel::runOnMachineFunction(llvm::MachineFunction&amp;) + 236</pre>
+      <pre>10 llc       0x000060e9b9d6a89d llvm::SelectionDAGISelLegacy::runOnMachineFunction(llvm::MachineFunction&amp;) + 381</pre>
+      <pre>11 llc       0x000060e9b906ade5 llvm::MachineFunctionPass::runOnFunction(llvm::Function&amp;) + 373</pre>
+      <pre>12 llc       0x000060e9b95a0522 llvm::FPPassManager::runOnFunction(llvm::Function&amp;) + 1810</pre>
+      <pre>13 llc       0x000060e9b95a0914 llvm::FPPassManager::runOnModule(llvm::Module&amp;) + 52</pre>
+      <pre>14 llc       0x000060e9b95a13bd</pre>
+      <pre>15 llc       0x000060e9b95a1a8d llvm::legacy::PassManagerImpl::run(llvm::Module&amp;) + 205</pre>
+      <pre>16 llc       0x000060e9b875f27a</pre>
+      <pre>17 llc       0x000060e9b86b2bec main + 1148</pre>
+      <pre>18 libc.so.6 0x00007a46fb029d90</pre>
+      <pre>19 libc.so.6 0x00007a46fb029e40 __libc_start_main + 128</pre>
+      <pre>20 llc       0x000060e9b8755575 _start + 37</pre>
       <pre>Segmentation fault (core dumped)</pre>
       <pre>+ exit 139</pre>
       <pre></pre>

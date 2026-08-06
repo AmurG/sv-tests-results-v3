@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_delay4_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-04 09:06:58</dd></div>
-        <div><dt>time elapsed</dt><dd>0.067s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 09:30:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.065s</dd></div>
         <div><dt>ram usage</dt><dd>28672 KB</dd></div>
       </dl>
     </section>
@@ -44,20 +44,20 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/delay4.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/delay4.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/delay4.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/delay4.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/model.ll</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir:54:5: error: &#39;llhd.drv&#39; op drive with a nonzero real-time delay of type &#39;!hw.struct&lt;value: i1, unknown: i1&gt;&#39; is not supported</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> error: &#39;llhd.drv&#39; op drive with a nonzero real-time delay of type &#39;!hw.struct&lt;value: i1, unknown: i1&gt;&#39; is not supported</pre>
       <pre>    llhd.drv %trace, %20 after %33 : !hw.struct&lt;value: i1, unknown: i1&gt;</pre>
       <pre>    ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir:54:5: note: see current operation: &#34;llhd.drv&#34;(%6, %8, %12) : (!llhd.ref&lt;!hw.struct&lt;value: i1, unknown: i1&gt;&gt;, !hw.struct&lt;value: i1, unknown: i1&gt;, !llhd.time) -&gt; ()</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir:54:5: remark: computing new phase here</pre>
+      <pre><redacted-local-path> note: see current operation: &#34;llhd.drv&#34;(%6, %8, %12) : (!llhd.ref&lt;!hw.struct&lt;value: i1, unknown: i1&gt;&gt;, !hw.struct&lt;value: i1, unknown: i1&gt;, !llhd.time) -&gt; ()</pre>
+      <pre><redacted-local-path> remark: computing new phase here</pre>
       <pre>    llhd.drv %trace, %20 after %33 : !hw.struct&lt;value: i1, unknown: i1&gt;</pre>
       <pre>    ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpoq_ap9wk/design.mlir:54:5: note: see current operation: llhd.drv %trace, %5 after %9 : !hw.struct&lt;value: i1, unknown: i1&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: llhd.drv %trace, %5 after %9 : !hw.struct&lt;value: i1, unknown: i1&gt;</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>circt-verilog</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
         <h2>hdlconvertor_std2017_p633</h2>
     </header>
     <section class="property-list">
@@ -17,7 +17,7 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,14 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-02 09:47:38</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 05:12:04</dd></div>
         <div><dt>time elapsed</dt><dd>0.034s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p633.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p633.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p633.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p633.sv</a></pre>
+      <pre><redacted-local-path> --parse-only -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p633.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p633.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p633.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p633.sv</a></pre>
       <pre>module {</pre>
       <pre>  moore.module @top() {</pre>
       <pre>    %va = moore.variable %13 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
@@ -82,177 +82,171 @@
       <pre>      %31 = moore.fstring_to_string %30</pre>
       <pre>      moore.blocking_assign %23, %31 : string</pre>
       <pre>      %32 = moore.read %17 : &lt;i32&gt;</pre>
-      <pre>      %33 = moore.fmt.literal &#34;&#39;h&#34;</pre>
+      <pre>      %33 = moore.fmt.int decimal %32, align right, pad space width 0 signed : i32</pre>
       <pre>      %34 = moore.fstring_to_string %33</pre>
-      <pre>      %35 = moore.fmt.int hex_lower %32, align right, pad zero width 0 : i32</pre>
-      <pre>      %36 = moore.fstring_to_string %35</pre>
-      <pre>      %37 = moore.string.concat (%34, %36)</pre>
-      <pre>      %38 = moore.assoc_array_extract %15[%32] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
-      <pre>      %39 = moore.fmt.literal &#34;&#39;{&#34;</pre>
+      <pre>      %35 = moore.assoc_array_extract %15[%32] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
+      <pre>      %36 = moore.fmt.literal &#34;&#39;{&#34;</pre>
+      <pre>      %37 = moore.fstring_to_string %36</pre>
+      <pre>      %38 = moore.struct_extract %35, &#34;sw&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; i32</pre>
+      <pre>      %39 = moore.fmt.literal &#34;&#39;h&#34;</pre>
       <pre>      %40 = moore.fstring_to_string %39</pre>
-      <pre>      %41 = moore.struct_extract %38, &#34;sw&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; i32</pre>
-      <pre>      %42 = moore.fmt.literal &#34;&#39;h&#34;</pre>
-      <pre>      %43 = moore.fstring_to_string %42</pre>
-      <pre>      %44 = moore.fmt.int hex_lower %41, align right, pad zero width 0 : i32</pre>
-      <pre>      %45 = moore.fstring_to_string %44</pre>
-      <pre>      %46 = moore.string.concat (%43, %45)</pre>
-      <pre>      %47 = moore.constant 1 : i32</pre>
-      <pre>      %48 = moore.eq %41, %47 : i32 -&gt; i1</pre>
+      <pre>      %41 = moore.fmt.int hex_lower %38, align right, pad zero width 0 : i32</pre>
+      <pre>      %42 = moore.fstring_to_string %41</pre>
+      <pre>      %43 = moore.string.concat (%40, %42)</pre>
+      <pre>      %44 = moore.constant 1 : i32</pre>
+      <pre>      %45 = moore.eq %38, %44 : i32 -&gt; i1</pre>
+      <pre>      %46 = moore.conditional %45 : i1 -&gt; string {</pre>
+      <pre>        %158 = moore.fmt.literal &#34;OFF&#34;</pre>
+      <pre>        %159 = moore.fstring_to_string %158</pre>
+      <pre>        moore.yield %159 : string</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %43 : string</pre>
+      <pre>      }</pre>
+      <pre>      %47 = moore.constant 0 : i32</pre>
+      <pre>      %48 = moore.eq %38, %47 : i32 -&gt; i1</pre>
       <pre>      %49 = moore.conditional %48 : i1 -&gt; string {</pre>
-      <pre>        %164 = moore.fmt.literal &#34;OFF&#34;</pre>
-      <pre>        %165 = moore.fstring_to_string %164</pre>
-      <pre>        moore.yield %165 : string</pre>
+      <pre>        %158 = moore.fmt.literal &#34;ON&#34;</pre>
+      <pre>        %159 = moore.fstring_to_string %158</pre>
+      <pre>        moore.yield %159 : string</pre>
       <pre>      } {</pre>
       <pre>        moore.yield %46 : string</pre>
       <pre>      }</pre>
-      <pre>      %50 = moore.constant 0 : i32</pre>
-      <pre>      %51 = moore.eq %41, %50 : i32 -&gt; i1</pre>
-      <pre>      %52 = moore.conditional %51 : i1 -&gt; string {</pre>
-      <pre>        %164 = moore.fmt.literal &#34;ON&#34;</pre>
-      <pre>        %165 = moore.fstring_to_string %164</pre>
-      <pre>        moore.yield %165 : string</pre>
-      <pre>      } {</pre>
-      <pre>        moore.yield %49 : string</pre>
-      <pre>      }</pre>
-      <pre>      %53 = moore.fmt.literal &#34;sw:&#34;</pre>
-      <pre>      %54 = moore.fstring_to_string %53</pre>
-      <pre>      %55 = moore.string.concat (%40, %54, %52)</pre>
-      <pre>      %56 = moore.struct_extract %38, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
-      <pre>      %57 = moore.fmt.literal &#34;\22&#34;</pre>
-      <pre>      %58 = moore.fstring_to_string %57</pre>
-      <pre>      %59 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %50 = moore.fmt.literal &#34;sw:&#34;</pre>
+      <pre>      %51 = moore.fstring_to_string %50</pre>
+      <pre>      %52 = moore.string.concat (%37, %51, %49)</pre>
+      <pre>      %53 = moore.struct_extract %35, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
+      <pre>      %54 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %55 = moore.fstring_to_string %54</pre>
+      <pre>      %56 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %57 = moore.fstring_to_string %56</pre>
+      <pre>      %58 = moore.string.concat (%55, %53, %57)</pre>
+      <pre>      %59 = moore.fmt.literal &#34;, s:&#34;</pre>
       <pre>      %60 = moore.fstring_to_string %59</pre>
-      <pre>      %61 = moore.string.concat (%58, %56, %60)</pre>
-      <pre>      %62 = moore.fmt.literal &#34;, s:&#34;</pre>
+      <pre>      %61 = moore.string.concat (%52, %60, %58)</pre>
+      <pre>      %62 = moore.fmt.literal &#34;}&#34;</pre>
       <pre>      %63 = moore.fstring_to_string %62</pre>
-      <pre>      %64 = moore.string.concat (%55, %63, %61)</pre>
-      <pre>      %65 = moore.fmt.literal &#34;}&#34;</pre>
+      <pre>      %64 = moore.string.concat (%61, %63)</pre>
+      <pre>      %65 = moore.fmt.literal &#34;:&#34;</pre>
       <pre>      %66 = moore.fstring_to_string %65</pre>
-      <pre>      %67 = moore.string.concat (%64, %66)</pre>
-      <pre>      %68 = moore.fmt.literal &#34;:&#34;</pre>
-      <pre>      %69 = moore.fstring_to_string %68</pre>
-      <pre>      %70 = moore.string.concat (%29, %37, %69, %67)</pre>
-      <pre>      moore.blocking_assign %20, %70 : string</pre>
+      <pre>      %67 = moore.string.concat (%29, %34, %66, %64)</pre>
+      <pre>      moore.blocking_assign %20, %67 : string</pre>
       <pre>      cf.br ^bb2</pre>
       <pre>    ^bb2:  // pred: ^bb1</pre>
-      <pre>      %71 = moore.assoc_array.next to %17 from %16 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %72 = moore.bool_cast %71 : i32 -&gt; i1</pre>
-      <pre>      %73 = moore.to_builtin_int %72 : i1</pre>
-      <pre>      cf.cond_br %73, ^bb1, ^bb3</pre>
+      <pre>      %68 = moore.assoc_array.next to %17 from %16 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %69 = moore.bool_cast %68 : i32 -&gt; i1</pre>
+      <pre>      %70 = moore.to_builtin_int %69 : i1</pre>
+      <pre>      cf.cond_br %70, ^bb1, ^bb3</pre>
       <pre>    ^bb3:  // 2 preds: ^bb0, ^bb2</pre>
-      <pre>      %74 = moore.read %20 : &lt;string&gt;</pre>
-      <pre>      %75 = moore.fmt.literal &#34;}&#34;</pre>
-      <pre>      %76 = moore.fstring_to_string %75</pre>
-      <pre>      %77 = moore.string.concat (%74, %76)</pre>
-      <pre>      %78 = moore.fmt.string %77</pre>
-      <pre>      %79 = moore.fmt.literal &#34;;&#34;</pre>
-      <pre>      %80 = moore.fmt.literal &#34;\0A&#34;</pre>
-      <pre>      %81 = moore.fmt.concat (%14, %78, %79, %80)</pre>
-      <pre>      moore.builtin.display %81</pre>
-      <pre>      %82 = moore.fmt.literal &#34;va[int] = &#34;</pre>
-      <pre>      %83 = moore.read %va : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %84 = moore.variable %83 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %85 = moore.variable : &lt;i32&gt;</pre>
-      <pre>      %86 = moore.fmt.literal &#34;&#39;{&#34;</pre>
+      <pre>      %71 = moore.read %20 : &lt;string&gt;</pre>
+      <pre>      %72 = moore.fmt.literal &#34;}&#34;</pre>
+      <pre>      %73 = moore.fstring_to_string %72</pre>
+      <pre>      %74 = moore.string.concat (%71, %73)</pre>
+      <pre>      %75 = moore.fmt.string %74</pre>
+      <pre>      %76 = moore.fmt.literal &#34;;&#34;</pre>
+      <pre>      %77 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %78 = moore.fmt.concat (%14, %75, %76, %77)</pre>
+      <pre>      moore.builtin.display %78</pre>
+      <pre>      %79 = moore.fmt.literal &#34;va[int] = &#34;</pre>
+      <pre>      %80 = moore.read %va : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %81 = moore.variable %80 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %82 = moore.variable : &lt;i32&gt;</pre>
+      <pre>      %83 = moore.fmt.literal &#34;&#39;{&#34;</pre>
+      <pre>      %84 = moore.fstring_to_string %83</pre>
+      <pre>      %85 = moore.variable %84 : &lt;string&gt;</pre>
+      <pre>      %86 = moore.fmt.literal &#34;&#34;</pre>
       <pre>      %87 = moore.fstring_to_string %86</pre>
       <pre>      %88 = moore.variable %87 : &lt;string&gt;</pre>
-      <pre>      %89 = moore.fmt.literal &#34;&#34;</pre>
-      <pre>      %90 = moore.fstring_to_string %89</pre>
-      <pre>      %91 = moore.variable %90 : &lt;string&gt;</pre>
-      <pre>      %92 = moore.assoc_array.first to %85 from %84 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %93 = moore.bool_cast %92 : i32 -&gt; i1</pre>
-      <pre>      %94 = moore.to_builtin_int %93 : i1</pre>
-      <pre>      cf.cond_br %94, ^bb4, ^bb6</pre>
+      <pre>      %89 = moore.assoc_array.first to %82 from %81 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %90 = moore.bool_cast %89 : i32 -&gt; i1</pre>
+      <pre>      %91 = moore.to_builtin_int %90 : i1</pre>
+      <pre>      cf.cond_br %91, ^bb4, ^bb6</pre>
       <pre>    ^bb4:  // 2 preds: ^bb3, ^bb5</pre>
-      <pre>      %95 = moore.read %88 : &lt;string&gt;</pre>
-      <pre>      %96 = moore.read %91 : &lt;string&gt;</pre>
-      <pre>      %97 = moore.string.concat (%95, %96)</pre>
-      <pre>      %98 = moore.fmt.literal &#34;,&#34;</pre>
+      <pre>      %92 = moore.read %85 : &lt;string&gt;</pre>
+      <pre>      %93 = moore.read %88 : &lt;string&gt;</pre>
+      <pre>      %94 = moore.string.concat (%92, %93)</pre>
+      <pre>      %95 = moore.fmt.literal &#34;,&#34;</pre>
+      <pre>      %96 = moore.fstring_to_string %95</pre>
+      <pre>      moore.blocking_assign %88, %96 : string</pre>
+      <pre>      %97 = moore.read %82 : &lt;i32&gt;</pre>
+      <pre>      %98 = moore.fmt.int decimal %97, align right, pad space width 0 signed : i32</pre>
       <pre>      %99 = moore.fstring_to_string %98</pre>
-      <pre>      moore.blocking_assign %91, %99 : string</pre>
-      <pre>      %100 = moore.read %85 : &lt;i32&gt;</pre>
-      <pre>      %101 = moore.fmt.literal &#34;&#39;h&#34;</pre>
+      <pre>      %100 = moore.assoc_array_extract %80[%97] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
+      <pre>      %101 = moore.fmt.literal &#34;&#39;{&#34;</pre>
       <pre>      %102 = moore.fstring_to_string %101</pre>
-      <pre>      %103 = moore.fmt.int hex_lower %100, align right, pad zero width 0 : i32</pre>
-      <pre>      %104 = moore.fstring_to_string %103</pre>
-      <pre>      %105 = moore.string.concat (%102, %104)</pre>
-      <pre>      %106 = moore.assoc_array_extract %83[%100] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
-      <pre>      %107 = moore.fmt.literal &#34;&#39;{&#34;</pre>
-      <pre>      %108 = moore.fstring_to_string %107</pre>
-      <pre>      %109 = moore.struct_extract %106, &#34;sw&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; i32</pre>
-      <pre>      %110 = moore.fmt.literal &#34;&#39;h&#34;</pre>
-      <pre>      %111 = moore.fstring_to_string %110</pre>
-      <pre>      %112 = moore.fmt.int hex_lower %109, align right, pad zero width 0 : i32</pre>
-      <pre>      %113 = moore.fstring_to_string %112</pre>
-      <pre>      %114 = moore.string.concat (%111, %113)</pre>
-      <pre>      %115 = moore.constant 1 : i32</pre>
-      <pre>      %116 = moore.eq %109, %115 : i32 -&gt; i1</pre>
-      <pre>      %117 = moore.conditional %116 : i1 -&gt; string {</pre>
-      <pre>        %164 = moore.fmt.literal &#34;OFF&#34;</pre>
-      <pre>        %165 = moore.fstring_to_string %164</pre>
-      <pre>        moore.yield %165 : string</pre>
+      <pre>      %103 = moore.struct_extract %100, &#34;sw&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; i32</pre>
+      <pre>      %104 = moore.fmt.literal &#34;&#39;h&#34;</pre>
+      <pre>      %105 = moore.fstring_to_string %104</pre>
+      <pre>      %106 = moore.fmt.int hex_lower %103, align right, pad zero width 0 : i32</pre>
+      <pre>      %107 = moore.fstring_to_string %106</pre>
+      <pre>      %108 = moore.string.concat (%105, %107)</pre>
+      <pre>      %109 = moore.constant 1 : i32</pre>
+      <pre>      %110 = moore.eq %103, %109 : i32 -&gt; i1</pre>
+      <pre>      %111 = moore.conditional %110 : i1 -&gt; string {</pre>
+      <pre>        %158 = moore.fmt.literal &#34;OFF&#34;</pre>
+      <pre>        %159 = moore.fstring_to_string %158</pre>
+      <pre>        moore.yield %159 : string</pre>
       <pre>      } {</pre>
-      <pre>        moore.yield %114 : string</pre>
+      <pre>        moore.yield %108 : string</pre>
       <pre>      }</pre>
-      <pre>      %118 = moore.constant 0 : i32</pre>
-      <pre>      %119 = moore.eq %109, %118 : i32 -&gt; i1</pre>
-      <pre>      %120 = moore.conditional %119 : i1 -&gt; string {</pre>
-      <pre>        %164 = moore.fmt.literal &#34;ON&#34;</pre>
-      <pre>        %165 = moore.fstring_to_string %164</pre>
-      <pre>        moore.yield %165 : string</pre>
+      <pre>      %112 = moore.constant 0 : i32</pre>
+      <pre>      %113 = moore.eq %103, %112 : i32 -&gt; i1</pre>
+      <pre>      %114 = moore.conditional %113 : i1 -&gt; string {</pre>
+      <pre>        %158 = moore.fmt.literal &#34;ON&#34;</pre>
+      <pre>        %159 = moore.fstring_to_string %158</pre>
+      <pre>        moore.yield %159 : string</pre>
       <pre>      } {</pre>
-      <pre>        moore.yield %117 : string</pre>
+      <pre>        moore.yield %111 : string</pre>
       <pre>      }</pre>
-      <pre>      %121 = moore.fmt.literal &#34;&#34;</pre>
+      <pre>      %115 = moore.fmt.literal &#34;&#34;</pre>
+      <pre>      %116 = moore.fstring_to_string %115</pre>
+      <pre>      %117 = moore.string.concat (%102, %116, %114)</pre>
+      <pre>      %118 = moore.struct_extract %100, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
+      <pre>      %119 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %120 = moore.fstring_to_string %119</pre>
+      <pre>      %121 = moore.fmt.literal &#34;\22&#34;</pre>
       <pre>      %122 = moore.fstring_to_string %121</pre>
-      <pre>      %123 = moore.string.concat (%108, %122, %120)</pre>
-      <pre>      %124 = moore.struct_extract %106, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
-      <pre>      %125 = moore.fmt.literal &#34;\22&#34;</pre>
-      <pre>      %126 = moore.fstring_to_string %125</pre>
-      <pre>      %127 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %123 = moore.string.concat (%120, %118, %122)</pre>
+      <pre>      %124 = moore.fmt.literal &#34;,&#34;</pre>
+      <pre>      %125 = moore.fstring_to_string %124</pre>
+      <pre>      %126 = moore.string.concat (%117, %125, %123)</pre>
+      <pre>      %127 = moore.fmt.literal &#34;}&#34;</pre>
       <pre>      %128 = moore.fstring_to_string %127</pre>
-      <pre>      %129 = moore.string.concat (%126, %124, %128)</pre>
-      <pre>      %130 = moore.fmt.literal &#34;,&#34;</pre>
+      <pre>      %129 = moore.string.concat (%126, %128)</pre>
+      <pre>      %130 = moore.fmt.literal &#34;:&#34;</pre>
       <pre>      %131 = moore.fstring_to_string %130</pre>
-      <pre>      %132 = moore.string.concat (%123, %131, %129)</pre>
-      <pre>      %133 = moore.fmt.literal &#34;}&#34;</pre>
-      <pre>      %134 = moore.fstring_to_string %133</pre>
-      <pre>      %135 = moore.string.concat (%132, %134)</pre>
-      <pre>      %136 = moore.fmt.literal &#34;:&#34;</pre>
-      <pre>      %137 = moore.fstring_to_string %136</pre>
-      <pre>      %138 = moore.string.concat (%97, %105, %137, %135)</pre>
-      <pre>      moore.blocking_assign %88, %138 : string</pre>
+      <pre>      %132 = moore.string.concat (%94, %99, %131, %129)</pre>
+      <pre>      moore.blocking_assign %85, %132 : string</pre>
       <pre>      cf.br ^bb5</pre>
       <pre>    ^bb5:  // pred: ^bb4</pre>
-      <pre>      %139 = moore.assoc_array.next to %85 from %84 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %140 = moore.bool_cast %139 : i32 -&gt; i1</pre>
-      <pre>      %141 = moore.to_builtin_int %140 : i1</pre>
-      <pre>      cf.cond_br %141, ^bb4, ^bb6</pre>
+      <pre>      %133 = moore.assoc_array.next to %82 from %81 : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %134 = moore.bool_cast %133 : i32 -&gt; i1</pre>
+      <pre>      %135 = moore.to_builtin_int %134 : i1</pre>
+      <pre>      cf.cond_br %135, ^bb4, ^bb6</pre>
       <pre>    ^bb6:  // 2 preds: ^bb3, ^bb5</pre>
-      <pre>      %142 = moore.read %88 : &lt;string&gt;</pre>
-      <pre>      %143 = moore.fmt.literal &#34;}&#34;</pre>
-      <pre>      %144 = moore.fstring_to_string %143</pre>
-      <pre>      %145 = moore.string.concat (%142, %144)</pre>
-      <pre>      %146 = moore.fmt.string %145</pre>
-      <pre>      %147 = moore.fmt.literal &#34;;&#34;</pre>
-      <pre>      %148 = moore.fmt.literal &#34;\0A&#34;</pre>
-      <pre>      %149 = moore.fmt.concat (%82, %146, %147, %148)</pre>
-      <pre>      moore.builtin.display %149</pre>
-      <pre>      %150 = moore.fmt.literal &#34;va[10].s = &#34;</pre>
-      <pre>      %151 = moore.read %va : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
-      <pre>      %152 = moore.constant 10 : i32</pre>
-      <pre>      %153 = moore.assoc_array_extract %151[%152] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
-      <pre>      %154 = moore.struct_extract %153, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
-      <pre>      %155 = moore.fmt.literal &#34;\22&#34;</pre>
-      <pre>      %156 = moore.fstring_to_string %155</pre>
-      <pre>      %157 = moore.fmt.literal &#34;\22&#34;</pre>
-      <pre>      %158 = moore.fstring_to_string %157</pre>
-      <pre>      %159 = moore.string.concat (%156, %154, %158)</pre>
-      <pre>      %160 = moore.fmt.string %159</pre>
-      <pre>      %161 = moore.fmt.literal &#34;;&#34;</pre>
-      <pre>      %162 = moore.fmt.literal &#34;\0A&#34;</pre>
-      <pre>      %163 = moore.fmt.concat (%150, %160, %161, %162)</pre>
-      <pre>      moore.builtin.display %163</pre>
+      <pre>      %136 = moore.read %85 : &lt;string&gt;</pre>
+      <pre>      %137 = moore.fmt.literal &#34;}&#34;</pre>
+      <pre>      %138 = moore.fstring_to_string %137</pre>
+      <pre>      %139 = moore.string.concat (%136, %138)</pre>
+      <pre>      %140 = moore.fmt.string %139</pre>
+      <pre>      %141 = moore.fmt.literal &#34;;&#34;</pre>
+      <pre>      %142 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %143 = moore.fmt.concat (%79, %140, %141, %142)</pre>
+      <pre>      moore.builtin.display %143</pre>
+      <pre>      %144 = moore.fmt.literal &#34;va[10].s = &#34;</pre>
+      <pre>      %145 = moore.read %va : &lt;assoc_array&lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;&gt;</pre>
+      <pre>      %146 = moore.constant 10 : i32</pre>
+      <pre>      %147 = moore.assoc_array_extract %145[%146] : &lt;ustruct&lt;{sw: i32, s: string}&gt;, i32&gt;</pre>
+      <pre>      %148 = moore.struct_extract %147, &#34;s&#34; : ustruct&lt;{sw: i32, s: string}&gt; -&gt; string</pre>
+      <pre>      %149 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %150 = moore.fstring_to_string %149</pre>
+      <pre>      %151 = moore.fmt.literal &#34;\22&#34;</pre>
+      <pre>      %152 = moore.fstring_to_string %151</pre>
+      <pre>      %153 = moore.string.concat (%150, %148, %152)</pre>
+      <pre>      %154 = moore.fmt.string %153</pre>
+      <pre>      %155 = moore.fmt.literal &#34;;&#34;</pre>
+      <pre>      %156 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %157 = moore.fmt.concat (%144, %154, %155, %156)</pre>
+      <pre>      moore.builtin.display %157</pre>
       <pre>      moore.return</pre>
       <pre>    }</pre>
       <pre>    moore.output</pre>

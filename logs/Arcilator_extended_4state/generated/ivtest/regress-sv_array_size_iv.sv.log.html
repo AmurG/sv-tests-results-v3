@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_array_size_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-04 09:07:58</dd></div>
-        <div><dt>time elapsed</dt><dd>222.652s</dd></div>
-        <div><dt>ram usage</dt><dd>104061560 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 09:30:45</dd></div>
+        <div><dt>time elapsed</dt><dd>238.967s</dd></div>
+        <div><dt>ram usage</dt><dd>104164292 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,25 +44,25 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/array_size.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/array_size.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/array_size.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/array_size.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/model.ll</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/design.mlir:22:14: warning: four-valued aggregate signal &#39;array&#39; of type &#39;!hw.array&lt;65536xstruct&lt;value: i16, unknown: i16&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;array&#39; of type &#39;!hw.array&lt;65536xstruct&lt;value: i16, unknown: i16&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %array = llhd.sig %5 : !hw.array&lt;65536xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
       <pre>             ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/design.mlir:22:14: note: see current operation: %array = llhd.sig %2 : !hw.array&lt;65536xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %array = llhd.sig %2 : !hw.array&lt;65536xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/state.json</pre>
+      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
       <pre>+ echo [Arcilator] gen-driver stage</pre>
       <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/driver.cpp  128 2 1 10 regress-sv_array_size_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/design.mlir [] 0</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-sv_array_size_iv ivtest <redacted-local-path> [] 0</pre>
       <pre>+ echo [Arcilator] llc stage</pre>
       <pre>[Arcilator] llc stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp3_fmk__z/model.o</pre>
+      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
       <pre>Killed</pre>
       <pre>+ exit 137</pre>
       <pre></pre>

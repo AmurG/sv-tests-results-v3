@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_br_gh99q_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-04 09:10:09</dd></div>
-        <div><dt>time elapsed</dt><dd>0.121s</dd></div>
-        <div><dt>ram usage</dt><dd>25984 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 09:34:08</dd></div>
+        <div><dt>time elapsed</dt><dd>0.119s</dd></div>
+        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,30 +44,30 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpu23r33av/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99q.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99q.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99q.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99q.v</a></pre>
       <pre>PLEASE submit a bug report to https://github.com/llvm/circt and include the crash backtrace.</pre>
       <pre>Stack dump:</pre>
-      <pre>0.	Program arguments: /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog.real --four-valued -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmpu23r33av/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99q.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99q.v</a></pre>
+      <pre>0.	Program arguments: <redacted-local-path> --four-valued -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh99q.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh99q.v</a></pre>
       <pre>Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):</pre>
-      <pre>0  circt-verilog.real 0x00005efc1333c860</pre>
-      <pre>1  circt-verilog.real 0x00005efc13339abd</pre>
-      <pre>2  libc.so.6          0x00007b2714442520</pre>
-      <pre>3  circt-verilog.real 0x00005efc12927999</pre>
-      <pre>4  circt-verilog.real 0x00005efc129089e1</pre>
-      <pre>5  circt-verilog.real 0x00005efc130e9941</pre>
-      <pre>6  circt-verilog.real 0x00005efc130eabd2</pre>
-      <pre>7  circt-verilog.real 0x00005efc130aa262</pre>
-      <pre>8  circt-verilog.real 0x00005efc131b5de1</pre>
-      <pre>9  circt-verilog.real 0x00005efc131b6079</pre>
-      <pre>10 circt-verilog.real 0x00005efc131b51eb</pre>
-      <pre>11 circt-verilog.real 0x00005efc131b5d77</pre>
-      <pre>12 circt-verilog.real 0x00005efc131b6079</pre>
-      <pre>13 circt-verilog.real 0x00005efc131b6ebf</pre>
-      <pre>14 circt-verilog.real 0x00005efc12054792</pre>
-      <pre>15 circt-verilog.real 0x00005efc12011fb2</pre>
-      <pre>16 libc.so.6          0x00007b2714429d90</pre>
-      <pre>17 libc.so.6          0x00007b2714429e40 __libc_start_main + 128</pre>
-      <pre>18 circt-verilog.real 0x00005efc1204b655</pre>
+      <pre>0  circt-verilog.real 0x00005d5c089ba220</pre>
+      <pre>1  circt-verilog.real 0x00005d5c089b747d</pre>
+      <pre>2  libc.so.6          0x0000774a32642520</pre>
+      <pre>3  circt-verilog.real 0x00005d5c07fa5359</pre>
+      <pre>4  circt-verilog.real 0x00005d5c07f863a1</pre>
+      <pre>5  circt-verilog.real 0x00005d5c08767301</pre>
+      <pre>6  circt-verilog.real 0x00005d5c08768592</pre>
+      <pre>7  circt-verilog.real 0x00005d5c08727c22</pre>
+      <pre>8  circt-verilog.real 0x00005d5c088337a1</pre>
+      <pre>9  circt-verilog.real 0x00005d5c08833a39</pre>
+      <pre>10 circt-verilog.real 0x00005d5c08832bab</pre>
+      <pre>11 circt-verilog.real 0x00005d5c08833737</pre>
+      <pre>12 circt-verilog.real 0x00005d5c08833a39</pre>
+      <pre>13 circt-verilog.real 0x00005d5c0883487f</pre>
+      <pre>14 circt-verilog.real 0x00005d5c076cc8e2</pre>
+      <pre>15 circt-verilog.real 0x00005d5c0768a102</pre>
+      <pre>16 libc.so.6          0x0000774a32629d90</pre>
+      <pre>17 libc.so.6          0x0000774a32629e40 __libc_start_main + 128</pre>
+      <pre>18 circt-verilog.real 0x00005d5c076c37a5</pre>
       <pre>Segmentation fault (core dumped)</pre>
       <pre>+ exit 139</pre>
       <pre></pre>

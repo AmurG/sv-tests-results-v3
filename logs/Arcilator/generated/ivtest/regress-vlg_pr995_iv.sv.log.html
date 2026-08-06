@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_pr995_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-02 10:24:15</dd></div>
-        <div><dt>time elapsed</dt><dd>6.170s</dd></div>
-        <div><dt>ram usage</dt><dd>200704 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 06:20:29</dd></div>
+        <div><dt>time elapsed</dt><dd>6.149s</dd></div>
+        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,184 +44,184 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr995.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr995.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr995.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr995.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/model.ll</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-header-cpp.py /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/state.json</pre>
+      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
       <pre>+ echo [Arcilator] gen-driver stage</pre>
       <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/state.json /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/driver.cpp  128 2 1 10 regress-vlg_pr995_iv ivtest /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/design.mlir [] 0</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-vlg_pr995_iv ivtest <redacted-local-path> [] 0</pre>
       <pre>+ echo [Arcilator] llc stage</pre>
       <pre>[Arcilator] llc stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/llc -O0 --filetype=obj /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/model.ll -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/model.o</pre>
+      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
       <pre>+ echo [Arcilator] driver link stage</pre>
       <pre>[Arcilator] driver link stage</pre>
-      <pre>+ /usr/bin/clang++ -std=c++17 -O1 /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/model.o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/driver.cpp /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTArcRuntime.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libCIRCTSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMSupport.a /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/lib/libLLVMDemangle.a -I/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin -I/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/driver.bin -no-pie -latomic -lz -ltinfo</pre>
-      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/driver.cpp:17:</pre>
-      <pre>In file included from /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/model.hpp:8:</pre>
-      <pre>In file included from /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-runtime.h:14:</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:932:20: warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> -I<redacted-local-path> -I<redacted-local-path> -o <redacted-local-path> -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::string renderScalarI64(int64_t v) {</pre>
       <pre>                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:944:20: warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
       <pre>                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1189:28: warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1195:28: warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1201:28: warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1207:28: warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1640:28: warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
       <pre>                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1764:34: warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
       <pre>                                 ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1774:16: warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
       <pre>               ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:1872:58: warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
       <pre>                                                         ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:2746:41: warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
       <pre>                                        ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3400:1: warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
       <pre>^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3515:21: warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline const char *&amp;currentSvScope() {</pre>
       <pre>                    ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3598:36: warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
       <pre>                                   ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:3602:17: warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
       <pre>                ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4135:15: warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4770:37: warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:4855:44: warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
       <pre>                                           ^</pre>
-      <pre>/home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/arcilator-uvm-runtime.h:5368:20: warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
       <pre>19 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
-      <pre>+ /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/driver.bin /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v16_v2_arc/tmp/tmphfmll3ys/wave.vcd</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path></pre>
       <pre>Start sequence: seed=00000001</pre>
-      <pre>seed=00010dce result=80010e00</pre>
-      <pre>seed=1c5983f7 result=9c598438</pre>
+      <pre>seed=00010dce result=80010e01</pre>
+      <pre>seed=1c5983f7 result=9c598439</pre>
       <pre>seed=c35937cc result=43593986</pre>
-      <pre>seed=2e130a5d result=ae130c5c</pre>
+      <pre>seed=2e130a5d result=ae130c5d</pre>
       <pre>seed=e723057a result=672307ce</pre>
       <pre>seed=e3cc94b3 result=63cc97c7</pre>
-      <pre>seed=63132a58 result=e3132cc6</pre>
-      <pre>seed=79d76079 result=f9d762f3</pre>
+      <pre>seed=63132a58 result=e3132cc7</pre>
+      <pre>seed=79d76079 result=f9d762f4</pre>
       <pre>seed=e1d765e6 result=61d767c3</pre>
-      <pre>seed=2f8f472f result=af8f485f</pre>
+      <pre>seed=2f8f472f result=af8f4860</pre>
       <pre>seed=a38863a4 result=23886547</pre>
-      <pre>seed=44eb1e55 result=c4eb2089</pre>
-      <pre>seed=3f269b12 result=bf269c7e</pre>
-      <pre>seed=22dc176b result=a2dc1845</pre>
-      <pre>seed=2eda2fb0 result=aeda305d</pre>
+      <pre>seed=44eb1e55 result=c4eb208a</pre>
+      <pre>seed=3f269b12 result=bf269c7f</pre>
+      <pre>seed=22dc176b result=a2dc1846</pre>
+      <pre>seed=2eda2fb0 result=aeda305e</pre>
       <pre>seed=c8d41ff1 result=48d42191</pre>
       <pre>seed=b76dd0fe result=376dd36e</pre>
-      <pre>seed=478b4167 result=c78b428f</pre>
+      <pre>seed=478b4167 result=c78b4290</pre>
       <pre>seed=9e3c9a7c result=1e3c9d3c</pre>
-      <pre>seed=64dc014d result=e4dc02c9</pre>
+      <pre>seed=64dc014d result=e4dc02ca</pre>
       <pre>seed=f18af3aa result=718af5e3</pre>
-      <pre>seed=6e4ec123 result=ee4ec2dc</pre>
-      <pre>seed=16027008 result=9602722c</pre>
-      <pre>seed=2fac1e69 result=afac205f</pre>
-      <pre>seed=08c8af16 result=88c8b011</pre>
+      <pre>seed=6e4ec123 result=ee4ec2dd</pre>
+      <pre>seed=16027008 result=9602722d</pre>
+      <pre>seed=2fac1e69 result=afac2060</pre>
+      <pre>seed=08c8af16 result=88c8b012</pre>
       <pre>seed=e8ae529f result=68ae55d1</pre>
       <pre>seed=80693c54 result=00693f00</pre>
-      <pre>seed=68a99345 result=e8a994d1</pre>
+      <pre>seed=68a99345 result=e8a994d2</pre>
       <pre>seed=ff8a6f42 result=7f8a71ff</pre>
-      <pre>seed=18c371db result=98c37231</pre>
-      <pre>seed=33254b60 result=b3254c66</pre>
+      <pre>seed=18c371db result=98c37232</pre>
+      <pre>seed=33254b60 result=b3254c67</pre>
       <pre>Start sequence: seed=00000002</pre>
-      <pre>seed=00021b9b result=80021c00</pre>
-      <pre>seed=38b1fa20 result=b8b1fc71</pre>
-      <pre>seed=6a58eba1 result=ea58ecd4</pre>
+      <pre>seed=00021b9b result=80021c01</pre>
+      <pre>seed=38b1fa20 result=b8b1fc72</pre>
+      <pre>seed=6a58eba1 result=ea58ecd5</pre>
       <pre>seed=98ccdcee result=18ccdf31</pre>
       <pre>seed=a0330097 result=20330340</pre>
       <pre>seed=e07623ec result=607625c0</pre>
       <pre>seed=e259bffd result=6259c1c4</pre>
       <pre>seed=909b969a result=109b9921</pre>
-      <pre>seed=49d76b53 result=c9d76c93</pre>
-      <pre>seed=7d472878 result=fd472afa</pre>
-      <pre>seed=17818019 result=9781822f</pre>
+      <pre>seed=49d76b53 result=c9d76c94</pre>
+      <pre>seed=7d472878 result=fd472afb</pre>
+      <pre>seed=17818019 result=97818230</pre>
       <pre>seed=e64dd906 result=664ddbcc</pre>
-      <pre>seed=396217cf result=b9621872</pre>
-      <pre>seed=069193c4 result=8691940d</pre>
-      <pre>seed=3ad847f5 result=bad84875</pre>
-      <pre>seed=62ce1032 result=e2ce12c5</pre>
+      <pre>seed=396217cf result=b9621873</pre>
+      <pre>seed=069193c4 result=8691940e</pre>
+      <pre>seed=3ad847f5 result=bad84876</pre>
+      <pre>seed=62ce1032 result=e2ce12c6</pre>
       <pre>seed=a607820b result=2607854c</pre>
       <pre>seed=d7a8b1d0 result=57a8b3af</pre>
       <pre>seed=f4edf391 result=74edf5e9</pre>
-      <pre>seed=2b7b681e result=ab7b6a56</pre>
-      <pre>seed=7e39e607 result=fe39e8fc</pre>
+      <pre>seed=2b7b681e result=ab7b6a57</pre>
+      <pre>seed=7e39e607 result=fe39e8fd</pre>
       <pre>seed=eb128e9c result=6b1291d6</pre>
       <pre>seed=bdb61eed result=3db6217b</pre>
-      <pre>seed=4955ccca result=c955ce92</pre>
+      <pre>seed=4955ccca result=c955ce93</pre>
       <pre>seed=e1e53fc3 result=61e541c3</pre>
       <pre>seed=c893f628 result=4893f991</pre>
-      <pre>seed=18242609 result=98242830</pre>
-      <pre>seed=50e9ea36 result=d0e9eca1</pre>
+      <pre>seed=18242609 result=98242831</pre>
+      <pre>seed=50e9ea36 result=d0e9eca2</pre>
       <pre>seed=966b4b3f result=166b4d2c</pre>
-      <pre>seed=31fc7474 result=b1fc7663</pre>
-      <pre>seed=4d8724e5 result=cd87269b</pre>
+      <pre>seed=31fc7474 result=b1fc7664</pre>
+      <pre>seed=4d8724e5 result=cd87269c</pre>
       <pre>Start sequence: seed=00000001</pre>
-      <pre>seed=00010dce result=80010e00</pre>
-      <pre>seed=1c5983f7 result=9c598438</pre>
+      <pre>seed=00010dce result=80010e01</pre>
+      <pre>seed=1c5983f7 result=9c598439</pre>
       <pre>seed=c35937cc result=43593986</pre>
-      <pre>seed=2e130a5d result=ae130c5c</pre>
+      <pre>seed=2e130a5d result=ae130c5d</pre>
       <pre>seed=e723057a result=672307ce</pre>
       <pre>seed=e3cc94b3 result=63cc97c7</pre>
-      <pre>seed=63132a58 result=e3132cc6</pre>
-      <pre>seed=79d76079 result=f9d762f3</pre>
+      <pre>seed=63132a58 result=e3132cc7</pre>
+      <pre>seed=79d76079 result=f9d762f4</pre>
       <pre>seed=e1d765e6 result=61d767c3</pre>
-      <pre>seed=2f8f472f result=af8f485f</pre>
+      <pre>seed=2f8f472f result=af8f4860</pre>
       <pre>seed=a38863a4 result=23886547</pre>
-      <pre>seed=44eb1e55 result=c4eb2089</pre>
-      <pre>seed=3f269b12 result=bf269c7e</pre>
-      <pre>seed=22dc176b result=a2dc1845</pre>
-      <pre>seed=2eda2fb0 result=aeda305d</pre>
+      <pre>seed=44eb1e55 result=c4eb208a</pre>
+      <pre>seed=3f269b12 result=bf269c7f</pre>
+      <pre>seed=22dc176b result=a2dc1846</pre>
+      <pre>seed=2eda2fb0 result=aeda305e</pre>
       <pre>seed=c8d41ff1 result=48d42191</pre>
       <pre>seed=b76dd0fe result=376dd36e</pre>
-      <pre>seed=478b4167 result=c78b428f</pre>
+      <pre>seed=478b4167 result=c78b4290</pre>
       <pre>seed=9e3c9a7c result=1e3c9d3c</pre>
-      <pre>seed=64dc014d result=e4dc02c9</pre>
+      <pre>seed=64dc014d result=e4dc02ca</pre>
       <pre>seed=f18af3aa result=718af5e3</pre>
-      <pre>seed=6e4ec123 result=ee4ec2dc</pre>
-      <pre>seed=16027008 result=9602722c</pre>
-      <pre>seed=2fac1e69 result=afac205f</pre>
-      <pre>seed=08c8af16 result=88c8b011</pre>
+      <pre>seed=6e4ec123 result=ee4ec2dd</pre>
+      <pre>seed=16027008 result=9602722d</pre>
+      <pre>seed=2fac1e69 result=afac2060</pre>
+      <pre>seed=08c8af16 result=88c8b012</pre>
       <pre>seed=e8ae529f result=68ae55d1</pre>
       <pre>seed=80693c54 result=00693f00</pre>
-      <pre>seed=68a99345 result=e8a994d1</pre>
+      <pre>seed=68a99345 result=e8a994d2</pre>
       <pre>seed=ff8a6f42 result=7f8a71ff</pre>
-      <pre>seed=18c371db result=98c37231</pre>
-      <pre>seed=33254b60 result=b3254c66</pre>
+      <pre>seed=18c371db result=98c37232</pre>
+      <pre>seed=33254b60 result=b3254c67</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
       <pre></pre>
     </section>

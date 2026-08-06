@@ -5,19 +5,19 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/5f5e83a852d60449dce05907a21f3034261c4b62" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p348</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017<li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-02 10:07:48</dd></div>
-        <div><dt>time elapsed</dt><dd>0.030s</dd></div>
-        <div><dt>ram usage</dt><dd>15232 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 06:02:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.027s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,11 +44,55 @@
       <pre>[Arcilator] mode=parsing top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/lanev16f-20260802/bank/bins-v16/bin/circt-verilog --parse-only -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tests/hdlconvertor/tests/sv_test/std2017 -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p348.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p348.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p348.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p348.sv</a></pre>
-      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p348.sv:14:4: error: unsupported expression: Abort</pre>
-      <pre>          p2(a, b, c), </pre>
-      <pre>          ^</pre>
-      <pre>+ exit 1</pre>
+      <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p348.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p348.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p348.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p348.sv</a></pre>
+      <pre>module {</pre>
+      <pre>  moore.module @top() {</pre>
+      <pre>    %a = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %b = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %c = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %clk = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %check.checker_clk = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>    %1 = moore.logic_to_int %0 : l1</pre>
+      <pre>    %2 = moore.to_builtin_int %1 : i1</pre>
+      <pre>    %3 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>    %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>    %5 = moore.to_builtin_int %4 : i1</pre>
+      <pre>    %6 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>    %7 = moore.logic_to_int %6 : l1</pre>
+      <pre>    %8 = moore.to_builtin_int %7 : i1</pre>
+      <pre>    %true = hw.constant true</pre>
+      <pre>    %9 = ltl.delay %5, 1, 0 : i1</pre>
+      <pre>    %10 = ltl.concat %9, %true : !ltl.sequence, i1</pre>
+      <pre>    %11 = ltl.implication %10, %8 : !ltl.sequence, i1</pre>
+      <pre>    %12 = moore.read %clk : &lt;l1&gt;</pre>
+      <pre>    %13 = moore.logic_to_int %12 : l1</pre>
+      <pre>    %14 = moore.to_builtin_int %13 : i1</pre>
+      <pre>    %15 = ltl.clock %11, edge %14 : !ltl.property</pre>
+      <pre>    %16 = ltl.abort accept_on %2, %15 : !ltl.property</pre>
+      <pre>    %17 = moore.read %clk : &lt;l1&gt;</pre>
+      <pre>    %18 = moore.logic_to_int %17 : l1</pre>
+      <pre>    %19 = moore.to_builtin_int %18 : i1</pre>
+      <pre>    %20 = ltl.clock %16, edge %19 : !ltl.property</pre>
+      <pre>    verif.assert %20 : !ltl.property</pre>
+      <pre>    %21 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>    %22 = moore.logic_to_int %21 : l1</pre>
+      <pre>    %23 = moore.to_builtin_int %22 : i1</pre>
+      <pre>    %24 = ltl.repeat %23, 1 : i1</pre>
+      <pre>    %25 = ltl.delay %24, 0, 0 : !ltl.sequence</pre>
+      <pre>    %26 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>    %27 = moore.logic_to_int %26 : l1</pre>
+      <pre>    %28 = moore.to_builtin_int %27 : i1</pre>
+      <pre>    %29 = ltl.delay %28, 1, 0 : i1</pre>
+      <pre>    %30 = ltl.concat %25, %29 : !ltl.sequence, !ltl.sequence</pre>
+      <pre>    %31 = moore.read %clk : &lt;l1&gt;</pre>
+      <pre>    %32 = moore.logic_to_int %31 : l1</pre>
+      <pre>    %33 = moore.to_builtin_int %32 : i1</pre>
+      <pre>    %34 = ltl.clock %30, edge %33 : !ltl.sequence</pre>
+      <pre>    verif.cover %34 : !ltl.sequence</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
       <pre></pre>
     </section>
   </body>

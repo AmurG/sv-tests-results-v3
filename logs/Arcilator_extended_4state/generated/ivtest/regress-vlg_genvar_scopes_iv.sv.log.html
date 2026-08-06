@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/sv-tests-results-v3" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_genvar_scopes_iv</h2>
     </header>
     <section class="property-list">
@@ -17,8 +17,8 @@
         <div>
           <dt>incdirs</dt>
           <dd><ul>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest<li>
-            <li>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests<li>
+            <li><redacted-local-path><li>
+            <li><redacted-local-path><li>
           </ul></dd>
         </div>
         <div><dt>top module</dt><dd></dd></div>
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-04 09:35:00</dd></div>
-        <div><dt>time elapsed</dt><dd>0.071s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-05 10:06:45</dd></div>
+        <div><dt>time elapsed</dt><dd>0.067s</dd></div>
         <div><dt>ram usage</dt><dd>28672 KB</dd></div>
       </dl>
     </section>
@@ -44,43 +44,43 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/circt-verilog -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest -I /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/third_party/tools/icarus/ivtest/ivltests -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/genvar_scopes.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/genvar_scopes.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/genvar_scopes.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/genvar_scopes.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ /home/aghose/circtuvm/fork-eval/laneshipfinal-20260803/bank/bins-shipfinal-on/bin/arcilator --observe-ports --observe-wires --observe-registers --observe-named-values --state-file /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/state.json --emit-llvm /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir -o /home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/model.ll</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:18:10: warning: four-valued aggregate signal &#39;a&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;a&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %a = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
       <pre>         ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:18:10: note: see current operation: %a = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:19:10: warning: four-valued aggregate signal &#39;b&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre><redacted-local-path> note: see current operation: %a = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;b&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %b = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
       <pre>         ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:19:10: note: see current operation: %b = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:21:10: warning: four-valued aggregate signal &#39;c&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre><redacted-local-path> note: see current operation: %b = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;c&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %c = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
       <pre>         ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:21:10: note: see current operation: %c = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:23:10: warning: four-valued aggregate signal &#39;d&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre><redacted-local-path> note: see current operation: %c = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;d&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %d = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
       <pre>         ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:23:10: note: see current operation: %d = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:32:11: error: probe of a reference that is not a module-level signal is not supported</pre>
+      <pre><redacted-local-path> note: see current operation: %d = llhd.sig %58 : !hw.array&lt;2xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> error: probe of a reference that is not a module-level signal is not supported</pre>
       <pre>    %17 = llhd.prb %12 : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
       <pre>          ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:34:16: remark: computing new phase here</pre>
+      <pre><redacted-local-path> remark: computing new phase here</pre>
       <pre>    %value_0 = hw.struct_extract %17[&#34;value&#34;] : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
       <pre>               ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:34:16: note: see current operation: %21 = arc.call @genvar_scopes_arc_1_split_0(%6) : (!hw.struct&lt;value: i2, unknown: i2&gt;) -&gt; i2</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:43:11: remark: computing new phase here</pre>
+      <pre><redacted-local-path> note: see current operation: %21 = arc.call @genvar_scopes_arc_1_split_0(%6) : (!hw.struct&lt;value: i2, unknown: i2&gt;) -&gt; i2</pre>
+      <pre><redacted-local-path> remark: computing new phase here</pre>
       <pre>    %26 = hw.struct_create (%21, %25) : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
       <pre>          ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:43:11: note: see current operation: %19 = arc.call @genvar_scopes_arc(%21, %37, %22, %38) : (i2, i2, i2, i2) -&gt; !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:44:5: remark: computing new phase here</pre>
+      <pre><redacted-local-path> note: see current operation: %19 = arc.call @genvar_scopes_arc(%21, %37, %22, %38) : (i2, i2, i2, i2) -&gt; !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
+      <pre><redacted-local-path> remark: computing new phase here</pre>
       <pre>    llhd.drv %12, %26 after %4 : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
       <pre>    ^</pre>
-      <pre>/home/aghose/circtuvm/svtests_arcilator_results_work/sv-tests/out_v3_on_arc/tmp/tmp5cemmicp/design.mlir:44:5: note: see current operation: llhd.drv %4, %19 after %0 : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: llhd.drv %4, %19 after %0 : !hw.struct&lt;value: i2, unknown: i2&gt;</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>
