@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>regress-vlg_pr2728547_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,18 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:26:14</dd></div>
-        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
-        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:29:46</dd></div>
+        <div><dt>time elapsed</dt><dd>0.041s</dd></div>
+        <div><dt>ram usage</dt><dd>25088 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2728547.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2728547.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2728547.v:10:11: error: failed to legalize operation &#39;moore.scan.begin_sscanf_bits&#39;: %51 = &#34;moore.scan.begin_sscanf_bits&#34;(%15) : (!moore.l232) -&gt; !moore.scan_string</pre>
-      <pre>    res = $sscanf(in, &#34;%s%s%s%d&#34;, arg1, arg2, arg3, arg4);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2728547.v:10:11: note: see current operation: %51 = &#34;moore.scan.begin_sscanf_bits&#34;(%15) : (!moore.l232) -&gt; !moore.scan_string</pre>
       <pre></pre>
     </section>
   </body>

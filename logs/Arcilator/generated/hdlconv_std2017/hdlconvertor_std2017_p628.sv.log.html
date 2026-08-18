@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p628</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 06:02:11</dd></div>
-        <div><dt>time elapsed</dt><dd>0.028s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-15 08:23:53</dd></div>
+        <div><dt>time elapsed</dt><dd>0.027s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
@@ -97,7 +97,7 @@
       <pre>      %38 = moore.fmt.concat (%35, %36, %37)</pre>
       <pre>      moore.builtin.display %38</pre>
       <pre>      %39 = moore.constant 101 : i32</pre>
-      <pre>      %40 = moore.int_to_string %39 : i32</pre>
+      <pre>      %40 = moore.int_to_string %39 {fmtNulMode = 1 : i32} : i32</pre>
       <pre>      %41 = moore.fmt.string %40</pre>
       <pre>      %42 = moore.fmt.literal &#34; is ascii value for 101&#34;</pre>
       <pre>      %43 = moore.fmt.literal &#34;\0A&#34;</pre>

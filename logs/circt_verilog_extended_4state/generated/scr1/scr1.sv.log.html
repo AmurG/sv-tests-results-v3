@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>scr1</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full scr1 core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>scr1</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -62,45 +62,80 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:25:54</dd></div>
-        <div><dt>time elapsed</dt><dd>0.372s</dd></div>
-        <div><dt>ram usage</dt><dd>50176 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:28:56</dd></div>
+        <div><dt>time elapsed</dt><dd>0.826s</dd></div>
+        <div><dt>ram usage</dt><dd>61824 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=scr1_top_tb_axi <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_idu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_idu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_mprf.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_mprf.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_top.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_pipe_top.sv</a> <a href="../../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv.html" target="file-frame">third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv</a> <a href="../../../../third_party/cores/scr1/src/core/primitives/scr1_cg.sv.html" target="file-frame">third_party/cores/scr1/src/core/primitives/scr1_cg.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_clk_ctrl.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_clk_ctrl.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_tapc.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_tapc.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_core_top.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_core_top.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_dm.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_dm.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_dmi.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_dmi.sv</a> <a href="../../../../third_party/cores/scr1/src/core/scr1_scu.sv.html" target="file-frame">third_party/cores/scr1/src/core/scr1_scu.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_dmem_router.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_imem_router.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_imem_router.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_dp_memory.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_tcm.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_tcm.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_timer.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_timer.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_mem_axi.sv</a> <a href="../../../../third_party/cores/scr1/src/top/scr1_top_axi.sv.html" target="file-frame">third_party/cores/scr1/src/top/scr1_top_axi.sv</a> <a href="../../../../third_party/cores/scr1/src/core/pipeline/scr1_tracelog.sv.html" target="file-frame">third_party/cores/scr1/src/core/pipeline/scr1_tracelog.sv</a> <a href="../../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv.html" target="file-frame">third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv</a> <a href="../../../../third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv.html" target="file-frame">third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv</a></pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:173:36: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>                tdu2csr_rdata_o = {&#39;0, csr_tselect_ff};</pre>
+      <pre>                                   ^~</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:173:36: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>                tdu2csr_rdata_o = {&#39;0, csr_tselect_ff};</pre>
       <pre>                                   ^</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:940:29: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>                         : {&#39;0, exu_queue.rs1_addr}; // zimm</pre>
+      <pre>                            ^~</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:940:29: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>                         : {&#39;0, exu_queue.rs1_addr}; // zimm</pre>
       <pre>                            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:467:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>                      ? {&#39;0, div_quo_bit}</pre>
+      <pre>                         ^~</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:467:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>                      ? {&#39;0, div_quo_bit}</pre>
       <pre>                         ^</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:710:47: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>        ifu2idu_instr_o = `SCR1_IMEM_DWIDTH&#39;({&#39;0, hdu2ifu_pbuf_instr_i});</pre>
+      <pre>                                              ^~</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:710:47: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>        ifu2idu_instr_o = `SCR1_IMEM_DWIDTH&#39;({&#39;0, hdu2ifu_pbuf_instr_i});</pre>
       <pre>                                              ^</pre>
       <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:34:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_arch_types.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_arch_types.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:34:1: note: included from here</pre>
       <pre>`include &#34;scr1_arch_types.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:35:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_riscv_isa_decoding.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_riscv_isa_decoding.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:35:1: note: included from here</pre>
       <pre>`include &#34;scr1_riscv_isa_decoding.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:11:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_csr.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_csr.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:1: note: included from here</pre>
@@ -109,6 +144,12 @@
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:11:1: note: included from here</pre>
       <pre>`include &#34;scr1_csr.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:11:</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/includes/scr1_csr.svh:11:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_ipic.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_ipic.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:36:1: note: included from here</pre>
@@ -120,36 +161,65 @@
       <pre>../../../third_party/cores/scr1/src/includes/scr1_csr.svh:11:1: note: included from here</pre>
       <pre>`include &#34;scr1_ipic.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:41:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:41:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:42:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_memif.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_memif.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:42:1: note: included from here</pre>
       <pre>`include &#34;scr1_memif.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:47:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:47:2: note: included from here</pre>
       <pre> `include &#34;scr1_hdu.svh&#34;</pre>
       <pre> ^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:30:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:30:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_top.sv:16:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_top.sv:16:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/scr1_tapc.sv:29:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_tapc.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_tapc.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:29:1: note: included from here</pre>
       <pre>`include &#34;scr1_tapc.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/scr1_tapc.sv:30:</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/includes/scr1_dm.svh:10:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:30:1: note: included from here</pre>
@@ -158,88 +228,217 @@
       <pre>../../../third_party/cores/scr1/src/includes/scr1_dm.svh:10:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/scr1_core_top.sv:13:</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_hdu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
       <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
       <pre>../../../third_party/cores/scr1/src/core/scr1_core_top.sv:13:1: note: included from here</pre>
       <pre>`include &#34;scr1_hdu.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/cores/scr1/src/core/scr1_scu.sv:30:</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_scu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
-      <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:30:1: note: included from here</pre>
-      <pre>`include &#34;scr1_scu.svh&#34;</pre>
-      <pre>^</pre>
-      <pre>&lt;unknown&gt;:0: warning: in scr1_pipe_hdu: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>&lt;unknown&gt;:0: warning: in scr1_pipe_csr: x/z literal &#39;zzzzz&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>&lt;unknown&gt;:0: warning: in scr1_mem_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>&lt;unknown&gt;:0: warning: in width2axsize: x/z literal &#39;xxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>&lt;unknown&gt;:0: warning: in scr1_memory_tb_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:101:17: warning: in mem_read: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>    mem_read  = &#39;x;</pre>
-      <pre>                ^</pre>
-      <pre>&lt;unknown&gt;:0: warning: in scr1_top_tb_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 1386 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge dm_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge dm_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:556:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:776:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:808:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:914:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:925:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:947:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1012:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1061:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1154:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1165:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1176:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1190:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1228:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1351:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 1312 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:85:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:94:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:121:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:116:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
@@ -252,29 +451,11 @@
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
-      <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
@@ -288,28 +469,10 @@
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge rtc_clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge rtc_clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge rtc_clk) begin</pre>
-      <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
@@ -321,25 +484,10 @@
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:146:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:146:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk) begin</pre>
-      <pre>            ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
@@ -354,18 +502,6 @@
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
-      <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
@@ -378,28 +514,10 @@
       <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(negedge core_rst_n_local, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge core_rst_n_local, posedge clk) begin</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(negedge core_rst_n_local, posedge clk) begin</pre>
-      <pre>           ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
@@ -411,17 +529,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWADDR_404 :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_AWADDR_404 :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_AWVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_AWVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
@@ -429,17 +538,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWLEN :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_AWLEN :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_WVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_WVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_WCHANNEL :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_WCHANNEL :</pre>
@@ -456,26 +556,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>WDATA :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_BREADY :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_BREADY :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_ARADDR_404 :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_ARADDR_404 :</pre>
@@ -483,17 +565,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_ARVALID :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_ARVALID :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_ARLEN :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_ARLEN :</pre>
@@ -501,25 +574,10 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_RREADY :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_RREADY :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
@@ -531,17 +589,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWADDR_404 :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_AWADDR_404 :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_AWVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_AWVALID :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
@@ -549,32 +598,11 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWLEN :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_AWLEN :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_WVALID :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_WVALID :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_WCHANNEL :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_WCHANNEL :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>WDATA :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>WDATA :</pre>
@@ -591,17 +619,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_BREADY :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_BREADY :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_ARADDR_404 :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_ARADDR_404 :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_ARVALID :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_ARVALID :</pre>
@@ -609,17 +628,8 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
-      <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_ARLEN :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_ARLEN :</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>SVA_TBMEM_X_RREADY :</pre>
       <pre>^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_RREADY :</pre>
@@ -627,19 +637,9 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv:322:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv:322:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk) begin</pre>
-      <pre>            ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_runtests.sv:30:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_runtests.sv:30:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk) begin</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:160:20: error: &#39;sim.fmt.char&#39; op operand #0 must be integer, but got &#39;!hw.struct&lt;value: i8, unknown: i8&gt;&#39;</pre>
-      <pre>            $write(&#34;%c&#34;,data[(i*8)+:8]);</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:160:20: note: see current operation: %272 = &#34;sim.fmt.char&#34;(%271) &lt;{isLeftAligned = false, paddingChar = 32 : i8}&gt; : (!hw.struct&lt;value: i8, unknown: i8&gt;) -&gt; !sim.fstring</pre>
       <pre></pre>
     </section>
   </body>

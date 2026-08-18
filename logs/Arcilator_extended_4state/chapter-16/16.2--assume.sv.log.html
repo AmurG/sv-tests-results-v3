@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>assume_test</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>assume test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>16.2 uvm-req</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,9 +31,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:16:03</dd></div>
-        <div><dt>time elapsed</dt><dd>0.033s</dd></div>
-        <div><dt>ram usage</dt><dd>21504 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:48:13</dd></div>
+        <div><dt>time elapsed</dt><dd>0.067s</dd></div>
+        <div><dt>ram usage</dt><dd>30464 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,11 +44,9 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=top <a href="../../../tests/chapter-16/16.2--assume.sv.html" target="file-frame">tests/chapter-16/16.2--assume.sv</a></pre>
-      <pre>../../../tests/chapter-16/16.2--assume.sv:17:9: error: &#39;verif.assume&#39; op operand #0 must be 1-bit signless integer or LTL sequence type or LTL property type, but got &#39;!hw.struct&lt;value: i1, unknown: i1&gt;&#39;</pre>
-      <pre>initial assume (a != 0);</pre>
-      <pre>        ^</pre>
-      <pre>../../../tests/chapter-16/16.2--assume.sv:17:9: note: see current operation: &#34;verif.assume&#34;(%24) &lt;{label = &#34;../../../tests/chapter-16/16.2--assume.sv:17&#34;}&gt; : (!hw.struct&lt;value: i1, unknown: i1&gt;) -&gt; ()</pre>
-      <pre>+ exit 1</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
       <pre></pre>
     </section>
   </body>

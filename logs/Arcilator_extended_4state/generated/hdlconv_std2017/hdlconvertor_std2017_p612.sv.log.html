@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p612</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:23:36</dd></div>
-        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:01:54</dd></div>
+        <div><dt>time elapsed</dt><dd>0.044s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
@@ -81,7 +81,7 @@
       <pre>    %__sva_prevclk = moore.variable %7 : &lt;i1&gt;</pre>
       <pre>    %8 = moore.constant 0 : i32</pre>
       <pre>    %__sva_cnt = moore.variable %8 : &lt;i32&gt;</pre>
-      <pre>    moore.procedure always {</pre>
+      <pre>    moore.procedure always attributes {moore.sva_monitor} {</pre>
       <pre>      moore.wait_event {</pre>
       <pre>        %64 = moore.read %clk : &lt;l1&gt;</pre>
       <pre>        moore.detect_event any %64 : l1</pre>

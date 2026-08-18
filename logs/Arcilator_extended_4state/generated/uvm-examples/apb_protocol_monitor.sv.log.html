@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>apb_protocol_monitor</h2>
     </header>
     <section class="property-list">
@@ -33,8 +33,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:13:44</dd></div>
-        <div><dt>time elapsed</dt><dd>31.723s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:45:06</dd></div>
+        <div><dt>time elapsed</dt><dd>31.871s</dd></div>
         <div><dt>ram usage</dt><dd>208768 KB</dd></div>
       </dl>
     </section>
@@ -51,9 +51,20 @@
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -82,23 +93,182 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:1015:21: warning: in uvm_pkg::uvm_root::m_process_config: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>    uvm_bitstream_t v;</pre>
       <pre>                    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:43:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>RESET_VALID: assert property(SIGNAL_VALID(PRESETn));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:44:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_VALID: assert property(SIGNAL_VALID(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:53:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_VALID: assert property(CONTROL_SIGNAL_VALID(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:54:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_VALID: assert property(CONTROL_SIGNAL_VALID(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:55:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PENABLE_VALID: assert property(CONTROL_SIGNAL_VALID(PENABLE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:63:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_VALID: assert property(PWDATA_SIGNAL_VALID);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:88:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_ONLY_ONE: assert property(PSEL_ONEHOT0);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:96:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PENABLE_DEASSERT: assert property(PENABLE_DEASSERTED);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:96:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PENABLE_DEASSERT: assert property(PENABLE_DEASSERTED);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:104:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_2_PENABLE: assert property(PSEL_TO_PENABLE_ACTIVE);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:104:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_2_PENABLE: assert property(PSEL_TO_PENABLE_ACTIVE);</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:155:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>cover property(END_OF_APB_TRANSFER) begin</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:155:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>cover property(END_OF_APB_TRANSFER) begin</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:56:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:70:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:75:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:79:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    @(posedge PCLK);</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:81:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(negedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:87:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:98:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:102:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:106:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    @(posedge PCLK);</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:108:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(negedge PCLK);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:115:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  @(posedge PCLK);</pre>
+      <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>                  wait(top.phase_timeout != 0);</pre>
       <pre>                  ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:43:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>RESET_VALID: assert property(SIGNAL_VALID(PRESETn));</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:43:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>RESET_VALID: assert property(SIGNAL_VALID(PRESETn));</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:44:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PSEL_VALID: assert property(SIGNAL_VALID(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:44:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_VALID: assert property(SIGNAL_VALID(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:53:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_VALID: assert property(CONTROL_SIGNAL_VALID(PADDR));</pre>
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:53:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PADDR_VALID: assert property(CONTROL_SIGNAL_VALID(PADDR));</pre>
@@ -106,17 +276,8 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:54:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PWRITE_VALID: assert property(CONTROL_SIGNAL_VALID(PWRITE));</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:54:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_VALID: assert property(CONTROL_SIGNAL_VALID(PWRITE));</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:55:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PENABLE_VALID: assert property(CONTROL_SIGNAL_VALID(PENABLE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:55:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PENABLE_VALID: assert property(CONTROL_SIGNAL_VALID(PENABLE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:63:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_VALID: assert property(PWDATA_SIGNAL_VALID);</pre>
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:63:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PWDATA_VALID: assert property(PWDATA_SIGNAL_VALID);</pre>
@@ -133,30 +294,6 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:71:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PREADY_VALID: assert property(PENABLE_SIGNAL_VALID(PREADY));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:72:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PSLVERR_VALID: assert property(PENABLE_SIGNAL_VALID(PSLVERR));</pre>
       <pre>^</pre>
@@ -172,15 +309,6 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:88:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PSEL_ONLY_ONE: assert property(PSEL_ONEHOT0);</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:88:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_ONLY_ONE: assert property(PSEL_ONEHOT0);</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:96:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PENABLE_DEASSERT: assert property(PENABLE_DEASSERTED);</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:96:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PENABLE_DEASSERT: assert property(PENABLE_DEASSERTED);</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:96:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PENABLE_DEASSERT: assert property(PENABLE_DEASSERTED);</pre>
       <pre>^</pre>
@@ -193,30 +321,6 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:104:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PSEL_2_PENABLE: assert property(PSEL_TO_PENABLE_ACTIVE);</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:104:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_2_PENABLE: assert property(PSEL_TO_PENABLE_ACTIVE);</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:104:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_2_PENABLE: assert property(PSEL_TO_PENABLE_ACTIVE);</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:112:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PSEL_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PSEL));</pre>
       <pre>^</pre>
@@ -253,24 +357,6 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:113:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWRITE_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWRITE));</pre>
-      <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
       <pre>^</pre>
@@ -288,42 +374,6 @@
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:114:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PADDR_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PADDR));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:115:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>PWDATA_STABLE: assert property(PSEL_ASSERT_SIGNAL_STABLE(PWDATA &amp; PWRITE));</pre>
@@ -349,15 +399,6 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:155:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>cover property(END_OF_APB_TRANSFER) begin</pre>
       <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:155:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>cover property(END_OF_APB_TRANSFER) begin</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/protocol_monitor/apb_monitor.sv:155:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>cover property(END_OF_APB_TRANSFER) begin</pre>
-      <pre>^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:56:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
-      <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:56:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
@@ -367,29 +408,14 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:70:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:70:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:75:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
-      <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:75:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:79:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    @(posedge PCLK);</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:79:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:81:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(negedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:81:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(negedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:87:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:87:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
@@ -400,29 +426,14 @@
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:98:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:98:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:102:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
-      <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:102:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:106:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    @(posedge PCLK);</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:106:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:108:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(negedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:108:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(negedge PCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:115:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge PCLK);</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm-examples/apb_protocol_monitor/testbench/apb_monitor_tb.sv:115:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  @(posedge PCLK);</pre>

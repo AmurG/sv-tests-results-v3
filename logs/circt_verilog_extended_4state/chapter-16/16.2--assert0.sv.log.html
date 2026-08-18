@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>assert0_test</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>assert #0 test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>16.4</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -31,18 +31,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:25:15</dd></div>
-        <div><dt>time elapsed</dt><dd>0.033s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:27:17</dd></div>
+        <div><dt>time elapsed</dt><dd>0.034s</dd></div>
         <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../tests/chapter-16/16.2--assert0.sv.html" target="file-frame">tests/chapter-16/16.2--assert0.sv</a></pre>
-      <pre>../../../tests/chapter-16/16.2--assert0.sv:19:1: error: &#39;verif.assert&#39; op operand #0 must be 1-bit signless integer or LTL sequence type or LTL property type, but got &#39;!hw.struct&lt;value: i1, unknown: i1&gt;&#39;</pre>
-      <pre>assert #0 (a != 0);</pre>
-      <pre>^</pre>
-      <pre>../../../tests/chapter-16/16.2--assert0.sv:19:1: note: see current operation: &#34;verif.assert&#34;(%2) &lt;{label = &#34;../../../tests/chapter-16/16.2--assert0.sv:19&#34;}&gt; : (!hw.struct&lt;value: i1, unknown: i1&gt;) -&gt; ()</pre>
       <pre></pre>
     </section>
   </body>

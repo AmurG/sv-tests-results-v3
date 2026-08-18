@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>uart_example</h2>
     </header>
     <section class="property-list">
@@ -59,9 +59,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 06:07:15</dd></div>
-        <div><dt>time elapsed</dt><dd>900.247s</dd></div>
-        <div><dt>ram usage</dt><dd>231168 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:45:32</dd></div>
+        <div><dt>time elapsed</dt><dd>900.204s</dd></div>
+        <div><dt>ram usage</dt><dd>241920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -77,9 +77,20 @@
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -89,6 +100,10 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
       <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
       <pre>  ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:101:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:35:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>  rm.LCR.write(status, {&#39;0, LCR}, .parent(this));</pre>
+      <pre>                        ^~</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:35:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>  rm.LCR.write(status, {&#39;0, LCR}, .parent(this));</pre>
       <pre>                        ^</pre>
@@ -97,10 +112,16 @@
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:37:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>  rm.FCR.write(status, {&#39;0, FCR, 6&#39;b0}, .parent(this));</pre>
+      <pre>                        ^~</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:37:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>  rm.FCR.write(status, {&#39;0, FCR, 6&#39;b0}, .parent(this));</pre>
       <pre>                        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:101:1: note: included from here</pre>
       <pre>`include &#34;uart_config_seq.svh&#34;</pre>
       <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:38:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>  rm.DIV1.write(status, {&#39;0, DIV[7:0]}, .parent(this));</pre>
+      <pre>                         ^~</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:38:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>  rm.DIV1.write(status, {&#39;0, DIV[7:0]}, .parent(this));</pre>
       <pre>                         ^</pre>
@@ -109,22 +130,36 @@
       <pre>^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:39:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>  rm.DIV2.write(status, {&#39;0, DIV[15:8]}, .parent(this));</pre>
+      <pre>                         ^~</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_config_seq.svh:39:26: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>  rm.DIV2.write(status, {&#39;0, DIV[15:8]}, .parent(this));</pre>
       <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:101:1: note: included from here</pre>
       <pre>`include &#34;uart_config_seq.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:106:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_int_enable_seq.svh:32:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>  rm.IER.write(status, {&#39;0, IER}, .parent(this));</pre>
+      <pre>                        ^~</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/uart_int_enable_seq.svh:32:25: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>  rm.IER.write(status, {&#39;0, IER}, .parent(this));</pre>
       <pre>                        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:106:1: note: included from here</pre>
       <pre>`include &#34;uart_int_enable_seq.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:110:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/baud_rate_test_seq.svh:47:13: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>    data = {&#39;0, div[15:8]};</pre>
+      <pre>            ^~</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/baud_rate_test_seq.svh:47:13: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>    data = {&#39;0, div[15:8]};</pre>
       <pre>            ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/host_if_seq_pkg.sv:110:1: note: included from here</pre>
       <pre>`include &#34;baud_rate_test_seq.svh&#34;</pre>
       <pre>^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/baud_rate_test_seq.svh:49:13: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
+      <pre>    data = {&#39;0, div[7:0]};</pre>
+      <pre>            ^~</pre>
       <pre>../../../third_party/tests/uvm-examples/uart_example/uvm_tb/sequences/baud_rate_test_seq.svh:49:13: warning: unsized integer in concat; using a width of 1 [-Wunsized-concat]</pre>
       <pre>    data = {&#39;0, div[7:0]};</pre>
       <pre>            ^</pre>
@@ -243,7 +278,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/6 as driver argv +UVM_TESTNAME=uart_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/6 as driver argv +UVM_TESTNAME=uart_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909205</pre>
+      <pre>+ __svtests_variant_t0=1787002293</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=uart_test</pre>
@@ -268,10 +303,6 @@
       <pre>UVM_INFO @ 0: reporter [RNTST] Running test uart_test...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/baud_rate_checker.svh(140) @ 171: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_modem_scoreboard.svh(207) @ 171: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_rx_scoreboard.svh(152) @ 171: uvm_test_top.m_env.rx_sb [report_phase] 0 characters received by the UART with 0 inserted errors</pre>
@@ -296,40 +327,17 @@
       <pre>[report_phase]     3</pre>
       <pre>[uart_modem_scoreboard::report_phase]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/6 0</pre>
       <pre>[Arcilator] simvariant 1/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/6 as driver argv +UVM_TESTNAME=baud_rate_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 2/6 as driver argv +UVM_TESTNAME=baud_rate_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909205</pre>
+      <pre>+ __svtests_variant_t0=1787002293</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=baud_rate_test</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
-      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
-      <pre></pre>
-      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
-      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
-      <pre>  for more details.</pre>
-      <pre></pre>
-      <pre>----------------------------------------------------------------</pre>
-      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
-      <pre></pre>
-      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
-      <pre>All Rights Reserved Worldwide</pre>
-      <pre>----------------------------------------------------------------</pre>
-      <pre></pre>
-      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
-      <pre></pre>
-      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI</pre>
-      <pre>UVM_INFO @ 0: reporter [RNTST] Running test baud_rate_test...</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
-      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre></pre>
       <pre>Timeout: &gt; 900s</pre>
       <pre></pre>

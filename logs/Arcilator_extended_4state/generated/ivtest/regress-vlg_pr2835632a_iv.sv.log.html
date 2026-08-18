@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_pr2835632a_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:40:45</dd></div>
-        <div><dt>time elapsed</dt><dd>6.241s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:30:33</dd></div>
+        <div><dt>time elapsed</dt><dd>6.412s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -220,25 +220,17 @@
       <pre>big_l[1&#39;bx]: xxxx, ltl_l[1&#39;bx]: xxxx</pre>
       <pre>big_l[edge]: 2003, ltl_l[edge]: 2003</pre>
       <pre></pre>
-      <pre>wcu_big_l: 0000, wcu_ltl_l: 0000</pre>
-      <pre>FAILED: big endian CA L-value constant +: indexed select.</pre>
-      <pre>FAILED: little endian CA L-value constant +: indexed select.</pre>
+      <pre>wcu_big_l: 0123, wcu_ltl_l: 3210</pre>
       <pre>wcu_big_lx: 0000, wcu_ltl_lx: 0000</pre>
       <pre>FAILED: big endian CA L-value constant &#39;bx +: indexed select.</pre>
       <pre>FAILED: little endian CA L-value constant &#39;bx +: indexed select.</pre>
-      <pre>wcu_big_lo: 2000, wcu_ltl_lo: 0003</pre>
-      <pre>FAILED: big endian edge CA L-value constant +: indexed select.</pre>
-      <pre>FAILED: little endian edge CA L-value constant +: indexed select.</pre>
+      <pre>wcu_big_lo: 2003, wcu_ltl_lo: 2003</pre>
       <pre></pre>
-      <pre>wcd_big_l: 0000, wcd_ltl_l: 0000</pre>
-      <pre>FAILED: big endian CA L-value constant -: indexed select.</pre>
-      <pre>FAILED: little endian CA L-value constant -: indexed select.</pre>
+      <pre>wcd_big_l: 0123, wcd_ltl_l: 3210</pre>
       <pre>wcd_big_lx: 0000, wcd_ltl_lx: 0000</pre>
       <pre>FAILED: big endian CA L-value constant &#39;bx -: indexed select.</pre>
       <pre>FAILED: little endian CA L-value constant &#39;bx -: indexed select.</pre>
-      <pre>wcd_big_lo: 2000, wcd_ltl_lo: 0003</pre>
-      <pre>FAILED: big endian edge CA L-value constant -: indexed select.</pre>
-      <pre>FAILED: little endian edge CA L-value constant -: indexed select.</pre>
+      <pre>wcd_big_lo: 2003, wcd_ltl_lo: 2003</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 11000000 fs; natural end of simulation</pre>
       <pre></pre>
       <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_register_mem_example</h2>
     </header>
     <section class="property-list">
@@ -51,9 +51,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:55:44</dd></div>
-        <div><dt>time elapsed</dt><dd>138.414s</dd></div>
-        <div><dt>ram usage</dt><dd>1545544 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:36:15</dd></div>
+        <div><dt>time elapsed</dt><dd>144.393s</dd></div>
+        <div><dt>ram usage</dt><dd>1545364 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -69,9 +69,20 @@
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -81,12 +92,21 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
       <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
       <pre>  ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_agent_pkg.sv:31:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
+      <pre>`define uvm_record_field(NAME,VALUE)</pre>
+      <pre>        ^~~~~~~~~~~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
       <pre>`define uvm_record_field(NAME,VALUE)</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_agent_pkg.sv:31:1: note: included from here</pre>
       <pre>`include &#34;ahb_seq_item.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:37:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_macros.svh:85:</pre>
+      <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: note: previous definition here</pre>
+      <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: remark: previous definition here</pre>
       <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
       <pre>        ^</pre>
@@ -200,7 +220,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=mem_ss_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=mem_ss_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909253</pre>
+      <pre>+ __svtests_variant_t0=1787002478</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=mem_ss_test</pre>
@@ -235,11 +255,7 @@
       <pre></pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 0: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_1_range in map &#34;mem_ss_rm.AHB_map&#34;...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 0: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_1_range in map &#34;mem_ss_rm.AHB_2_map&#34;...</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 0: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_2_offset in map &#34;mem_ss_rm.AHB_map&#34;...</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 310: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_2_offset in map &#34;mem_ss_rm.AHB_2_map&#34;...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 550: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_2_range in map &#34;mem_ss_rm.AHB_map&#34;...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/reg/sequences/uvm_reg_bit_bash_seq.svh(156) @ 550: uvm_test_top.m_env.m_ahb_agent.m_sequencer@@reg_bash.reg_single_bit_bash_seq [uvm_reg_bit_bash_seq] Verifying bits in register mem_ss_rm.mem_2_range in map &#34;mem_ss_rm.AHB_2_map&#34;...</pre>
@@ -278,9 +294,10 @@
       <pre>[uvm_mem_walk_seq]     4</pre>
       <pre>[uvm_reg_bit_bash_seq]    12</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 91</pre>
-      <pre>[Arcilator] simvariant 1/1 wall 91s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 97</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 97s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

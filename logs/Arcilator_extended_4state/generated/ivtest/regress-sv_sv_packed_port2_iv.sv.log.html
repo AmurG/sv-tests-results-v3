@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_sv_packed_port2_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:54:07</dd></div>
-        <div><dt>time elapsed</dt><dd>6.187s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:47:02</dd></div>
+        <div><dt>time elapsed</dt><dd>6.481s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,20 +45,20 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/sv_packed_port2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/sv_packed_port2.v</a></pre>
-      <pre>&lt;unknown&gt;:0: warning: in main: x/z literal &#39;xxxx0011xxxx0010xxxx0001xxxx0000&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in main: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx0011xxxx0010xxxx0001xxxx0000&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;ival&#39; of type &#39;!hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %ival = llhd.sig %8 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
+      <pre>    %ival = llhd.sig %12 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
       <pre>            ^</pre>
-      <pre><redacted-local-path> note: see current operation: %ival = llhd.sig %25 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %ival = llhd.sig %57 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;oval&#39; of type &#39;!hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %oval = llhd.sig %8 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
+      <pre>    %oval = llhd.sig %12 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
       <pre>            ^</pre>
-      <pre><redacted-local-path> note: see current operation: %oval = llhd.sig %25 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %oval = llhd.sig %57 : !hw.array&lt;4xarray&lt;2xstruct&lt;adr: !hw.struct&lt;value: i4, unknown: i4&gt;, val: !hw.struct&lt;value: i4, unknown: i4&gt;&gt;&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -135,8 +135,8 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>ival = 00000000x3x2x1x0, oval = 0000zz000000fxx0</pre>
-      <pre>FAILED -- oval=0000zz000000fxx0</pre>
+      <pre>ival = xxxxxxxxx3x2x1x0, oval = 00xx00xx00xd00xf</pre>
+      <pre>FAILED -- oval=00xx00xx00xd00xf</pre>
       <pre></pre>
       <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>

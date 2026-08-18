@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>uvm_scoreboard_2</h2>
     </header>
     <section class="property-list">
@@ -33,14 +33,19 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:11:21</dd></div>
-        <div><dt>time elapsed</dt><dd>4.450s</dd></div>
-        <div><dt>ram usage</dt><dd>155764 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:26:11</dd></div>
+        <div><dt>time elapsed</dt><dd>4.528s</dd></div>
+        <div><dt>ram usage</dt><dd>155768 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> --parse-only -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../tests/generated/uvm_classes_2/uvm_scoreboard_class_2.sv.html" target="file-frame">tests/generated/uvm_classes_2/uvm_scoreboard_class_2.sv</a></pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -60,7 +65,7 @@
       <pre>../../../third_party/tests/uvm/src/seq/uvm_sequencer_param_base.svh:313:12: warning: class randomize solver: rand field `value` of unsupported type is NOT drawn; it keeps its previous value while randomize() still returns 1</pre>
       <pre>      if (!param_t.randomize()) begin</pre>
       <pre>           ^</pre>
-      <pre>module attributes {circt.dpi_export_funcs = [[&#34;m__uvm_report_dpi&#34;, &#34;uvm_pkg::m__uvm_report_dpi&#34;], [&#34;uvm_polling_value_change_notify&#34;, &#34;uvm_pkg::uvm_polling_value_change_notify&#34;]]} {</pre>
+      <pre>module attributes {circt.dpi_export_funcs = [[&#34;m__uvm_report_dpi&#34;, &#34;uvm_pkg::m__uvm_report_dpi&#34;, 6 : i32], [&#34;uvm_polling_value_change_notify&#34;, &#34;uvm_pkg::uvm_polling_value_change_notify&#34;, 1 : i32]]} {</pre>
       <pre>  func.func private @circt_uvm_mailbox_try_peek_ptr(!moore.chandle) -&gt; (!moore.i64, !moore.i1)</pre>
       <pre>  func.func private @circt_uvm_mailbox_try_get_ptr(!moore.chandle) -&gt; (!moore.i64, !moore.i1)</pre>
       <pre>  func.func private @circt_uvm_mailbox_try_put_ptr(!moore.chandle, !moore.i64) -&gt; !moore.i32</pre>
@@ -99,6 +104,7 @@
       <pre>  func.func private @circt_uvm_resource_write_string(!moore.i64, !moore.string)</pre>
       <pre>  func.func private @circt_uvm_resource_write_wide_chunk(!moore.i64, !moore.i32, !moore.i32, !moore.i32, !moore.i64)</pre>
       <pre>  func.func private @circt_sv_obj_srandom(!moore.chandle, !moore.i32)</pre>
+      <pre>  func.func private @circt_uvm_note_run_test_done()</pre>
       <pre>  func.func private @circt_uvm_process_set_randstate(!moore.chandle, !moore.string)</pre>
       <pre>  func.func private @circt_uvm_process_get_randstate(!moore.chandle) -&gt; !moore.string</pre>
       <pre>  func.func private @circt_uvm_process_self() -&gt; !moore.chandle</pre>
@@ -125,8 +131,8 @@
       <pre>  moore.class.classdecl @C extends @&#34;uvm_pkg::uvm_scoreboard&#34; {</pre>
       <pre>  }</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_check_path&#34;(in %path : !moore.string, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_check_path&#34;}</pre>
-      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_deposit&#34;(in %path : !moore.string, in %value : !moore.l1024, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_deposit&#34;}</pre>
-      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_force&#34;(in %path : !moore.string, in %value : !moore.l1024, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_force&#34;}</pre>
+      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_deposit&#34;(in %path : !moore.string, in %value : !moore.l1024, return return : !moore.i32) attributes {circt.dpi_arg_abi = [0 : i32, 2 : i32, 0 : i32], verilogName = &#34;uvm_hdl_deposit&#34;}</pre>
+      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_force&#34;(in %path : !moore.string, in %value : !moore.l1024, return return : !moore.i32) attributes {circt.dpi_arg_abi = [0 : i32, 2 : i32, 0 : i32], verilogName = &#34;uvm_hdl_force&#34;}</pre>
       <pre>  moore.coroutine private @&#34;uvm_pkg::uvm_hdl_force_time&#34;(%arg0: !moore.string, %arg1: !moore.l1024, %arg2: !moore.time) {</pre>
       <pre>    %0 = moore.constant 0 : i32</pre>
       <pre>    %1 = moore.constant 0 : i64</pre>
@@ -161,9 +167,9 @@
       <pre>    %21 = func.call @circt_uvm_hdl_unsupported(%arg0) : (!moore.string) -&gt; !moore.i32</pre>
       <pre>    moore.return</pre>
       <pre>  }</pre>
-      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_release_and_read&#34;(in %path : !moore.string, inout %value : !moore.l1024, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_release_and_read&#34;}</pre>
+      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_release_and_read&#34;(in %path : !moore.string, inout %value : !moore.l1024, return return : !moore.i32) attributes {circt.dpi_arg_abi = [0 : i32, 2 : i32, 0 : i32], verilogName = &#34;uvm_hdl_release_and_read&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_release&#34;(in %path : !moore.string, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_release&#34;}</pre>
-      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_read&#34;(in %path : !moore.string, out value : !moore.l1024, return return : !moore.i32) attributes {verilogName = &#34;uvm_hdl_read&#34;}</pre>
+      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_hdl_read&#34;(in %path : !moore.string, out value : !moore.l1024, return return : !moore.i32) attributes {circt.dpi_arg_abi = [0 : i32, 2 : i32, 0 : i32], verilogName = &#34;uvm_hdl_read&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_dpi_get_next_arg_c&#34;(in %init : !moore.i32, return return : !moore.string) attributes {verilogName = &#34;uvm_dpi_get_next_arg_c&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_dpi_get_tool_name_c&#34;(return return : !moore.string) attributes {verilogName = &#34;uvm_dpi_get_tool_name_c&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_dpi_get_tool_version_c&#34;(return return : !moore.string) attributes {verilogName = &#34;uvm_dpi_get_tool_version_c&#34;}</pre>
@@ -204,13 +210,7 @@
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_re_comp&#34;(in %re : !moore.string, in %deglob : !moore.i1, return return : !moore.chandle) attributes {verilogName = &#34;uvm_re_comp&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_re_exec&#34;(in %rexp : !moore.chandle, in %str : !moore.string, return return : !moore.i32) attributes {verilogName = &#34;uvm_re_exec&#34;}</pre>
       <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_re_compexec&#34;(in %re : !moore.string, in %str : !moore.string, in %deglob : !moore.i1, out exec_ret : !moore.i32, return return : !moore.chandle) attributes {verilogName = &#34;uvm_re_compexec&#34;}</pre>
-      <pre>  moore.func.dpi private @&#34;uvm_pkg::uvm_re_compexecfree&#34;(in %re : !moore.string, in %str : !moore.string, in %deglob : !moore.i1, out exec_ret : !moore.i32, return return : !moore.i1) attributes {verilogName = &#34;uvm_re_compexecfree&#34;}</pre>
-      <pre>  func.func private @&#34;uvm_pkg::uvm_re_match&#34;(%arg0: !moore.string, %arg1: !moore.string, %arg2: !moore.i1) -&gt; !moore.i32 {</pre>
-      <pre>    %0 = moore.get_global_variable @retval : &lt;i32&gt;</pre>
-      <pre>    %1 = moore.get_global_variable @success : &lt;i1&gt;</pre>
-      <pre>    %2:2 = moore.func.dpi.call @&#34;uvm_pkg::uvm_re_compexecfree&#34;(%arg0, %arg1, %arg2) : (!moore.string, !moore.string, !moore.i1) -&gt; (!moore.i32, !moore.i1)</pre>
-      <pre>    moore.blocking_assign %0, %2#0 : i32</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 268316 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 268307 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>    %970 = moore.handle_eq %968, %969 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; : !moore.null -&gt; i1</pre>
       <pre>    %971 = moore.class.dyncast %968 : &lt;@&#34;uvm_pkg::uvm_resource_base&#34;&gt; to &lt;@&#34;uvm_pkg::uvm_resource&#34;&gt;</pre>
       <pre>    %972 = moore.handle_ne %971, %969 : !moore.class&lt;@&#34;uvm_pkg::uvm_resource&#34;&gt; : !moore.null -&gt; i1</pre>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_tb_build_bl_tb</h2>
     </header>
     <section class="property-list">
@@ -63,9 +63,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:56:38</dd></div>
-        <div><dt>time elapsed</dt><dd>60.229s</dd></div>
-        <div><dt>ram usage</dt><dd>209664 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:38:49</dd></div>
+        <div><dt>time elapsed</dt><dd>60.861s</dd></div>
+        <div><dt>ram usage</dt><dd>211456 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -81,9 +81,20 @@
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -93,12 +104,21 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
       <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
       <pre>  ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uvm_tb_build_bl_tb/agents/apb_agent/apb_agent_pkg.sv:25:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_bl_tb/agents/apb_agent/apb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
+      <pre>`define uvm_record_field(NAME,VALUE)</pre>
+      <pre>        ^~~~~~~~~~~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_bl_tb/agents/apb_agent/apb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
       <pre>`define uvm_record_field(NAME,VALUE)</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_bl_tb/agents/apb_agent/apb_agent_pkg.sv:25:1: note: included from here</pre>
       <pre>`include &#34;apb_seq_item.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:37:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_macros.svh:85:</pre>
+      <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: note: previous definition here</pre>
+      <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: remark: previous definition here</pre>
       <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
       <pre>        ^</pre>
@@ -225,7 +245,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=spi_interrupt_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=spi_interrupt_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909392</pre>
+      <pre>+ __svtests_variant_t0=1787002723</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=spi_interrupt_test</pre>
@@ -250,11 +270,6 @@
       <pre>UVM_INFO @ 0: reporter [RNTST] Running test spi_interrupt_test...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_bl_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 670: reporter [SPI_DRV_RUN:] Starting transmission: c265050263f59b339af84ed436db652c RX_NEG State 1, no of bits 3</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1091: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1091: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
@@ -407,6 +422,7 @@
       <pre>[UVM/FLD/GET_MIRRORED_VAL/VOL]   120</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 6</pre>
       <pre>[Arcilator] simvariant 1/1 wall 6s</pre>

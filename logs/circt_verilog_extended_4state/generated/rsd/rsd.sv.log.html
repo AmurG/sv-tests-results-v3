@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>rsd</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full RSD core test</dd></div>
-        <div><dt>rc</dt><dd>-11 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>rsd</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -182,9 +182,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:25:57</dd></div>
-        <div><dt>time elapsed</dt><dd>0.756s</dd></div>
-        <div><dt>ram usage</dt><dd>73472 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:29:11</dd></div>
+        <div><dt>time elapsed</dt><dd>1.453s</dd></div>
+        <div><dt>ram usage</dt><dd>98408 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -192,7 +192,13 @@
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=Core <a href="../../../../tests/generated/rsd/rsd.sv.html" target="file-frame">tests/generated/rsd/rsd.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MicroArchConf.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MicroArchConf.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/BasicTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/BasicTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/MemoryMapTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/MemoryMapTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIndexTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIndexTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheSystemTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheSystemTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/MemoryTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/MemoryTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/OpFormat.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/OpFormat.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/MicroOp.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/MicroOp.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/FetchUnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/FetchUnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPUTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPUTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SchedulerTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SchedulerTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PipelineTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PipelineTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_UnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_UnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/DebugTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/DebugTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Core.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Core.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/PC.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/PC.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DecodeStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/RenameStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DispatchStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/CommitStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFileIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFileIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetworkIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetworkIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/BitCounter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/BitCounter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/IntALU.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/IntALU.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/Shifter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/Shifter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/PipelinedRefDivider.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/PipelinedRefDivider.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedAdder.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedAdder.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedMultiplier.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedMultiplier.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/Decoder.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/Decoder.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/BranchPredictor.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/BranchPredictor.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/Bimodal.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/Bimodal.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SchedulerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SchedulerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupSelectIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupSelectIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SelectLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SelectLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SourceCAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SourceCAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheSystemIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheSystemIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/DCache.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/DCacheIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/DCacheIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/ICache.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManagerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheFlushManagerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/Memory.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/Memory.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManagerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Recovery/RecoveryManagerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ControllerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ControllerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Controller.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Controller.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ResetController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ResetController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/InterruptController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/InterruptController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_UnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_UnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Queue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/RAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/LRU_Counter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/LRU_Counter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Picker.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Picker.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Divider.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/Debug.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/Debug.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/DebugIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/DebugIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounterIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/PerformanceCounterIF.sv</a></pre>
       <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:36:38: warning: shift count of &#39;32&#39; overflows 32-bit operand [-Wshift-count-overflow]</pre>
       <pre>    parameter DATA_MINUS_ONE = (1 &lt;&lt; DATA_WIDTH) - 1;</pre>
+      <pre>                                     ^~~~~~~~~~</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:36:38: warning: shift count of &#39;32&#39; overflows 32-bit operand [-Wshift-count-overflow]</pre>
+      <pre>    parameter DATA_MINUS_ONE = (1 &lt;&lt; DATA_WIDTH) - 1;</pre>
       <pre>                                     ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:264:38: warning: shift count of &#39;32&#39; overflows 32-bit operand [-Wshift-count-overflow]</pre>
+      <pre>    parameter DATA_MINUS_ONE = (1 &lt;&lt; DATA_WIDTH) - 1;</pre>
+      <pre>                                     ^~~~~~~~~~</pre>
       <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:264:38: warning: shift count of &#39;32&#39; overflows 32-bit operand [-Wshift-count-overflow]</pre>
       <pre>    parameter DATA_MINUS_ONE = (1 &lt;&lt; DATA_WIDTH) - 1;</pre>
       <pre>                                     ^</pre>
@@ -255,30 +261,846 @@
       <pre>    FPU_Code fpuCode;</pre>
       <pre>             ^</pre>
       <pre>&lt;unknown&gt;:0: warning: further x/z literal projections onto the two-valued runtime value model were suppressed after 20 reports</pre>
-      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv:160:13: error: failed to legalize operation &#39;moore.extract&#39;: %552 = &#34;moore.extract&#34;(%544) &lt;{lowBit = 0 : i32}&gt; : (!moore.l37) -&gt; !moore.struct&lt;{NV: l1, DZ: l1, OF: l1, UF: l1, NX: l1}&gt;</pre>
-      <pre>            {result, fflags} = pipeReg[0];</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv:160:13: note: see current operation: %552 = &#34;moore.extract&#34;(%544) &lt;{lowBit = 0 : i32}&gt; : (!moore.l37) -&gt; !moore.struct&lt;{NV: l1, DZ: l1, OF: l1, UF: l1, NX: l1}&gt;</pre>
-      <pre>PLEASE submit a bug report to https://github.com/llvm/circt and include the crash backtrace.</pre>
-      <pre>Stack dump:</pre>
-      <pre>0.	Program arguments: <redacted-local-path> --four-valued -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=Core <a href="../../../../tests/generated/rsd/rsd.sv.html" target="file-frame">tests/generated/rsd/rsd.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MicroArchConf.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MicroArchConf.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/BasicTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/BasicTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/MemoryMapTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/MemoryMapTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIndexTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIndexTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheSystemTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheSystemTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/MemoryTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/MemoryTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/OpFormat.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/OpFormat.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/MicroOp.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/MicroOp.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/FetchUnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/FetchUnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPUTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPUTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SchedulerTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SchedulerTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PipelineTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PipelineTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_UnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_UnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/DebugTypes.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/DebugTypes.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Core.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Core.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/PC.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/PC.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DecodeStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/RenameStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/DispatchStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ScheduleStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStageIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/CommitStageIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFileIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFileIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetworkIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetworkIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/BitCounter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/BitCounter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/IntALU.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/IntALU.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/Shifter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/Shifter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/PipelinedRefDivider.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/PipelinedRefDivider.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedAdder.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedAdder.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedMultiplier.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedMultiplier.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveListIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/Decoder.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/Decoder.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/BranchPredictor.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/BranchPredictor.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/FetchUnit/Bimodal.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/FetchUnit/Bimodal.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SchedulerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SchedulerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupSelectIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupSelectIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SelectLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SelectLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/SourceCAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/SourceCAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheSystemIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheSystemIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/DCache.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/DCacheIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/DCacheIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/ICache.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManagerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Cache/CacheFlushManagerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Memory/Memory.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Memory/Memory.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManagerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Recovery/RecoveryManagerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ControllerIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ControllerIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Controller.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Controller.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/ResetController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/ResetController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/InterruptController.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/InterruptController.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Privileged/CSR_UnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/IO/IO_UnitIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/IO/IO_UnitIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Queue.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/RAM.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/LRU_Counter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/LRU_Counter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Picker.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Picker.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Primitives/Divider.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/Debug.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/Debug.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/DebugIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/DebugIF.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv</a> <a href="../../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounterIF.sv.html" target="file-frame">third_party/cores/rsd/Processor/Src/Debug/PerformanceCounterIF.sv</a></pre>
-      <pre>Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):</pre>
-      <pre>0  circt-verilog.real 0x0000613c9ba5b220</pre>
-      <pre>1  circt-verilog.real 0x0000613c9ba5847d</pre>
-      <pre>2  libc.so.6          0x0000753b6fc42520</pre>
-      <pre>3  circt-verilog.real 0x0000613c9b046359</pre>
-      <pre>4  circt-verilog.real 0x0000613c9ac3d7a2</pre>
-      <pre>5  circt-verilog.real 0x0000613c9ac3db02</pre>
-      <pre>6  circt-verilog.real 0x0000613c9ac3db02</pre>
-      <pre>7  circt-verilog.real 0x0000613c9acd1a9c</pre>
-      <pre>8  circt-verilog.real 0x0000613c9b8d47a1</pre>
-      <pre>9  circt-verilog.real 0x0000613c9b8d4a39</pre>
-      <pre>10 circt-verilog.real 0x0000613c9b8d587f</pre>
-      <pre>11 circt-verilog.real 0x0000613c9a76d8e2</pre>
-      <pre>12 circt-verilog.real 0x0000613c9a72b102</pre>
-      <pre>13 libc.so.6          0x0000753b6fc29d90</pre>
-      <pre>14 libc.so.6          0x0000753b6fc29e40 __libc_start_main + 128</pre>
-      <pre>15 circt-verilog.real 0x0000613c9a7647a5</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv:94:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:26:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:70:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:101:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv:37:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@ (posedge port.clk)</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv:88:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@ (posedge port.clk)</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv:189:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv:53:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv:141:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv:35:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge ctrl.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv:29:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv:85:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv:73:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv:45:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge /*port.clk*/ ctrl.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv:42:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv:72:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv:102:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv:39:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge ctrl.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv:30:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv:61:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv:51:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv:44:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv:52:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv:43:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge /*port.clk*/ ctrl.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv:42:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv:72:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv:102:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv:39:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge ctrl.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv:259:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv:64:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv:168:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge clk )               // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv:27:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge clk )               // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv:183:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv:57:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv:69:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv:69:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv:88:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv:113:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv:38:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv:99:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:21:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:103:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:116:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:143:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:166:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv:165:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv:124:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv:40:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv:87:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv:201:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv:216:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv:166:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv:79:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv:35:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv:81:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv:44:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv:77:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv:93:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv:99:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv:108:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:91:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:226:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:277:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:300:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:317:22: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge port.clk ) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:168:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:187:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:633:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv:46:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv:58:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv:65:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv:144:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv:117:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv:389:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv:39:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv:46:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:156:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:425:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:675:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:965:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:1323:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:73:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ ( posedge clk ) begin</pre>
+      <pre>                  ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:128:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ ( posedge clk ) begin</pre>
+      <pre>                  ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:241:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:481:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:498:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv:45:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv:41:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv:111:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv:77:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin  // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv:34:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv:25:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv:28:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge clk )           // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv:56:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff@( posedge clk )           // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv:146:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ (posedge clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv:146:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @ (posedge clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:43:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:128:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @( posedge clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:217:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:217:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:307:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:412:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:701:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:701:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv:92:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:287:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Debug/Debug.sv:116:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv:14:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/NextPCStage.sv:94:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:26:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:70:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FetchStage/FetchStage.sv:101:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/PreDecodeStage.sv:37:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@ (posedge port.clk)</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv:88:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@ (posedge port.clk)</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DecodeStage.sv:189:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv:53:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/RenameStage.sv:141:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/DispatchStage.sv:35:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge ctrl.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerIssueStage.sv:29:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterReadStage.sv:85:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerExecutionStage.sv:73:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/IntegerBackEnd/IntegerRegisterWriteStage.sv:45:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge /*port.clk*/ ctrl.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerIssueStage.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterReadStage.sv:42:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv:72:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerExecutionStage.sv:102:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/ComplexIntegerBackEnd/ComplexIntegerRegisterWriteStage.sv:39:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge ctrl.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryIssueStage.sv:30:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterReadStage.sv:61:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryExecutionStage.sv:51:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryAccessStage.sv:44:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryTagAccessStage.sv:52:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/MemoryBackEnd/MemoryRegisterWriteStage.sv:43:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge /*port.clk*/ ctrl.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPIssueStage.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterReadStage.sv:42:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk )   // synchronous rst</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv:72:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPExecutionStage.sv:102:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/FPBackEnd/FPRegisterWriteStage.sv:39:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge ctrl.clk)   // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Pipeline/CommitStage.sv:259:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv:64:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/RegisterFile.sv:168:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassController.sv:32:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge clk )               // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RegisterFile/BypassNetwork.sv:27:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge clk )               // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/ExecUnit/MultiplierUnit.sv:183:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/ExecUnit/DividerUnit.sv:57:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/MulDivUnit/MulDivUnit.sv:69:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadStoreUnit.sv:69:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/LoadQueue.sv:88:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreQueue.sv:113:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv:38:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/LoadStoreUnit/StoreCommitter.sv:99:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:21:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:103:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:116:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:143:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedFMA.sv:166:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32PipelinedOther.sv:165:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FP32DivSqrter.sv:124:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FloatingPointUnit/FPDivSqrtUnit.sv:40:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogic.sv:87:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv:201:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/ActiveList.sv:216:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RMT.sv:166:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RetirementRMT.sv:79:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv:35:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge port.clk ) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/RenameLogic/RenameLogicCommitter.sv:81:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Decoder/DecodedBranchResolver.sv:44:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv:77:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/BTB.sv:93:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv:99:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/FetchUnit/Gshare.sv:108:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:91:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:226:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:277:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:300:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/IssueQueue.sv:317:22: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        always_ff @( posedge port.clk ) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:168:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:187:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReplayQueue.sv:633:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/DestinationRAM.sv:46:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ (posedge port.clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ReadyBitTable.sv:58:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/Scheduler.sv:65:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupLogic.sv:144:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv:117:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/WakeupPipelineRegister.sv:389:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/ProducerMatrix.sv:39:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Scheduler/MemoryDependencyPredictor.sv:46:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:156:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:425:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:675:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:965:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/DCache.sv:1323:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:73:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ ( posedge clk ) begin</pre>
+      <pre>                  ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:128:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ ( posedge clk ) begin</pre>
+      <pre>                  ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:241:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:481:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/ICache.sv:498:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/MemoryAccessController.sv:45:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv:41:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Cache/CacheFlushManager.sv:111:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge port.clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Recovery/RecoveryManager.sv:77:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin  // synchronous rst</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Privileged/CSR_Unit.sv:34:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/IO/IO_Unit.sv:25:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@(posedge port.clk) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv:28:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge clk )           // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FlipFlop.sv:56:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff@( posedge clk )           // synchronous rst </pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv:146:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ (posedge clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/FreeList.sv:146:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @ (posedge clk) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:43:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:128:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @( posedge clk ) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:217:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:217:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:307:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Queue.sv:412:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:41:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:89:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:654:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:701:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:701:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/RAM.sv:1473:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Multiplier.sv:92:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Primitives/Divider.sv:287:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Debug/Debug.sv:116:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/rsd/Processor/Src/Debug/PerformanceCounter.sv:14:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge port.clk) begin</pre>
+      <pre>                ^</pre>
       <pre></pre>
     </section>
   </body>

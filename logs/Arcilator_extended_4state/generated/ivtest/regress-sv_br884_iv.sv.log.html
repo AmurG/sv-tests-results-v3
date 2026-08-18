@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_br884_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:50:08</dd></div>
-        <div><dt>time elapsed</dt><dd>6.294s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:41:56</dd></div>
+        <div><dt>time elapsed</dt><dd>6.601s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -52,21 +52,21 @@
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;array_bg2&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %array_bg2 = llhd.sig %97 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>    %array_bg2 = llhd.sig %69 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre>                 ^</pre>
-      <pre><redacted-local-path> note: see current operation: %array_bg2 = llhd.sig %2 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %array_bg2 = llhd.sig %3 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;array_bg3&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %array_bg3 = llhd.sig %97 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>    %array_bg3 = llhd.sig %69 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre>                 ^</pre>
-      <pre><redacted-local-path> note: see current operation: %array_bg3 = llhd.sig %2 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %array_bg3 = llhd.sig %3 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;array_lt2&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %array_lt2 = llhd.sig %97 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>    %array_lt2 = llhd.sig %69 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre>                 ^</pre>
-      <pre><redacted-local-path> note: see current operation: %array_lt2 = llhd.sig %2 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %array_lt2 = llhd.sig %3 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;array_lt3&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %array_lt3 = llhd.sig %97 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>    %array_lt3 = llhd.sig %69 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre>                 ^</pre>
-      <pre><redacted-local-path> note: see current operation: %array_lt3 = llhd.sig %2 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %array_lt3 = llhd.sig %3 : !hw.array&lt;4xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -143,96 +143,8 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>FAILED -- LHS=RHS -- array_bg2 = &#39;bxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg3 = &#39;bzzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg4 = &#39;bxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg5 = &#39;bzzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg6 = &#39;bxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg7 = &#39;bzzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg8 = &#39;bxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS=RHS -- array_bg9 = &#39;bzxxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg2 = &#39;bxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg3 = &#39;bzzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg4 = &#39;bxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg5 = &#39;bzzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg6 = &#39;bxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg7 = &#39;bzzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg8 = &#39;bxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_bg9 = &#39;bzxxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg2 = &#39;b0xxxxxxx00000000</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg3 = &#39;bxzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg4 = &#39;bxxxxxxxx0xxx0000</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg5 = &#39;bxzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg6 = &#39;bxxxxxxxxxx0xxx00</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_bg7 = &#39;bxzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt2 = &#39;bzzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt3 = &#39;bxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt4 = &#39;bzzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt5 = &#39;bxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt6 = &#39;bzzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt7 = &#39;bxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt8 = &#39;bzxxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS=RHS -- array_lt9 = &#39;bxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt2 = &#39;bzzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt3 = &#39;bxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt4 = &#39;bzzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt5 = &#39;bxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt6 = &#39;bzzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt7 = &#39;bxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt8 = &#39;bzxxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&lt;RHS -- array_lt9 = &#39;bxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt2 = &#39;bxzzzzzzzxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt3 = &#39;b0xxxxxxx00000000</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt4 = &#39;bxzzzxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt5 = &#39;bxxxxxxxx0xxx0000</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt6 = &#39;bxzxxxxxxxxxxxxxx</pre>
-      <pre>FAILED -- LHS&gt;RHS -- array_lt7 = &#39;bxxxxxxxxxx0xxx00</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d2 = &#39;bxxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d3 = &#39;bxxxxxxxxxzzzzzzzz</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d4 = &#39;bxxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d5 = &#39;bxxxxxxxxxxxxxzzzz</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d6 = &#39;bxxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d7 = &#39;bxxxxxxxxxxxxxxxzz</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d8 = &#39;bxxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS=RHS BE -- array_1d9 = &#39;bxxxxxxxxxxxxxxxxz</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d2 = &#39;bxxxxxxxx000000000</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d3 = &#39;bxxxxxxxx0zzzzzzzz</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d4 = &#39;bxxxxxxxxxxxx00000</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d5 = &#39;bxxxxxxxxxxxx0zzzz</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d6 = &#39;bxxxxxxxxxxxxxx000</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d7 = &#39;bxxxxxxxxxxxxxx0zz</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d8 = &#39;bxxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS&gt;RHS BE -- array_1d9 = &#39;bxxxxxxxxxxxxxxx0z</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d2 = &#39;bxxxxxxxxxx0000000</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d3 = &#39;bxxxxxxxxxxzzzzzzz</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d4 = &#39;bxxxxxxxxxxxxxx000</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d5 = &#39;bxxxxxxxxxxxxxxzzz</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d6 = &#39;bxxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS&lt;RHS BE -- array_1d7 = &#39;bxxxxxxxxxxxxxxxxz</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d2 = &#39;bxxxxxxxxxzzzzzzzz</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d3 = &#39;bxxxxxxxxx00000000</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d4 = &#39;bxxxxxxxxxxxxxzzzz</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d5 = &#39;bxxxxxxxxxxxxx0000</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d6 = &#39;bxxxxxxxxxxxxxxxzz</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d7 = &#39;bxxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d8 = &#39;bxxxxxxxxxxxxxxxxz</pre>
-      <pre>FAILED -- LHS=RHS LE -- array_1d9 = &#39;bxxxxxxxxxxxxxxxx0</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d2 = &#39;bxxxxxxxx0zzzzzzzz</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d3 = &#39;bxxxxxxxx000000000</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d4 = &#39;bxxxxxxxxxxxx0zzzz</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d5 = &#39;bxxxxxxxxxxxx00000</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d6 = &#39;bxxxxxxxxxxxxxx0zz</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d7 = &#39;bxxxxxxxxxxxxxx000</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d8 = &#39;bxxxxxxxxxxxxxxx0z</pre>
-      <pre>FAILED -- LHS&gt;RHS LE -- array_1d9 = &#39;bxxxxxxxxxxxxxxx00</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d2 = &#39;bxxxxxxxxxxzzzzzzz</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d3 = &#39;bxxxxxxxxxx0000000</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d4 = &#39;bxxxxxxxxxxxxxxzzz</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d5 = &#39;bxxxxxxxxxxxxxx000</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d6 = &#39;bxxxxxxxxxxxxxxxxz</pre>
-      <pre>FAILED -- LHS&lt;RHS LE -- array_1d7 = &#39;bxxxxxxxxxxxxxxxx0</pre>
-      <pre></pre>
-      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
+      <pre>PASSED</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
       <pre></pre>
     </section>
   </body>

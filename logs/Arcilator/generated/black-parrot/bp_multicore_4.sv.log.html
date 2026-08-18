@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
         <h2>bp_multicore_4</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>black-parrot core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>black-parrot</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -330,9 +330,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 06:02:21</dd></div>
-        <div><dt>time elapsed</dt><dd>31.421s</dd></div>
-        <div><dt>ram usage</dt><dd>2128036 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-15 08:25:01</dd></div>
+        <div><dt>time elapsed</dt><dd>149.456s</dd></div>
+        <div><dt>ram usage</dt><dd>2131356 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -507,7 +507,12 @@
       <pre>../../../third_party/cores/black-parrot/external/basejump_stl/bsg_misc/bsg_defines.sv:124:142: note: expanded from macro &#39;BSG_COUNTONES_SYNTH&#39;</pre>
       <pre>                                                                                       +`BSG_GET_BIT(y,60)+`BSG_GET_BIT(y,61)+`BSG_GET_BIT(y,62)+`BSG_GET_BIT(y,63))</pre>
       <pre>                                                                                                                                             ^</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 15347 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 15342 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>`define BSG_COUNTONES_SYNTH(y) (($bits(y) &lt; 65) ? 1&#39;b0 : `BSG_UNDEFINED_IN_SIM(1&#39;b0)) + (`BSG_GET_BIT(y,0) +`BSG_GET_BIT(y,1) +`BSG_GET_BIT(y,2) +`BSG_GET_BIT(y,3) +`BSG_GET_BIT(y,4) +`BSG_GET_BIT(y,5) +`BSG_GET_BIT(y,6)+`BSG_GET_BIT(y,7) +`BSG_GET_BIT(y,8)+`BSG_GET_BIT(y,9) \</pre>
+      <pre>                                                                                                                                                                 ^</pre>
+      <pre>../../../third_party/cores/black-parrot/external/basejump_stl/bsg_noc/bsg_wormhole_router.sv:200:0: warning: shift count of &#39;59&#39; overflows 5-bit operand [-Wshift-count-overflow]</pre>
+      <pre>../../../third_party/cores/black-parrot/external/basejump_stl/bsg_misc/bsg_defines.sv:123:275: note: expanded from macro &#39;BSG_COUNTONES_SYNTH&#39;</pre>
+      <pre>                                                                                       +`BSG_GET_BIT(y,50)+`BSG_GET_BIT(y,51)+`BSG_GET_BIT(y,52)+`BSG_GET_BIT(y,53)+`BSG_GET_BIT(y,54)+`BSG_GET_BIT(y,55)+`BSG_GET_BIT(y,56)+`BSG_GET_BIT(y,57)+`BSG_GET_BIT(y,58)+`BSG_GET_BIT(y,59) \</pre>
       <pre>                                                                                                                                                                                                                                                                                  ^</pre>
       <pre>../../../third_party/cores/black-parrot/external/basejump_stl/bsg_noc/bsg_wormhole_router.sv:200:0: warning: shift count of &#39;59&#39; overflows 3-bit operand [-Wshift-count-overflow]</pre>
       <pre>../../../third_party/cores/black-parrot/external/basejump_stl/bsg_misc/bsg_defines.sv:123:275: note: expanded from macro &#39;BSG_COUNTONES_SYNTH&#39;</pre>
@@ -903,11 +908,6 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
-      <pre><redacted-local-path> error: failed to legalize operation &#39;seq.compreg&#39; that was explicitly marked illegal: %932 = &#34;seq.compreg&#34;(%931, %arg71) &lt;{name = &#34;sharers_ways_r&#34;, operandSegmentSizes = array&lt;i32: 1, 1, 0, 0, 0&gt;}&gt; {llhd.nba} : (!hw.array&lt;8xi3&gt;, !seq.clock) -&gt; !hw.array&lt;8xi3&gt;</pre>
-      <pre>    %sharers_ways_r = seq.firreg %42 clock %47 {llhd.nba} : !hw.array&lt;8xi3&gt;</pre>
-      <pre>                      ^</pre>
-      <pre><redacted-local-path> note: see current operation: %932 = &#34;seq.compreg&#34;(%931, %arg71) &lt;{name = &#34;sharers_ways_r&#34;, operandSegmentSizes = array&lt;i32: 1, 1, 0, 0, 0&gt;}&gt; {llhd.nba} : (!hw.array&lt;8xi3&gt;, !seq.clock) -&gt; !hw.array&lt;8xi3&gt;</pre>
-      <pre>+ exit 1</pre>
       <pre></pre>
     </section>
   </body>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_use_models_pipelined_get_put</h2>
     </header>
     <section class="property-list">
@@ -38,9 +38,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:53:25</dd></div>
-        <div><dt>time elapsed</dt><dd>64.383s</dd></div>
-        <div><dt>ram usage</dt><dd>209552 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:32:37</dd></div>
+        <div><dt>time elapsed</dt><dd>46.411s</dd></div>
+        <div><dt>ram usage</dt><dd>210436 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -56,9 +56,20 @@
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -190,9 +201,6 @@
       <pre>UVM_INFO @ 0: reporter [RNTST] Running test mbus_test...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_seq.svh(68) @ 110: uvm_test_top.menv.m_bus_agent.m_sequencer@@t_seq_1 [] write (i = 0) of da779f1a at 00188928</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_seq.svh(68) @ 150: uvm_test_top.menv.m_bus_agent.m_sequencer@@t_seq_1 [] write (i = 1) of 19ae141e at 0013a1cc</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_get_put/pipelined_get_put/mbus_pipelined_agent/mbus_pipelined_seq.svh(68) @ 190: uvm_test_top.menv.m_bus_agent.m_sequencer@@t_seq_1 [] write (i = 2) of c24be148 at 0018ba38</pre>
@@ -291,6 +299,7 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre></pre>
     </section>
   </body>

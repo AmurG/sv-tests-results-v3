@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>hana_test_simulation_nor</h2>
     </header>
     <section class="property-list">
@@ -32,27 +32,51 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:26:07</dd></div>
-        <div><dt>time elapsed</dt><dd>0.143s</dd></div>
-        <div><dt>ram usage</dt><dd>28672 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:29:31</dd></div>
+        <div><dt>time elapsed</dt><dd>0.124s</dd></div>
+        <div><dt>ram usage</dt><dd>25088 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/yosys/tests/hana/test_simulation_nor.v.html" target="file-frame">third_party/tools/yosys/tests/hana/test_simulation_nor.v</a> <a href="../../../../third_party/tools/yosys/tests/hana/hana_vlib.v.html" target="file-frame">third_party/tools/yosys/tests/hana/hana_vlib.v</a></pre>
       <pre>&lt;unknown&gt;:0: warning: in TRIBUF: x/z literal &#39;z&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:703:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @( posedge clk)</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:709:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge reset)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:709:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge reset)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:717:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge set)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:717:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge set)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:703:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @( posedge clk)</pre>
       <pre>          ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:703:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @( posedge clk)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:709:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge reset)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:709:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge reset)</pre>
-      <pre>        ^</pre>
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:709:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk or posedge reset)</pre>
       <pre>        ^</pre>
@@ -65,12 +89,6 @@
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:717:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk or posedge set)</pre>
       <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:717:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge set)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:717:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge set)</pre>
-      <pre>        ^</pre>
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk or posedge reset or posedge set)</pre>
       <pre>        ^</pre>
@@ -79,24 +97,6 @@
       <pre>        ^</pre>
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk or posedge reset or posedge set)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:725:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge reset or posedge set)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or posedge set or posedge reset)</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/tools/yosys/tests/hana/hana_vlib.v:735:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>always @(posedge clk or posedge set or posedge reset)</pre>

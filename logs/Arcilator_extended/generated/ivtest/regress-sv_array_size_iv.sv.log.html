@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_array_size_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>137 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 06:08:18</dd></div>
-        <div><dt>time elapsed</dt><dd>191.908s</dd></div>
-        <div><dt>ram usage</dt><dd>104007236 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:58:56</dd></div>
+        <div><dt>time elapsed</dt><dd>60.593s</dd></div>
+        <div><dt>ram usage</dt><dd>464736 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -50,17 +50,9 @@
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
-      <pre>+ echo [Arcilator] header-gen stage</pre>
-      <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
-      <pre>+ echo [Arcilator] gen-driver stage</pre>
-      <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-sv_array_size_iv ivtest <redacted-local-path> [] 0</pre>
-      <pre>+ echo [Arcilator] llc stage</pre>
-      <pre>[Arcilator] llc stage</pre>
-      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
-      <pre>Killed</pre>
-      <pre>+ exit 137</pre>
+      <pre>&lt;unknown&gt;:0: error: SSA value of type &#39;!llvm.array&lt;65536 x i16&gt;&#39; (1048576 bits) exceeds the native code generation budget (--giant-value-bits=262144): whole-value materialization of a memory this large crashes the backend (LLC-ISEL-CRASH-GIANT-MEM); keep the memory in indexed storage or raise the budget</pre>
+      <pre>&lt;unknown&gt;:0: note: see current operation: %6 = &#34;llvm.mlir.poison&#34;() : () -&gt; !llvm.array&lt;65536 x i16&gt;</pre>
+      <pre>+ exit 1</pre>
       <pre></pre>
     </section>
   </body>

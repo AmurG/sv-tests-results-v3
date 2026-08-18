@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
         <h2>rsd</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full RSD core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>rsd</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -182,9 +182,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 06:02:12</dd></div>
-        <div><dt>time elapsed</dt><dd>2.451s</dd></div>
-        <div><dt>ram usage</dt><dd>79624 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-15 08:23:53</dd></div>
+        <div><dt>time elapsed</dt><dd>5.474s</dd></div>
+        <div><dt>ram usage</dt><dd>195996 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -263,15 +263,6 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
-      <pre><redacted-local-path> error: &#39;arc.execute&#39; op requires one region</pre>
-      <pre>    %8:6 = llhd.combinational -&gt; i16, i16, !hw.array&lt;1xi1&gt;, i1, !hw.array&lt;1xi4&gt;, i1 {</pre>
-      <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %0:6 = &#34;arc.execute&#34;(&lt;&lt;UNKNOWN SSA VALUE&gt;&gt;) : (i16) -&gt; (i16, i16, i1, i1, i4, i1)</pre>
-      <pre><redacted-local-path> error: &#39;llhd.sig&#39; op failed to verify that init type must match result ref element type</pre>
-      <pre>    %we = llhd.sig %1 : !hw.array&lt;1xi4&gt;</pre>
-      <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %10 = &#34;llhd.sig&#34;(%9) &lt;{name = &#34;we&#34;}&gt; : (i4) -&gt; !llhd.ref&lt;!hw.array&lt;1xi4&gt;&gt;</pre>
-      <pre>+ exit 1</pre>
       <pre></pre>
     </section>
   </body>

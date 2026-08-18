@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_br_gh112f_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 10:02:05</dd></div>
-        <div><dt>time elapsed</dt><dd>6.259s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:58:30</dd></div>
+        <div><dt>time elapsed</dt><dd>6.413s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -133,7 +133,7 @@
       <pre>width 0 = 256</pre>
       <pre>width 1 = 128</pre>
       <pre>width 2 = 8</pre>
-      <pre>x000xx00xx00xx00xx00xx00xx00xx00xx00xx00xx00xx00xx00xx00xx00xz00</pre>
+      <pre>000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f</pre>
       <pre>00 : 00 10</pre>
       <pre>01 : 01 11</pre>
       <pre>02 : 02 12</pre>
@@ -150,10 +150,8 @@
       <pre>0d : 0d 1d</pre>
       <pre>0e : 0e 1e</pre>
       <pre>0f : 0f 1f</pre>
-      <pre>FAILED</pre>
+      <pre>PASSED</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
-      <pre></pre>
-      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_sv_class_in_module_decl_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:51:16</dd></div>
-        <div><dt>time elapsed</dt><dd>6.112s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:43:15</dd></div>
+        <div><dt>time elapsed</dt><dd>6.470s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -53,6 +53,30 @@
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m2/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %3 = arc.alloc_state %arg0 tap {names = [&#34;m2/c&#34;], offset = 48 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m1/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %1 = arc.alloc_state %arg0 tap {names = [&#34;m1/c&#34;], offset = 32 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m2/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %3 = arc.alloc_state %arg0 tap {names = [&#34;m2/c&#34;], offset = 48 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m1/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %1 = arc.alloc_state %arg0 tap {names = [&#34;m1/c&#34;], offset = 32 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m2/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %3 = arc.alloc_state %arg0 tap {names = [&#34;m2/c&#34;], offset = 48 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> warning: pointer-typed state &#39;m1/c&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
+      <pre>    %c = llhd.sig %3 : !llvm.ptr</pre>
+      <pre>         ^</pre>
+      <pre><redacted-local-path> note: see current operation: %1 = arc.alloc_state %arg0 tap {names = [&#34;m1/c&#34;], offset = 32 : i32} : (!arc.storage&lt;72&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>

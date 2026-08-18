@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_tb_build_ss_tb</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>UVM example - uvm_tb_build_ss_tb</dd></div>
-        <div><dt>rc</dt><dd>71 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>uvm uvm-examples</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -122,9 +122,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:22:24</dd></div>
-        <div><dt>time elapsed</dt><dd>900.789s</dd></div>
-        <div><dt>ram usage</dt><dd>279276 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:37:32</dd></div>
+        <div><dt>time elapsed</dt><dd>467.973s</dd></div>
+        <div><dt>ram usage</dt><dd>307428 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -137,23 +137,46 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=hdl_top <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/register_model/spi_reg_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/register_model/spi_reg_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/register_model/gpio_reg_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/register_model/gpio_reg_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/register_model/pss_reg_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/register_model/pss_reg_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/env/spi_env_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/env/spi_env_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_env_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_env_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/env/pss_env_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/env/pss_env_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/sequences/spi_bus_sequence_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/sequences/spi_bus_sequence_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/sequences/spi_test_seq_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/sequences/spi_test_seq_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/sequences/gpio_bus_sequence_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/sequences/gpio_bus_sequence_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/sequences/gpio_test_sequence_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/sequences/gpio_test_sequence_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/sequences/pss_test_seq_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/sequences/pss_test_seq_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/test/pss_test_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/test/pss_test_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/test/spi_test_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/test/spi_test_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hdl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hdl_top.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hvl_top.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hvl_top.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/binder.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/binder.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/timescale.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/timescale.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_defines.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_defines.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_shift.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_shift.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_top.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_top.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/timescale.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/timescale.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/gpio_defines.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/gpio_defines.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/gpio_top.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/gpio/rtl/verilog/gpio_top.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/timescale.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/timescale.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_defines.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_defines.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/raminfr.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/raminfr.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_rfifo.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_rfifo.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_tfifo.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_tfifo.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_sync_flops.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_sync_flops.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_receiver.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_receiver.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_transmitter.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_transmitter.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_regs.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_regs.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_debug_if.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_debug_if.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_apb.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_apb.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_top.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/uart/rtl/uart_top.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/icpit/rtl/icpit.v.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/icpit/rtl/icpit.v</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/pss/rtl/pss.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/pss/rtl/pss.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/pss/rtl/pss_wrapper.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/pss/rtl/pss_wrapper.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/modem_agent/modem_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/serial_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/serial_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_driver_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_driver_bfm.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_bfm.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_bfm.sv</a> <a href="../../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
+      <pre>  in instance: hdl_top.APB</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv:36:8: warning: input net port &#39;PCLK&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>assign APB.PCLK = PCLK;</pre>
+      <pre>       ^~~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv:36:8: warning: input net port &#39;PCLK&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>assign APB.PCLK = PCLK;</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:39:24: note: declared here</pre>
+      <pre>interface apb_if(input PCLK,</pre>
+      <pre>                       ^~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:39:24: remark: declared here</pre>
       <pre>interface apb_if(input PCLK,</pre>
       <pre>                       ^</pre>
+      <pre>  in instance: hdl_top.APB</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv:37:8: warning: input net port &#39;PRESETn&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>assign APB.PRESETn = PRESETn;</pre>
+      <pre>       ^~~~~~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/apb_prober.sv:37:8: warning: input net port &#39;PRESETn&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>assign APB.PRESETn = PRESETn;</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:40:24: note: declared here</pre>
+      <pre>                 input PRESETn);</pre>
+      <pre>                       ^~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:40:24: remark: declared here</pre>
       <pre>                 input PRESETn);</pre>
       <pre>                       ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv:41:15: warning: edge of expression of type &#39;logic[4:0]&#39; will only trigger on changes to the first bit [-Wmultibit-edge]</pre>
       <pre>    @(posedge IREQ);</pre>
+      <pre>              ^~~~</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv:41:15: warning: edge of expression of type &#39;logic[4:0]&#39; will only trigger on changes to the first bit [-Wmultibit-edge]</pre>
+      <pre>    @(posedge IREQ);</pre>
       <pre>              ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:181:25: warning: cannot refer to element 4 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
       <pre>           slave_select[4] = 1;</pre>
+      <pre>                        ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:181:25: warning: cannot refer to element 4 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
+      <pre>           slave_select[4] = 1;</pre>
+      <pre>                        ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:184:25: warning: cannot refer to element 5 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
+      <pre>           slave_select[5] = 1;</pre>
       <pre>                        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:184:25: warning: cannot refer to element 5 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
       <pre>           slave_select[5] = 1;</pre>
@@ -161,15 +184,32 @@
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:187:25: warning: cannot refer to element 6 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
       <pre>           slave_select[6] = 1;</pre>
       <pre>                        ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:187:25: warning: cannot refer to element 6 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
+      <pre>           slave_select[6] = 1;</pre>
+      <pre>                        ^</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:190:25: warning: cannot refer to element 7 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
+      <pre>           slave_select[7] = 1;</pre>
+      <pre>                        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:190:25: warning: cannot refer to element 7 of &#39;logic[3:0]&#39; [-Windex-oob]</pre>
       <pre>           slave_select[7] = 1;</pre>
       <pre>                        ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
+      <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_done&#39; has no connection [-Wunconnected-output-port]</pre>
+      <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
+      <pre>                                                    ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:57:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/base/uvm_base.svh:77:</pre>
+      <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
+      <pre>            separator = &#34;\.(&#34; ;</pre>
+      <pre>                         ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_config_db_implementation.svh:375:26: warning: unknown character escape sequence &#39;\.&#39; [-Wunknown-escape-code]</pre>
       <pre>            separator = &#34;\.(&#34; ;</pre>
       <pre>                         ^</pre>
@@ -179,12 +219,21 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_base.svh:77:3: note: included from here</pre>
       <pre>  `include &#34;base/uvm_config_db_implementation.svh&#34;</pre>
       <pre>  ^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_agent_pkg.sv:25:</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
+      <pre>`define uvm_record_field(NAME,VALUE)</pre>
+      <pre>        ^~~~~~~~~~~~~~~~</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_seq_item.svh:21:9: warning: macro &#39;uvm_record_field&#39; redefined [-Wredef-macro]</pre>
       <pre>`define uvm_record_field(NAME,VALUE)</pre>
       <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_agent_pkg.sv:25:1: note: included from here</pre>
       <pre>`include &#34;apb_seq_item.svh&#34;</pre>
       <pre>^</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_pkg.sv:37:</pre>
+      <pre>in file included from ../../../third_party/tests/uvm/src/uvm_macros.svh:85:</pre>
+      <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: note: previous definition here</pre>
+      <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm/src/macros/uvm_recorder_defines.svh:191:9: remark: previous definition here</pre>
       <pre>`define uvm_record_field(NAME,VALUE,RECORDER=recorder) \</pre>
       <pre>        ^</pre>
@@ -231,475 +280,426 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_root.svh:1015:21: warning: in uvm_pkg::uvm_root::m_process_config: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>    uvm_bitstream_t v;</pre>
       <pre>                    ^</pre>
-      <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>                  wait(top.phase_timeout != 0);</pre>
-      <pre>                  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:67:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:67:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>        @(posedge clk);</pre>
       <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:67:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge clk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>  CHK_PSEL: assert property(psel_valid);</pre>
       <pre>  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>  CHK_PSEL: assert property(psel_valid);</pre>
       <pre>  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  CHK_PSEL: assert property(psel_valid);</pre>
-      <pre>  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_if.sv:55:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  CHK_PSEL: assert property(psel_valid);</pre>
-      <pre>  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_bfm.sv:31:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    wait (IRQ == 1);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/utils/interrupt/intr_bfm.sv:33:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    wait (IRQ == 0);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hdl_top.sv:260:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hdl_top.sv:260:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>  repeat(4) @(posedge HCLK);</pre>
       <pre>              ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/hdl_top.sv:260:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  repeat(4) @(posedge HCLK);</pre>
-      <pre>              ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv:26:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv:26:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>    @(posedge IRQ);</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/sub_system_tbs/pss_tb/tb/intr_if.sv:26:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge IRQ);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>  always @(posedge clk_in or posedge rst)</pre>
       <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:85:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:85:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:85:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:85:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:94:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:94:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(posedge clk_in or posedge rst)</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 987 middle lines omitted for size; grading used the full log] ...</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/icpit/rtl/icpit.v:84:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge PCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/icpit/rtl/icpit.v:117:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge PCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/icpit/rtl/icpit.v:117:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge PCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:87:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge HCLK) begin</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:87:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge HCLK) begin</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:210:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge HCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/ahb2apb/rtl/ahb_apb_bridge.sv:210:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge HCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_monitor_bfm.sv:62:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_monitor_bfm.sv:62:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:58:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:58:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:65:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:65:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge PCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:68:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge PCLK);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/apb_agent/apb_driver_bfm.sv:68:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge PCLK);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv:63:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv:63:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv:66:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(negedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv:66:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(negedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:53:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:53:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:57:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:57:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:77:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:77:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:82:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge ext_clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:82:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge ext_clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:83:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:83:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:89:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:89:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:90:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:90:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:95:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge ext_clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:95:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge ext_clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:97:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:97:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:104:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_monitor_bfm.sv:104:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:44:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:44:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge clk);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:52:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:52:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:61:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:61:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:64:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:64:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:73:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(negedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:73:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(negedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:76:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/gpio_agent/gpio_driver_bfm.sv:76:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(negedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv:60:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff((HREADY == 1) &amp;&amp; (HTRANS == AHB_NON_SEQ)));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv:60:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff((HREADY == 1) &amp;&amp; (HTRANS == AHB_NON_SEQ)));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv:63:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_monitor_bfm.sv:63:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:64:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HRESETn);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:64:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HRESETn);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:68:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:68:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:72:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:72:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:79:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/ahb_agent/ahb_driver_bfm.sv:79:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:102:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>          @(posedge sclk);</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:102:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>          @(posedge sclk);</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>       @(posedge clk);</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>       @(posedge clk);</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:123:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>           @(posedge clk);</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:123:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>           @(posedge clk);</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:136:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>           @(posedge clk);</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:136:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>           @(posedge clk);</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:148:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>       @(posedge clk);</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:148:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>       @(posedge clk);</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:152:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge clk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:152:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge clk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:214:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge clk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:214:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge clk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:217:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>          @(posedge clk);</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:217:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>          @(posedge clk);</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:228:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_monitor_bfm.sv:228:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_driver_bfm.sv:46:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge sclk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/uart_agent/uart_driver_bfm.sv:46:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge sclk);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_in_scoreboard.svh:435:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(GPI);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_in_scoreboard.svh:435:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(GPI);</pre>
-      <pre>      ^</pre>
-      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
-      <pre>[Arcilator] Arcilator backend stage</pre>
-      <pre>+ ulimit -v 10485760</pre>
-      <pre>+ printf %s\n [Arcilator] simvariant AOT mode: single compile, 1 argv-plusarg runs</pre>
-      <pre>[Arcilator] simvariant AOT mode: single compile, 1 argv-plusarg runs</pre>
-      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
-      <pre>[Arcilator] arc lower-to-llvm stage</pre>
-      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
-      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;wrapper/DUT/U_UART/regs/receiver/fifo_rx/fifo&#39; of type &#39;!hw.array&lt;16xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %fifo = llhd.sig %9 : !hw.array&lt;16xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
-      <pre>            ^</pre>
-      <pre><redacted-local-path> note: see current operation: %wrapper2FDUT2FU_UART2Fregs2Freceiver2Ffifo_rx2Ffifo = llhd.sig name &#34;wrapper/DUT/U_UART/regs/receiver/fifo_rx/fifo&#34; %502 : !hw.array&lt;16xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
-      <pre><redacted-local-path> warning: four-valued aggregate state &#39;wrapper/DUT/U_UART/regs/receiver/fifo_rx/rfifo/ram&#39; of type &#39;!hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; cannot be exported faithfully: the {value, unknown} planes of its elements are interleaved in storage and the flat state schema cannot describe them; omitting it from the state table and the waveform (the two-valued path exports this signal)</pre>
-      <pre>    %ram = seq.firreg %2 clock %1 {llhd.nba} : !hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
-      <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %539 = arc.alloc_state %arg0 {name = &#34;wrapper/DUT/U_UART/regs/receiver/fifo_rx/rfifo/ram&#34;, offset = 2576 : i32} : (!arc.storage&lt;3692&gt;) -&gt; !arc.state&lt;!hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;</pre>
-      <pre><redacted-local-path> warning: four-valued aggregate state &#39;wrapper/DUT/U_UART/regs/transmitter/fifo_tx/tfifo/ram&#39; of type &#39;!hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; cannot be exported faithfully: the {value, unknown} planes of its elements are interleaved in storage and the flat state schema cannot describe them; omitting it from the state table and the waveform (the two-valued path exports this signal)</pre>
-      <pre>    %ram = seq.firreg %2 clock %1 {llhd.nba} : !hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
-      <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %452 = arc.alloc_state %arg0 {name = &#34;wrapper/DUT/U_UART/regs/transmitter/fifo_tx/tfifo/ram&#34;, offset = 2176 : i32} : (!arc.storage&lt;3692&gt;) -&gt; !arc.state&lt;!hw.array&lt;16xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;</pre>
-      <pre><redacted-local-path> warning: four-valued aggregate state &#39;wrapper/DUT/U_BRIDGE/PRDATA&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; cannot be exported faithfully: the {value, unknown} planes of its elements are interleaved in storage and the flat state schema cannot describe them; omitting it from the state table and the waveform (the two-valued path exports this signal)</pre>
-      <pre>  hw.module private @ahb_apb_bridge(in %HCLK : !hw.struct&lt;value: i1, unknown: i1&gt;, in %HRESETn : !hw.struct&lt;value: i1, unknown: i1&gt;, in %HADDR : !hw.struct&lt;value: i32, unknown: i32&gt;, in %HTRANS : !hw.struct&lt;value: i2, unknown: i2&gt;, in %HWRITE : !hw.struct&lt;value: i1, unknown: i1&gt;, in %HSIZE : !hw.struct&lt;value: i3, unknown: i3&gt;, in %HBURST : !hw.struct&lt;value: i3, unknown: i3&gt;, in %HPROT : !hw.struct&lt;value: i4, unknown: i4&gt;, in %HWDATA : !hw.struct&lt;value: i32, unknown: i32&gt;, in %HSEL : !hw.struct&lt;value: i1, unknown: i1&gt;, out HRDATA : !hw.struct&lt;value: i32, unknown: i32&gt;, out HREADY : !hw.struct&lt;value: i1, unknown: i1&gt;, out HRESP : !hw.struct&lt;value: i2, unknown: i2&gt;, out PADDR : !hw.struct&lt;value: i32, unknown: i32&gt;, out PWDATA : !hw.struct&lt;value: i32, unknown: i32&gt;, out PENABLE : !hw.struct&lt;value: i1, unknown: i1&gt;, out PWRITE : !hw.struct&lt;value: i1, unknown: i1&gt;, out PSEL : !hw.struct&lt;value: i4, unknown: i4&gt;, in %PRDATA : !hw.array&lt;4xstruct&lt;value: i32, unknown: i32&gt;&gt;, in %PREADY : !hw.struct&lt;value: i4, unknown: i4&gt;, in %PSLVERR : !hw.struct&lt;value: i4, unknown: i4&gt;) {</pre>
-      <pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %172 = arc.alloc_state %arg0 tap {names = [&#34;wrapper/DUT/U_BRIDGE/PRDATA&#34;], offset = 704 : i32} : (!arc.storage&lt;3692&gt;) -&gt; !arc.state&lt;!hw.array&lt;4xstruct&lt;value: i32, unknown: i32&gt;&gt;&gt;</pre>
-      <pre>+ echo [Arcilator] header-gen stage</pre>
-      <pre>[Arcilator] header-gen stage</pre>
-      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
-      <pre>+ echo [Arcilator] gen-driver stage</pre>
-      <pre>[Arcilator] gen-driver stage</pre>
-      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  50000 2 1 10 uvm_tb_build_ss_tb uvm-examples uvm <redacted-local-path> [] 0</pre>
-      <pre>+ echo [Arcilator] llc stage</pre>
-      <pre>[Arcilator] llc stage</pre>
-      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
-      <pre>+ echo [Arcilator] driver link stage</pre>
-      <pre>[Arcilator] driver link stage</pre>
-      <pre>+ /usr/bin/clang++ -std=c++17 -O1 <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> -I<redacted-local-path> -I<redacted-local-path> -o <redacted-local-path> -no-pie -latomic -lz -ltinfo</pre>
-      <pre>In file included from <redacted-local-path></pre>
-      <pre>In file included from <redacted-local-path></pre>
-      <pre>In file included from <redacted-local-path></pre>
-      <pre><redacted-local-path> warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
-      <pre>                   ^</pre>
-      <pre><redacted-local-path> warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
-      <pre>                   ^</pre>
-      <pre><redacted-local-path> warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
-      <pre>                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
-      <pre>                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
-      <pre>                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
-      <pre>                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
-      <pre>                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
-      <pre>                                 ^</pre>
-      <pre><redacted-local-path> warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
-      <pre>               ^</pre>
-      <pre><redacted-local-path> warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
-      <pre>                                                         ^</pre>
-      <pre><redacted-local-path> warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
-      <pre>                                        ^</pre>
-      <pre><redacted-local-path> warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
-      <pre>^</pre>
-      <pre><redacted-local-path> warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline const char *&amp;currentSvScope() {</pre>
-      <pre>                    ^</pre>
-      <pre><redacted-local-path> warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
-      <pre>                                   ^</pre>
-      <pre><redacted-local-path> warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
-      <pre>                ^</pre>
-      <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline State &amp;state() {</pre>
-      <pre>              ^</pre>
-      <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
-      <pre>                                    ^</pre>
-      <pre><redacted-local-path> warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
-      <pre>                                           ^</pre>
-      <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
-      <pre>inline SchedStats &amp;schedStats() {</pre>
-      <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
-      <pre>+ status=0</pre>
-      <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=pss_spi_interrupt_test</pre>
-      <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=pss_spi_interrupt_test</pre>
-      <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785920925</pre>
-      <pre>+ echo [Arcilator] native run stage</pre>
-      <pre>[Arcilator] native run stage</pre>
-      <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=pss_spi_interrupt_test</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(476) @ 0: reporter [UVM/RELNOTES] </pre>
-      <pre>  ***********       IMPORTANT RELEASE NOTES         ************</pre>
+      <pre>../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/rtl/spi/rtl/verilog/spi_clgen.v:71:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 2345 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1624720: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1624840: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1624960: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1626880: reporter [SPI_DRV_RUN:] Starting transmission: 90ef131e35df743f5540a747d257ae5e RX_NEG State 1, no of bits 8</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629100: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629220: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629340: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629700: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629700: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1629820: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1632461: reporter [SPI_DRV_RUN:] Starting transmission: 410e2843a7fe2a225a80a33080dfbd35 RX_NEG State 1, no of bits 5</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636201: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636201: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636201: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636201: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636201: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636320: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636540: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1636900: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1637140: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1637260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1637380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1640260: reporter [SPI_DRV_RUN:] Starting transmission: ff0960faf4c79b83014c5b60ba4a7401 RX_NEG State 1, no of bits 23</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643581: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643581: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643581: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643581: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643581: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643600: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643720: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643840: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1643960: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1644080: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1644200: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1644320: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1647680: reporter [SPI_DRV_RUN:] Starting transmission: 5c7821603e6f1f3a2027c5a360704193 RX_NEG State 1, no of bits 1</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648361: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648361: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648361: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648361: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648361: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648500: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648620: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648740: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648860: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1648980: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1649100: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1653181: reporter [SPI_DRV_RUN:] Starting transmission: 24b0062c17913bb019c3e94a1d0563e7 RX_NEG State 1, no of bits 7</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1655881: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1655881: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1655881: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1655881: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1655881: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656000: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656220: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656580: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656820: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1656940: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1657060: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1661501: reporter [SPI_DRV_RUN:] Starting transmission: 6e4a6e33f07ca6fdae070e590c774e84 RX_NEG State 1, no of bits 2</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661601: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661601: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661601: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661601: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661601: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661720: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1661940: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1662180: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1662300: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1662540: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1662660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1662780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1667580: reporter [SPI_DRV_RUN:] Starting transmission: 970d23170996813b174d40b5a16c6f7d RX_NEG State 0, no of bits 29</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744781: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744781: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744781: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744781: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744781: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1744920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1745040: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1745160: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1745400: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1745400: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1745520: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1750920: reporter [SPI_DRV_RUN:] Starting transmission: 830e1e5a284af5a0dca6a9d083c5e7d5 RX_NEG State 0, no of bits 27</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770121: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770121: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770121: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770121: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770121: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770140: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770500: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770620: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770740: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1770860: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1772040: reporter [SPI_DRV_RUN:] Starting transmission: 50a86a373b8fe00adc8e4599b6d6296b RX_NEG State 1, no of bits 10</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826721: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826721: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826721: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826721: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826721: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826740: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826860: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1826980: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1827100: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1827220: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1827340: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1827460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1829141: reporter [SPI_DRV_RUN:] Starting transmission: 1771733a9052f0bb000cda6aa587fb1c RX_NEG State 0, no of bits 13</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830221: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830221: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830221: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830221: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830221: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830340: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830560: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830800: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1830920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1831160: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1831280: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1831400: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1833321: reporter [SPI_DRV_RUN:] Starting transmission: be41a36d03ccb6572f131c0bb3c4d573 RX_NEG State 1, no of bits 6</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833841: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833841: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833841: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833841: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833841: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1833960: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1834180: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1834420: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1834540: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1834780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1834900: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1835020: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1837420: reporter [SPI_DRV_RUN:] Starting transmission: 99eaa67af7d1f5f71f7af0d779c45bf6 RX_NEG State 1, no of bits 11</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845760: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1845880: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1846000: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1846120: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1846240: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1846360: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1846480: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1849601: reporter [SPI_DRV_RUN:] Starting transmission: d85b157b42997734fbf36b9a8bee4f4e RX_NEG State 1, no of bits 26</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918620: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1918840: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1919080: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1919320: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1919440: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1919560: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1919680: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1923040: reporter [SPI_DRV_RUN:] Starting transmission: 172b0a61075647c50f4805df9ca678ca RX_NEG State 1, no of bits 2</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923741: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923760: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1923880: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1924120: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1924120: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1924240: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1924360: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1924480: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1928561: reporter [SPI_DRV_RUN:] Starting transmission: eae93046890c493763bf61b0f08eaefd RX_NEG State 0, no of bits 16</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950341: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950341: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950341: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950341: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950341: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950680: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1950920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1951160: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1951280: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1951400: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 1951520: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 1955961: reporter [SPI_DRV_RUN:] Starting transmission: 6b51e4614c46e1188f19fcf933e909d1 RX_NEG State 1, no of bits 22</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014461: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014461: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014461: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014461: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014461: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014580: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2014800: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2015040: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2015160: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2015400: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2015520: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2015640: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2020440: reporter [SPI_DRV_RUN:] Starting transmission: ec408bc67343a5156f3479acb5dcae07 RX_NEG State 1, no of bits 10</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028100: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028220: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028340: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028580: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028700: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2028820: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2034220: reporter [SPI_DRV_RUN:] Starting transmission: 1c57933382d1bd9b191c25f1ff26d132 RX_NEG State 0, no of bits 5</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035161: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035161: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035161: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035161: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035161: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035180: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035300: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035420: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035540: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2035900: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2037201: reporter [SPI_DRV_RUN:] Starting transmission: eac6feb411e6ae60b5d363fbe4a84ae4 RX_NEG State 0, no of bits 25</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103501: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103620: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2103840: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2104080: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2104200: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2104440: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2104560: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2104680: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2106120: reporter [SPI_DRV_RUN:] Starting transmission: ca9a440f0d002091bdf271b310f305bb RX_NEG State 1, no of bits 2</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108340: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108460: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108580: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108700: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108820: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2108940: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2109060: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2111221: reporter [SPI_DRV_RUN:] Starting transmission: 7808f039ec1bcdb6b604eb6a9df06bb2 RX_NEG State 1, no of bits 15</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114321: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114440: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2114900: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2115140: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2115260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2115380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2115500: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2118021: reporter [SPI_DRV_RUN:] Starting transmission: 12dcafe2698cc7c03cc5afb0fde42093 RX_NEG State 0, no of bits 2</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2118921: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2118921: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2118921: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2118921: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2118921: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119040: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119500: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119620: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119860: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2119980: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2120100: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2122980: reporter [SPI_DRV_RUN:] Starting transmission: df1cb52c0460b1bbacf20d7cf6b18d04 RX_NEG State 0, no of bits 6</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132061: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132061: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132061: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132061: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132061: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132080: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132200: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132320: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132440: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132560: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132680: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2132920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2136280: reporter [SPI_DRV_RUN:] Starting transmission: 87b71447f00f17c17d5f01d8b0210092 RX_NEG State 0, no of bits 4</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137681: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137681: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137681: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137681: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137681: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137700: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137820: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2137940: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2138060: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2138180: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2138300: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2138540: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2142501: reporter [SPI_DRV_RUN:] Starting transmission: 58de458f921e76327f99df1af4d4c284 RX_NEG State 1, no of bits 25</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144541: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144541: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144541: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144541: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144541: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2144880: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2145120: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2145360: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2145480: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2145600: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2145720: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2150040: reporter [SPI_DRV_RUN:] Starting transmission: 5bd8db107920290f51e00f32b7b2f563 RX_NEG State 0, no of bits 18</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198641: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198641: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198641: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198641: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198641: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2198780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2199020: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2199020: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2199260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2199260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2199380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2204301: reporter [SPI_DRV_RUN:] Starting transmission: a9d3fa9c6e032f26ce2728be31fc5cb5 RX_NEG State 0, no of bits 12</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236801: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236801: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236801: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236801: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236801: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2236920: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237140: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237380: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237500: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237740: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237860: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2237980: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/agents/spi_agent/spi_driver_bfm.sv(55) @ 2243381: reporter [SPI_DRV_RUN:] Starting transmission: 5527d4b3cd84d6e3e8db3a701501b3af RX_NEG State 0, no of bits 7</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246081: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246200: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246420: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246660: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2246780: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx0.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2247020: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx3.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2247140: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx2.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/reg/uvm_reg_field.svh(1310) @ 2247260: reporter [UVM/FLD/GET_MIRRORED_VAL/VOL] Mirrored value returned for volatile field &#34;pss_rb.spi_rb.rxtx1.F&#34; may not reflect the actual current value.</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_in_scoreboard.svh(373) @ 2247380: uvm_test_top.m_env.m_gpio_env.m_in_sb [GPIO_IN_SB] Test Passed - No GPI or interrupt read errors</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_out_scoreboard.svh(391) @ 2247380: uvm_test_top.m_env.m_gpio_env.m_out_sb [GPIO_OUTPUT_SB] Test passed: no errors detected</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_out_scoreboard.svh(392) @ 2247380: uvm_test_top.m_env.m_gpio_env.m_out_sb [GPIO_OUTPUT_SB] 0 GPOE changes detected 0 GPO changes detected</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/gpio_tb/env/gpio_env.svh(141) @ 2247380: uvm_test_top.m_env.m_gpio_env [** UVM TEST PASSED **] No scoreboard errors reported</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/env/spi_scoreboard.svh(252) @ 2247380: uvm_test_top.m_env.m_spi_env.m_scoreboard [SPI_SB_REPORT:] Test Passed - 100 transfers occured with no errors</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_tb_build_ss_tb/block_level_tbs/spi_tb/env/spi_scoreboard.svh(253) @ 2247380: uvm_test_top.m_env.m_spi_env.m_scoreboard [** UVM TEST PASSED **] Test Passed - 100 transfers occured with no errors</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 2247380: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>--- UVM Report Summary ---</pre>
       <pre></pre>
-      <pre>  This implementation of the UVM Library deviates from the 1800.2-2020</pre>
-      <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
-      <pre>  for more details.</pre>
+      <pre>** Report counts by severity</pre>
+      <pre>UVM_INFO :  110</pre>
+      <pre>UVM_WARNING : 1202</pre>
+      <pre>UVM_ERROR :    0</pre>
+      <pre>UVM_FATAL :    0</pre>
+      <pre>** Report counts by id</pre>
+      <pre>[** UVM TEST PASSED **]     2</pre>
+      <pre>[GPIO_IN_SB]     1</pre>
+      <pre>[GPIO_OUTPUT_SB]     2</pre>
+      <pre>[NO_DPI_TSTNAME]     1</pre>
+      <pre>[NO_DPI_USED]     1</pre>
+      <pre>[NO_VISIT_CHECK]     1</pre>
+      <pre>[RNTST]     1</pre>
+      <pre>[SPI_DRV_RUN:]   100</pre>
+      <pre>[SPI_SB_REPORT:]     1</pre>
+      <pre>[UVM/COMP/NAMECHECK]     1</pre>
+      <pre>[UVM/FLD/GET_MIRRORED_VAL/VOL]  1200</pre>
+      <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
-      <pre>----------------------------------------------------------------</pre>
-      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
-      <pre></pre>
-      <pre>All copyright owners for this kit are listed in NOTICE.txt</pre>
-      <pre>All Rights Reserved Worldwide</pre>
-      <pre>----------------------------------------------------------------</pre>
-      <pre></pre>
-      <pre>      (Specify +UVM_NO_RELNOTES to turn off this notice)</pre>
-      <pre></pre>
-      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_root.svh(549) @ 0: reporter [NO_DPI_USED] We are thinking of removing support for UVM_NO_DPI.  Please try this test without it and evaluate the impact</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_root.svh(552) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI</pre>
-      <pre>UVM_INFO @ 0: reporter [RNTST] Running test pss_spi_interrupt_test...</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
-      <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre></pre>
-      <pre>Timeout: &gt; 900s</pre>
+      <pre>+ date +%s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 371</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 371s</pre>
+      <pre>+ exit 0</pre>
       <pre></pre>
     </section>
   </body>

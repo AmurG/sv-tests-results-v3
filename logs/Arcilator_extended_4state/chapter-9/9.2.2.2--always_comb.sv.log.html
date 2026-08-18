@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>always_comb</h2>
     </header>
     <section class="property-list">
@@ -31,9 +31,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 08:57:39</dd></div>
-        <div><dt>time elapsed</dt><dd>0.054s</dd></div>
-        <div><dt>ram usage</dt><dd>30464 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:13:52</dd></div>
+        <div><dt>time elapsed</dt><dd>0.053s</dd></div>
+        <div><dt>ram usage</dt><dd>29568 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,6 +44,9 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=always_tb <a href="../../../tests/chapter-9/9.2.2.2--always_comb.sv.html" target="file-frame">tests/chapter-9/9.2.2.2--always_comb.sv</a></pre>
+      <pre>../../../tests/chapter-9/9.2.2.2--always_comb.sv:17:6: warning: variable &#39;b&#39; has a declaration initializer and is also written by an always_comb procedure; IEEE 1800-2023 9.2.2.2 gives the always_comb procedure exclusive write access, and other simulators reject this as a multiple-driver violation</pre>
+      <pre>        reg b = 0;</pre>
+      <pre>            ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>

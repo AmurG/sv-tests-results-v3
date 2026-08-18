@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>regress-vlg_br965_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,18 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:26:11</dd></div>
-        <div><dt>time elapsed</dt><dd>0.036s</dd></div>
-        <div><dt>ram usage</dt><dd>21504 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:29:40</dd></div>
+        <div><dt>time elapsed</dt><dd>0.040s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br965.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br965.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br965.v:6:9: error: failed to legalize operation &#39;moore.extract_ref&#39;: %9 = &#34;moore.extract_ref&#34;(%7) &lt;{lowBit = 0 : i32}&gt; : (!moore.ref&lt;l3&gt;) -&gt; !moore.ref&lt;l1&gt;</pre>
-      <pre>  .bit0(value[0]),</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br965.v:6:9: note: see current operation: %9 = &#34;moore.extract_ref&#34;(%7) &lt;{lowBit = 0 : i32}&gt; : (!moore.ref&lt;l3&gt;) -&gt; !moore.ref&lt;l1&gt;</pre>
       <pre></pre>
     </section>
   </body>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_pv_wr_vec2_nb_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 10:06:32</dd></div>
-        <div><dt>time elapsed</dt><dd>6.225s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:04:52</dd></div>
+        <div><dt>time elapsed</dt><dd>6.368s</dd></div>
         <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
@@ -47,19 +47,37 @@
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:28:7: warning: cannot select range of [4:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
       <pre>    x[4:-1] &lt;= 6&#39;b101010;</pre>
+      <pre>      ^~~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:28:7: warning: cannot select range of [4:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[4:-1] &lt;= 6&#39;b101010;</pre>
       <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:34:7: warning: cannot select range of [0:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[0:-1] &lt;= 2&#39;b10;</pre>
+      <pre>      ^~~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:34:7: warning: cannot select range of [0:-1] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
       <pre>    x[0:-1] &lt;= 2&#39;b10;</pre>
       <pre>      ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:40:7: warning: cannot select range of [4:3] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
       <pre>    x[4:3] &lt;= 2&#39;b01;</pre>
+      <pre>      ^~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:40:7: warning: cannot select range of [4:3] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[4:3] &lt;= 2&#39;b01;</pre>
       <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:46:7: warning: cannot select range of [-1:-2] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[-1:-2] &lt;= 2&#39;b11;</pre>
+      <pre>      ^~~~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:46:7: warning: cannot select range of [-1:-2] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
       <pre>    x[-1:-2] &lt;= 2&#39;b11;</pre>
       <pre>      ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:52:7: warning: cannot select range of [6:5] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
       <pre>    x[6:5] &lt;= 2&#39;b11;</pre>
+      <pre>      ^~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:52:7: warning: cannot select range of [6:5] from &#39;bit[3:0]&#39; [-Wrange-oob]</pre>
+      <pre>    x[6:5] &lt;= 2&#39;b11;</pre>
       <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:68:10: warning: cannot select range of 6 elements from &#39;bit[3:0]&#39; [-Wrange-width-oob]</pre>
+      <pre>    x[i+:6] &lt;= 6&#39;b101010;</pre>
+      <pre>         ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2_nb.v:68:10: warning: cannot select range of 6 elements from &#39;bit[3:0]&#39; [-Wrange-width-oob]</pre>
       <pre>    x[i+:6] &lt;= 6&#39;b101010;</pre>
       <pre>         ^</pre>
@@ -157,7 +175,6 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>FAILED. Got 0000, expected 0100.</pre>
       <pre>FAILED. Got 0011, expected 0000.</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 14, sim time 23000000 fs; natural end of simulation</pre>
       <pre></pre>

@@ -1,1 +1,1 @@
-config_loader_data['circt_verilog_extended_4state/veer-el2'] = [["cores","veer-el2",0,"logs/circt_verilog_extended_4state/generated/veer-config/veer-el2_sim/veer-el2_sim.sv.log.html","third_party/cores/veer-el2/design/include/el2_def.sv.html"]]
+config_loader_data['circt_verilog_extended_4state/veer-el2'] = [["cores","veer-el2",1,"logs/circt_verilog_extended_4state/generated/veer-config/veer-el2_sim/veer-el2_sim.sv.log.html","third_party/cores/veer-el2/design/include/el2_def.sv.html"]]

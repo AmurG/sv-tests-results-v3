@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>regress-vlg_pr1735822_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,18 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:26:27</dd></div>
-        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
-        <div><dt>ram usage</dt><dd>23296 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:30:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.039s</dd></div>
+        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr1735822.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr1735822.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr1735822.v:18:18: error: &#39;sim.fmt.char&#39; op operand #0 must be integer, but got &#39;!hw.struct&lt;value: i8, unknown: i8&gt;&#39;</pre>
-      <pre>                 $write(&#34;%c&#34;, identdata);</pre>
-      <pre>                        ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr1735822.v:18:18: note: see current operation: %100 = &#34;sim.fmt.char&#34;(%99) &lt;{isLeftAligned = false, paddingChar = 32 : i8}&gt; : (!hw.struct&lt;value: i8, unknown: i8&gt;) -&gt; !sim.fstring</pre>
       <pre></pre>
     </section>
   </body>

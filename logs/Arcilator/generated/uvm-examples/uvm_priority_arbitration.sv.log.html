@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_priority_arbitration</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:53:59</dd></div>
-        <div><dt>time elapsed</dt><dd>58.231s</dd></div>
-        <div><dt>ram usage</dt><dd>207672 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-15 08:06:07</dd></div>
+        <div><dt>time elapsed</dt><dd>41.247s</dd></div>
+        <div><dt>ram usage</dt><dd>206784 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -166,7 +166,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_FIFO</pre>
@@ -191,11 +191,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_FIFO</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
@@ -231,13 +226,14 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/6 0</pre>
       <pre>[Arcilator] simvariant 1/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
       <pre>[Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
@@ -262,11 +258,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_WEIGHTED</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
@@ -302,13 +293,14 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 2/6 0</pre>
       <pre>[Arcilator] simvariant 2/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
       <pre>[Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_RANDOM</pre>
@@ -333,11 +325,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_RANDOM</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:1 SEQ_4:1</pre>
@@ -373,13 +360,14 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 3/6 0</pre>
       <pre>[Arcilator] simvariant 3/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
       <pre>[Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
@@ -404,11 +392,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_STRICT_FIFO</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
@@ -444,13 +427,14 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 4/6 0</pre>
       <pre>[Arcilator] simvariant 4/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
       <pre>[Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
@@ -475,11 +459,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_STRICT_RANDOM</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:2 SEQ_2:1 SEQ_3:0 SEQ_4:0</pre>
@@ -515,13 +494,14 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
       <pre>+ printf [Arcilator] simvariant %s wall %ss\n 5/6 0</pre>
       <pre>[Arcilator] simvariant 5/6 wall 0s</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
       <pre>[Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1785909239</pre>
+      <pre>+ __svtests_variant_t0=1786781166</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_USER</pre>
@@ -546,11 +526,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(252) @ 0: uvm_test_top [Sequencer Arbitration selected:] UVM_SEQ_ARB_USER</pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
-      <pre>[circt-uvm-rt] note: poll re-probe record churn past the non-fire streak cap; suppressing its heap-epoch bumps at this timestamp (storm breaker)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 1: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:0</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 11: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:1</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_priority_arbitration/top.sv(94) @ 21: uvm_test_top.m_driver [RCVD] Totals: SEQ_1:1 SEQ_2:0 SEQ_3:0 SEQ_4:2</pre>
@@ -586,9 +561,10 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
+      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 6/6 0</pre>
-      <pre>[Arcilator] simvariant 6/6 wall 0s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 6/6 1</pre>
+      <pre>[Arcilator] simvariant 6/6 wall 1s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

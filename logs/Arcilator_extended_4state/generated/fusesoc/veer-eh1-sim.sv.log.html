@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>veer-eh1</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full VeeR EH1 core test</dd></div>
-        <div><dt>rc</dt><dd>139 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>veer-eh1</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -79,9 +79,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:23:33</dd></div>
-        <div><dt>time elapsed</dt><dd>1.102s</dd></div>
-        <div><dt>ram usage</dt><dd>137516 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 21:58:37</dd></div>
+        <div><dt>time elapsed</dt><dd>31.982s</dd></div>
+        <div><dt>ram usage</dt><dd>548612 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -89,13 +89,19 @@
       <pre>sh scr.sh</pre>
       <pre>+ printf %s\n [Arcilator] mode=simulation_without_run top=tb_top</pre>
       <pre>[Arcilator] mode=simulation_without_run top=tb_top</pre>
-      <pre>+ printf %s\n [Arcilator] treating C/C++ inputs as DPI sources, not SystemVerilog frontend files: <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/test_tb_top.cpp.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/test_tb_top.cpp</a></pre>
-      <pre>[Arcilator] treating C/C++ inputs as DPI sources, not SystemVerilog frontend files: <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/test_tb_top.cpp.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/test_tb_top.cpp</a></pre>
+      <pre>+ printf %s\n [Arcilator] treating C/C++ inputs as DPI sources, not SystemVerilog frontend files: <redacted-local-path></pre>
+      <pre>[Arcilator] treating C/C++ inputs as DPI sources, not SystemVerilog frontend files: <redacted-local-path></pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8.html" target="file-frame">build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8</a>/design/include -I <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8.html" target="file-frame">build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8</a>/testbench -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=tb_top <a href="../../../../build/veer-eh1_sim/sim-verilator/config/common_defines.vh.html" target="file-frame">build/veer-eh1_sim/sim-verilator/config/common_defines.vh</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/include/veer_types.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/include/veer_types.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/pic_ctrl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/pic_ctrl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dma_ctrl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dma_ctrl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_aln_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_aln_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_compress_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_compress_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ifc_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ifc_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_bp_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_bp_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ic_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ic_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_mem_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_mem_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_iccm_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_iccm_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_gpr_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_gpr_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_ib_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_ib_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_tlu_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_tlu_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_trigger.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_trigger.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_alu_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_alu_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_mul_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_mul_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_div_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_div_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_buffer.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_buffer.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_clkdomain.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_clkdomain.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_addrcheck.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_addrcheck.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_lsc_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_lsc_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_stbuf.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_stbuf.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_intf.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_intf.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_ecc.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_ecc.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_trigger.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_trigger.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dbg/dbg.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dbg/dbg.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_wrapper.v.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_wrapper.v</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/ahb_to_axi4.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/ahb_to_axi4.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/axi4_to_ahb.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/axi4_to_ahb.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer_wrapper.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer_wrapper.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/tb_top.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/tb_top.sv</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=tb_top <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path></pre>
       <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:62:40: warning: if statement has empty body (put the semicolon on a separate line to silence this warning) [-Wempty-body]</pre>
       <pre>    if ($value$plusargs(&#34;iws=%d&#34;, iws));</pre>
+      <pre>                                       ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:62:40: warning: if statement has empty body (put the semicolon on a separate line to silence this warning) [-Wempty-body]</pre>
+      <pre>    if ($value$plusargs(&#34;iws=%d&#34;, iws));</pre>
+      <pre>                                       ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:63:40: warning: if statement has empty body (put the semicolon on a separate line to silence this warning) [-Wempty-body]</pre>
+      <pre>    if ($value$plusargs(&#34;dws=%d&#34;, dws));</pre>
       <pre>                                       ^</pre>
       <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:63:40: warning: if statement has empty body (put the semicolon on a separate line to silence this warning) [-Wempty-body]</pre>
       <pre>    if ($value$plusargs(&#34;dws=%d&#34;, dws));</pre>
@@ -116,32 +122,719 @@
       <pre>&lt;unknown&gt;:0: warning: in ram_2048x39_46: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in ram_256x34: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in ram_64x21: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv:1718:11: error: failed to legalize operation &#39;moore.extract&#39;: %31092 = &#34;moore.extract&#34;(%31091) &lt;{lowBit = 4 : i32}&gt; : (!moore.l8) -&gt; !moore.struct&lt;{mul: l1, load: l1, sec: l1, alu: l1}&gt;</pre>
-      <pre>   assign {i0_rs1_class_d, i0_rs1_depth_d[3:0]} =</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v:49:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ ( posedge clk or negedge rst_n) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v:49:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ ( posedge clk or negedge rst_n) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:137:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (negedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:137:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (negedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:153:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:153:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:189:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (negedge tck ) tdo &lt;= sr[0];</pre>
       <pre>          ^</pre>
-      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv:1718:11: note: see current operation: %31092 = &#34;moore.extract&#34;(%31091) &lt;{lowBit = 4 : i32}&gt; : (!moore.l8) -&gt; !moore.struct&lt;{mul: l1, load: l1, sec: l1, alu: l1}&gt;</pre>
-      <pre>PLEASE submit a bug report to https://github.com/llvm/circt and include the crash backtrace.</pre>
-      <pre>Stack dump:</pre>
-      <pre>0.	Program arguments: <redacted-local-path> --four-valued -o <redacted-local-path> -I <redacted-local-path> -I <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8.html" target="file-frame">build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8</a>/design/include -I <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8.html" target="file-frame">build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8</a>/testbench -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=tb_top <a href="../../../../build/veer-eh1_sim/sim-verilator/config/common_defines.vh.html" target="file-frame">build/veer-eh1_sim/sim-verilator/config/common_defines.vh</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/include/veer_types.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/include/veer_types.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/pic_ctrl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/pic_ctrl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dma_ctrl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dma_ctrl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_aln_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_aln_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_compress_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_compress_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ifc_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ifc_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_bp_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_bp_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ic_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_ic_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_mem_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_mem_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_iccm_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu_iccm_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/ifu/ifu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_decode_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_gpr_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_gpr_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_ib_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_ib_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_tlu_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_tlu_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_trigger.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec_trigger.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dec/dec.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_alu_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_alu_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_mul_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_mul_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_div_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu_div_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/exu/exu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_buffer.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_buffer.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_clkdomain.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_clkdomain.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_addrcheck.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_addrcheck.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_lsc_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_lsc_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_stbuf.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_stbuf.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_intf.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_bus_intf.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_ecc.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_ecc.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_mem.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_mem.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_ctl.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_dccm_ctl.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_trigger.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lsu/lsu_trigger.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dbg/dbg.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dbg/dbg.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_wrapper.v.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_wrapper.v</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/ahb_to_axi4.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/ahb_to_axi4.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/axi4_to_ahb.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/axi4_to_ahb.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer_wrapper.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/design/veer_wrapper.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv</a> <a href="../../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/tb_top.sv.html" target="file-frame">build/veer-eh1_sim/sim-verilator/../src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/tb_top.sv</a></pre>
-      <pre>Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):</pre>
-      <pre>0  circt-verilog.real 0x000055ca50836220</pre>
-      <pre>1  circt-verilog.real 0x000055ca5083347d</pre>
-      <pre>2  libc.so.6          0x000072fa51a42520</pre>
-      <pre>3  circt-verilog.real 0x000055ca4fe21359</pre>
-      <pre>4  circt-verilog.real 0x000055ca4fa187a2</pre>
-      <pre>5  circt-verilog.real 0x000055ca4fa18b02</pre>
-      <pre>6  circt-verilog.real 0x000055ca4fa18b02</pre>
-      <pre>7  circt-verilog.real 0x000055ca4faaca9c</pre>
-      <pre>8  circt-verilog.real 0x000055ca506af7a1</pre>
-      <pre>9  circt-verilog.real 0x000055ca506afa39</pre>
-      <pre>10 circt-verilog.real 0x000055ca506b087f</pre>
-      <pre>11 circt-verilog.real 0x000055ca4f5488e2</pre>
-      <pre>12 circt-verilog.real 0x000055ca4f506102</pre>
-      <pre>13 libc.so.6          0x000072fa51a29d90</pre>
-      <pre>14 libc.so.6          0x000072fa51a29e40 __libc_start_main + 128</pre>
-      <pre>15 circt-verilog.real 0x000055ca4f53f7a5</pre>
-      <pre>Segmentation fault (core dumped)</pre>
-      <pre>+ exit 139</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:192:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:192:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:208:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:208:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:536:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:887:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:70:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (negedge HCLK ) begin</pre>
+      <pre>          ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:70:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (negedge HCLK ) begin</pre>
+      <pre>          ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/beh_lib.sv:34:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always_ff @(posedge clk or negedge rst_l) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v:49:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ ( posedge clk or negedge rst_n) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/dmi_jtag_to_core_sync.v:49:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ ( posedge clk or negedge rst_n) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:116:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:137:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (negedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:137:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (negedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:153:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:153:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:189:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (negedge tck ) tdo &lt;= sr[0];</pre>
+      <pre>          ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:192:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:192:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:208:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/dmi/rvjtag_tap.sv:208:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge tck or negedge trst) begin</pre>
+      <pre>         ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:150:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:536:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/design/lib/mem_lib.sv:887:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>   always @(posedge CLK) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:70:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (negedge HCLK ) begin</pre>
+      <pre>          ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:70:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (negedge HCLK ) begin</pre>
+      <pre>          ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../build/veer-eh1_sim/src/chipsalliance.org_cores_VeeR_EH1_1.8/testbench/ahb_sif.sv:103:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @(posedge HCLK or negedge HRESETn) begin</pre>
+      <pre>        ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;wb_valid&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %wb_valid = llhd.sig %76 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wb_valid = llhd.sig %22069 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;wb_dest&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i5, unknown: i5&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %wb_dest = llhd.sig %78 : !hw.array&lt;2xstruct&lt;value: i5, unknown: i5&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wb_dest = llhd.sig %22070 : !hw.array&lt;2xstruct&lt;value: i5, unknown: i5&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;wb_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %wb_data = llhd.sig %80 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wb_data = llhd.sig %22071 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dma_ctrl/fifo_error&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i2, unknown: i2&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %fifo_error = llhd.sig %14 : !hw.array&lt;4xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre>                  ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdma_ctrl2Ffifo_error = llhd.sig name &#34;rvtop/veer/dma_ctrl/fifo_error&#34; %19807 : !hw.array&lt;4xstruct&lt;value: i2, unknown: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/ifu/bp/rets_in&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i31, unknown: i31&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %rets_in = llhd.sig %10 : !hw.array&lt;4xstruct&lt;value: i31, unknown: i31&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fifu2Fbp2Frets_in = llhd.sig name &#34;rvtop/veer/ifu/bp/rets_in&#34; %2859 : !hw.array&lt;4xstruct&lt;value: i31, unknown: i31&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/ifu/mem_ctl/way_status_out&#39; of type &#39;!hw.array&lt;64xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %way_status_out = llhd.sig %37 : !hw.array&lt;64xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre>                      ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fifu2Fmem_ctl2Fway_status_out = llhd.sig name &#34;rvtop/veer/ifu/mem_ctl/way_status_out&#34; %6713 : !hw.array&lt;64xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dec/decode/e1d&#39; of type &#39;!hw.struct&lt;i0rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i0mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i0load: !hw.struct&lt;value: i1, unknown: i1&gt;, i0store: !hw.struct&lt;value: i1, unknown: i1&gt;, i0div: !hw.struct&lt;value: i1, unknown: i1&gt;, i0v: !hw.struct&lt;value: i1, unknown: i1&gt;, i0valid: !hw.struct&lt;value: i1, unknown: i1&gt;, i0secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i0rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs1bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i0rs2bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i1rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i1mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i1load: !hw.struct&lt;value: i1, unknown: i1&gt;, i1store: !hw.struct&lt;value: i1, unknown: i1&gt;, i1v: !hw.struct&lt;value: i1, unknown: i1&gt;, i1valid: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwen: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwonly: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwaddr: !hw.struct&lt;value: i12, unknown: i12&gt;, i1secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i1rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs1bype3: !hw.struct&lt;value: i7, unknown: i7&gt;, i1rs2bype3: !hw.struct&lt;value: i7, unknown: i7&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %e1d = llhd.sig %66 : !hw.struct&lt;i0rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i0mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i0load: !hw.struct&lt;value: i1, unknown: i1&gt;, i0store: !hw.struct&lt;value: i1, unknown: i1&gt;, i0div: !hw.struct&lt;value: i1, unknown: i1&gt;, i0v: !hw.struct&lt;value: i1, unknown: i1&gt;, i0valid: !hw.struct&lt;value: i1, unknown: i1&gt;, i0secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i0rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs1bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i0rs2bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i1rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i1mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i1load: !hw.struct&lt;value: i1, unknown: i1&gt;, i1store: !hw.struct&lt;value: i1, unknown: i1&gt;, i1v: !hw.struct&lt;value: i1, unknown: i1&gt;, i1valid: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwen: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwonly: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwaddr: !hw.struct&lt;value: i12, unknown: i12&gt;, i1secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i1rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs1bype3: !hw.struct&lt;value: i7, unknown: i7&gt;, i1rs2bype3: !hw.struct&lt;value: i7, unknown: i7&gt;&gt;</pre>
+      <pre>           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdec2Fdecode2Fe1d = llhd.sig name &#34;rvtop/veer/dec/decode/e1d&#34; %15092 : !hw.struct&lt;i0rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i0mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i0load: !hw.struct&lt;value: i1, unknown: i1&gt;, i0store: !hw.struct&lt;value: i1, unknown: i1&gt;, i0div: !hw.struct&lt;value: i1, unknown: i1&gt;, i0v: !hw.struct&lt;value: i1, unknown: i1&gt;, i0valid: !hw.struct&lt;value: i1, unknown: i1&gt;, i0secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i0rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i0rs1bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i0rs2bype3: !hw.struct&lt;value: i4, unknown: i4&gt;, i1rd: !hw.struct&lt;value: i5, unknown: i5&gt;, i1mul: !hw.struct&lt;value: i1, unknown: i1&gt;, i1load: !hw.struct&lt;value: i1, unknown: i1&gt;, i1store: !hw.struct&lt;value: i1, unknown: i1&gt;, i1v: !hw.struct&lt;value: i1, unknown: i1&gt;, i1valid: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwen: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwonly: !hw.struct&lt;value: i1, unknown: i1&gt;, csrwaddr: !hw.struct&lt;value: i12, unknown: i12&gt;, i1secondary: !hw.struct&lt;value: i1, unknown: i1&gt;, i1rs1bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs2bype2: !hw.struct&lt;value: i2, unknown: i2&gt;, i1rs1bype3: !hw.struct&lt;value: i7, unknown: i7&gt;, i1rs2bype3: !hw.struct&lt;value: i7, unknown: i7&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dec/decode/i0_e1c&#39; of type &#39;!hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %i0_e1c = llhd.sig %57 : !hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdec2Fdecode2Fi0_e1c = llhd.sig name &#34;rvtop/veer/dec/decode/i0_e1c&#34; %15088 : !hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dec/decode/i1_e1c&#39; of type &#39;!hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %i1_e1c = llhd.sig %57 : !hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdec2Fdecode2Fi1_e1c = llhd.sig name &#34;rvtop/veer/dec/decode/i1_e1c&#34; %15088 : !hw.struct&lt;mul: !hw.struct&lt;value: i1, unknown: i1&gt;, load: !hw.struct&lt;value: i1, unknown: i1&gt;, sec: !hw.struct&lt;value: i1, unknown: i1&gt;, alu: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dec/arf/gpr_in&#39; of type &#39;!hw.array&lt;31xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %gpr_in = llhd.sig %4 : !hw.array&lt;31xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdec2Farf2Fgpr_in = llhd.sig name &#34;rvtop/veer/dec/arf/gpr_in&#34; %14075 : !hw.array&lt;31xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/lsu/stbuf/stbuf_fwdbyteenvec_hi&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %stbuf_fwdbyteenvec_hi = llhd.sig %12 : !hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>                             ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Flsu2Fstbuf2Fstbuf_fwdbyteenvec_hi = llhd.sig name &#34;rvtop/veer/lsu/stbuf/stbuf_fwdbyteenvec_hi&#34; %9603 : !hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/lsu/stbuf/stbuf_fwdbyteenvec_lo&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %stbuf_fwdbyteenvec_lo = llhd.sig %12 : !hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre>                             ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Flsu2Fstbuf2Fstbuf_fwdbyteenvec_lo = llhd.sig name &#34;rvtop/veer/lsu/stbuf/stbuf_fwdbyteenvec_lo&#34; %9603 : !hw.array&lt;8xstruct&lt;value: i4, unknown: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/lsu/bus_intf/bus_buffer/buf_nxtstate&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %buf_nxtstate = llhd.sig %37 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre>                    ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Flsu2Fbus_intf2Fbus_buffer2Fbuf_nxtstate = llhd.sig name &#34;rvtop/veer/lsu/bus_intf/bus_buffer/buf_nxtstate&#34; %11368 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/lsu/bus_intf/bus_buffer/buf_data_in&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %buf_data_in = llhd.sig %40 : !hw.array&lt;8xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>                   ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Flsu2Fbus_intf2Fbus_buffer2Fbuf_data_in = llhd.sig name &#34;rvtop/veer/lsu/bus_intf/bus_buffer/buf_data_in&#34; %11369 : !hw.array&lt;8xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/lsu/bus_intf/bus_buffer/buf_ageQ&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %buf_ageQ = llhd.sig %49 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Flsu2Fbus_intf2Fbus_buffer2Fbuf_ageQ = llhd.sig name &#34;rvtop/veer/lsu/bus_intf/bus_buffer/buf_ageQ&#34; %11370 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/dec/decode/cam_in&#39; of type &#39;!hw.array&lt;8xstruct&lt;valid: !hw.struct&lt;value: i1, unknown: i1&gt;, wb: !hw.struct&lt;value: i1, unknown: i1&gt;, tag: !hw.struct&lt;value: i3, unknown: i3&gt;, rd: !hw.struct&lt;value: i5, unknown: i5&gt;&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %cam_in = llhd.sig %60 : !hw.array&lt;8xstruct&lt;valid: !hw.struct&lt;value: i1, unknown: i1&gt;, wb: !hw.struct&lt;value: i1, unknown: i1&gt;, tag: !hw.struct&lt;value: i3, unknown: i3&gt;, rd: !hw.struct&lt;value: i5, unknown: i5&gt;&gt;&gt;</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fdec2Fdecode2Fcam_in = llhd.sig name &#34;rvtop/veer/dec/decode/cam_in&#34; %15091 : !hw.array&lt;8xstruct&lt;valid: !hw.struct&lt;value: i1, unknown: i1&gt;, wb: !hw.struct&lt;value: i1, unknown: i1&gt;, tag: !hw.struct&lt;value: i3, unknown: i3&gt;, rd: !hw.struct&lt;value: i5, unknown: i5&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/pic_ctrl_inst/level_intpend_w_prior_en&#39; of type &#39;!hw.array&lt;5xarray&lt;11xstruct&lt;value: i4, unknown: i4&gt;&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %level_intpend_w_prior_en = llhd.sig %26 : !hw.array&lt;5xarray&lt;11xstruct&lt;value: i4, unknown: i4&gt;&gt;&gt;</pre>
+      <pre>                                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fpic_ctrl_inst2Flevel_intpend_w_prior_en = llhd.sig name &#34;rvtop/veer/pic_ctrl_inst/level_intpend_w_prior_en&#34; %18910 : !hw.array&lt;5xarray&lt;11xstruct&lt;value: i4, unknown: i4&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/veer/pic_ctrl_inst/level_intpend_id&#39; of type &#39;!hw.array&lt;5xarray&lt;11xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %level_intpend_id = llhd.sig %27 : !hw.array&lt;5xarray&lt;11xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;</pre>
+      <pre>                        ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fveer2Fpic_ctrl_inst2Flevel_intpend_id = llhd.sig name &#34;rvtop/veer/pic_ctrl_inst/level_intpend_id&#34; %18911 : !hw.array&lt;5xarray&lt;11xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_0.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_0.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_0.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_1.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_1.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_1.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_2.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_2.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_2.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_3.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_3.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_3.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_4.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_4.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_4.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_5.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_5.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_5.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_6.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_6.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_6.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_7.dccm_bank/ram_core&#39; of type &#39;!hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %ram_core = llhd.sig %2 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %rvtop2Fmem2FGen_dccm_enable.dccm2Fmem_bank_7.dccm_bank2Fram_core = llhd.sig name &#34;rvtop/mem/Gen_dccm_enable.dccm/mem_bank_7.dccm_bank/ram_core&#34; %21450 : !hw.array&lt;2048xstruct&lt;value: i39, unknown: i39&gt;&gt;</pre>
       <pre></pre>
     </section>
   </body>

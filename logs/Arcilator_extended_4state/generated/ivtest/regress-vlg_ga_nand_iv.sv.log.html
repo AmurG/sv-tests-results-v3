@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_ga_nand_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:34:23</dd></div>
-        <div><dt>time elapsed</dt><dd>6.314s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:22:24</dd></div>
+        <div><dt>time elapsed</dt><dd>6.361s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -126,247 +126,8 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>FAILED - GA NAND a=0001,b=ffff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=7fff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=3fff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=1fff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=0fff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=07ff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=03ff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=01ff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=00ff,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=007f,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=003f,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=001f,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=000f,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=0007,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=0003,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0001,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=ffff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=7fff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=3fff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=1fff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=0fff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=07ff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=03ff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=01ff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=00ff,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=007f,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=003f,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=001f,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=000f,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=0007,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0003,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=ffff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=7fff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=3fff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=1fff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=0fff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=07ff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=03ff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=01ff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=00ff,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=007f,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=003f,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=001f,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=000f,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0007,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=ffff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=7fff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=3fff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=1fff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=0fff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=07ff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=03ff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=01ff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=00ff,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=007f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=003f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=001f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=000f,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=ffff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=7fff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=3fff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=1fff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=0fff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=07ff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=03ff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=01ff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=00ff,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=007f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=003f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=001f,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=ffff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=7fff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=3fff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=1fff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=0fff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=07ff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=03ff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=01ff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=00ff,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=007f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=003f,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=ffff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=7fff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=3fff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=1fff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=0fff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=07ff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=03ff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=01ff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=00ff,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=007f,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=ffff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=7fff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=3fff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=1fff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=0fff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=07ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=03ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=01ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=00ff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=ffff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=7fff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=3fff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=1fff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=0fff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=07ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=03ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=01ff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=ffff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=7fff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=3fff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=1fff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=0fff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=07ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=03ff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=ffff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=7fff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=3fff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=1fff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=0fff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=07ff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=07ff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=ffff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=7fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=3fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=1fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=0fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=07ff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=0fff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=ffff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=7fff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=3fff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=1fff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=0fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=07ff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=1fff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=ffff,expct=c000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=7fff,expct=c000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=3fff,expct=c000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=1fff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=0fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=07ff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=3fff,b=0001,expct=fffe - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=3fff,expct=c000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=1fff,expct=e000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=0fff,expct=f000 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=07ff,expct=f800 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=03ff,expct=fc00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=01ff,expct=fe00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=00ff,expct=ff00 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=007f,expct=ff80 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=003f,expct=ffc0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=001f,expct=ffe0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=000f,expct=fff0 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=0007,expct=fff8 - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=0003,expct=fffc - rcvd=8000</pre>
-      <pre>FAILED - GA NAND a=7fff,b=0001,expct=fffe - rcvd=8000</pre>
+      <pre>PASSED</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 242, sim time 251000000 fs; natural end of simulation</pre>
-      <pre></pre>
-      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

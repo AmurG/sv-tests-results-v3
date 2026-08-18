@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>circt-verilog</h1></a>
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
         <h2>regress-sv_br_gh307_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 05:26:36</dd></div>
-        <div><dt>time elapsed</dt><dd>0.038s</dd></div>
-        <div><dt>ram usage</dt><dd>25088 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 23:30:29</dd></div>
+        <div><dt>time elapsed</dt><dd>0.041s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -42,7 +42,13 @@
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh307.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh307.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh307.v:21:21: warning: output net port &#39;dst&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>   simple copy(src, dst);</pre>
+      <pre>                    ^~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh307.v:21:21: warning: output net port &#39;dst&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>   simple copy(src, dst);</pre>
       <pre>                    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh307.v:22:11: note: driven here</pre>
+      <pre>   assign dst.b2.b = src.b2.b;</pre>
+      <pre>          ^~~~~~~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh307.v:22:11: remark: driven here</pre>
       <pre>   assign dst.b2.b = src.b2.b;</pre>
       <pre>          ^</pre>

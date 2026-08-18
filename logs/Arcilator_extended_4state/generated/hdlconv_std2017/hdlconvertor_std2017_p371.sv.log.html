@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/08e7ee1bd5885e1a5ea399d67ded482ab3c6a03b" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p371</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Tests imported from hdlconv_std2017</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>hdlconv_std2017</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-05 09:23:38</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>14336 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-17 22:01:56</dd></div>
+        <div><dt>time elapsed</dt><dd>0.043s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,19 +45,210 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p371.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p371.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv</a></pre>
-      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:31:12: error: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:31:12: warning: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
+      <pre>  dut dut (.*);</pre>
+      <pre>           ^~</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:31:12: warning: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
       <pre>  dut dut (.*);</pre>
       <pre>           ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:1:24: note: for connection to port &#39;clk&#39;</pre>
+      <pre>module dut(input logic clk, input logic a, input logic b);</pre>
+      <pre>                       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:1:24: remark: for connection to port &#39;clk&#39;</pre>
       <pre>module dut(input logic clk, input logic a, input logic b);</pre>
       <pre>                       ^</pre>
-      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:32:10: error: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:32:10: warning: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
+      <pre>  tb tb (.*);</pre>
+      <pre>         ^~</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:32:10: warning: implicit named port &#39;clk&#39; of type &#39;logic&#39; connects to value of inequivalent type &#39;bit&#39; [-Wimplicit-port-type-mismatch]</pre>
       <pre>  tb tb (.*);</pre>
       <pre>         ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:9:24: note: for connection to port &#39;clk&#39;</pre>
+      <pre>program tb(input logic clk, output logic a, output logic b);</pre>
+      <pre>                       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p371.sv:9:24: remark: for connection to port &#39;clk&#39;</pre>
       <pre>program tb(input logic clk, output logic a, output logic b);</pre>
       <pre>                       ^</pre>
-      <pre>+ exit 1</pre>
+      <pre>module {</pre>
+      <pre>  moore.module private @dut(in %clk : !moore.l1, in %a : !moore.l1, in %b : !moore.l1) {</pre>
+      <pre>    %clk_0 = moore.net name &#34;clk&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %a_1 = moore.net name &#34;a&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %b_2 = moore.net name &#34;b&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %c = moore.variable : &lt;l1&gt;</pre>
+      <pre>    moore.procedure always_ff {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %1 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event posedge %1 : l1</pre>
+      <pre>      }</pre>
+      <pre>      %0 = moore.read %b_2 : &lt;l1&gt;</pre>
+      <pre>      moore.nonblocking_assign %c, %0 : l1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      %0 = moore.read %a_1 : &lt;l1&gt;</pre>
+      <pre>      %1 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %2 = moore.and %0, %1 : l1</pre>
+      <pre>      %3 = moore.not %2 : l1</pre>
+      <pre>      %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>      %5 = moore.to_builtin_int %4 : i1</pre>
+      <pre>      cf.cond_br %5, ^bb1, ^bb2</pre>
+      <pre>    ^bb1:  // pred: ^bb0</pre>
+      <pre>      %6 = moore.fmt.literal &#34;Pass&#34;</pre>
+      <pre>      %7 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %8 = moore.fmt.concat (%6, %7)</pre>
+      <pre>      moore.builtin.display %8</pre>
+      <pre>      cf.br ^bb3</pre>
+      <pre>    ^bb2:  // pred: ^bb0</pre>
+      <pre>      %9 = moore.fmt.literal &#34;Fail&#34;</pre>
+      <pre>      %10 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %11 = moore.fmt.concat (%9, %10)</pre>
+      <pre>      moore.builtin.display %11</pre>
+      <pre>      cf.br ^bb3</pre>
+      <pre>    ^bb3:  // 2 preds: ^bb1, ^bb2</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      %0 = moore.read %a_1 : &lt;l1&gt;</pre>
+      <pre>      %1 = moore.read %c : &lt;l1&gt;</pre>
+      <pre>      %2 = moore.and %0, %1 : l1</pre>
+      <pre>      %3 = moore.not %2 : l1</pre>
+      <pre>      %4 = moore.logic_to_int %3 : l1</pre>
+      <pre>      %5 = moore.to_builtin_int %4 : i1</pre>
+      <pre>      cf.cond_br %5, ^bb1, ^bb2</pre>
+      <pre>    ^bb1:  // pred: ^bb0</pre>
+      <pre>      %6 = moore.fmt.literal &#34;Pass&#34;</pre>
+      <pre>      %7 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %8 = moore.fmt.concat (%6, %7)</pre>
+      <pre>      moore.builtin.display %8</pre>
+      <pre>      cf.br ^bb3</pre>
+      <pre>    ^bb2:  // pred: ^bb0</pre>
+      <pre>      %9 = moore.fmt.literal &#34;Fail&#34;</pre>
+      <pre>      %10 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>      %11 = moore.fmt.concat (%9, %10)</pre>
+      <pre>      moore.builtin.display %11</pre>
+      <pre>      cf.br ^bb3</pre>
+      <pre>    ^bb3:  // 2 preds: ^bb1, ^bb2</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.assign %clk_0, %clk : l1</pre>
+      <pre>    moore.assign %a_1, %a : l1</pre>
+      <pre>    moore.assign %b_2, %b : l1</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>  moore.module private @tb(in %clk : !moore.l1, out a : !moore.l1, out b : !moore.l1) {</pre>
+      <pre>    %clk_0 = moore.net name &#34;clk&#34; wire : &lt;l1&gt;</pre>
+      <pre>    %a = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %b = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.constant 0 : i1</pre>
+      <pre>    %__cb_prevclk = moore.variable %0 : &lt;i1&gt;</pre>
+      <pre>    %1 = moore.constant 0 : l64</pre>
+      <pre>    %__cb_evtime = moore.variable %1 : &lt;l64&gt;</pre>
+      <pre>    %2 = moore.constant 0 : i1</pre>
+      <pre>    %__cb_evseen = moore.variable %2 : &lt;i1&gt;</pre>
+      <pre>    moore.procedure always {</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %26 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event any %26 : l1</pre>
+      <pre>      }</pre>
+      <pre>      %5 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>      %6 = moore.logic_to_int %5 : l1</pre>
+      <pre>      %7 = moore.read %__cb_prevclk : &lt;i1&gt;</pre>
+      <pre>      %8 = moore.not %7 : i1</pre>
+      <pre>      %9 = moore.and %8, %6 : i1</pre>
+      <pre>      %10 = moore.builtin.time</pre>
+      <pre>      %11 = moore.time_to_logic %10</pre>
+      <pre>      %12 = moore.read %__cb_evtime : &lt;l64&gt;</pre>
+      <pre>      %13 = moore.conditional %9 : i1 -&gt; l64 {</pre>
+      <pre>        moore.yield %11 : l64</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %12 : l64</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__cb_evtime, %13 : l64</pre>
+      <pre>      %14 = moore.read %__cb_evseen : &lt;i1&gt;</pre>
+      <pre>      %15 = moore.constant 1 : i1</pre>
+      <pre>      %16 = moore.conditional %9 : i1 -&gt; i1 {</pre>
+      <pre>        moore.yield %15 : i1</pre>
+      <pre>      } {</pre>
+      <pre>        moore.yield %14 : i1</pre>
+      <pre>      }</pre>
+      <pre>      moore.blocking_assign %__cb_evseen, %16 : i1</pre>
+      <pre>      %17 = moore.builtin.time</pre>
+      <pre>      %18 = moore.time_to_logic %17</pre>
+      <pre>      %19 = moore.read %__cb_evtime : &lt;l64&gt;</pre>
+      <pre>      %20 = moore.eq %19, %18 : l64 -&gt; l1</pre>
+      <pre>      %21 = moore.logic_to_int %20 : l1</pre>
+      <pre>      %22 = moore.read %__cb_evseen : &lt;i1&gt;</pre>
+      <pre>      %23 = moore.and %22, %21 : i1</pre>
+      <pre>      %24 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>      %25 = moore.logic_to_int %24 : l1</pre>
+      <pre>      moore.blocking_assign %__cb_prevclk, %25 : i1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.procedure initial {</pre>
+      <pre>      %5 = moore.constant 1 : i32</pre>
+      <pre>      %6 = moore.constant 1 : l32</pre>
+      <pre>      %7 = moore.constant 1 : l1</pre>
+      <pre>      moore.blocking_assign %a, %7 : l1</pre>
+      <pre>      %8 = moore.constant 0 : i32</pre>
+      <pre>      %9 = moore.constant 0 : l32</pre>
+      <pre>      %10 = moore.constant 0 : l1</pre>
+      <pre>      moore.blocking_assign %b, %10 : l1</pre>
+      <pre>      %11 = moore.constant 10 : i32</pre>
+      <pre>      %__cb_cycles = moore.variable %11 : &lt;i32&gt;</pre>
+      <pre>      cf.br ^bb1</pre>
+      <pre>    ^bb1:  // 2 preds: ^bb0, ^bb2</pre>
+      <pre>      %12 = moore.read %__cb_cycles : &lt;i32&gt;</pre>
+      <pre>      %13 = moore.constant 0 : i32</pre>
+      <pre>      %14 = moore.sgt %12, %13 : i32 -&gt; i1</pre>
+      <pre>      %15 = moore.to_builtin_int %14 : i1</pre>
+      <pre>      cf.cond_br %15, ^bb2, ^bb3</pre>
+      <pre>    ^bb2:  // pred: ^bb1</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %25 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event posedge %25 : l1</pre>
+      <pre>      }</pre>
+      <pre>      %16 = moore.constant 1 : i32</pre>
+      <pre>      %17 = moore.read %__cb_cycles : &lt;i32&gt;</pre>
+      <pre>      %18 = moore.sub %17, %16 : i32</pre>
+      <pre>      moore.blocking_assign %__cb_cycles, %18 : i32</pre>
+      <pre>      cf.br ^bb1</pre>
+      <pre>    ^bb3:  // pred: ^bb1</pre>
+      <pre>      %19 = moore.constant 1 : i32</pre>
+      <pre>      %20 = moore.constant 1 : l32</pre>
+      <pre>      %21 = moore.constant 1 : l1</pre>
+      <pre>      moore.blocking_assign %b, %21 : l1</pre>
+      <pre>      moore.wait_event {</pre>
+      <pre>        %25 = moore.read %clk_0 : &lt;l1&gt;</pre>
+      <pre>        moore.detect_event posedge %25 : l1</pre>
+      <pre>      }</pre>
+      <pre>      %22 = moore.constant 0 : i32</pre>
+      <pre>      %23 = moore.constant 0 : l32</pre>
+      <pre>      %24 = moore.constant 0 : l1</pre>
+      <pre>      moore.blocking_assign %a, %24 : l1</pre>
+      <pre>      moore.return</pre>
+      <pre>    }</pre>
+      <pre>    moore.assign %clk_0, %clk : l1</pre>
+      <pre>    %3 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>    %4 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>    moore.output %3, %4 : !moore.l1, !moore.l1</pre>
+      <pre>  }</pre>
+      <pre>  moore.module @sva_svtb() {</pre>
+      <pre>    %clk = moore.variable : &lt;i1&gt;</pre>
+      <pre>    %a = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %b = moore.variable : &lt;l1&gt;</pre>
+      <pre>    %0 = moore.read %clk : &lt;i1&gt;</pre>
+      <pre>    %1 = moore.int_to_logic %0 : i1</pre>
+      <pre>    %2 = moore.read %a : &lt;l1&gt;</pre>
+      <pre>    %3 = moore.read %b : &lt;l1&gt;</pre>
+      <pre>    moore.instance &#34;dut&#34; @dut(clk: %1: !moore.l1, a: %2: !moore.l1, b: %3: !moore.l1) -&gt; ()</pre>
+      <pre>    %4 = moore.read %clk : &lt;i1&gt;</pre>
+      <pre>    %5 = moore.int_to_logic %4 : i1</pre>
+      <pre>    %tb.a, %tb.b = moore.instance &#34;tb&#34; @tb(clk: %5: !moore.l1) -&gt; (a: !moore.l1, b: !moore.l1)</pre>
+      <pre>    moore.assign %a, %tb.a : l1</pre>
+      <pre>    moore.assign %b, %tb.b : l1</pre>
+      <pre>    moore.output</pre>
+      <pre>  }</pre>
+      <pre>}</pre>
       <pre></pre>
     </section>
   </body>
