@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_event3_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:38:23</dd></div>
-        <div><dt>time elapsed</dt><dd>6.339s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:49:44</dd></div>
+        <div><dt>time elapsed</dt><dd>6.587s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -51,29 +51,29 @@
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
+      <pre>    %e2 = llhd.sig %10 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 160 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
-      <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre>  hw.module private @m(in %a : !hw.struct&lt;value: i32, unknown: i32&gt;, out x : !hw.struct&lt;value: i32, unknown: i32&gt;, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
+      <pre>                                                                                                                                                     ^</pre>
+      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 64 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
+      <pre>    %e2 = llhd.sig %10 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 160 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
-      <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre>  hw.module private @m(in %a : !hw.struct&lt;value: i32, unknown: i32&gt;, out x : !hw.struct&lt;value: i32, unknown: i32&gt;, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
+      <pre>                                                                                                                                                     ^</pre>
+      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 64 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
+      <pre>    %e2 = llhd.sig %10 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %15 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 160 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
-      <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
-      <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre>  hw.module private @m(in %a : !hw.struct&lt;value: i32, unknown: i32&gt;, out x : !hw.struct&lt;value: i32, unknown: i32&gt;, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
+      <pre>                                                                                                                                                     ^</pre>
+      <pre><redacted-local-path> note: see current operation: %6 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 64 : i32} : (!arc.storage&lt;369&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -137,6 +137,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -146,15 +149,15 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>T=                   0, a=        10, b=        20, x=         0, y=         0</pre>
-      <pre>T=                  10, a=        30, b=        20, x=         0, y=         0</pre>
-      <pre>T=                  20, a=        30, b=        40, x=         0, y=         0</pre>
-      <pre>T=                  30, a=        50, b=        40, x=         0, y=         0</pre>
-      <pre>T=                  31, a=        50, b=        40, x=        50, y=         0</pre>
+      <pre>T=                   0, a=        10, b=        20, x=         x, y=         x</pre>
+      <pre>T=                  10, a=        30, b=        20, x=         x, y=         x</pre>
+      <pre>T=                  20, a=        30, b=        40, x=         x, y=         x</pre>
+      <pre>T=                  30, a=        50, b=        40, x=         x, y=         x</pre>
+      <pre>T=                  31, a=        50, b=        40, x=        50, y=         x</pre>
       <pre>T=                  33, a=        50, b=        40, x=        50, y=        40</pre>
       <pre>T=                  40, a=        50, b=        60, x=        50, y=        40</pre>
       <pre>T=                  43, a=        50, b=        60, x=        50, y=        60</pre>

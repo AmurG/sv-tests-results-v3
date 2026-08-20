@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p752</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:23:53</dd></div>
-        <div><dt>time elapsed</dt><dd>0.027s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:30:55</dd></div>
+        <div><dt>time elapsed</dt><dd>0.038s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -48,16 +48,34 @@
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:16:8: warning: duplicate definition of &#39;memMod&#39; [-Wduplicate-definition]</pre>
       <pre>module memMod (interface a, input logic clk);</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:16:8: warning: duplicate definition of &#39;memMod&#39; [-Wduplicate-definition]</pre>
+      <pre>module memMod (interface a, input logic clk);</pre>
+      <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:1:8: note: previous definition here</pre>
+      <pre>module memMod (simple_bus sb_intf, input logic clk);</pre>
+      <pre>       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:1:8: remark: previous definition here</pre>
       <pre>module memMod (simple_bus sb_intf, input logic clk);</pre>
       <pre>       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:18:8: warning: duplicate definition of &#39;cpuMod&#39; [-Wduplicate-definition]</pre>
       <pre>module cpuMod(interface b, input logic clk);</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:18:8: warning: duplicate definition of &#39;cpuMod&#39; [-Wduplicate-definition]</pre>
+      <pre>module cpuMod(interface b, input logic clk);</pre>
+      <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:3:8: note: previous definition here</pre>
+      <pre>module cpuMod (simple_bus sb_intf, input logic clk);</pre>
+      <pre>       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:3:8: remark: previous definition here</pre>
       <pre>module cpuMod (simple_bus sb_intf, input logic clk);</pre>
       <pre>       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:26:8: warning: duplicate definition of &#39;top&#39; [-Wduplicate-definition]</pre>
+      <pre>module top;</pre>
+      <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:26:8: warning: duplicate definition of &#39;top&#39; [-Wduplicate-definition]</pre>
+      <pre>module top;</pre>
+      <pre>       ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:5:8: note: previous definition here</pre>
       <pre>module top;</pre>
       <pre>       ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p752.sv:5:8: remark: previous definition here</pre>

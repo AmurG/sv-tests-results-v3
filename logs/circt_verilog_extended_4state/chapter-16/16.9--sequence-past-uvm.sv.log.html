@@ -5,15 +5,15 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>circt-verilog</h1></a>
+    <header class="test-passed">
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>circt-verilog</h1></a>
         <h2>sequence_past_test_uvm</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>sequence with &#34;past&#34; task in UVM</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm-assertions uvm</dd></div>
+        <div><dt>tags</dt><dd>uvm uvm-assertions</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 23:28:00</dd></div>
-        <div><dt>time elapsed</dt><dd>5.514s</dd></div>
-        <div><dt>ram usage</dt><dd>190724 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:58:20</dd></div>
+        <div><dt>time elapsed</dt><dd>5.522s</dd></div>
+        <div><dt>ram usage</dt><dd>192512 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -89,8 +89,8 @@
       <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:37:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>    always @(posedge clk) begin</pre>
       <pre>             ^</pre>
-      <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:103:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
-      <pre>    assert property (seq) else `uvm_info(label, $sformatf(&#34;$past(dif.out) failed :assert: (%d != 8)&#34;, cycle), UVM_LOW);</pre>
+      <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:104:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    assert property (seq) else `uvm_info(label, $sformatf(&#34;$past(dif.out) failed (%0d != 8)&#34;, cycle), UVM_LOW);</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>                  wait(top.phase_timeout != 0);</pre>
@@ -98,8 +98,8 @@
       <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:37:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    always @(posedge clk) begin</pre>
       <pre>             ^</pre>
-      <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:103:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    assert property (seq) else `uvm_info(label, $sformatf(&#34;$past(dif.out) failed :assert: (%d != 8)&#34;, cycle), UVM_LOW);</pre>
+      <pre>../../../tests/chapter-16/16.9--sequence-past-uvm.sv:104:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    assert property (seq) else `uvm_info(label, $sformatf(&#34;$past(dif.out) failed (%0d != 8)&#34;, cycle), UVM_LOW);</pre>
       <pre>    ^</pre>
       <pre></pre>
     </section>

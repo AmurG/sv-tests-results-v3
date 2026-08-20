@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_br_gh127f_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 09:05:16</dd></div>
-        <div><dt>time elapsed</dt><dd>6.269s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:18:28</dd></div>
+        <div><dt>time elapsed</dt><dd>6.479s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -45,27 +45,52 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh127f.v</a></pre>
+      <pre>  in instance: top.copy1</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:3:8: warning: input net port &#39;out&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>assign out = in;</pre>
+      <pre>       ^~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:3:8: warning: input net port &#39;out&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>assign out = in;</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:1:25: note: declared here</pre>
+      <pre>module copy(input [1:0] out, output [1:0] in);</pre>
+      <pre>                        ^~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:1:25: remark: declared here</pre>
       <pre>module copy(input [1:0] out, output [1:0] in);</pre>
       <pre>                        ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:21:16: warning: output net port &#39;i1&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>copy copy1(o1, i1);</pre>
+      <pre>               ^~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:21:16: warning: output net port &#39;i1&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>copy copy1(o1, i1);</pre>
       <pre>               ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:17:8: note: driven here</pre>
+      <pre>assign i1 = r;</pre>
+      <pre>       ^~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:17:8: remark: driven here</pre>
       <pre>assign i1 = r;</pre>
       <pre>       ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:22:16: warning: output net port &#39;i2&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>copy copy2(o2, i2);</pre>
+      <pre>               ^~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:22:16: warning: output net port &#39;i2&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>copy copy2(o2, i2);</pre>
       <pre>               ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:18:8: note: driven here</pre>
+      <pre>assign i2 = r;</pre>
+      <pre>       ^~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:18:8: remark: driven here</pre>
       <pre>assign i2 = r;</pre>
       <pre>       ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:23:16: warning: output net port &#39;i3&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
       <pre>copy copy3(o3, i3);</pre>
+      <pre>               ^~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:23:16: warning: output net port &#39;i3&#39; coerced to &#39;inout&#39; [-Wport-coercion]</pre>
+      <pre>copy copy3(o3, i3);</pre>
       <pre>               ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:19:8: note: driven here</pre>
+      <pre>assign i3 = r;</pre>
+      <pre>       ^~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh127f.v:19:8: remark: driven here</pre>
       <pre>assign i3 = r;</pre>
       <pre>       ^</pre>
@@ -138,6 +163,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -147,14 +175,14 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>00 : 00 0 : 00 00 : 00 000</pre>
-      <pre>01 : 01 0 : 01 00 : 01 000</pre>
-      <pre>10 : 10 0 : 10 00 : 10 000</pre>
-      <pre>11 : 11 0 : 11 00 : 11 000</pre>
+      <pre>00 : 00 z : 00 zz : 00 zzz</pre>
+      <pre>01 : 01 z : 01 zz : 01 zzz</pre>
+      <pre>10 : 10 z : 10 zz : 10 zzz</pre>
+      <pre>11 : 11 z : 11 zz : 11 zzz</pre>
       <pre>FAILED</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 5, sim time 14000000 fs; natural end of simulation</pre>
       <pre></pre>

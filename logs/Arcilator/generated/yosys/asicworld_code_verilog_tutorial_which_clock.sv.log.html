@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>asicworld_code_verilog_tutorial_which_clock</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 09:24:34</dd></div>
-        <div><dt>time elapsed</dt><dd>0.044s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:37:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.067s</dd></div>
         <div><dt>ram usage</dt><dd>30464 KB</dd></div>
       </dl>
     </section>
@@ -45,6 +45,18 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=which_clock <a href="../../../../tests/generated/yosys/asicworld_code_verilog_tutorial_which_clock.sv.html" target="file-frame">tests/generated/yosys/asicworld_code_verilog_tutorial_which_clock.sv</a> <a href="../../../../third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v.html" target="file-frame">third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v</a></pre>
+      <pre>../../../third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v:6:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge x or posedge y)</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v:6:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @ (posedge x or posedge y)</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v:6:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge x or posedge y)</pre>
+      <pre>         ^</pre>
+      <pre>../../../third_party/tools/yosys/tests/asicworld/code_verilog_tutorial_which_clock.v:6:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>always @ (posedge x or posedge y)</pre>
+      <pre>         ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>

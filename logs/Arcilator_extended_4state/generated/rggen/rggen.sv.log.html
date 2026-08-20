@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>RgGen</h2>
     </header>
     <section class="property-list">
@@ -56,9 +56,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 22:01:41</dd></div>
-        <div><dt>time elapsed</dt><dd>9.473s</dd></div>
-        <div><dt>ram usage</dt><dd>139208 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:30:26</dd></div>
+        <div><dt>time elapsed</dt><dd>9.019s</dd></div>
+        <div><dt>ram usage</dt><dd>142776 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -235,403 +235,403 @@
       <pre>      always_ff @(posedge i_clk, negedge i_rst_n) begin</pre>
       <pre>... [sv-tests hybrid publication: log truncated here — 955 middle lines omitted for size; grading used the full log] ...</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_1.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_2.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_3.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_3.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_0.g_3.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_0.g_3.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_0.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_1.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_2.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_3.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_3.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_11.g_1.g_3.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_11.g_1.g_3.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_12.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_12.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_12.u_register/u_register_common/mask&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_12.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %9 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_12.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_12.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_12.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_12.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_12.u_register/u_register_common/write_data&#34; %525 : !hw.array&lt;2xstruct&lt;value: i64, unknown: i64&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_13.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_13.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_13.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_13.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_13.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_13.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_13.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_13.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_13.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_14.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_14.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_14.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_14.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_14.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_14.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_14.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_14.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_14.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_15.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_15.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_15.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_15.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_15.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_15.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_15.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_15.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_15.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_16.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_16.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_16.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_16.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_16.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_16.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_16.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_16.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_16.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_17.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_17.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_0/g_register_17.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_17.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_17.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_0/g_register_17.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_0/g_register_17.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_02Fg_register_17.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_0/g_register_17.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/u_adapter/u_adapter_common/response&#39; of type &#39;!hw.array&lt;20xstruct&lt;value: i34, unknown: i34&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %response = llhd.sig %7 : !hw.array&lt;20xstruct&lt;value: i34, unknown: i34&gt;&gt;</pre>
+      <pre>    %response = llhd.sig %8 : !hw.array&lt;20xstruct&lt;value: i34, unknown: i34&gt;&gt;</pre>
       <pre>                ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fu_adapter2Fu_adapter_common2Fresponse = llhd.sig name &#34;u_block_1/u_adapter/u_adapter_common/response&#34; %2883 : !hw.array&lt;20xstruct&lt;value: i34, unknown: i34&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_0.g_register_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_0.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_0.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_1.g_register_1.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_1.g_register_1.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_0.g_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_0.g_register_file_0.g_register_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_0.g_2.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_0.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_0.g_1.g_2.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/mask&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %mask = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %mask = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>            ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_1.u_register2Fu_register_common2Fmask = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/mask&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/write&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write = llhd.sig %6 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>    %write = llhd.sig %8 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre>             ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/write&#34; %170 : !hw.array&lt;2xstruct&lt;value: i1, unknown: i1&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/write_data&#39; of type &#39;!hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %write_data = llhd.sig %5 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>    %write_data = llhd.sig %7 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>                  ^</pre>
       <pre><redacted-local-path> note: see current operation: %u_block_12Fg_register_file_2.g_1.g_register_file_0.g_register_1.u_register2Fu_register_common2Fwrite_data = llhd.sig name &#34;u_block_1/g_register_file_2.g_1.g_register_file_0.g_register_1.u_register/u_register_common/write_data&#34; %171 : !hw.array&lt;2xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre></pre>

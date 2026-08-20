@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_pullupdown2_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:43:28</dd></div>
-        <div><dt>time elapsed</dt><dd>6.349s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:55:15</dd></div>
+        <div><dt>time elapsed</dt><dd>6.655s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -46,6 +46,18 @@
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pullupdown2.v</a></pre>
       <pre>&lt;unknown&gt;:0: warning: in pullupdown: x/z literal &#39;zzzzzzzz&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:28:11: warning: honest x-init: duplicate whole-net drivers mixed with other writers keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
+      <pre>   pullup (pull_up_1);</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:28:11: note: see current operation: &#34;moore.assign&#34;(%46, %41) {moore.pull = &#34;up&#34;} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:30:11: warning: honest x-init: overlapping continuous drivers mixed with other writers keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
+      <pre>   pullup u8 [7:0] (pull_up_8);</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:30:11: note: see current operation: &#34;moore.assign&#34;(%90, %41) {moore.pull = &#34;up&#34;} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:30:11: warning: honest x-init: partially-overlapping continuous slice drivers keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
+      <pre>   pullup u8 [7:0] (pull_up_8);</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pullupdown2.v:30:11: note: see current operation: &#34;moore.assign&#34;(%90, %41) {moore.pull = &#34;up&#34;} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
@@ -114,6 +126,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -123,7 +138,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>

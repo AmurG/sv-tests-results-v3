@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>hdlconvertor_std2017_p168</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:23:54</dd></div>
-        <div><dt>time elapsed</dt><dd>0.119s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:30:57</dd></div>
+        <div><dt>time elapsed</dt><dd>0.128s</dd></div>
+        <div><dt>ram usage</dt><dd>19712 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,9 +45,15 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv.html" target="file-frame">tests/generated/hdlconv_std2017/hdlconvertor_std2017_p168.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv.html" target="file-frame">third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv</a></pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:4:14: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
+      <pre>        byte b[] = { 1, 2, 3, 4 };</pre>
+      <pre>             ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:4:7: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
       <pre>        byte b[] = { 1, 2, 3, 4 };</pre>
       <pre>             ^</pre>
+      <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:12:21: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
+      <pre>        logic [7:0] m [2][2] = &#39;{ &#39;{5, 10}, &#39;{15, 20} };</pre>
+      <pre>                    ^</pre>
       <pre>../../../third_party/tests/hdlconvertor/tests/sv_test/std2017/p168.sv:12:14: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
       <pre>        logic [7:0] m [2][2] = &#39;{ &#39;{5, 10}, &#39;{15, 20} };</pre>
       <pre>                    ^</pre>
@@ -203,13 +209,7 @@
       <pre>    %23 = moore.constant 4 : i32</pre>
       <pre>    %24 = moore.zext %22 : l1 -&gt; l32</pre>
       <pre>    %25 = moore.logic_to_int %24 : l32</pre>
-      <pre>    %26 = moore.add %21, %25 : i32</pre>
-      <pre>    %27 = moore.extract %2 from 5 : uarray&lt;1024 x l1&gt; -&gt; l1</pre>
-      <pre>    %28 = moore.constant 5 : i32</pre>
-      <pre>    %29 = moore.zext %27 : l1 -&gt; l32</pre>
-      <pre>    %30 = moore.logic_to_int %29 : l32</pre>
-      <pre>    %31 = moore.add %26, %30 : i32</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 4696 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 4702 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>    %4728 = moore.constant 945 : i32</pre>
       <pre>    %4729 = moore.zext %4727 : l1 -&gt; l32</pre>
       <pre>    %4730 = moore.logic_to_int %4729 : l32</pre>

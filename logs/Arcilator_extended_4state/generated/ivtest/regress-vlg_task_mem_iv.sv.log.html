@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_task_mem_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 22:25:53</dd></div>
-        <div><dt>time elapsed</dt><dd>29.122s</dd></div>
-        <div><dt>ram usage</dt><dd>113332 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:55:06</dd></div>
+        <div><dt>time elapsed</dt><dd>13.616s</dd></div>
+        <div><dt>ram usage</dt><dd>79220 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -51,8 +51,8 @@
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre><redacted-local-path> error: SSA value of type &#39;!llvm.array&lt;32768 x struct&lt;(i16, i16)&gt;&gt;&#39; (1048576 bits) exceeds the native code generation budget (--giant-value-bits=262144): whole-value materialization of a memory this large crashes the backend (LLC-ISEL-CRASH-GIANT-MEM); keep the memory in indexed storage or raise the budget</pre>
-      <pre>    %7 = hw.bitcast %c0_i1048576 : (i1048576) -&gt; !hw.array&lt;32768xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
-      <pre>         ^</pre>
+      <pre>    %11 = hw.array_concat %10, %10 : !hw.array&lt;16384xstruct&lt;value: i16, unknown: i16&gt;&gt;, !hw.array&lt;16384xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
+      <pre>          ^</pre>
       <pre><redacted-local-path> note: see current operation: %10 = &#34;llvm.mlir.poison&#34;() : () -&gt; !llvm.array&lt;32768 x struct&lt;(i16, i16)&gt;&gt;</pre>
       <pre>+ exit 1</pre>
       <pre></pre>

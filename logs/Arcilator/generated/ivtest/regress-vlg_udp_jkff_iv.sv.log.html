@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_udp_jkff_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:52:47</dd></div>
-        <div><dt>time elapsed</dt><dd>6.347s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:04:59</dd></div>
+        <div><dt>time elapsed</dt><dd>6.657s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -114,6 +114,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -123,22 +126,31 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>cp=0 j=0 k=0 s=1 r=0  q=1</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=0  q=1</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=1  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=0  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=1 r=0  q=1</pre>
-      <pre>cp=0 j=0 k=0 s=1 r=1  q=1</pre>
-      <pre>FAILED: expect        q=0  (time=                 102)</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=1  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=0  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=1  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=1 r=1  q=0</pre>
-      <pre>cp=0 j=0 k=0 s=0 r=1  q=0</pre>
+      <pre>cp=0 j=x k=x s=x r=x  q=0</pre>
+      <pre>cp=0 j=x k=x s=1 r=0  q=1</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=1</pre>
+      <pre>cp=0 j=x k=x s=x r=0  q=1</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=1</pre>
+      <pre>cp=0 j=x k=x s=0 r=1  q=0</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=0</pre>
+      <pre>cp=0 j=x k=x s=x r=0  q=0</pre>
+      <pre>FAILED: expect        q=x  (time=                  72)</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=0</pre>
+      <pre>FAILED: expect        q=x  (time=                  82)</pre>
+      <pre>cp=0 j=x k=x s=1 r=0  q=1</pre>
+      <pre>cp=0 j=x k=x s=1 r=1  q=1</pre>
+      <pre>FAILED: expect        q=x  (time=                 102)</pre>
+      <pre>cp=0 j=x k=x s=0 r=1  q=0</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=0</pre>
+      <pre>cp=0 j=x k=x s=0 r=1  q=0</pre>
+      <pre>cp=0 j=x k=x s=1 r=1  q=0</pre>
+      <pre>FAILED: expect        q=x  (time=                 142)</pre>
+      <pre>cp=0 j=x k=x s=0 r=1  q=0</pre>
+      <pre>cp=0 j=x k=x s=0 r=0  q=0</pre>
       <pre>cp=0 j=0 k=0 s=0 r=0  q=0</pre>
       <pre>cp=1 j=0 k=0 s=0 r=0  q=0</pre>
       <pre>cp=0 j=0 k=1 s=0 r=0  q=0</pre>
@@ -148,24 +160,30 @@
       <pre>cp=0 j=1 k=1 s=0 r=0  q=1</pre>
       <pre>cp=1 j=1 k=1 s=0 r=0  q=0</pre>
       <pre>cp=0 j=0 k=0 s=0 r=0  q=0</pre>
+      <pre>cp=x j=0 k=0 s=0 r=0  q=0</pre>
       <pre>cp=0 j=1 k=0 s=0 r=0  q=0</pre>
       <pre>cp=1 j=1 k=0 s=0 r=0  q=1</pre>
-      <pre>cp=0 j=1 k=0 s=0 r=0  q=1</pre>
+      <pre>cp=x j=1 k=0 s=0 r=0  q=1</pre>
       <pre>cp=1 j=1 k=0 s=0 r=0  q=1</pre>
       <pre>cp=0 j=1 k=0 s=0 r=0  q=1</pre>
+      <pre>cp=x j=1 k=0 s=0 r=0  q=1</pre>
       <pre>cp=0 j=0 k=1 s=0 r=0  q=1</pre>
+      <pre>cp=x j=0 k=1 s=0 r=0  q=1</pre>
+      <pre>FAILED: expect        q=x  (time=                 342)</pre>
       <pre>cp=1 j=0 k=1 s=0 r=0  q=0</pre>
+      <pre>FAILED: expect        q=x  (time=                 352)</pre>
       <pre>cp=0 j=1 k=1 s=0 r=0  q=0</pre>
+      <pre>FAILED: expect        q=x  (time=                 362)</pre>
       <pre>cp=1 j=1 k=1 s=0 r=0  q=1</pre>
-      <pre>FAILED: expect        q=0  (time=                 372)</pre>
+      <pre>FAILED: expect        q=x  (time=                 372)</pre>
       <pre>cp=0 j=0 k=1 s=0 r=0  q=1</pre>
-      <pre>FAILED: expect        q=0  (time=                 382)</pre>
+      <pre>FAILED: expect        q=x  (time=                 382)</pre>
       <pre>cp=1 j=0 k=1 s=0 r=0  q=0</pre>
-      <pre>cp=0 j=1 k=1 s=0 r=0  q=0</pre>
+      <pre>cp=x j=1 k=1 s=0 r=0  q=0</pre>
       <pre>cp=1 j=1 k=1 s=0 r=0  q=1</pre>
-      <pre>FAILED: expect        q=0  (time=                 412)</pre>
+      <pre>FAILED: expect        q=x  (time=                 412)</pre>
       <pre>cp=0 j=1 k=0 s=0 r=0  q=1</pre>
-      <pre>FAILED: expect        q=0  (time=                 422)</pre>
+      <pre>FAILED: expect        q=x  (time=                 422)</pre>
       <pre>cp=1 j=1 k=0 s=0 r=0  q=1</pre>
       <pre>cp=0 j=0 k=0 s=0 r=0  q=1</pre>
       <pre>FAILED</pre>

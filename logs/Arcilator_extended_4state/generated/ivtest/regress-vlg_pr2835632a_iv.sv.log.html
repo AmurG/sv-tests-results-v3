@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
+    <header class="test-passed">
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_pr2835632a_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 22:30:33</dd></div>
-        <div><dt>time elapsed</dt><dd>6.412s</dd></div>
-        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:00:07</dd></div>
+        <div><dt>time elapsed</dt><dd>6.690s</dd></div>
+        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -117,6 +117,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -126,7 +129,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -221,19 +224,14 @@
       <pre>big_l[edge]: 2003, ltl_l[edge]: 2003</pre>
       <pre></pre>
       <pre>wcu_big_l: 0123, wcu_ltl_l: 3210</pre>
-      <pre>wcu_big_lx: 0000, wcu_ltl_lx: 0000</pre>
-      <pre>FAILED: big endian CA L-value constant &#39;bx +: indexed select.</pre>
-      <pre>FAILED: little endian CA L-value constant &#39;bx +: indexed select.</pre>
+      <pre>wcu_big_lx: zzzz, wcu_ltl_lx: zzzz</pre>
       <pre>wcu_big_lo: 2003, wcu_ltl_lo: 2003</pre>
       <pre></pre>
       <pre>wcd_big_l: 0123, wcd_ltl_l: 3210</pre>
-      <pre>wcd_big_lx: 0000, wcd_ltl_lx: 0000</pre>
-      <pre>FAILED: big endian CA L-value constant &#39;bx -: indexed select.</pre>
-      <pre>FAILED: little endian CA L-value constant &#39;bx -: indexed select.</pre>
+      <pre>wcd_big_lx: zzzz, wcd_ltl_lx: zzzz</pre>
       <pre>wcd_big_lo: 2003, wcd_ltl_lo: 2003</pre>
+      <pre>PASSED</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 11000000 fs; natural end of simulation</pre>
-      <pre></pre>
-      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

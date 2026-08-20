@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_comp1000_iv</h2>
     </header>
     <section class="property-list">
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:39:24</dd></div>
-        <div><dt>time elapsed</dt><dd>41.076s</dd></div>
-        <div><dt>ram usage</dt><dd>437696 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:51:38</dd></div>
+        <div><dt>time elapsed</dt><dd>92.989s</dd></div>
+        <div><dt>ram usage</dt><dd>994256 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -114,6 +114,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -123,7 +126,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -134,7 +137,7 @@
       <pre>r4 = 0000000100000100010101</pre>
       <pre>r5 = 0000000000000000000000000000000</pre>
       <pre>r6 = 00</pre>
-      <pre>r7 = 0000000000000000000000</pre>
+      <pre>r7 = xxxxxxxxxxxxxxxxxxxxxx</pre>
       <pre>r8 = 00000000000000001</pre>
       <pre>r9 = 00000000000000001</pre>
       <pre>r10 = 01010110011</pre>
@@ -156,12 +159,12 @@
       <pre>r26 = 00000000000000000000000001</pre>
       <pre>r27 = 000000000000001</pre>
       <pre>r28 = 00000000000000110010010100</pre>
-      <pre>r29 = 0000000000000000000000000</pre>
+      <pre>r29 = 0000000000000x0xx00xx0xx0</pre>
       <pre>r30 = 00000000000000000000000000000000</pre>
       <pre>r31 = 10</pre>
       <pre>r32 = 0000000000000000000000000000000</pre>
       <pre>r33 = 0000000000000100010101110110</pre>
-      <pre>r34 = 00000000000000000</pre>
+      <pre>r34 = xxxxxxxxxxxxxxxxx</pre>
       <pre>r35 = 1100101001100</pre>
       <pre>r36 = 0001</pre>
       <pre>r37 = 000000000000000000000000000000</pre>
@@ -170,7 +173,7 @@
       <pre>r40 = 000000000110110010111011</pre>
       <pre>r41 = 00000000000000000100100000100101</pre>
       <pre>r42 = 10111000111</pre>
-      <pre>r43 = 00000000000000000000000000001</pre>
+      <pre>r43 = 0000000000000000000000000000x</pre>
       <pre>r44 = 00000000000000000000000000</pre>
       <pre>r45 = 0000000000001</pre>
       <pre>r46 = 000000000000001</pre>
@@ -185,7 +188,7 @@
       <pre>r55 = 0000000000000000000000000001</pre>
       <pre>r56 = 101111011</pre>
       <pre>r57 = 1111111111</pre>
-      <pre>r58 = 000000000000000000000</pre>
+      <pre>r58 = 00000000000000000000x</pre>
       <pre>r59 = 00000000000000000000101111000010</pre>
       <pre>r60 = 0000000000000000000001</pre>
       <pre>r61 = 00000000000000001</pre>
@@ -213,11 +216,11 @@
       <pre>r83 = 0100100</pre>
       <pre>r84 = 10110010010010</pre>
       <pre>r85 = 000000011110110110110</pre>
-      <pre>r86 = 000</pre>
+      <pre>r86 = xxx</pre>
       <pre>r87 = 111011111111111</pre>
       <pre>r88 = 00000000000000100011110110000</pre>
       <pre>r89 = 00000000000000000000000000</pre>
-      <pre>r90 = 00000000000000000000</pre>
+      <pre>r90 = xxxxxxxxxxxxxxxxxxxx</pre>
       <pre>r91 = 100</pre>
       <pre>r92 = 011</pre>
       <pre>r93 = 10111001</pre>
@@ -227,7 +230,7 @@
       <pre>r97 = 000001</pre>
       <pre>r98 = 0000000000110001110100010</pre>
       <pre>r99 = 0111011</pre>
-      <pre>r100 = 0</pre>
+      <pre>r100 = x</pre>
       <pre>r101 = 000000001</pre>
       <pre>r102 = 000000000000000000000001</pre>
       <pre>r103 = 000000000000000000000000000000</pre>
@@ -250,7 +253,7 @@
       <pre>r120 = 0110001101</pre>
       <pre>r121 = 000000010110111011</pre>
       <pre>r122 = 000000000110001011101100</pre>
-      <pre>r123 = 11111111111111000011110110</pre>
+      <pre>r123 = xxxxxxxxxxxxxxxxxxxxxxxxxx</pre>
       <pre>r124 = 0</pre>
       <pre>r125 = 000000000000000001011110000111</pre>
       <pre>r126 = 0000000000000000000000010101</pre>
@@ -262,10 +265,10 @@
       <pre>r132 = 00000000000000000</pre>
       <pre>r133 = 000000000000000000001</pre>
       <pre>r134 = 000</pre>
-      <pre>r135 = 0</pre>
+      <pre>r135 = 1</pre>
       <pre>r136 = 00</pre>
       <pre>r137 = 00000100100100100110</pre>
-      <pre>r138 = 00000000</pre>
+      <pre>r138 = 0000000x</pre>
       <pre>r139 = 110011101110</pre>
       <pre>r140 = 000000000000001001</pre>
       <pre>r141 = 000000000100110111110000</pre>
@@ -311,24 +314,24 @@
       <pre>r181 = 000000</pre>
       <pre>r182 = 0101100101111110</pre>
       <pre>r183 = 11111110</pre>
-      <pre>r184 = 000000000000001</pre>
+      <pre>r184 = 000000000000000</pre>
       <pre>r185 = 000000000000000000001</pre>
       <pre>r186 = 00000000000000</pre>
       <pre>r187 = 000000000000000000000000000000</pre>
       <pre>r188 = 01101011110101</pre>
       <pre>r189 = 100010</pre>
-      <pre>r190 = 0000000000000000000000000000001</pre>
+      <pre>r190 = 000000000000000000000000000000x</pre>
       <pre>r191 = 1000100000011</pre>
       <pre>r192 = 00000000000010</pre>
       <pre>r193 = 11111111111111111010111111111000</pre>
       <pre>r194 = 00000110100001100</pre>
-      <pre>r195 = 10</pre>
+      <pre>r195 = xx</pre>
       <pre>r196 = 0000011000011000011</pre>
       <pre>r197 = 000000000000101000000001</pre>
       <pre>r198 = 00000000000000000000000000000000</pre>
       <pre>r199 = 00000000000100110010010</pre>
       <pre>r200 = 000000000000001</pre>
-      <pre>r201 = 00000000000000</pre>
+      <pre>r201 = 0000000000000x</pre>
       <pre>r202 = 0000101100100100010</pre>
       <pre>r203 = 0000010111101100001</pre>
       <pre>r204 = 00000000000000000101110001000100</pre>
@@ -336,12 +339,12 @@
       <pre>r206 = 000000000000000000000000000001</pre>
       <pre>r207 = 000000010</pre>
       <pre>r208 = 000000000000001</pre>
-      <pre>r209 = 0000000000000000000</pre>
+      <pre>r209 = 000000000000000000x</pre>
       <pre>r210 = 1111111111111111111111111111111</pre>
       <pre>r211 = 0000000101010011000100</pre>
       <pre>r212 = 0000000000000000</pre>
       <pre>r213 = 000000000000000000000000000000</pre>
-      <pre>r214 = 000</pre>
+      <pre>r214 = xxx</pre>
       <pre>r215 = 11101</pre>
       <pre>r216 = 000001</pre>
       <pre>r217 = 0</pre>
@@ -354,7 +357,7 @@
       <pre>r224 = 00000000000000000</pre>
       <pre>r225 = 01111001010</pre>
       <pre>r226 = 00</pre>
-      <pre>r227 = 000000000000000000000000000</pre>
+      <pre>r227 = 00000000000000000000000000x</pre>
       <pre>r228 = 01011</pre>
       <pre>r229 = 1111111111110011</pre>
       <pre>r230 = 00000000000000000</pre>

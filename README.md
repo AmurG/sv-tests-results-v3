@@ -4,68 +4,72 @@ Full [sv-tests](https://github.com/chipsalliance/sv-tests) dashboard, **strictly
 [sv-tests-results-v2](https://amurg.github.io/sv-tests-results-v2/)**: every column of the v2
 page is carried here from the v2 page's own logs — same logs, same grading, same provenance
 statements, **zero verdict flips in either direction across all 20 carried columns** — plus
-**four extended-engine columns**, re-measured for this publish on the same harness, the same
+**four extended columns**, re-measured for this publish on the same harness, the same
 stock report generator and the same grading pipeline:
+
+**THE ARM LABELS CHANGED AT THIS PUBLISH: the four-state honest power-on arm is now the
+ENGINE DEFAULT** (it is the arm the v2/v1 pages' `Arcilator` column publishes), and the
+two-state-init arm is the documented opt-out. Column names are kept stable so deep links
+survive; what flipped is which column IS the default:
 
 | new column | engine arm | result | `uvm` cell |
 |---|---|---|---|
-| `circt_verilog_extended` | extended line, default (two-state) | **4960/5093** | 169/169 |
-| `Arcilator_extended` | extended line, default (two-state) | **BOARD 4673/5092, HONEST 4643/5092** | **166/169** |
-| `circt_verilog_extended_4state` | extended line, four-state mode | **4944/5093** (as rendered; 4952 strict — the renderer note below) | 163/169 |
-| `Arcilator_extended_4state` | extended line, four-state mode | **BOARD 4777/5092, HONEST 4755/5092** | 159/169 |
+| `circt_verilog_extended` | compile default (no four-valued flag) | **4960/5093** | 169/169 |
+| `Arcilator_extended` | **two-state-init OPT-OUT arm** (pre-flip default; the reference arm) | **BOARD 4673/5092, HONEST 4643/5092** | **166/169** |
+| `circt_verilog_extended_4state` | `--four-valued` compile arm | **4948/5093** (as rendered; 4952 strict — the renderer note below) | 167/169 |
+| `Arcilator_extended_4state` | **THE DEFAULT ARM** (four-state honest power-on) | **BOARD 4819/5092, HONEST 4798/5092** | 163/169 |
 
-Movement against the previous (2026-08-06) v3 publish, per row, every flip named in the
-campaign records: `circt_verilog_extended` **+8**, `circt_verilog_extended_4state` **+70** as
-rendered, `Arcilator_extended` **+33**, `Arcilator_extended_4state` **+213** — and
-**green-to-red is ZERO on all four columns**, 5,092/5,093 rows compared per column.
+- **Publication-posture change (this publish).** Earlier revisions of these pages linked every engine row to a public source-snapshot branch. From this publish the engine source is NOT published (ruling of record: public dashboards, nothing else public): the per-row provenance fields read `not published`, the tool-header links point at this results page itself, results provenance is retained privately, and the previously published snapshot branches are being retired. This is a link-posture change only — ZERO cell movement, gated by the publish verification (numbers re-derived unchanged on every column).
 
-**What the extended engine is at this publish, and how it now relates to the v2 table.** At
-the 2026-08-06 publish the extended default-arm columns were the *same boards* as the v2
-page's own `circt_verilog`/`Arcilator` columns — per-row identical by construction. **That is
-no longer true and the difference is stated rather than smoothed over.** The carried v2 table
-is the v2 page's published-engine measurement; the extended columns are two integration waves
-ahead of it. Measured on this page:
+Movement against the previous (2026-08-15) v3 publish, per row: `circt_verilog_extended`
+**+0** (zero flips), `circt_verilog_extended_4state` **+4** as rendered
+(4 red-to-green, zero green-to-red), `Arcilator_extended` **+0** (zero flips —
+the opt-out arm is row-for-row EXACT to the prior publish), `Arcilator_extended_4state`
+**+42** (44 red-to-green and **2 green-to-red: `bp_multicore_4`, `bp_multicore_4_cce_ucode_cfg`** — both are LOUD
+rc=71 budget timeouts on the honest-init default's measured runtime cost (~1.37x on the two
+largest cores), both green on the opt-out column beside them; the giants bullet of the v2 page
+carries the idle-replay numbers). Green-to-red is zero everywhere else.
+
+**How the extended columns relate to the v2 table at this publish — the identity pairing
+FLIPPED with the default.** The carried v2 table and the extended columns are the SAME engine
+generation again (one tip, one snapshot), and the identity now runs through the four-state
+column, measured on this page's own CSV:
 
 * `circt_verilog_extended` vs the page's own `circt_verilog`: **per-row identical** — 0 verdict
-  differences, 0 exit-code differences over 5,093 rows.
-* `Arcilator_extended` vs the page's own `Arcilator`: **6 red-to-green, ZERO green-to-red**, and
-  the six are named — `event_control_simulation_minimal`, `regress-sv_br_gh508a_iv`,
-  `sequence_rose_test_uvm`, `sequence_fell_test_uvm`, `sequence_past_test_uvm`,
-  `sequence_changed_test_uvm`. A further **48** rows keep the same verdict while their exit
-  code improves from 1 to 0 (a grader demotion that no longer fires); **53 exit codes move and
-  every one of them moves in the 1→0 direction — zero rows exit worse.**
+  differences over 5,093 rows (the compile default carries no four-valued flag and is untouched
+  by the power-on flip).
+* `Arcilator_extended_4state` vs the page's own `Arcilator` (the v2 page's default column):
+  **per-row identical** — 0 verdict differences over 5,092 rows. THE FOUR-STATE COLUMN IS THE
+  DEFAULT COLUMN NOW; it is kept here so the `_4state` series stays continuous.
+* `Arcilator_extended` (the opt-out arm) vs the page's own `Arcilator`: the flip ledger between
+  the two arms of one build — 17 rows green only on the opt-out arm and 163 green only on
+  the default arm (page lens). The opt-out arm is the pre-flip default, retained as the
+  reference for the arm-cost rows the v2 page names.
 
-The page's distinct content remains the two `_4state` columns: the same binaries with the
-engine's opt-in four-state mode enabled (`--four-valued` lowering) against the default
-two-state arm. Same harness environment as the v2 CIRCT columns
+The page's distinct content is now the OPT-OUT column (`Arcilator_extended` — the two-state
+arm the engine no longer defaults to, kept published as the reference arm) and the
+`--four-valued` compile arm (`circt_verilog_extended_4state`); the `Arcilator_extended_4state`
+column coincides with the default column by construction (identity measured above). Same harness environment as the v2 CIRCT columns
 (`ARCILATOR_UVM_NO_STUB=1 CIRCT_UVM_SHIMS=1 CIRCT_UVM_FABRICATED_REPORTS=0`,
 `OVERRIDE_TEST_TIMEOUTS=900` on the simulate columns, AOT compile-and-run only), same
 denominators (5093 compile-lens / 5092 simulate-lens, `regress-vlg_pr587_iv`
 harness-excluded, standing disclosure), same dual lens on the simulate columns (BOARD = the
 rig's `report.csv` `Pass` column; HONEST = BOARD minus the case-leak rows, definition
-unchanged — **30** rows on `Arcilator_extended`, **22** on `Arcilator_extended_4state`).
+unchanged — **30** rows on `Arcilator_extended`, **21** on `Arcilator_extended_4state`,
+both re-derived fail-closed on these boards' own logs).
 
-**Source disclosure.** The engine's source snapshot for the four extended columns is
-AmurG/circt [`batch-20260817`](https://github.com/AmurG/circt/tree/batch-20260817) @
-[`0f3df6801c`](https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98),
-a single provenance commit whose tree is the tree these columns were built from, and a
-fast-forward descendant of the [`batch-20260815`](https://github.com/AmurG/circt/tree/batch-20260815)
-snapshot the carried v2 table cites. Two qualifications, both measured:
+**Source disclosure — PUBLICATION POSTURE (changed at this publish, by ruling): the dashboards are public; the engine source is NOT published.** The four extended columns were built from the campaign's engine tree of 2026-08-19; results provenance — the exact source tree, build receipts and board banks — is retained privately, every number is reproducible from that retained record, and nothing on this page implies the source is available (each row's `circt_ref` reads `not published`; earlier revisions' public snapshot branches are being retired). Two statements, both measured:
 
-1. **The snapshot is the exact build tree plus one lit test and a comment-grade disclosure
-   sweep.** The board binaries were built at the commit immediately preceding the snapshot
-   line; `git diff` between that tree and this snapshot returns **58** files: one lit test
-   (`test/Conversion/ImportVerilog/uvm-covergroup-forward-ref.sv`), the 08-15 oracle-neutral
-   comment restatement (56 files, 124 comment lines, line-for-line balanced), and the same
-   restatement extended to one lit header that sweep predates (5 comment lines). **Every
-   non-test hunk is a comment; no compiled byte differs** — the binaries the boards ran are
-   built from the same compiled sources this snapshot carries.
-2. **Lineage:** this snapshot is a descendant of the v2 page's, which is itself a descendant of
-   the 2026-08-06 page's — the batch-`*` provenance line is linear, so the extended columns are
-   strictly downstream of every previously published snapshot, not a side line.
+1. **The retained provenance tree IS the exact build tree.** Its tree is bit-identical to the source the
+   boards' binaries were built from (tree-hash equality verified at staging); the
+   earlier publishes' disclosure rewrites are part of this line's history now.
+2. **Lineage:** the privately retained provenance line is linear — these columns are strictly
+   downstream of every earlier publish's build, not a side line. The carried v2 table on
+   this page is the v2 page's own fresh measurement at this same build.
 
-**Four-state mover — this one is engine.** `Arcilator_extended_4state` 4564 → **4777**
-(+213 BOARD, +214 HONEST), green-to-red **0** across the whole interval. The previous publish's
+**Four-state mover — the series continues, and its biggest step is THE FLIP ITSELF.**
+`Arcilator_extended_4state` 4564 → 4777 → **4819** (this publish +42 BOARD,
++43 HONEST). The previous publish's
 mover was a *harness correction* and said so (58 of 66 new greens were a corrupted four-state
 driver generator); that correction is already inside the 4564 baseline, so none of this +213
 is rig. The interval splits into three measured segments:
@@ -75,6 +79,14 @@ is rig. The interval splits into three measured segments:
 | 2026-08-06 → W22 | **+210** | four-valued **aggregate / net-type lowering** (+156: ref remat, union→slice, LTL clock-root, observe-variables), 15 cures (+24), 16 cures across 8 lanes (+14), re-landed + burn cures and the SplitLoops aggregate-element projection (+7/+2/+2), and **+1 that is NOT engine** — one large-core row oscillating against the 900 s budget. **Itemisation residue, stated: those items sum to 206, so 4 of the 210 are unattributed in the campaign's own decomposition.** |
 | W22 → W23 | **+1 board, +4 honest** | x-semantics: an out-of-range dynamic select now reads `x` **per bit** (IEEE 1800-2023 §11.5.1). One row flips green; three more stop being green-while-printing-`Failed`, which is where the extra honest rows come from. |
 | W23 → W24 | **+2** | a SystemVerilog event trigger now wakes an `always @(e)` block parked before the first trigger — `event_control_simulation_minimal` and `regress-sv_br_gh508a_iv`, on **both** arms. |
+| W24 → W25 (2026-08-18) | **+1 board / +1 honest** | ⭐ **the clock-reload cure**: on the four-valued arm every register on a PROCESS-DRIVEN clock had committed ONE EVALUATION LATE (an end-of-eval reload defect reaching every plain testbench clock generator); cured, with the historical caveat below. |
+| W25 → W26 | **+38** | ⭐ **the DEFAULT FLIP lands**: the honest power-on arm becomes the engine default; the 38-row recovery list was pre-registered from the historical flag boards and reproduced row-for-row (38/38 expected-hit, zero unexpected movers), minus the two named budget giants. |
+| W26 → this publish (suite merge) | **+4 report lens only** | upstream `b5685cbe` removed the `:assert:` marker the report lens mis-scored on the sequence quartet (SCORING change; strict EXACT; the retirement paragraph below). `tests/` is now byte-identical to upstream `c4229f3b`. |
+
+**HISTORICAL-SERIES CAVEAT (travels with every comparison on this table):** the `_4state`
+series crosses the W25 clock-reload cure — numbers published for this arm BEFORE 2026-08-18
+were measured with every process-driven-clock register committing one evaluation late, so
+cross-publish comparisons of this column are NOT like-for-like across that cure.
 
 Row families across the interval: struct / packed-array / implicit-cast /
 net-type-and-strength (`tri`, `supply`, `uwire`) / assertion-block / large-core, plus the
@@ -83,69 +95,67 @@ test-driver generator succession never isolated by its own board; it is bounded 
 (green-to-red is 0 end to end and no row of its known verdict-moving class is among the
 movers) — and bounded is not measured.
 
-**Disclosure — one of this publish's cures does NOT reach the four-state arm.** The same
-integration wave that gave `Arcilator_extended` its four SVA rows
-(`sequence_rose/fell/past/changed_test_uvm` — an assertion action block now sees its own
-edge's non-blocking update) moved **zero** of them on `Arcilator_extended_4state`. Measured
-here on both arms of the same build: on the four-state arm those rows still print an
-assertion counter one edge stale. The visible consequence is that the four-state mode's
-measured row cost below **grew by exactly those four** — *because the default arm was cured
-and the four-valued lowering was not, not because the four-state arm lost anything.* The
-four-state arm lost no row at this publish. This is an open engine item, disclosed here
-rather than left to be inferred from a moving cost number.
+**The previous publish's "cure does not reach the four-state arm" disclosure is RETIRED —
+by measurement, not by fiat.** On this build the `sequence_rose/fell/past/changed_test_uvm`
+family is **strict-green on the four-state arm** (4/4 by the strict ledger of
+these very logs): the Reactive-region NBA cure reaches the four-valued lowering, and what had
+actually been failing this arm was the W25 clock-reload defect above, now cured. At this publish the four are green on the page lens as well — upstream's
+suite update removed the expectation marker the renderer's predicate was mis-scoring
+(the segments table above). What DOES remain engine-red on the
+default arm alone: the two deferred-assert rows (`assert0_test_uvm`, `assert_final_test_uvm`,
+green on the opt-out column beside it) — the named open item of the flip, disclosed on the v2
+page's default-arm bullet as well.
 
 **Four-state mode cost (the `_4state` columns vs the default-arm columns, same rig, same
 rowset), and it has collapsed.** The four-state mode trades rows for value fidelity, and
 every lost row still fails LOUDLY:
 
-| lens | G→R at 2026-08-06 | G→R now | R→G at 2026-08-06 | R→G now |
+| lens | G→R at 2026-08-15 | G→R now | R→G at 2026-08-15 | R→G now |
 |---|---|---|---|---|
-| compile (`_4state` vs default, strict grading) | 70 | **8** (5 exit `1`, 3 exit `71`; all named) | 0 | 0 |
-| simulate (`_4state` vs default, strict grading) | 178 | **18** (all exit `1`) | +103 | **+123** |
+| compile (four-valued arm vs the compile default, strict grading) | 8 | **8** (all named in the campaign records) | 0 | 0 |
+| simulate (the DEFAULT arm vs the two-state opt-out arm, strict grading) | 18 | **16** | +123 | **+163** |
 
 **The silent-wrong bucket — a lost row that exits 0 with a clean transcript — is EMPTY on both
-lenses.** On the simulate lens the four-state arm now sits **104 rows above** the default arm,
-where at the previous publish it sat 76 below.
+lenses.** On the simulate lens the four-state arm — now the DEFAULT — sits **147 rows above**
+the opt-out arm, where at the previous publish it sat 105 above and at 2026-08-06 it sat 76
+below. The 16 strict-lens simulate losses are the arm's named cost set (2 budget giants, 2
+deferred-assert rows, 12 honest-initialization rows), classified row-by-row on the v2 page's
+default-arm bullet.
 
 **Renderer note (the stock renderer's own extra predicate).** For `mode: simulation` rows the
 stock report generator applies a transcript predicate the strict grader does not, so a few
 rows that exit 0 and pass by transcript are denied on the page. Re-measured by name at this
-publish: **8** rows on `circt_verilog_extended_4state` — `property_disable_iff_test`,
-`property_local_var_test`, `sequence_changed_test_uvm`, `sequence_fell_test_uvm`,
-`sequence_local_var_test`, `sequence_past_test_uvm`, `sequence_rose_test_uvm`,
-`sequence_stable_test_uvm` (the four-state SVA-sampling family, whose logs carry heavy
-four-valued conversion warnings the stock renderer does not credit through) — **1** on
-`Arcilator_extended` (`basic-tagged-union`), **2** on
-`Arcilator_extended_4state` (`basic-tagged-union`, `sequence_stable_test_uvm`), **0** on
-`circt_verilog_extended`, and **0** rows in the other direction on any column. **This page
-publishes the lower, as-rendered number for every column** rather than patching the table
+publish: **4** rows on `circt_verilog_extended_4state` — `property_disable_iff_test`, `property_local_var_test`, `sequence_local_var_test`, `sequence_stable_test_uvm` —
+**1** on `Arcilator_extended` (`basic-tagged-union`), **2** on
+`Arcilator_extended_4state` (`basic-tagged-union`, `sequence_stable_test_uvm` — the strict-green report-lens residue discussed above), and **0** rows in the other direction on any column. **This
+page publishes the lower, as-rendered number for every column** rather than patching the table
 against its own renderer; the strict-graded counts for the same logs are 4952
-(`circt_verilog_extended_4state`), 4674 (`Arcilator_extended`) and 4779
+(`circt_verilog_extended_4state`), 4674 (`Arcilator_extended`) and 4821
 (`Arcilator_extended_4state`), while `circt_verilog_extended` has no seam and is 4960 either way.
 
-**Artefact disclosure — the row logs carry more frontend diagnostic lines than the previous
-publish.** The extended columns' frontend was upgraded across this interval and emits more
-diagnostic lines on the same sources. Measured page against page — the 2026-08-06 v3 logs
-against these, on every row of every extended column:
+**Artefact disclosure — how these logs differ from the previous publish's.** The previous
+publish's finding stands and is carried: its frontend bump added diagnostic lines on ~19.6% of
+rows, dominantly byte-identical repeats — those lines are still in these logs. THIS publish's
+interval (2026-08-15 page → this page) was measured page against rendered page with volatile
+fields normalized (this lane's `logdelta` receipt):
 
-| column | rows | gained diagnostic lines | of which a repeat of a line already present | at a new location/text | lost any line |
-|---|---|---|---|---|---|
-| `Arcilator_extended` | 5092 | **998 (19.6%)** | 892 | 113 | 6 |
-| `circt_verilog_extended` | 5093 | **997 (19.6%)** | 890 | 114 | 6 |
-| `Arcilator_extended_4state` | 5092 | **1001 (19.7%)** | 889 | 194 | 39 |
-| `circt_verilog_extended_4state` | 5093 | **999 (19.6%)** | 888 | 194 | 39 |
+```
+(log BODY only; page chrome, volatile metadata, command echoes, local paths and the publication redaction token normalized out; vs the LIVE v3 page)
+circt_verilog_extended: rows-compared=5093 log-body-identical=5089 log-body-diff=4 diag-line-set-gained-rows=2 diag-line-set-lost-rows=1
+circt_verilog_extended_4state: rows-compared=5093 log-body-identical=5080 log-body-diff=13 diag-line-set-gained-rows=11 diag-line-set-lost-rows=5
+Arcilator_extended: rows-compared=5092 log-body-identical=2499 log-body-diff=2593 diag-line-set-gained-rows=2590 diag-line-set-lost-rows=1
+Arcilator_extended_4state: rows-compared=5092 log-body-identical=2477 log-body-diff=2615 diag-line-set-gained-rows=2587 diag-line-set-lost-rows=7
+dominant gained-line cause carried from the premerge measurement: the per-row AOT-compile 'assertFailCount' C-linkage warning (W25 assert-exit header) + its warnings-counter bump; verdict-neutral, header cleanup filed. The suite-merge rows additionally change text on the 5 merged files' pages.
+```
 
-The dominant shape is a **byte-identical repeat** of a diagnostic the row already emitted at
-the same file, line and column — not a new finding. Every row that *lost* a line was checked
-in the direction that matters: on `Arcilator_extended` all 6 are rows that turned green (a row
-that now succeeds no longer prints the error that stopped it), and on
-`Arcilator_extended_4state` **zero of the 39 are green on both pages** — no passing row quietly
-dropped a diagnostic. **No verdict changes on this account**; it is an artefact change, not a
-result change, and anyone diffing published logs against the previous v3 page should be told
-rather than discover it.
+The default-arm columns' content movement is the flip's own class (power-on constants and SSA
+renumbering in the recorded pipeline output, plus the rows the flip genuinely moved); the
+opt-out arc column is verdict-EXACT to the prior publish and its content deltas are the
+standing wave-over-wave nondeterministic rows plus one diagnostic-only remark. Verdict deltas
+on this account are exactly the flip ledger above — nothing else moved.
 
 **Carried-table note (a stock-renderer nondeterminism, named).** The carried columns' *log
-content* comes from the v2 page's own logs unchanged, and every carried verdict and exit code
+content* comes from the V18 v2 page's own logs unchanged (the v2 stage committed beside this page), and every carried verdict and exit code
 matches it. The rendered pages are not byte-identical to the v2 page's, and the reason was
 chased rather than waived: the stock report generator renders each row's `tags` field from an
 unordered set, so the same tags appear in a different order between two runs. Over a
@@ -154,19 +164,18 @@ disappear once the `tags` field alone is order-normalised — zero residual**. T
 holds between the previously shipped pages; it is a generator artefact, not a content change.
 
 **Grading.** The same fail-closed strict grading and case-leak scanner as the v2 page, both
-re-run here on these boards' own logs: the `Arcilator_extended` leak set is the standing 30,
-row for row. The `Arcilator_extended_4state` set is **22** — smaller than the previous
-publish's 23 and smaller than the 25 measured on the intervening board — and the three names
-that left the intervening set were each checked individually rather than netted: all three are
-green under **both** gradings at **both** ends, so the reduction is rows that stopped being
-green-while-printing-`Failed`, never rows that went red. One member of the 22
-(`regress-vlg_pr2728032_iv`) sits outside the default arm's 30-class. The case-leak deduction
-defines the HONEST lens in the table above.
+re-run here on these boards' own logs: the `Arcilator_extended` (opt-out) leak set is the
+standing **30**, row for row; the `Arcilator_extended_4state` (default) set is **21**,
+re-derived on this arm's own logs — the leak population is arm-dependent and is re-derived,
+never carried. The case-leak deduction defines the HONEST lens in the table above. The rig's
+report-vs-strict divergence on the default arm (4819 vs 4821) is the renderer-lens
+artifact disclosed above, stated on the v2 page as well.
 
 **What this page does not claim.** The extended columns are not an upstream-CIRCT measurement
-(the published snapshot is a fork tree, cited above), the four-state mode is opt-in and its row
-cost is stated rather than averaged away, and rows red here for harness reasons are disclosed
-as such rather than re-rolled. For the all-stock baseline see
+(the published snapshot is a fork tree, cited above); the four-state arm is the ENGINE DEFAULT
+at this publish (no longer opt-in) and its row cost against the retained opt-out arm is stated
+row-by-row rather than averaged away; rows red here for harness or renderer-lens reasons are
+disclosed as such rather than re-rolled. For the all-stock baseline see
 [sv-tests-results-v1](https://amurg.github.io/sv-tests-results-v1/); for the overlay board
 and all standing column disclosures see
 [sv-tests-results-v2](https://amurg.github.io/sv-tests-results-v2/).

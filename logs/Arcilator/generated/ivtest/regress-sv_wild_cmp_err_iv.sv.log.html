@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-sv_wild_cmp_err_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:56:04</dd></div>
-        <div><dt>time elapsed</dt><dd>0.024s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 05:08:24</dd></div>
+        <div><dt>time elapsed</dt><dd>0.033s</dd></div>
         <div><dt>ram usage</dt><dd>14336 KB</dd></div>
       </dl>
     </section>
@@ -47,13 +47,25 @@
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:2:26: error: invalid operands to binary expression (&#39;bit[1:0]&#39; and &#39;real&#39;)</pre>
       <pre>  parameter weq1 = 2&#39;b01 ==? 0.0;</pre>
+      <pre>                   ~~~~~ ^~~ ~~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:2:26: error: invalid operands to binary expression (&#39;bit[1:0]&#39; and &#39;real&#39;)</pre>
+      <pre>  parameter weq1 = 2&#39;b01 ==? 0.0;</pre>
       <pre>                         ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:3:24: error: invalid operands to binary expression (&#39;real&#39; and &#39;bit[1:0]&#39;)</pre>
+      <pre>  parameter weq2 = 0.0 ==? 2&#39;b01;</pre>
+      <pre>                   ~~~ ^~~ ~~~~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:3:24: error: invalid operands to binary expression (&#39;real&#39; and &#39;bit[1:0]&#39;)</pre>
       <pre>  parameter weq2 = 0.0 ==? 2&#39;b01;</pre>
       <pre>                       ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:4:27: error: invalid operands to binary expression (&#39;bit[1:0]&#39; and &#39;real&#39;)</pre>
       <pre>  parameter wneq1 = 2&#39;b01 !=? 0.0;</pre>
+      <pre>                    ~~~~~ ^~~ ~~~</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:4:27: error: invalid operands to binary expression (&#39;bit[1:0]&#39; and &#39;real&#39;)</pre>
+      <pre>  parameter wneq1 = 2&#39;b01 !=? 0.0;</pre>
       <pre>                          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:5:25: error: invalid operands to binary expression (&#39;real&#39; and &#39;bit[1:0]&#39;)</pre>
+      <pre>  parameter wneq2 = 0.0 !=? 2&#39;b01;</pre>
+      <pre>                    ~~~ ^~~ ~~~~~</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/wild_cmp_err.v:5:25: error: invalid operands to binary expression (&#39;real&#39; and &#39;bit[1:0]&#39;)</pre>
       <pre>  parameter wneq2 = 0.0 !=? 2&#39;b01;</pre>
       <pre>                        ^</pre>

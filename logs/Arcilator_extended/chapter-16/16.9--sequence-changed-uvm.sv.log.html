@@ -6,14 +6,14 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>sequence_changed_test_uvm</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>sequence with &#34;changed&#34; task in UVM</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm-assertions uvm</dd></div>
+        <div><dt>tags</dt><dd>uvm uvm-assertions</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 21:43:41</dd></div>
-        <div><dt>time elapsed</dt><dd>40.909s</dd></div>
-        <div><dt>ram usage</dt><dd>207748 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:10:28</dd></div>
+        <div><dt>time elapsed</dt><dd>40.714s</dd></div>
+        <div><dt>ram usage</dt><dd>206868 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -174,6 +174,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -183,7 +186,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -210,15 +213,15 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(73) @ 0: env [SEQUENCE_FUNC_UVM] Started run phase</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 150: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          2 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 250: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          3 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 350: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          4 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 450: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          5 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 550: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          6 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 650: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          7 != 8)</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 850: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (          9 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 150: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (2 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 250: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (3 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 350: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (4 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 450: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (5 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 550: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (6 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 650: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (7 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 850: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (9 != 8)</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(77) @ 950: env [SEQUENCE_FUNC_UVM] Finished run phase</pre>
-      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(103) @ 950: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed :assert: (         10 != 8)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.9--sequence-changed-uvm.sv(104) @ 950: reporter [SEQUENCE_FUNC_UVM] $changed(dif.out) failed (10 != 8)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 950: reporter [UVM/REPORT/SERVER] </pre>
       <pre>--- UVM Report Summary ---</pre>
       <pre></pre>

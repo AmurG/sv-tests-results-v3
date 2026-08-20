@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-passed">
-        <a href="https://github.com/AmurG/circt/tree/0f3df6801c21b7337e08691d4a6a43776e95bd98" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>uvm_param_vif_config_db</h2>
     </header>
     <section class="property-list">
@@ -41,9 +41,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-17 21:32:53</dd></div>
-        <div><dt>time elapsed</dt><dd>179.997s</dd></div>
-        <div><dt>ram usage</dt><dd>2660704 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:00:42</dd></div>
+        <div><dt>time elapsed</dt><dd>166.824s</dd></div>
+        <div><dt>ram usage</dt><dd>2698508 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -220,6 +220,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -229,12 +232,12 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ status=0</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787002364</pre>
+      <pre>+ __svtests_variant_t0=1787112034</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=sfr_test</pre>
@@ -279,8 +282,8 @@
       <pre></pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 9</pre>
-      <pre>[Arcilator] simvariant 1/1 wall 9s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 8</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 8s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="test-failed">
-        <a href="https://github.com/AmurG/circt/tree/b391c4d789429b128e42a27ba87f014eb90b8be8" target="_blank"><h1>Arcilator</h1></a>
+        <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_pr2202706c_iv</h2>
     </header>
     <section class="property-list">
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-15 08:44:07</dd></div>
-        <div><dt>time elapsed</dt><dd>6.324s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-19 04:55:59</dd></div>
+        <div><dt>time elapsed</dt><dd>6.577s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -113,6 +113,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
       <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
       <pre>                                    ^</pre>
@@ -122,41 +125,36 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>19 warnings generated.</pre>
+      <pre>20 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
       <pre>FAILED: Unable to get hex value.</pre>
-      <pre>FAILED: expected hex value 72&#39;h0123456789abcdefxz, got 000000000000000000</pre>
+      <pre>FAILED: expected hex value 72&#39;h0123456789abcdefxz, got xxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get hex value.</pre>
-      <pre>FAILED: expected hex value 72&#39;h0123456789abcdefxz, got 000000000000000000</pre>
+      <pre>FAILED: expected hex value 72&#39;h0123456789abcdefxz, got xxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get octal value.</pre>
-      <pre>FAILED: expected octal value 72&#39;o01234567xz, got 000000000000000000000000</pre>
+      <pre>FAILED: expected octal value 72&#39;o01234567xz, got xxxxxxxxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get binary value.</pre>
-      <pre>FAILED: expected binary value 72&#39;b0101xz, got 000000000000000000000000000000000000000000000000000000000000000000000000</pre>
+      <pre>FAILED: expected binary value 72&#39;b0101xz, got xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get negative binary value.</pre>
-      <pre>FAILED: expected binary value 72&#39;hff...fc, got 000000000000000000</pre>
+      <pre>FAILED: expected binary value 72&#39;hff...fc, got xxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get negative octal value.</pre>
-      <pre>FAILED: expected octal value 72&#39;hff...fc0, got 000000000000000000</pre>
+      <pre>FAILED: expected octal value 72&#39;hff...fc0, got xxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get negative hex value.</pre>
+      <pre>FAILED: expected hex value 8&#39;h00, got xx</pre>
       <pre>FAILED: Unable to get bad binary value.</pre>
-      <pre>FAILED: expected bad binary value &#39;bx, got                      0</pre>
       <pre>FAILED: Unable to get bad octal value.</pre>
-      <pre>FAILED: expected bad octal value &#39;bx, got                      0</pre>
       <pre>FAILED: Unable to get bad hex value.</pre>
-      <pre>FAILED: expected bad hex value &#39;bx, got                      0</pre>
       <pre>FAILED: Unable to get bad hex (x) value.</pre>
-      <pre>FAILED: expected bad hex (x) value &#39;bx, got                      0</pre>
       <pre>FAILED: Unable to get decimal value.</pre>
-      <pre>FAILED: expected decimal value &#39;d0123456789, got                      0</pre>
+      <pre>FAILED: expected decimal value &#39;d0123456789, got                      x</pre>
       <pre>FAILED: Unable to get negative decimal value.</pre>
-      <pre>FAILED: expected decimal value 72&#39;hff...fc0, got 000000000000000000</pre>
+      <pre>FAILED: expected decimal value 72&#39;hff...fc0, got xxxxxxxxxxxxxxxxxx</pre>
       <pre>FAILED: Unable to get bad decimal value.</pre>
-      <pre>FAILED: expected bad decimal value &#39;bx, got                      0</pre>
       <pre>FAILED: Unable to get decimal &#34;x&#34; value.</pre>
-      <pre>FAILED: expected decimal value &#39;dx, got                      0</pre>
       <pre>FAILED: Unable to get decimal &#34;z&#34; value.</pre>
-      <pre>FAILED: expected decimal value &#39;dz, got                      0</pre>
+      <pre>FAILED: expected decimal value &#39;dz, got                      x</pre>
       <pre>FAILED: Unable to get real value.</pre>
       <pre>FAILED: expected real value 12.3456789, got 0.000000</pre>
       <pre>FAILED: Unable to get a negative real value.</pre>
@@ -171,7 +169,7 @@
       <pre>FAILED: Unable to get negative decimal (real) value.</pre>
       <pre>FAILED: expected decimal as real value -100, got 0.000000</pre>
       <pre>FAILED: Unable to get real (bit) value.</pre>
-      <pre>FAILED: expected real as bit value 12, got                      0</pre>
+      <pre>FAILED: expected real as bit value 12, got                      x</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 20000000 fs; natural end of simulation</pre>
       <pre></pre>
       <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
