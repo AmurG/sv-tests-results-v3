@@ -1,1 +1,1 @@
-config_loader_data['circt_verilog_extended_4state/ibex'] = [["cores","ibex",0,"logs/circt_verilog_extended_4state/generated/fusesoc/ibex-sim.sv.log.html","build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv.html"]]
+config_loader_data['circt_verilog_extended_4state/ibex'] = [["cores","ibex",1,"logs/circt_verilog_extended_4state/generated/fusesoc/ibex-sim.sv.log.html","build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_pkg_0.1/rtl/ibex_pkg.sv.html"]]

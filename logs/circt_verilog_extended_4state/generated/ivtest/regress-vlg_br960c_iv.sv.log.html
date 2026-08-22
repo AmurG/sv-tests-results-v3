@@ -32,19 +32,20 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 06:01:24</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:15:39</dd></div>
+        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
+        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br960c.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br960c.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br960c.v:31:5: error: unsupported system call `$sdf_annotate`: SDF back-annotation is not modelled</pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br960c.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br960c.v</a></pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br960c.v:31:5: warning: dropping `$sdf_annotate`: SDF back-annotation is not modelled, so the annotated delays are not applied and the design simulates with zero path delay</pre>
       <pre>    $sdf_annotate(&#34;ivltests/br960c.sdf&#34;, dut);</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br960c.v:31:5: note: treating it as a no-op is not semantics-preserving: the annotated delays would not be applied and the design would simulate with zero path delay</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br960c.v:31:5: note: pass `--ignore-timing-annotations` to drop it with a warning instead</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br960c.v:8:9: error: unsupported primitive `bufif1`</pre>
+      <pre>  bufif1(Z, A, EN);</pre>
+      <pre>        ^</pre>
       <pre></pre>
     </section>
   </body>

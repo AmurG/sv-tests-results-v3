@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:29:45</dd></div>
-        <div><dt>time elapsed</dt><dd>0.028s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:05:47</dd></div>
+        <div><dt>time elapsed</dt><dd>0.035s</dd></div>
+        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/rise_fall_delay3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/rise_fall_delay3.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/rise_fall_delay3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/rise_fall_delay3.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/rise_fall_delay3.v:11:25: error: unsupported instance of primitive `tranif1`</pre>
       <pre>tranif1 #(dly1, dly2)   buf1(o[1], i, en);</pre>
       <pre>                        ^</pre>

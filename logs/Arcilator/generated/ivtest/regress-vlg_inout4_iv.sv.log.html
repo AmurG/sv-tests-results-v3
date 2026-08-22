@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:24:03</dd></div>
-        <div><dt>time elapsed</dt><dd>0.042s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:55:21</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
         <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
@@ -44,13 +44,45 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/inout4.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/inout4.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/inout4.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/inout4.v</a></pre>
       <pre>&lt;unknown&gt;:0: warning: in X1: x/z literal &#39;zzzz&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in Y1: x/z literal &#39;zzzzzzzz&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:14: error: failed to legalize operation &#39;moore.extract_ref&#39;: %28 = &#34;moore.extract_ref&#34;(%22) &lt;{lowBit = 8 : i32}&gt; : (!moore.ref&lt;l32&gt;) -&gt; !moore.ref&lt;l24&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:14: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
       <pre>   X2 U (.DB(DB[31:8]), .E(E));</pre>
       <pre>             ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:14: note: see current operation: %28 = &#34;moore.extract_ref&#34;(%22) &lt;{lowBit = 8 : i32}&gt; : (!moore.ref&lt;l32&gt;) -&gt; !moore.ref&lt;l24&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   X2 U (.DB(DB[31:8]), .E(E));</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:7:14: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
+      <pre>   Y1 V (.DB(DB[7:0]),  .E(E));</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:7:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   Y1 V (.DB(DB[7:0]),  .E(E));</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:29:15: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
+      <pre>   X1 uu (.DB(DB[31:28]), .E(E));</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:29:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   X1 uu (.DB(DB[31:28]), .E(E));</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:14: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
+      <pre>   X2 U (.DB(DB[31:8]), .E(E));</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:6:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   X2 U (.DB(DB[31:8]), .E(E));</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:7:14: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
+      <pre>   Y1 V (.DB(DB[7:0]),  .E(E));</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:7:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   Y1 V (.DB(DB[7:0]),  .E(E));</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:29:15: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
+      <pre>   X1 uu (.DB(DB[31:28]), .E(E));</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout4.v:29:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   X1 uu (.DB(DB[31:28]), .E(E));</pre>
+      <pre>      ^</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

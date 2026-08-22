@@ -32,14 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:58:14</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:14:22</dd></div>
         <div><dt>time elapsed</dt><dd>0.040s</dd></div>
-        <div><dt>ram usage</dt><dd>23296 KB</dd></div>
+        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/always_ff_warn.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/always_ff_warn.v</a></pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/always_ff_warn.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/always_ff_warn.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/always_ff_warn.v:11:7: warning: variable &#39;done&#39; has a declaration initializer and is also written by an always_ff procedure; IEEE 1800-2023 9.2.2.2 gives the always_ff procedure exclusive write access, and other simulators reject this as a multiple-driver violation</pre>
       <pre>  int done = 0;</pre>
       <pre>      ^</pre>

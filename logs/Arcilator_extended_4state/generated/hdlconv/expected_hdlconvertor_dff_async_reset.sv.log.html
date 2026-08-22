@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:37:05</dd></div>
-        <div><dt>time elapsed</dt><dd>0.035s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:07:46</dd></div>
+        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
+        <div><dt>ram usage</dt><dd>18816 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=parsing top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv/expected_hdlconvertor_dff_async_reset.sv.html" target="file-frame">tests/generated/hdlconv/expected_hdlconvertor_dff_async_reset.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/verilog/expected/dff_async_reset.v.html" target="file-frame">third_party/tests/hdlconvertor/tests/verilog/expected/dff_async_reset.v</a></pre>
+      <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/hdlconv/expected_hdlconvertor_dff_async_reset.sv.html" target="file-frame">tests/generated/hdlconv/expected_hdlconvertor_dff_async_reset.sv</a> <a href="../../../../third_party/tests/hdlconvertor/tests/verilog/expected/dff_async_reset.v.html" target="file-frame">third_party/tests/hdlconvertor/tests/verilog/expected/dff_async_reset.v</a></pre>
       <pre>module {</pre>
       <pre>  moore.module @dff_async_reset(in %data : !moore.l1, in %clk : !moore.l1, in %reset : !moore.l1, out q : !moore.l1) {</pre>
       <pre>    %data_0 = moore.net name &#34;data&#34; wire : &lt;l1&gt;</pre>

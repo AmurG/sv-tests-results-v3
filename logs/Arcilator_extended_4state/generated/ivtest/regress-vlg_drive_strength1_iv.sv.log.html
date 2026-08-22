@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:15:23</dd></div>
-        <div><dt>time elapsed</dt><dd>0.036s</dd></div>
-        <div><dt>ram usage</dt><dd>16128 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:46:26</dd></div>
+        <div><dt>time elapsed</dt><dd>0.030s</dd></div>
+        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/drive_strength1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/drive_strength1.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/drive_strength1.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/drive_strength1.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/drive_strength1.v:33:26: error: primitive instances with explicit drive strengths are not supported.</pre>
       <pre>   buf (highz0, strong1) drive0(value, en0);</pre>
       <pre>                         ^</pre>

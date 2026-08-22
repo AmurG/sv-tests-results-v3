@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>expect in UVM</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-assertions</dd></div>
+        <div><dt>tags</dt><dd>uvm-assertions uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:13:14</dd></div>
-        <div><dt>time elapsed</dt><dd>44.383s</dd></div>
-        <div><dt>ram usage</dt><dd>206928 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 06:44:14</dd></div>
+        <div><dt>time elapsed</dt><dd>48.151s</dd></div>
+        <div><dt>ram usage</dt><dd>207872 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -47,7 +47,7 @@
       <pre>[Arcilator policy] UVM heartbeat harness bound into top (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=top <a href="../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../tests/chapter-16/16.17--expect-uvm.sv.html" target="file-frame">tests/chapter-16/16.17--expect-uvm.sv</a> <a href="../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=top <a href="../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../tests/chapter-16/16.17--expect-uvm.sv.html" target="file-frame">tests/chapter-16/16.17--expect-uvm.sv</a> <a href="../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
       <pre>../../../tests/chapter-16/16.17--expect-uvm.sv:99:17: warning: input port &#39;read&#39; has no connection [-Wunconnected-input-port]</pre>
       <pre>    mem_ctrl_if dif();</pre>
       <pre>                ^</pre>

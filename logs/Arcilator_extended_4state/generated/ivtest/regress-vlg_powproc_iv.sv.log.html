@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
+    <header class="test-failed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_powproc_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:07:43</dd></div>
-        <div><dt>time elapsed</dt><dd>6.411s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:38:16</dd></div>
+        <div><dt>time elapsed</dt><dd>6.323s</dd></div>
+        <div><dt>ram usage</dt><dd>202332 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pow-proc.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pow-proc.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pow-proc.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pow-proc.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
@@ -131,6 +131,8 @@
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
       <pre>Failed 0**neg got    0</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 11000000 fs; natural end of simulation</pre>
+      <pre></pre>
+      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

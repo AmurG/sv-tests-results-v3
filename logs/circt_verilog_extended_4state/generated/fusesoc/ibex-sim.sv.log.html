@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
+    <header class="test-passed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>circt-verilog</h1></a>
         <h2>ibex</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full ibex core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ibex</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -188,23 +188,583 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code>RVFI=1 RV32M=ibex_pkg::RV32MFast RV32B=ibex_pkg::RV32BNone RV32ZC=ibex_pkg::RV32ZcaZcbZcmp RegFile=ibex_pkg::RegFileFF INSTR_CYCLE_DELAY=0</code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:59:19</dd></div>
-        <div><dt>time elapsed</dt><dd>0.264s</dd></div>
-        <div><dt>ram usage</dt><dd>62720 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:14:09</dd></div>
+        <div><dt>time elapsed</dt><dd>1.505s</dd></div>
+        <div><dt>ram usage</dt><dd>86064 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D RVFI=1 -D RV32M=ibex_pkg::RV32MFast -D RV32B=ibex_pkg::RV32BNone -D RV32ZC=ibex_pkg::RV32ZcaZcbZcmp -D RegFile=ibex_pkg::RegFileFF -D INSTR_CYCLE_DELAY=0 --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=ibex_simple_system -Wno-duplicate-definition --ignore-unknown-modules <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path></pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D RVFI=1 -D RV32M=ibex_pkg::RV32MFast -D RV32B=ibex_pkg::RV32BNone -D RV32ZC=ibex_pkg::RV32ZcaZcbZcmp -D RegFile=ibex_pkg::RegFileFF -D INSTR_CYCLE_DELAY=0 --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=ibex_simple_system -Wno-duplicate-definition --ignore-unknown-modules <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path></pre>
       <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_xilinx_clock_gating_0/rtl/prim_clock_gating.sv:17:20: warning: unknown module &#39;BUFGCE&#39; instantiated as &#39;u_bufgce&#39; is treated as a black box: its outputs are undriven</pre>
       <pre>  end else begin : gen_gate</pre>
       <pre>                   ^</pre>
-      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:856:23: error: unknown name `file_handle`</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:856:23: warning: static initializer reads `file_handle`, which is not yet initialized at static-initialization time; using its uninitialized default (IEEE 1800-2017 § 6.21)</pre>
       <pre>      static int fh = file_handle;</pre>
       <pre>                      ^</pre>
-      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:86:16: note: no rvalue generated for Variable</pre>
-      <pre>  int          file_handle;</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:864:23: warning: static initializer reads `file_handle`, which is not yet initialized at static-initialization time; using its uninitialized default (IEEE 1800-2017 § 6.21)</pre>
+      <pre>      static int fh = file_handle;</pre>
+      <pre>                      ^</pre>
+      <pre>&lt;unknown&gt;:0: warning: in ibex_tracer: x/z literal &#39;1001zzzzz0000010&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in prim_ram_2p: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in new_sync_exc_bit: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:841:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:841:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_tracer_0.1/rtl/ibex_tracer.sv:862:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always @(posedge clk_i) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:66:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:69:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:66:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:69:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:66:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:69:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:66:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:69:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always @(posedge clk_a_i) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_prim_generic_ram_2p_0/rtl/prim_ram_2p.sv:92:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always @(posedge clk_b_i) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/ram_2p.sv:68:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/ram_2p.sv:68:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/bus.sv:89:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/bus.sv:89:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:59:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/sim/simulator_ctrl.sv:59:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:84:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:84:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:92:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:92:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:103:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:103:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:131:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:141:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_sim_shared_0/rtl/timer.sv:141:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:798:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:798:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:818:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk_i) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:829:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:832:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:834:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:836:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:838:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:840:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:843:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_compressed_decoder.sv:845:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:174:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(negedge clk_i) begin</pre>
+      <pre>              ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:207:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:295:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:439:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:439:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:874:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : update_regs</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:874:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : update_regs</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:898:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:921:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:924:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_controller.sv:934:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:812:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:812:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:1429:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:1429:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_cs_registers.sv:1680:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:55:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:55:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:55:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:55:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:55:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_csr.sv:28:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 780 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:498:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:543:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:728:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:821:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:831:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:834:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_if_stage.sv:837:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:190:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:190:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:199:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:199:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:219:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:219:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:490:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:490:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:584:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:584:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:610:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:611:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:612:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:613:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:614:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:619:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_load_store_unit.sv:622:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:101:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:101:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:117:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:118:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:119:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:367:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
       <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:367:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:378:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_multdiv_fast.sv:532:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:159:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:183:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:243:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_prefetch_buffer.sv:243:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_wb_stage.sv:251:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1011:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1014:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1022:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1022:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1043:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1043:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1168:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1174:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1174:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1482:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1482:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1533:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1533:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1557:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1557:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1565:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1565:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1576:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1576:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1777:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1777:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1838:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1838:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1877:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1877:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1926:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1926:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_core_0.1/rtl/ibex_core.sv:1950:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_register_file_ff.sv:61:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:267:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:267:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1150:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1151:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1151:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1153:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1154:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1154:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1157:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1158:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1159:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1160:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1161:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1162:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1165:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1166:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1167:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1168:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1169:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1171:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1172:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1173:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1173:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1176:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1177:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1195:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1195:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1195:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1195:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      always_ff @(posedge clk or negedge rst_ni) begin</pre>
+      <pre>                 ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1241:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1246:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1256:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1256:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1261:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1261:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1311:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1311:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    always @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1334:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1336:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1339:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1344:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1346:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1347:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1347:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1349:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1350:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1354:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1357:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1358:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1359:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1361:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../build/lowrisc_ibex_ibex_simple_system_0/src/lowrisc_ibex_ibex_top_0.1/rtl/ibex_top.sv:1363:0: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre></pre>
     </section>
   </body>

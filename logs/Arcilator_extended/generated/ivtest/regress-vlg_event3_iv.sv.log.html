@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:33:22</dd></div>
-        <div><dt>time elapsed</dt><dd>6.402s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:09:45</dd></div>
+        <div><dt>time elapsed</dt><dd>6.551s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/event3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/event3.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/event3.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/event3.v</a></pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
@@ -53,27 +53,27 @@
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 144 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
       <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 144 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
       <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/e2&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>    %e2 = llhd.sig %9 : !llvm.ptr</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 152 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %14 = arc.alloc_state %arg0 tap {names = [&#34;m1/e2&#34;], offset = 144 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre><redacted-local-path> warning: pointer-typed state &#39;m1/et1.e1&#39; omitted from the observable state export: its slot holds a runtime address (event variables and class handles have no faithful waveform bit rendering)</pre>
       <pre>  hw.module private @m(in %a : i32, out x : i32, out e2 : !llhd.ref&lt;!llvm.ptr&gt;, in %et1.e1 : !llhd.ref&lt;!llvm.ptr&gt;) {</pre>
       <pre>                                                                                   ^</pre>
-      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;317&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %5 = arc.alloc_state %arg0 tap {names = [&#34;m1/et1.e1&#34;], offset = 56 : i32} : (!arc.storage&lt;301&gt;) -&gt; !arc.state&lt;!llvm.ptr&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>

@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:57:33</dd></div>
-        <div><dt>time elapsed</dt><dd>6.561s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:34:33</dd></div>
+        <div><dt>time elapsed</dt><dd>6.649s</dd></div>
+        <div><dt>ram usage</dt><dd>202140 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/implicit_cast11.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/implicit_cast11.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/implicit_cast11.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/implicit_cast11.v</a></pre>
       <pre>&lt;unknown&gt;:0: warning: in implicit_cast: x/z literal &#39;x0z00111&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>

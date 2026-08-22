@@ -31,9 +31,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 03:39:42</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>20608 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 06:10:53</dd></div>
+        <div><dt>time elapsed</dt><dd>0.029s</dd></div>
+        <div><dt>ram usage</dt><dd>21504 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -43,7 +43,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/chapter-7/queues/persistence.sv.html" target="file-frame">tests/chapter-7/queues/persistence.sv</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/chapter-7/queues/persistence.sv.html" target="file-frame">tests/chapter-7/queues/persistence.sv</a></pre>
       <pre>../../../tests/chapter-7/queues/persistence.sv:34:6: error: unsupported: `ref` argument bound to a queue element; element identity across queue resizes is not modeled (a write through the reference after a resize would silently corrupt a neighbouring element)</pre>
       <pre>        fun(q[1]);</pre>
       <pre>            ^</pre>

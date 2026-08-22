@@ -33,14 +33,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:57:44</dd></div>
-        <div><dt>time elapsed</dt><dd>0.054s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:13:51</dd></div>
+        <div><dt>time elapsed</dt><dd>0.055s</dd></div>
         <div><dt>ram usage</dt><dd>24192 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
       <pre>../../../third_party/cores/fx68k/fx68k.sv:1525:81: error: variable &#39;regs68L&#39; driven by always_ff procedure cannot be written to by any other process [-Wmultiple-always-assigns]</pre>
       <pre>                                        if( Nanod.dbl2rxl)                      regs68L[ actualRx] &lt;= Dbd;</pre>
       <pre>                                                                                ^~~~~~~</pre>

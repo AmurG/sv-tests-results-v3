@@ -31,8 +31,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 03:47:39</dd></div>
-        <div><dt>time elapsed</dt><dd>6.366s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 06:19:04</dd></div>
+        <div><dt>time elapsed</dt><dd>6.426s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -43,7 +43,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/equality_operators_sim/11.4.5--equality_operator_13.sv.html" target="file-frame">tests/generated/equality_operators_sim/11.4.5--equality_operator_13.sv</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/equality_operators_sim/11.4.5--equality_operator_13.sv.html" target="file-frame">tests/generated/equality_operators_sim/11.4.5--equality_operator_13.sv</a></pre>
       <pre>../../../tests/generated/equality_operators_sim/11.4.5--equality_operator_13.sv:9:16: warning: in top: x/z literal &#39;1101x000&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>wire [7:0] b = 8&#39;b1101x000;</pre>
       <pre>               ^</pre>

@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:39:15</dd></div>
-        <div><dt>time elapsed</dt><dd>0.038s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:10:32</dd></div>
+        <div><dt>time elapsed</dt><dd>0.036s</dd></div>
         <div><dt>ram usage</dt><dd>21504 KB</dd></div>
       </dl>
     </section>
@@ -44,13 +44,15 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/inout2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/inout2.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/inout2.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/inout2.v</a></pre>
       <pre>&lt;unknown&gt;:0: warning: in main: x/z literal &#39;z&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in bi: x/z literal &#39;z&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout2.v:14:12: error: failed to legalize operation &#39;moore.extract_ref&#39;: %29 = &#34;moore.extract_ref&#34;(%22) &lt;{lowBit = 0 : i32}&gt; : (!moore.ref&lt;l2&gt;) -&gt; !moore.ref&lt;l1&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout2.v:14:12: error: four-valued bit/part-select reference has no lowering for this use; the {value, unknown} plane pair cannot alias one ref, and this consumer cannot be projected into the planes</pre>
       <pre>   bi dut0(a[0], en);</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout2.v:14:12: note: see current operation: %29 = &#34;moore.extract_ref&#34;(%22) &lt;{lowBit = 0 : i32}&gt; : (!moore.ref&lt;l2&gt;) -&gt; !moore.ref&lt;l1&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/inout2.v:14:7: note: consumed here by &#39;hw.instance&#39;</pre>
+      <pre>   bi dut0(a[0], en);</pre>
+      <pre>      ^</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:37:09</dd></div>
-        <div><dt>time elapsed</dt><dd>0.032s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:07:51</dd></div>
+        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=parsing top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/utd-sv/utd-sv_scbuf_sig_buf.sv.html" target="file-frame">tests/generated/utd-sv/utd-sv_scbuf_sig_buf.sv</a> <a href="../../../../third_party/tests/utd-sv/scbuf_sig_buf.v.html" target="file-frame">third_party/tests/utd-sv/scbuf_sig_buf.v</a></pre>
+      <pre>+ <redacted-local-path> --parse-only -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/utd-sv/utd-sv_scbuf_sig_buf.sv.html" target="file-frame">tests/generated/utd-sv/utd-sv_scbuf_sig_buf.sv</a> <a href="../../../../third_party/tests/utd-sv/scbuf_sig_buf.v.html" target="file-frame">third_party/tests/utd-sv/scbuf_sig_buf.v</a></pre>
       <pre>module {</pre>
       <pre>  moore.module @scbuf_sig_buf(out scbuf_scdata_fbdecc_c4 : !moore.l624, out scbuf_dram_wr_data_r5 : !moore.l64, out scbuf_dram_data_vld_r5 : !moore.l1, out scbuf_dram_data_mecc_r5 : !moore.l1, out scbuf_sctag_ev_uerr_r5 : !moore.l1, out scbuf_sctag_ev_cerr_r5 : !moore.l1, in %scbuf_scdata_fbdecc_c4_pb : !moore.l624, in %scbuf_dram_wr_data_r5_pb : !moore.l64, in %scbuf_dram_data_vld_r5_pb : !moore.l1, in %scbuf_dram_data_mecc_r5_pb : !moore.l1, in %scbuf_sctag_ev_uerr_r5_pb : !moore.l1, in %scbuf_sctag_ev_cerr_r5_pb : !moore.l1) {</pre>
       <pre>    %scbuf_scdata_fbdecc_c4 = moore.net wire : &lt;l624&gt;</pre>

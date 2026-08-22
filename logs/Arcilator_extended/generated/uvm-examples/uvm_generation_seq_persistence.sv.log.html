@@ -37,9 +37,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:03:40</dd></div>
-        <div><dt>time elapsed</dt><dd>47.603s</dd></div>
-        <div><dt>ram usage</dt><dd>206884 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 06:35:41</dd></div>
+        <div><dt>time elapsed</dt><dd>56.706s</dd></div>
+        <div><dt>ram usage</dt><dd>207776 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -51,7 +51,7 @@
       <pre>[Arcilator policy] UVM heartbeat harness bound into top_tb (svtests_uvm_vcd_smoke: deterministic 16-tick time base; no design semantics change)</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=top_tb <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/bus_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/bus_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/dut.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/dut.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/bus_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/bus_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/sequence_library/bus_seq_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./sequence_library/bus_seq_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/tests/test_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./tests/test_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/top_tb.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/top_tb.sv</a> <a href="../../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-use-before-declare -D SVTESTS_UVM_BIND_MODULE=top_tb <a href="../../../../third_party/tests/uvm/src/uvm_pkg.sv.html" target="file-frame">third_party/tests/uvm/src/uvm_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/bus_if.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/bus_if.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/dut.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/dut.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/bus_agent_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/bus_agent_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/sequence_library/bus_seq_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./sequence_library/bus_seq_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/tests/test_lib_pkg.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./tests/test_lib_pkg.sv</a> <a href="../../../../third_party/tests/uvm-examples/uvm_generation_seq_persistence/common/top_tb.sv.html" target="file-frame">third_party/tests/uvm-examples/uvm_generation_seq_persistence/./common/top_tb.sv</a> <a href="../../../../tests/support/svtests_uvm_vcd_smoke.sv.html" target="file-frame">tests/support/svtests_uvm_vcd_smoke.sv</a></pre>
       <pre>../../../tests/support/svtests_uvm_vcd_smoke.sv:35:53: warning: output port &#39;svtests_vcd_smoke_counter&#39; has no connection [-Wunconnected-output-port]</pre>
       <pre>bind `SVTESTS_UVM_BIND_MODULE svtests_uvm_vcd_smoke svtests_uvm_vcd_smoke_inst();</pre>
       <pre>                                                    ^</pre>
@@ -185,7 +185,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=complete_transfer_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=complete_transfer_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787112217</pre>
+      <pre>+ __svtests_variant_t0=1787294138</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=complete_transfer_test</pre>

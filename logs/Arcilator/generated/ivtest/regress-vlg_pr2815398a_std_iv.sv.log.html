@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 04:44:57</dd></div>
-        <div><dt>time elapsed</dt><dd>6.741s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 07:16:07</dd></div>
+        <div><dt>time elapsed</dt><dd>6.412s</dd></div>
+        <div><dt>ram usage</dt><dd>202168 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -44,7 +44,7 @@
       <pre>[Arcilator] mode=simulation top=</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v</a></pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2815398a_std.v:65:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>      always @ (in[m] or dummy[m]) begin</pre>
       <pre>               ^</pre>
@@ -137,15 +137,15 @@
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;res&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %res = llhd.sig %11 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %res = llhd.sig %15 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %res = llhd.sig %14 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;in&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %in = llhd.sig %11 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre>          ^</pre>
-      <pre><redacted-local-path> note: see current operation: %in = llhd.sig %15 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %in = llhd.sig %14 : !hw.array&lt;8xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;dummy&#39; of type &#39;!hw.array&lt;7xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %dummy = llhd.sig %13 : !hw.array&lt;7xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>             ^</pre>
-      <pre><redacted-local-path> note: see current operation: %dummy = llhd.sig %16 : !hw.array&lt;7xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %dummy = llhd.sig %15 : !hw.array&lt;7xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>

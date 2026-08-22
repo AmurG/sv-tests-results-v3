@@ -32,14 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:59:19</dd></div>
-        <div><dt>time elapsed</dt><dd>0.029s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:15:27</dd></div>
+        <div><dt>time elapsed</dt><dd>0.026s</dd></div>
+        <div><dt>ram usage</dt><dd>18816 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> --parse-only -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv.html" target="file-frame">tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv</a> <a href="../../../../third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv.html" target="file-frame">third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv</a></pre>
+      <pre><redacted-local-path> --parse-only -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv.html" target="file-frame">tests/generated/projf-explore/hello_hello-nexys_I_projf_pwm.sv</a> <a href="../../../../third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv.html" target="file-frame">third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv</a></pre>
       <pre>../../../third_party/tests/projf-explore/hello/hello-nexys/I/pwm.sv:14:17: warning: variable &#39;cnt&#39; has a declaration initializer and is also written by an always_ff procedure; IEEE 1800-2023 9.2.2.2 gives the always_ff procedure exclusive write access, and other simulators reject this as a multiple-driver violation</pre>
       <pre>    logic [7:0] cnt = 8&#39;b0;</pre>
       <pre>                ^</pre>

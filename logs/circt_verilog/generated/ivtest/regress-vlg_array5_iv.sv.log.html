@@ -32,14 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:58:47</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:14:55</dd></div>
         <div><dt>time elapsed</dt><dd>0.024s</dd></div>
-        <div><dt>ram usage</dt><dd>13440 KB</dd></div>
+        <div><dt>ram usage</dt><dd>14336 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/array5.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/array5.v</a></pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/array5.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/array5.v</a></pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/array5.v:14:9: error: reference to non-constant variable &#39;m&#39; is not allowed in a constant expression</pre>
       <pre>   a[15*m:0] = 1; // causes error, but not sure if this is legal syntax</pre>
       <pre>        ^</pre>

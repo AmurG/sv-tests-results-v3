@@ -31,14 +31,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-19 05:53:15</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-21 08:08:57</dd></div>
+        <div><dt>time elapsed</dt><dd>0.026s</dd></div>
         <div><dt>ram usage</dt><dd>17024 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> --parse-only -I <redacted-local-path> --timescale=1ns/1ns --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../tests/chapter-21/21.4--readmemb.sv.html" target="file-frame">tests/chapter-21/21.4--readmemb.sv</a></pre>
+      <pre><redacted-local-path> --parse-only -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../tests/chapter-21/21.4--readmemb.sv.html" target="file-frame">tests/chapter-21/21.4--readmemb.sv</a></pre>
       <pre>module {</pre>
       <pre>  moore.module @top() {</pre>
       <pre>    %mem0 = moore.variable : &lt;uarray&lt;1024 x l32&gt;&gt;</pre>
@@ -46,8 +46,8 @@
       <pre>    %0 = moore.constant_string &#34;test0.mem&#34; : i72</pre>
       <pre>    %1 = moore.int_to_string %0 : i72</pre>
       <pre>    moore.procedure initial {</pre>
-      <pre>      %2 = moore.constant_string &#34;<redacted-local-path> : i952</pre>
-      <pre>      %3 = moore.int_to_string %2 : i952</pre>
+      <pre>      %2 = moore.constant_string &#34;<redacted-local-path> : i944</pre>
+      <pre>      %3 = moore.int_to_string %2 : i944</pre>
       <pre>      %4 = moore.read %fname0 : &lt;string&gt;</pre>
       <pre>      %5 = moore.readmem.open %4 search %3 {base = 2 : i32, elemBits = 32 : i64, finishAddr = 0 : i64, hasRange, leftIndex = 1023 : i64, rightIndex = 0 : i64, startAddr = 0 : i64}</pre>
       <pre>      cf.br ^bb1</pre>
