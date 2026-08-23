@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 07:13:29</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>16128 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 03:42:49</dd></div>
+        <div><dt>time elapsed</dt><dd>0.035s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,9 +45,14 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3296466c.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v:12:6: error: unsupported instance of primitive `tran`</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v:12:6: error: tran endpoint has a user this resolution cannot claim (multi-switch networks, delayed or sliced drivers, and instance connections are not supported)</pre>
       <pre>tran t[1:0](a, b);</pre>
       <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v:12:6: note: see current operation: &#34;moore.tran&#34;(%30, %35) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l2&gt;, !moore.ref&lt;l2&gt;) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v:12:6: error: failed to legalize operation &#39;moore.tran&#39;: &#34;moore.tran&#34;(%30, %35) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l2&gt;, !moore.ref&lt;l2&gt;) -&gt; ()</pre>
+      <pre>tran t[1:0](a, b);</pre>
+      <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466c.v:12:6: note: see current operation: &#34;moore.tran&#34;(%30, %35) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l2&gt;, !moore.ref&lt;l2&gt;) -&gt; ()</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

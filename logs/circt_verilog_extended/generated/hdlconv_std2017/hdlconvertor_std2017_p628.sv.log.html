@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 08:14:07</dd></div>
-        <div><dt>time elapsed</dt><dd>0.025s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 04:42:59</dd></div>
+        <div><dt>time elapsed</dt><dd>0.026s</dd></div>
         <div><dt>ram usage</dt><dd>18816 KB</dd></div>
       </dl>
     </section>
@@ -81,8 +81,8 @@
       <pre>      %28 = moore.fmt.literal &#34;pd strength value is &#34;</pre>
       <pre>      %29 = moore.read %pd : &lt;l1&gt;</pre>
       <pre>      %30 = moore.fmt.literal &#34;St&#34;</pre>
-      <pre>      %31 = moore.extract %29 from 0 : l1 -&gt; i1</pre>
-      <pre>      %32 = moore.fmt.int binary %31, align right, pad zero width 1 : i1</pre>
+      <pre>      %31 = moore.extract %29 from 0 : l1 -&gt; l1</pre>
+      <pre>      %32 = moore.fmt.int binary %31, align right, pad zero width 1 : l1</pre>
       <pre>      %33 = moore.fmt.literal &#34;\0A&#34;</pre>
       <pre>      %34 = moore.fmt.concat (%28, %30, %32, %33)</pre>
       <pre>      moore.builtin.display %34</pre>

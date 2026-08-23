@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 07:26:44</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 03:55:51</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,9 +45,15 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2937417c.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v:11:8: error: unsupported instance of primitive `tran`</pre>
+      <pre>&lt;unknown&gt;:0: warning: in top: x/z literal &#39;z&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v:11:8: error: tran endpoint has a user this resolution cannot claim (multi-switch networks, delayed or sliced drivers, and instance connections are not supported)</pre>
       <pre>  tran (x, y);</pre>
       <pre>       ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v:11:8: note: see current operation: &#34;moore.tran&#34;(%34, %39) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v:5:25: error: failed to legalize operation &#39;moore.assign&#39;: &#34;moore.assign&#34;(%34, %56) {moore.strength0 = 3 : i32, moore.strength1 = 3 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>  assign (weak1, weak0) x = (a === 1&#39;b1) ? 1&#39;b0 : 1&#39;b1;</pre>
+      <pre>                        ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2937417c.v:5:25: note: see current operation: &#34;moore.assign&#34;(%34, %56) {moore.strength0 = 3 : i32, moore.strength1 = 3 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

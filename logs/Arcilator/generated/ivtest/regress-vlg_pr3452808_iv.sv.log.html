@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 07:36:15</dd></div>
-        <div><dt>time elapsed</dt><dd>0.034s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 04:05:32</dd></div>
+        <div><dt>time elapsed</dt><dd>0.038s</dd></div>
+        <div><dt>ram usage</dt><dd>21504 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -93,9 +93,14 @@
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:73:18: remark: driven here</pre>
       <pre>   dut u_d1 (pp, nn);</pre>
       <pre>                 ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:34:29: error: primitive instances with explicit drive strengths are not supported.</pre>
-      <pre>   not (strong0, pull1) #16 not1 (op, in1);</pre>
-      <pre>                            ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:42:12: error: drive strength through a module inout port boundary is not supported</pre>
+      <pre>   dtl_inv u_p1</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:42:12: note: see current operation: &#34;moore.assign&#34;(&lt;&lt;UNKNOWN SSA VALUE&gt;&gt;, %3) {moore.strength0 = 6 : i32, moore.strength1 = 5 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:42:12: error: failed to legalize operation &#39;moore.assign&#39;: &#34;moore.assign&#34;(&lt;&lt;UNKNOWN SSA VALUE&gt;&gt;, %3) {moore.strength0 = 6 : i32, moore.strength1 = 5 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>   dtl_inv u_p1</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3452808.v:42:12: note: see current operation: &#34;moore.assign&#34;(&lt;&lt;UNKNOWN SSA VALUE&gt;&gt;, %3) {moore.strength0 = 6 : i32, moore.strength1 = 5 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 07:08:42</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 03:38:21</dd></div>
+        <div><dt>time elapsed</dt><dd>0.035s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,9 +45,14 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3296466d.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v:11:6: error: unsupported instance of primitive `tran`</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v:11:6: error: tran endpoint is not a same-scope net; this switch network shape is not supported</pre>
       <pre>tran t1(a[0], a[1]);</pre>
       <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v:11:6: note: see current operation: &#34;moore.tran&#34;(%38, %52) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v:11:6: error: failed to legalize operation &#39;moore.tran&#39;: &#34;moore.tran&#34;(%38, %52) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>tran t1(a[0], a[1]);</pre>
+      <pre>     ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466d.v:11:6: note: see current operation: &#34;moore.tran&#34;(%38, %52) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 07:37:32</dd></div>
-        <div><dt>time elapsed</dt><dd>0.030s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 04:06:49</dd></div>
+        <div><dt>time elapsed</dt><dd>0.037s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,9 +45,15 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr2832234.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v:21:18: error: primitive instances with explicit drive strengths are not supported.</pre>
+      <pre>&lt;unknown&gt;:0: warning: in top: x/z literal &#39;z&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v:23:11: error: tran endpoint with a net declaration assignment is not supported</pre>
+      <pre>  tranif0 q1(y1, y2, ctl);</pre>
+      <pre>          ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v:23:11: note: see current operation: &#34;moore.tran&#34;(%43, %49, %63) &lt;{kind = &#34;tranif0&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v:21:18: error: failed to legalize operation &#39;moore.assign&#39;: &#34;moore.assign&#34;(%49, %13) {moore.pull = &#34;up&#34;, moore.strength0 = 5 : i32, moore.strength1 = 3 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>  pullup (weak1) (y2);</pre>
       <pre>                 ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr2832234.v:21:18: note: see current operation: &#34;moore.assign&#34;(%49, %13) {moore.pull = &#34;up&#34;, moore.strength0 = 5 : i32, moore.strength1 = 3 : i32} : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

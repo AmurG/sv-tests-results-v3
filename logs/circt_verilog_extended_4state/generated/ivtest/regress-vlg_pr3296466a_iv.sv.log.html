@@ -32,17 +32,22 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-21 08:14:45</dd></div>
-        <div><dt>time elapsed</dt><dd>0.030s</dd></div>
-        <div><dt>ram usage</dt><dd>16128 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-22 04:43:36</dd></div>
+        <div><dt>time elapsed</dt><dd>0.034s</dd></div>
+        <div><dt>ram usage</dt><dd>22400 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/pr3296466a.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v:9:5: error: unsupported instance of primitive `tran`</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v:9:5: error: tran endpoint is not a same-scope net; this switch network shape is not supported</pre>
       <pre>tran(a[0], a[1]);</pre>
       <pre>    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v:9:5: note: see current operation: &#34;moore.tran&#34;(%22, %36) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v:9:5: error: failed to legalize operation &#39;moore.tran&#39;: &#34;moore.tran&#34;(%22, %36) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
+      <pre>tran(a[0], a[1]);</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pr3296466a.v:9:5: note: see current operation: &#34;moore.tran&#34;(%22, %36) &lt;{kind = &#34;tran&#34;}&gt; : (!moore.ref&lt;l1&gt;, !moore.ref&lt;l1&gt;) -&gt; ()</pre>
       <pre></pre>
     </section>
   </body>
