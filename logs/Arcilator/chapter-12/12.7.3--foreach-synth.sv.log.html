@@ -31,8 +31,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-24 22:15:58</dd></div>
-        <div><dt>time elapsed</dt><dd>0.055s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 08:48:38</dd></div>
+        <div><dt>time elapsed</dt><dd>0.099s</dd></div>
         <div><dt>ram usage</dt><dd>30464 KB</dd></div>
       </dl>
     </section>
@@ -47,6 +47,9 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;copy&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i16, unknown: i16&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %copy = llhd.sig %6 : !hw.array&lt;4xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
+      <pre>            ^</pre>
       <pre></pre>
     </section>
   </body>

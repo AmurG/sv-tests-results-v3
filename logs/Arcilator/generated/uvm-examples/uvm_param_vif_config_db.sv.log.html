@@ -41,9 +41,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-24 22:31:40</dd></div>
-        <div><dt>time elapsed</dt><dd>331.656s</dd></div>
-        <div><dt>ram usage</dt><dd>366732 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 09:03:52</dd></div>
+        <div><dt>time elapsed</dt><dd>314.783s</dd></div>
+        <div><dt>ram usage</dt><dd>366492 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -142,7 +142,6 @@
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;dut/mem&#39; of type &#39;!hw.array&lt;65536xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %mem = llhd.sig %8 : !hw.array&lt;65536xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %dut2Fmem = llhd.sig name &#34;dut/mem&#34; %21 : !hw.array&lt;65536xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -223,7 +222,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787610558</pre>
+      <pre>+ __svtests_variant_t0=1787648500</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=sfr_test</pre>
@@ -268,8 +267,8 @@
       <pre></pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 142</pre>
-      <pre>[Arcilator] simvariant 1/1 wall 142s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 132</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 132s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

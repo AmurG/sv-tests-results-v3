@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
+    <header class="test-passed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>circt-verilog</h1></a>
         <h2>regress-sv_br_gh1223c_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,17 +32,14 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 00:14:06</dd></div>
-        <div><dt>time elapsed</dt><dd>0.031s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 10:47:28</dd></div>
+        <div><dt>time elapsed</dt><dd>0.052s</dd></div>
+        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
       <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/br_gh1223c.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/br_gh1223c.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/br_gh1223c.v:8:8: error: unsupported primitive `rpmos`</pre>
-      <pre>  rpmos(out_rpm, inr, ctrl);</pre>
-      <pre>       ^</pre>
       <pre></pre>
     </section>
   </body>

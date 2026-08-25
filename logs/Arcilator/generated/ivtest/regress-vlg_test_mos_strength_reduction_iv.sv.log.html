@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-24 23:58:27</dd></div>
-        <div><dt>time elapsed</dt><dd>0.033s</dd></div>
-        <div><dt>ram usage</dt><dd>17024 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 10:31:14</dd></div>
+        <div><dt>time elapsed</dt><dd>6.637s</dd></div>
+        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,10 +45,202 @@
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
       <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/tools/icarus/ivtest/ivltests/test_mos_strength_reduction.v.html" target="file-frame">third_party/tools/icarus/ivtest/ivltests/test_mos_strength_reduction.v</a></pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/test_mos_strength_reduction.v:143:7: error: unsupported primitive `rnmos`</pre>
-      <pre>rnmos rn_0 (n1,gnd,c0);</pre>
-      <pre>      ^</pre>
-      <pre>+ exit 1</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/test_mos_strength_reduction.v:19:8: warning: honest x-init: tristate output-port readback with a non-whole-net instance connection (the child reads its own drivers only) keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
+      <pre>module rpull ( i, o);</pre>
+      <pre>       ^</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/test_mos_strength_reduction.v:19:8: note: see current operation: </pre>
+      <pre>moore.module private @rpull(in %i : !moore.l1, out o : !moore.l1) {</pre>
+      <pre>  %0 = moore.constant_time 1000000 fs</pre>
+      <pre>  %1 = moore.constant 1 : l1</pre>
+      <pre>  %2 = moore.constant 0 : l1</pre>
+      <pre>  %i_0 = moore.net name &#34;i&#34; wire : &lt;l1&gt;</pre>
+      <pre>  %o = moore.net wire : &lt;l1&gt;</pre>
+      <pre>  %gnd = moore.assigned_variable %2 : l1</pre>
+      <pre>  %vdd = moore.assigned_variable %1 : l1</pre>
+      <pre>  %pu0 = moore.assigned_variable %2 : l1</pre>
+      <pre>  %pu1 = moore.assigned_variable %1 : l1</pre>
+      <pre>  %failed = moore.variable : &lt;l1&gt;</pre>
+      <pre>  %3 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>  %4 = moore.switch_leg %2, %3 {kind = &#34;nmos&#34;} : l1, l1</pre>
+      <pre>  moore.assign %o, %4 {moore.strength0 = 5 : i32, moore.strength1 = 5 : i32} : l1</pre>
+      <pre>  %5 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>  %6 = moore.switch_leg %1, %5 {kind = &#34;pmos&#34;} : l1, l1</pre>
+      <pre>  moore.assign %o, %6 {moore.strength0 = 5 : i32, moore.strength1 = 5 : i32} : l1</pre>
+      <pre>  moore.procedure initial {</pre>
+      <pre>    moore.wait_delay %0</pre>
+      <pre>    moore.blocking_assign %failed, %2 : l1</pre>
+      <pre>    %8 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>    %9 = moore.case_eq %8, %1 : l1</pre>
+      <pre>    %10 = moore.to_builtin_int %9 : i1</pre>
+      <pre>    cf.cond_br %10, ^bb1, ^bb7</pre>
+      <pre>  ^bb1:  // pred: ^bb0</pre>
+      <pre>    %11 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>    %12 = moore.case_eq %11, %2 : l1</pre>
+      <pre>    %13 = moore.not %12 : i1</pre>
+      <pre>    %14 = moore.to_builtin_int %13 : i1</pre>
+      <pre>    cf.cond_br %14, ^bb2, ^bb3</pre>
+      <pre>  ^bb2:  // pred: ^bb1</pre>
+      <pre>    %15 = moore.fmt.literal &#34;FAILED: test_mos_strength_reduction:  case pull i:&#34;</pre>
+      <pre>    %16 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>    %17 = moore.fmt.int decimal %16, align right, pad space : l1</pre>
+      <pre>    %18 = moore.fmt.literal &#34; o:&#34;</pre>
+      <pre>    %19 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>    %20 = moore.fmt.int decimal %19, align right, pad space : l1</pre>
+      <pre>    %21 = moore.fmt.literal &#34; pu0:&#34;</pre>
+      <pre>    %22 = moore.fmt.int decimal %2, align right, pad space : l1</pre>
+      <pre>    %23 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>    %24 = moore.fmt.concat (%15, %17, %18, %20, %21, %22, %23)</pre>
+      <pre>    moore.builtin.display %24</pre>
+      <pre>    moore.blocking_assign %failed, %1 : l1</pre>
+      <pre>    cf.br ^bb7</pre>
+      <pre>  ^bb3:  // pred: ^bb1</pre>
+      <pre>    %25 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>    %26 = moore.case_eq %25, %2 : l1</pre>
+      <pre>    %27 = moore.to_builtin_int %26 : i1</pre>
+      <pre>    cf.cond_br %27, ^bb4, ^bb7</pre>
+      <pre>  ^bb4:  // pred: ^bb3</pre>
+      <pre>    %28 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>    %29 = moore.case_eq %28, %1 : l1</pre>
+      <pre>    %30 = moore.not %29 : i1</pre>
+      <pre>    %31 = moore.to_builtin_int %30 : i1</pre>
+      <pre>    cf.cond_br %31, ^bb5, ^bb6</pre>
+      <pre>  ^bb5:  // pred: ^bb4</pre>
+      <pre>    %32 = moore.fmt.literal &#34;FAILED: test_mos_strength_reduction:  case pull i:&#34;</pre>
+      <pre>    %33 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>    %34 = moore.fmt.int decimal %33, align right, pad space : l1</pre>
+      <pre>    %35 = moore.fmt.literal &#34; o:&#34;</pre>
+      <pre>    %36 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>    %37 = moore.fmt.int decimal %36, align right, pad space : l1</pre>
+      <pre>    %38 = moore.fmt.literal &#34; pu0:&#34;</pre>
+      <pre>    %39 = moore.fmt.int decimal %2, align right, pad space : l1</pre>
+      <pre>    %40 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>    %41 = moore.fmt.concat (%32, %34, %35, %37, %38, %39, %40)</pre>
+      <pre>    moore.builtin.display %41</pre>
+      <pre>    moore.blocking_assign %failed, %1 : l1</pre>
+      <pre>    cf.br ^bb7</pre>
+      <pre>  ^bb6:  // pred: ^bb4</pre>
+      <pre>    %42 = moore.fmt.literal &#34;FAILED: test_mos_strength_reduction:  case pull i:&#34;</pre>
+      <pre>    %43 = moore.read %i_0 : &lt;l1&gt;</pre>
+      <pre>    %44 = moore.fmt.int decimal %43, align right, pad space : l1</pre>
+      <pre>    %45 = moore.fmt.literal &#34; o:&#34;</pre>
+      <pre>    %46 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>    %47 = moore.fmt.int decimal %46, align right, pad space : l1</pre>
+      <pre>    %48 = moore.fmt.literal &#34; pu0:&#34;</pre>
+      <pre>    %49 = moore.fmt.int decimal %2, align right, pad space : l1</pre>
+      <pre>    %50 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>    %51 = moore.fmt.concat (%42, %44, %45, %47, %48, %49, %50)</pre>
+      <pre>    moore.builtin.display %51</pre>
+      <pre>    moore.blocking_assign %failed, %1 : l1</pre>
+      <pre>    cf.br ^bb7</pre>
+      <pre>  ^bb7:  // 5 preds: ^bb0, ^bb2, ^bb3, ^bb5, ^bb6</pre>
+      <pre>    %52 = moore.read %failed : &lt;l1&gt;</pre>
+      <pre>    %53 = moore.not %52 : l1</pre>
+      <pre>    %54 = moore.logic_to_int %53 : l1</pre>
+      <pre>    %55 = moore.to_builtin_int %54 : i1</pre>
+      <pre>    cf.cond_br %55, ^bb8, ^bb9</pre>
+      <pre>  ^bb8:  // pred: ^bb7</pre>
+      <pre>    %56 = moore.fmt.literal &#34;PASSED&#34;</pre>
+      <pre>    %57 = moore.fmt.literal &#34;\0A&#34;</pre>
+      <pre>    %58 = moore.fmt.concat (%56, %57)</pre>
+      <pre>    moore.builtin.display %58</pre>
+      <pre>    cf.br ^bb9</pre>
+      <pre>  ^bb9:  // 2 preds: ^bb7, ^bb8</pre>
+      <pre>    moore.return</pre>
+      <pre>  }</pre>
+      <pre>  moore.assign %i_0, %i : l1</pre>
+      <pre>  %7 = moore.read %o : &lt;l1&gt;</pre>
+      <pre>  moore.output %7 : !moore.l1</pre>
+      <pre>}</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
+      <pre>[Arcilator] arc lower-to-llvm stage</pre>
+      <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre>+ echo [Arcilator] header-gen stage</pre>
+      <pre>[Arcilator] header-gen stage</pre>
+      <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
+      <pre>+ echo [Arcilator] gen-driver stage</pre>
+      <pre>[Arcilator] gen-driver stage</pre>
+      <pre>+ python3 <a href="../../../../tools/arcilator_gen_driver.py.html" target="file-frame">tools/arcilator_gen_driver.py</a> <redacted-local-path> <redacted-local-path>  128 2 1 10 regress-vlg_test_mos_strength_reduction_iv ivtest <redacted-local-path> [] 0</pre>
+      <pre>+ echo [Arcilator] llc stage</pre>
+      <pre>[Arcilator] llc stage</pre>
+      <pre>+ <redacted-local-path> -O0 --filetype=obj <redacted-local-path> -o <redacted-local-path></pre>
+      <pre>+ echo [Arcilator] driver link stage</pre>
+      <pre>[Arcilator] driver link stage</pre>
+      <pre>+ /usr/bin/clang++ -std=c++17 -O1 <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> <redacted-local-path> -I<redacted-local-path> -I<redacted-local-path> -o <redacted-local-path> -no-pie -latomic -lz -ltinfo</pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre>In file included from <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: &#39;renderScalarI64&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string renderScalarI64(int64_t v) {</pre>
+      <pre>                   ^</pre>
+      <pre><redacted-local-path> warning: &#39;configDbJoinPath&#39; has C-linkage specified, but returns user-defined type &#39;std::string&#39; (aka &#39;basic_string&lt;char&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::string configDbJoinPath(const char *cntxtPath, const char *inst) {</pre>
+      <pre>                   ^</pre>
+      <pre><redacted-local-path> warning: &#39;makeI32&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI32(int32_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;makeI64&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeI64(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;makeStr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makeStr(const char *v) {</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;makePtr&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value makePtr(int64_t v) {</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;mailboxTake&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::Value&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline circt_uvm_rt::Value mailboxTake(void *mbx, bool pop, bool blocking,</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;objRngs&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, ObjRng&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, ObjRng&gt; &amp;objRngs() {</pre>
+      <pre>                                 ^</pre>
+      <pre><redacted-local-path> warning: &#39;objRng&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::ObjRng &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline ObjRng &amp;objRng(void *obj) {</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> warning: &#39;randcStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;&#39; (aka &#39;map&lt;pair&lt;void *, int&gt;, circt_uvm_rt::RandCState&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;std::pair&lt;void *, int32_t&gt;, RandCState&gt; &amp;randcStates() {</pre>
+      <pre>                                                         ^</pre>
+      <pre><redacted-local-path> warning: &#39;randModeStates&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;void *, RandModeState&gt; &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;void *, RandModeState&gt; &amp;randModeStates() {</pre>
+      <pre>                                        ^</pre>
+      <pre><redacted-local-path> warning: &#39;signedBegin&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;std::string, std::string&gt;::iterator&#39; (aka &#39;_Rb_tree_iterator&lt;std::pair&lt;const std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;&gt;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>signedBegin(std::map&lt;std::string, std::string&gt; &amp;items) {</pre>
+      <pre>^</pre>
+      <pre><redacted-local-path> warning: &#39;currentSvScope&#39; has C-linkage specified, but returns user-defined type &#39;const char *&amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline const char *&amp;currentSvScope() {</pre>
+      <pre>                    ^</pre>
+      <pre><redacted-local-path> warning: &#39;covTypes&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, CovType&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::CovType&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, CovType&gt; &amp;covTypes() {</pre>
+      <pre>                                   ^</pre>
+      <pre><redacted-local-path> warning: &#39;covTypeFor&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::CovType &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline CovType &amp;covTypeFor(int32_t id, const char *desc) {</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;state() {</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline int &amp;assertFailCount() {</pre>
+      <pre>            ^</pre>
+      <pre><redacted-local-path> warning: &#39;freadMemStash&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int64_t, uint64_t&gt; &amp;&#39; (aka &#39;map&lt;long, unsigned long&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int64_t, uint64_t&gt; &amp;freadMemStash() {</pre>
+      <pre>                                    ^</pre>
+      <pre><redacted-local-path> warning: &#39;stochasticQueues&#39; has C-linkage specified, but returns user-defined type &#39;std::map&lt;int32_t, StochasticQueue&gt; &amp;&#39; (aka &#39;map&lt;int, circt_uvm_rt::StochasticQueue&gt; &amp;&#39;) which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline std::map&lt;int32_t, StochasticQueue&gt; &amp;stochasticQueues() {</pre>
+      <pre>                                           ^</pre>
+      <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline SchedStats &amp;schedStats() {</pre>
+      <pre>                   ^</pre>
+      <pre>20 warnings generated.</pre>
+      <pre>+ echo [Arcilator] native run stage</pre>
+      <pre>[Arcilator] native run stage</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path></pre>
+      <pre>PASSED</pre>
+      <pre>PASSED: test_mos_strength_reduction:  case rweak</pre>
+      <pre>PASSED: test_mos_strength_reduction</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 8, sim time 17000000 fs; natural end of simulation</pre>
+      <pre></pre>
+      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

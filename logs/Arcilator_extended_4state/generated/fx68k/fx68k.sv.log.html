@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
+    <header class="test-passed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>fx68k</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full fx68k core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>fx68k</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-24 22:50:56</dd></div>
-        <div><dt>time elapsed</dt><dd>0.206s</dd></div>
-        <div><dt>ram usage</dt><dd>17920 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 09:23:10</dd></div>
+        <div><dt>time elapsed</dt><dd>10.597s</dd></div>
+        <div><dt>ram usage</dt><dd>68184 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -45,10 +45,158 @@
       <pre>[Arcilator] mode=elaboration top=fx68kTop</pre>
       <pre>+ echo [Arcilator] CIRCT frontend stage</pre>
       <pre>[Arcilator] CIRCT frontend stage</pre>
-      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --top=fx68kTop <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
-      <pre>error: &#39;fx68kTop&#39; is not a valid top-level module</pre>
-      <pre>&lt;unknown&gt;:0: error: &#39;fx68kTop&#39; is not a valid top-level module</pre>
-      <pre>+ exit 1</pre>
+      <pre>+ <redacted-local-path> -o <redacted-local-path> -I <redacted-local-path> -D UVM_NO_DPI --timescale=1ns/1ns --single-unit --ignore-timing-annotations -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-dup-initial-drivers -D FX68K_TEST --top=fx68kTop <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2692:15: warning: input port &#39;HALTn&#39; has no connection [-Wunconnected-input-port]</pre>
+      <pre>        fx68k fx68k( .clk( clk32),</pre>
+      <pre>              ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2692:8: warning: input port &#39;HALTn&#39; has no connection [-Wunconnected-input-port]</pre>
+      <pre>        fx68k fx68k( .clk( clk32),</pre>
+      <pre>              ^</pre>
+      <pre>&lt;unknown&gt;:0: warning: in excUnit: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in sequencer: x/z literal &#39;xx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in microToNanoAddr: x/z literal &#39;xxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in fx68kAlu: x/z literal &#39;xxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in aluGetOp: x/z literal &#39;xxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in ccrTable: x/z literal &#39;xxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in pla_lined: x/z literal &#39;xxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:185:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:214:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:260:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:318:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:385:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:400:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:422:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:482:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:506:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:563:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin                            </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:607:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:738:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:896:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1297:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1400:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1460:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1507:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1521:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1555:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1624:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1641:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1653:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1730:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1773:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2113:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2167:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2244:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2307:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2356:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2429:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2436:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2477:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2488:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2678:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always @( posedge clk32) begin</pre>
+      <pre>                  ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:123:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:178:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk)</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:421:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>+ echo [Arcilator] Arcilator backend stage</pre>
+      <pre>[Arcilator] Arcilator backend stage</pre>
+      <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/nanoRom/nRam&#39; of type &#39;!hw.array&lt;336xstruct&lt;value: i68, unknown: i68&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %nRam = llhd.sig %5 : !hw.array&lt;336xstruct&lt;value: i68, unknown: i68&gt;&gt;</pre>
+      <pre>            ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/uRom/uRam&#39; of type &#39;!hw.array&lt;1024xstruct&lt;value: i17, unknown: i17&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %uRam = llhd.sig %5 : !hw.array&lt;1024xstruct&lt;value: i17, unknown: i17&gt;&gt;</pre>
+      <pre>            ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/uaddrDecode/pla_lined/arA1&#39; of type &#39;!hw.array&lt;16xstruct&lt;value: i10, unknown: i10&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %arA1 = llhd.sig %193 : !hw.array&lt;16xstruct&lt;value: i10, unknown: i10&gt;&gt;</pre>
+      <pre>            ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/uaddrDecode/pla_lined/arA23&#39; of type &#39;!hw.array&lt;16xstruct&lt;value: i10, unknown: i10&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %arA23 = llhd.sig %193 : !hw.array&lt;16xstruct&lt;value: i10, unknown: i10&gt;&gt;</pre>
+      <pre>             ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/excUnit/regs68L&#39; of type &#39;!hw.array&lt;18xstruct&lt;value: i16, unknown: i16&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %regs68L = llhd.sig %25 : !hw.array&lt;18xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/excUnit/regs68H&#39; of type &#39;!hw.array&lt;18xstruct&lt;value: i16, unknown: i16&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %regs68H = llhd.sig %25 : !hw.array&lt;18xstruct&lt;value: i16, unknown: i16&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/irdDecode/Irdecod&#39; of type &#39;!hw.struct&lt;isPcRel: !hw.struct&lt;value: i1, unknown: i1&gt;, isTas: !hw.struct&lt;value: i1, unknown: i1&gt;, implicitSp: !hw.struct&lt;value: i1, unknown: i1&gt;, toCcr: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsDt: !hw.struct&lt;value: i1, unknown: i1&gt;, ryIsDt: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsUsp: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsMovem: !hw.struct&lt;value: i1, unknown: i1&gt;, movemPreDecr: !hw.struct&lt;value: i1, unknown: i1&gt;, isByte: !hw.struct&lt;value: i1, unknown: i1&gt;, isMovep: !hw.struct&lt;value: i1, unknown: i1&gt;, rx: !hw.struct&lt;value: i3, unknown: i3&gt;, ry: !hw.struct&lt;value: i3, unknown: i3&gt;, rxIsAreg: !hw.struct&lt;value: i1, unknown: i1&gt;, ryIsAreg: !hw.struct&lt;value: i1, unknown: i1&gt;, ftuConst: !hw.struct&lt;value: i16, unknown: i16&gt;, macroTvn: !hw.struct&lt;value: i6, unknown: i6&gt;, inhibitCcr: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %Irdecod = llhd.sig %14 : !hw.struct&lt;isPcRel: !hw.struct&lt;value: i1, unknown: i1&gt;, isTas: !hw.struct&lt;value: i1, unknown: i1&gt;, implicitSp: !hw.struct&lt;value: i1, unknown: i1&gt;, toCcr: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsDt: !hw.struct&lt;value: i1, unknown: i1&gt;, ryIsDt: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsUsp: !hw.struct&lt;value: i1, unknown: i1&gt;, rxIsMovem: !hw.struct&lt;value: i1, unknown: i1&gt;, movemPreDecr: !hw.struct&lt;value: i1, unknown: i1&gt;, isByte: !hw.struct&lt;value: i1, unknown: i1&gt;, isMovep: !hw.struct&lt;value: i1, unknown: i1&gt;, rx: !hw.struct&lt;value: i3, unknown: i3&gt;, ry: !hw.struct&lt;value: i3, unknown: i3&gt;, rxIsAreg: !hw.struct&lt;value: i1, unknown: i1&gt;, ryIsAreg: !hw.struct&lt;value: i1, unknown: i1&gt;, ftuConst: !hw.struct&lt;value: i16, unknown: i16&gt;, macroTvn: !hw.struct&lt;value: i6, unknown: i6&gt;, inhibitCcr: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;fx68k/nDecoder/Nanod&#39; of type &#39;!hw.struct&lt;permStart: !hw.struct&lt;value: i1, unknown: i1&gt;, waitBusFinish: !hw.struct&lt;value: i1, unknown: i1&gt;, isWrite: !hw.struct&lt;value: i1, unknown: i1&gt;, busByte: !hw.struct&lt;value: i1, unknown: i1&gt;, isRmc: !hw.struct&lt;value: i1, unknown: i1&gt;, noLowByte: !hw.struct&lt;value: i1, unknown: i1&gt;, noHighByte: !hw.struct&lt;value: i1, unknown: i1&gt;, updTpend: !hw.struct&lt;value: i1, unknown: i1&gt;, clrTpend: !hw.struct&lt;value: i1, unknown: i1&gt;, tvn2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, const2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Abl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2Pren: !hw.struct&lt;value: i1, unknown: i1&gt;, updPren: !hw.struct&lt;value: i1, unknown: i1&gt;, inl2psw: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Sr: !hw.struct&lt;value: i1, unknown: i1&gt;, sr2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Ccr: !hw.struct&lt;value: i1, unknown: i1&gt;, pswIToFtu: !hw.struct&lt;value: i1, unknown: i1&gt;, ird2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ssw2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, initST: !hw.struct&lt;value: i1, unknown: i1&gt;, Ir2Ird: !hw.struct&lt;value: i1, unknown: i1&gt;, auClkEn: !hw.struct&lt;value: i1, unknown: i1&gt;, noSpAlign: !hw.struct&lt;value: i1, unknown: i1&gt;, auCntrl: !hw.struct&lt;value: i3, unknown: i3&gt;, todbin: !hw.struct&lt;value: i1, unknown: i1&gt;, toIrc: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2Atl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2Atl: !hw.struct&lt;value: i1, unknown: i1&gt;, atl2Abl: !hw.struct&lt;value: i1, unknown: i1&gt;, atl2Dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2Ath: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2Ath: !hw.struct&lt;value: i1, unknown: i1&gt;, ath2Dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ath2Abh: !hw.struct&lt;value: i1, unknown: i1&gt;, db2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, ab2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, aob2Ab: !hw.struct&lt;value: i1, unknown: i1&gt;, updSsw: !hw.struct&lt;value: i1, unknown: i1&gt;, dobCtrl: !hw.struct&lt;value: i2, unknown: i2&gt;, abh2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2abl: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ssp: !hw.struct&lt;value: i1, unknown: i1&gt;, pchdbh: !hw.struct&lt;value: i1, unknown: i1&gt;, pcldbl: !hw.struct&lt;value: i1, unknown: i1&gt;, pclabl: !hw.struct&lt;value: i1, unknown: i1&gt;, pchabh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxh2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxh2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2rxl: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2rxh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxl2db: !hw.struct&lt;value: i1, unknown: i1&gt;, rxl2ab: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2rxl: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2rxh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2ryh: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2ryh: !hw.struct&lt;value: i1, unknown: i1&gt;, ryl2db: !hw.struct&lt;value: i1, unknown: i1&gt;, ryl2ab: !hw.struct&lt;value: i1, unknown: i1&gt;, ryh2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ryh2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2ryl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2ryl: !hw.struct&lt;value: i1, unknown: i1&gt;, rz: !hw.struct&lt;value: i1, unknown: i1&gt;, rxlDbl: !hw.struct&lt;value: i1, unknown: i1&gt;, aluColumn: !hw.struct&lt;value: i3, unknown: i3&gt;, aluDctrl: !hw.struct&lt;value: i2, unknown: i2&gt;, aluActrl: !hw.struct&lt;value: i1, unknown: i1&gt;, aluInit: !hw.struct&lt;value: i1, unknown: i1&gt;, aluFinish: !hw.struct&lt;value: i1, unknown: i1&gt;, abd2Dcr: !hw.struct&lt;value: i1, unknown: i1&gt;, dcr2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbd2Alue: !hw.struct&lt;value: i1, unknown: i1&gt;, alue2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbd2Alub: !hw.struct&lt;value: i1, unknown: i1&gt;, abd2Alub: !hw.struct&lt;value: i1, unknown: i1&gt;, alu2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, alu2Abd: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Db: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Ab: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Pc: !hw.struct&lt;value: i1, unknown: i1&gt;, dbin2Abd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbin2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, extDbh: !hw.struct&lt;value: i1, unknown: i1&gt;, extAbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ablAbd: !hw.struct&lt;value: i1, unknown: i1&gt;, ablAbh: !hw.struct&lt;value: i1, unknown: i1&gt;, dblDbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dblDbh: !hw.struct&lt;value: i1, unknown: i1&gt;, abdIsByte: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %Nanod = llhd.sig %6 : !hw.struct&lt;permStart: !hw.struct&lt;value: i1, unknown: i1&gt;, waitBusFinish: !hw.struct&lt;value: i1, unknown: i1&gt;, isWrite: !hw.struct&lt;value: i1, unknown: i1&gt;, busByte: !hw.struct&lt;value: i1, unknown: i1&gt;, isRmc: !hw.struct&lt;value: i1, unknown: i1&gt;, noLowByte: !hw.struct&lt;value: i1, unknown: i1&gt;, noHighByte: !hw.struct&lt;value: i1, unknown: i1&gt;, updTpend: !hw.struct&lt;value: i1, unknown: i1&gt;, clrTpend: !hw.struct&lt;value: i1, unknown: i1&gt;, tvn2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, const2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Abl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2Pren: !hw.struct&lt;value: i1, unknown: i1&gt;, updPren: !hw.struct&lt;value: i1, unknown: i1&gt;, inl2psw: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Sr: !hw.struct&lt;value: i1, unknown: i1&gt;, sr2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ftu2Ccr: !hw.struct&lt;value: i1, unknown: i1&gt;, pswIToFtu: !hw.struct&lt;value: i1, unknown: i1&gt;, ird2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, ssw2Ftu: !hw.struct&lt;value: i1, unknown: i1&gt;, initST: !hw.struct&lt;value: i1, unknown: i1&gt;, Ir2Ird: !hw.struct&lt;value: i1, unknown: i1&gt;, auClkEn: !hw.struct&lt;value: i1, unknown: i1&gt;, noSpAlign: !hw.struct&lt;value: i1, unknown: i1&gt;, auCntrl: !hw.struct&lt;value: i3, unknown: i3&gt;, todbin: !hw.struct&lt;value: i1, unknown: i1&gt;, toIrc: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2Atl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2Atl: !hw.struct&lt;value: i1, unknown: i1&gt;, atl2Abl: !hw.struct&lt;value: i1, unknown: i1&gt;, atl2Dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2Ath: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2Ath: !hw.struct&lt;value: i1, unknown: i1&gt;, ath2Dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ath2Abh: !hw.struct&lt;value: i1, unknown: i1&gt;, db2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, ab2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Aob: !hw.struct&lt;value: i1, unknown: i1&gt;, aob2Ab: !hw.struct&lt;value: i1, unknown: i1&gt;, updSsw: !hw.struct&lt;value: i1, unknown: i1&gt;, dobCtrl: !hw.struct&lt;value: i2, unknown: i2&gt;, abh2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2abl: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2reg: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2dbl: !hw.struct&lt;value: i1, unknown: i1&gt;, reg2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ssp: !hw.struct&lt;value: i1, unknown: i1&gt;, pchdbh: !hw.struct&lt;value: i1, unknown: i1&gt;, pcldbl: !hw.struct&lt;value: i1, unknown: i1&gt;, pclabl: !hw.struct&lt;value: i1, unknown: i1&gt;, pchabh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxh2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxh2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2rxl: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2rxh: !hw.struct&lt;value: i1, unknown: i1&gt;, rxl2db: !hw.struct&lt;value: i1, unknown: i1&gt;, rxl2ab: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2rxl: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2rxh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbh2ryh: !hw.struct&lt;value: i1, unknown: i1&gt;, abh2ryh: !hw.struct&lt;value: i1, unknown: i1&gt;, ryl2db: !hw.struct&lt;value: i1, unknown: i1&gt;, ryl2ab: !hw.struct&lt;value: i1, unknown: i1&gt;, ryh2dbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ryh2abh: !hw.struct&lt;value: i1, unknown: i1&gt;, dbl2ryl: !hw.struct&lt;value: i1, unknown: i1&gt;, abl2ryl: !hw.struct&lt;value: i1, unknown: i1&gt;, rz: !hw.struct&lt;value: i1, unknown: i1&gt;, rxlDbl: !hw.struct&lt;value: i1, unknown: i1&gt;, aluColumn: !hw.struct&lt;value: i3, unknown: i3&gt;, aluDctrl: !hw.struct&lt;value: i2, unknown: i2&gt;, aluActrl: !hw.struct&lt;value: i1, unknown: i1&gt;, aluInit: !hw.struct&lt;value: i1, unknown: i1&gt;, aluFinish: !hw.struct&lt;value: i1, unknown: i1&gt;, abd2Dcr: !hw.struct&lt;value: i1, unknown: i1&gt;, dcr2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbd2Alue: !hw.struct&lt;value: i1, unknown: i1&gt;, alue2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbd2Alub: !hw.struct&lt;value: i1, unknown: i1&gt;, abd2Alub: !hw.struct&lt;value: i1, unknown: i1&gt;, alu2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, alu2Abd: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Db: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Ab: !hw.struct&lt;value: i1, unknown: i1&gt;, au2Pc: !hw.struct&lt;value: i1, unknown: i1&gt;, dbin2Abd: !hw.struct&lt;value: i1, unknown: i1&gt;, dbin2Dbd: !hw.struct&lt;value: i1, unknown: i1&gt;, extDbh: !hw.struct&lt;value: i1, unknown: i1&gt;, extAbh: !hw.struct&lt;value: i1, unknown: i1&gt;, ablAbd: !hw.struct&lt;value: i1, unknown: i1&gt;, ablAbh: !hw.struct&lt;value: i1, unknown: i1&gt;, dblDbd: !hw.struct&lt;value: i1, unknown: i1&gt;, dblDbh: !hw.struct&lt;value: i1, unknown: i1&gt;, abdIsByte: !hw.struct&lt;value: i1, unknown: i1&gt;&gt;</pre>
+      <pre>             ^</pre>
       <pre></pre>
     </section>
   </body>

@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 00:06:14</dd></div>
-        <div><dt>time elapsed</dt><dd>0.088s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 10:39:17</dd></div>
+        <div><dt>time elapsed</dt><dd>0.083s</dd></div>
         <div><dt>ram usage</dt><dd>31360 KB</dd></div>
       </dl>
     </section>
@@ -51,11 +51,9 @@
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;y_table&#39; of type &#39;!hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %y_table = llhd.sig %4 : !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>               ^</pre>
-      <pre><redacted-local-path> note: see current operation: %y_table = llhd.sig %3 : !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;x_table&#39; of type &#39;!hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
       <pre>    %x_table = llhd.sig %5 : !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>               ^</pre>
-      <pre><redacted-local-path> note: see current operation: %x_table = llhd.sig %4 : !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: nonblocking drive of aggregate type &#39;!hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; (128 bytes) exceeds the NBA queue&#39;s inline emission budget of 64 bytes; DEGRADING to an immediate (blocking) store -- readers woken in the same delta cycle will observe the new value</pre>
       <pre>      llhd.drv %y_table, %16 after %0 if %17 : !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>      ^</pre>

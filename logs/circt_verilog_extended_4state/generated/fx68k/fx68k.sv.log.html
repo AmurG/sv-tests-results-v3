@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-failed">
+    <header class="test-passed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>circt-verilog</h1></a>
         <h2>fx68k</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Full fx68k core test</dd></div>
-        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
         <div><dt>tags</dt><dd>fx68k</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -33,38 +33,129 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 00:12:22</dd></div>
-        <div><dt>time elapsed</dt><dd>0.058s</dd></div>
-        <div><dt>ram usage</dt><dd>24192 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 10:45:45</dd></div>
+        <div><dt>time elapsed</dt><dd>1.435s</dd></div>
+        <div><dt>ram usage</dt><dd>69164 KB</dd></div>
       </dl>
     </section>
     <section class="log">
       <pre></pre>
-      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1525:81: error: variable &#39;regs68L&#39; driven by always_ff procedure cannot be written to by any other process [-Wmultiple-always-assigns]</pre>
-      <pre>                                        if( Nanod.dbl2rxl)                      regs68L[ actualRx] &lt;= Dbd;</pre>
-      <pre>                                                                                ^~~~~~~</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1525:27: error: variable &#39;regs68L&#39; driven by always_ff procedure cannot be written to by any other process [-Wmultiple-always-assigns]</pre>
-      <pre>                                        if( Nanod.dbl2rxl)                      regs68L[ actualRx] &lt;= Dbd;</pre>
-      <pre>                                                                                ^</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1189:25: note: also assigned here</pre>
-      <pre>                        regs68L[i] &lt;= &#39;0;</pre>
-      <pre>                        ^~~~~~~~~~</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1189:4: remark: also assigned here</pre>
-      <pre>                        regs68L[i] &lt;= &#39;0;</pre>
-      <pre>                        ^</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1545:33: error: variable &#39;regs68H&#39; driven by always_ff procedure cannot be written to by any other process [-Wmultiple-always-assigns]</pre>
-      <pre>                                regs68H[ actualRx] &lt;= Nanod.dbh2rxh ? Dbh : Abh;</pre>
-      <pre>                                ^~~~~~~</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1545:5: error: variable &#39;regs68H&#39; driven by always_ff procedure cannot be written to by any other process [-Wmultiple-always-assigns]</pre>
-      <pre>                                regs68H[ actualRx] &lt;= Nanod.dbh2rxh ? Dbh : Abh;</pre>
-      <pre>                                ^</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1190:25: note: also assigned here</pre>
-      <pre>                        regs68H[i] &lt;= &#39;0;</pre>
-      <pre>                        ^~~~~~~~~~</pre>
-      <pre>../../../third_party/cores/fx68k/fx68k.sv:1190:4: remark: also assigned here</pre>
-      <pre>                        regs68H[i] &lt;= &#39;0;</pre>
-      <pre>                        ^</pre>
+      <pre><redacted-local-path> -o /dev/null -I <redacted-local-path> --timescale=1ns/1ns --ignore-timing-annotations --single-unit -Wno-implicit-conv -Wno-error=index-oob -Wno-error=range-oob -Wno-error=range-width-oob --allow-dup-initial-drivers <a href="../../../../third_party/cores/fx68k/fx68k.sv.html" target="file-frame">third_party/cores/fx68k/fx68k.sv</a> <a href="../../../../third_party/cores/fx68k/fx68kAlu.sv.html" target="file-frame">third_party/cores/fx68k/fx68kAlu.sv</a> <a href="../../../../third_party/cores/fx68k/uaddrPla.sv.html" target="file-frame">third_party/cores/fx68k/uaddrPla.sv</a></pre>
+      <pre>&lt;unknown&gt;:0: warning: in excUnit: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in sequencer: x/z literal &#39;xx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in microToNanoAddr: x/z literal &#39;xxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in fx68kAlu: x/z literal &#39;xxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in aluGetOp: x/z literal &#39;xxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in ccrTable: x/z literal &#39;xxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in pla_lined: x/z literal &#39;xxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:185:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:214:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:260:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:318:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:385:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:400:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:422:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:482:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:506:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:563:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin                            </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:607:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:738:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:896:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1297:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1400:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1460:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1507:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1521:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1555:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1624:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1641:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1653:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1730:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:1773:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2113:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2167:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2244:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2307:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2356:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2429:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2436:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge Clks.clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2477:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68k.sv:2488:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) </pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:123:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) begin</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:178:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk)</pre>
+      <pre>                     ^</pre>
+      <pre>../../../third_party/cores/fx68k/fx68kAlu.sv:421:15: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @( posedge clk) begin</pre>
+      <pre>                     ^</pre>
       <pre></pre>
     </section>
   </body>
