@@ -40,9 +40,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:10:45</dd></div>
-        <div><dt>time elapsed</dt><dd>150.259s</dd></div>
-        <div><dt>ram usage</dt><dd>2549764 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 22:37:42</dd></div>
+        <div><dt>time elapsed</dt><dd>206.744s</dd></div>
+        <div><dt>ram usage</dt><dd>366500 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -127,27 +127,9 @@
       <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_master_bfm.sv:60:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>      wait(reset == 0);</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_master_bfm.sv:63:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_master_bfm.sv:68:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_monitor_bfm.sv:51:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge clk);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_monitor_bfm.sv:53:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge clk);</pre>
-      <pre>        ^</pre>
       <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_master_bfm.sv:49:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  always @(reset or posedge clk) begin</pre>
       <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/sfr_agent/sfr_master_bfm.sv:49:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always @(reset or posedge clk) begin</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_ef_vif_config_db/rtl/sfr_dut.sv:51:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk) begin</pre>
-      <pre>         ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ ulimit -v 10485760</pre>
@@ -156,6 +138,10 @@
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;dut/mem&#39; of type &#39;!hw.array&lt;65536xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %mem = llhd.sig %6 : !hw.array&lt;65536xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %dut2Fmem = llhd.sig name &#34;dut/mem&#34; %20 : !hw.array&lt;65536xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -236,7 +222,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=sfr_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787368242</pre>
+      <pre>+ __svtests_variant_t0=1787611037</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=sfr_test</pre>
@@ -281,8 +267,8 @@
       <pre></pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 3</pre>
-      <pre>[Arcilator] simvariant 1/1 wall 3s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 25</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 25s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

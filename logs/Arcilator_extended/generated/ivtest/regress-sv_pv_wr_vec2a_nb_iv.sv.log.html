@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:54:40</dd></div>
-        <div><dt>time elapsed</dt><dd>6.318s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 08:29:30</dd></div>
+        <div><dt>time elapsed</dt><dd>7.891s</dd></div>
+        <div><dt>ram usage</dt><dd>200704 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -84,16 +84,16 @@
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:68:5: remark: dynamic part-select is wider than the addressed vector; out-of-range bits of the write are discarded (IEEE 1800-2017 11.5.1)</pre>
       <pre>    x[0][i+:6] &lt;= 6&#39;b101010;</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:68:5: note: see current operation: %159 = moore.dyn_extract_ref %17 from %158 : &lt;i4&gt;, l32 -&gt; &lt;i6&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:68:5: note: see current operation: %165 = moore.dyn_extract_ref %17 from %164 : &lt;i4&gt;, l32 -&gt; &lt;i6&gt;</pre>
       <pre>&lt;unknown&gt;:0: warning: in test: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:46:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
       <pre>    x[0][-1:-2] &lt;= 2&#39;b11;</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:46:5: note: see current operation: %252 = &#34;moore.extract_ref&#34;(%75) &lt;{lowBit = -2 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:46:5: note: see current operation: %256 = &#34;moore.extract_ref&#34;(%79) &lt;{lowBit = -2 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:52:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
       <pre>    x[0][6:5] &lt;= 2&#39;b11;</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:52:5: note: see current operation: %288 = &#34;moore.extract_ref&#34;(%75) &lt;{lowBit = 5 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb.v:52:5: note: see current operation: %292 = &#34;moore.extract_ref&#34;(%79) &lt;{lowBit = 5 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>

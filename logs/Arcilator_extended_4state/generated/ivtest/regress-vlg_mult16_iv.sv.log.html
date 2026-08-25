@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
+    <header class="test-failed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_mult16_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>rc</dt><dd>0 (means success: 0)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:32:24</dd></div>
-        <div><dt>time elapsed</dt><dd>6.371s</dd></div>
-        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:02:11</dd></div>
+        <div><dt>time elapsed</dt><dd>6.401s</dd></div>
+        <div><dt>ram usage</dt><dd>199808 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -58,21 +58,6 @@
       <pre>         @(negedge clk) start = 0;</pre>
       <pre>           ^</pre>
       <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:162:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
-      <pre>         @(posedge done);</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:56:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or negedge resetb) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:56:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk or negedge resetb) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>         @(negedge clk);</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:161:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>         @(negedge clk) start = 0;</pre>
-      <pre>           ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/contrib/mult16.v:162:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>         @(posedge done);</pre>
       <pre>           ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>

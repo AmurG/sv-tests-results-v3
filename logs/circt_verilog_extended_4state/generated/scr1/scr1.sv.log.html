@@ -62,9 +62,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:42:55</dd></div>
-        <div><dt>time elapsed</dt><dd>1.160s</dd></div>
-        <div><dt>ram usage</dt><dd>58240 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:12:28</dd></div>
+        <div><dt>time elapsed</dt><dd>1.158s</dd></div>
+        <div><dt>ram usage</dt><dd>60032 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -239,293 +239,909 @@
       <pre>^</pre>
       <pre>in file included from ../../../third_party/cores/scr1/src/core/scr1_scu.sv:30:</pre>
       <pre>../../../third_party/cores/scr1/src/includes/scr1_scu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 1386 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>/// Copyright by Syntacore LLC &lt;A9&gt; 2016-2021. See LICENSE for details</pre>
+      <pre>                               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/includes/scr1_scu.svh:1:32: warning: invalid UTF-8 sequence in source text [-Winvalid-source-encoding]</pre>
+      <pre>/// Copyright by Syntacore LLC  2016-2021. See LICENSE for details</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:30:1: note: included from here</pre>
+      <pre>`include &#34;scr1_scu.svh&#34;</pre>
+      <pre>^</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_pipe_hdu: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_ipic: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_pipe_csr: x/z literal &#39;zzzzz&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_scu: x/z literal &#39;xxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_mem_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in width2axsize: x/z literal &#39;xxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_memory_tb_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:101:17: warning: in mem_read: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>    mem_read  = &#39;x;</pre>
+      <pre>                ^</pre>
+      <pre>&lt;unknown&gt;:0: warning: in scr1_top_tb_axi: x/z literal &#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:274:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:413:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:455:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:519:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:556:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:556:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:596:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:596:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:612:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:612:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:695:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:695:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:709:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:709:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:726:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:726:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_hdu.sv:831:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk) begin</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:324:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:344:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:344:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:410:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:410:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:460:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:410:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:410:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_tdu.sv:460:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:246:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:246:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:267:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:267:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:387:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:387:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:431:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:431:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:445:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:445:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:485:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:485:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:515:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:515:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:538:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:538:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:557:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_ipic.sv:557:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:617:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:617:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:659:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:659:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:694:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:694:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:725:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:725:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:755:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:755:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:768:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:768:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:796:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:796:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:832:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:832:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:892:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:892:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:930:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:930:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:962:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_csr.sv:962:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:500:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:500:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:613:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:613:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:632:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:632:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk_alw_on) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:664:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:664:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:686:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:686:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:946:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_exu.sv:946:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:323:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:340:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:340:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:477:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ialu.sv:531:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:264:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:264:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:308:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:308:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:386:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:386:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:401:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:401:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:421:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:421:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:469:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:469:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:520:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:520:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:545:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:545:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:572:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_ifu.sv:572:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv:142:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv:142:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_lsu.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_mprf.sv:138:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @( posedge clk, negedge rst_n ) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/pipeline/scr1_pipe_mprf.sv:138:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @( posedge clk, negedge rst_n ) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:25:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:25:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:35:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:35:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:82:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(negedge local_rst_n_in, posedge clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:82:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(negedge local_rst_n_in, posedge clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(negedge rst_n, posedge clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(negedge rst_n, posedge clk)</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/primitives/scr1_reset_cells.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge rst_n_mux, posedge clk) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_clk_ctrl.sv:30:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge ctrl_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_clk_ctrl.sv:30:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge ctrl_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv:59:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(posedge clk, negedge rst_n)</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv:59:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(posedge clk, negedge rst_n)</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv:40:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(posedge clk, negedge rst_n)</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_shift_reg.sv:40:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>        always_ff @(posedge clk, negedge rst_n)</pre>
+      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:123:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:123:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:135:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:135:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:198:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:198:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:226:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:226:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:238:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:238:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:250:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:250:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:326:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:326:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:341:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc.sv:341:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:68:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:68:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:76:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:76:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:84:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:84:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:99:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:99:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:111:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:111:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(negedge tapc_tck, negedge tapc_trst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:121:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:121:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:131:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:139:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
+      <pre>           ^</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge dm_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:157:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge dm_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_tapc_synchronizer.sv:169:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:597:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:610:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:655:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:670:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:776:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:776:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:808:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:808:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:914:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:914:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:925:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:925:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:947:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:947:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1012:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1012:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1061:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1061:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1154:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1154:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1165:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1165:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1176:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1176:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1190:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1190:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1228:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1228:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1258:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1321:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1351:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dm.sv:1351:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:132:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_dmi.sv:172:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:181:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:196:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:279:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:291:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:309:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/core/scr1_scu.sv:323:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge pwrup_rst_n_sync) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dmem_router.sv:97:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_imem_router.sv:66:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:85:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:85:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:94:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_dp_memory.sv:94:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:55:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:63:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:121:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_tcm.sv:121:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:77:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:90:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:116:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:116:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:116:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:116:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:137:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:152:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk, negedge rst_n) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:171:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge rtc_clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:189:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge rtc_clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:199:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_timer.sv:217:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:146:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:146:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(posedge clk) begin</pre>
       <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:197:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:209:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:214:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_mem_axi.sv:228:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge rst_n, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge core_rst_n_local, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/top/scr1_top_axi.sv:696:12: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always_ff @(negedge core_rst_n_local, posedge clk) begin</pre>
       <pre>           ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always @(posedge clk, negedge rst_n) begin</pre>
       <pre>        ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_AWADDR_404 :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_AWVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_AWLEN :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_WVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_WCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_BREADY :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_ARADDR_404 :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_ARVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_ARLEN :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_RREADY :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk, negedge rst_n) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk, negedge rst_n) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk, negedge rst_n) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always @(posedge clk, negedge rst_n) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_AWADDR_404 :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:301:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_AWVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:308:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_AWCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:315:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_AWLEN :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:322:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_WVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:329:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_WCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:337:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>WDATA :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:345:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_BREADY :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:352:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_ARADDR_404 :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:361:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_ARVALID :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:368:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_ARCHANNEL :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:375:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_ARLEN :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>SVA_TBMEM_X_RREADY :</pre>
+      <pre>^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv:322:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
+      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_runtests.sv:30:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>always_ff @(posedge clk) begin</pre>
+      <pre>            ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWADDR_404 :</pre>
       <pre>^</pre>
@@ -574,18 +1190,6 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_RREADY :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:201:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:237:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk, negedge rst_n) begin</pre>
-      <pre>        ^</pre>
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:292:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_AWADDR_404 :</pre>
       <pre>^</pre>
@@ -634,12 +1238,6 @@
       <pre>../../../third_party/cores/scr1/src/tb/scr1_memory_tb_axi.sv:382:1: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>SVA_TBMEM_X_RREADY :</pre>
       <pre>^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_axi.sv:322:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk) begin</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/cores/scr1/src/tb/scr1_top_tb_runtests.sv:30:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always_ff @(posedge clk) begin</pre>
-      <pre>            ^</pre>
       <pre></pre>
     </section>
   </body>

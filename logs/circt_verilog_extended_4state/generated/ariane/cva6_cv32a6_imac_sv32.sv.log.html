@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>CVA6 32-bit RV32IMAC, Sv32 MMU</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>cva6 ariane</dd></div>
+        <div><dt>tags</dt><dd>ariane cva6</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -248,9 +248,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:43:06</dd></div>
-        <div><dt>time elapsed</dt><dd>5.034s</dd></div>
-        <div><dt>ram usage</dt><dd>197016 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:12:38</dd></div>
+        <div><dt>time elapsed</dt><dd>5.060s</dd></div>
+        <div><dt>ram usage</dt><dd>197884 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -264,6 +264,9 @@
       <pre>        temp_stored_vpn = {tags_q[i].vpn[2], tags_q[i].vpn[1], tags_q[i].vpn[0]};</pre>
       <pre>                                         ^</pre>
       <pre>&lt;unknown&gt;:0: warning: skipping statement invalidated by a downgraded diagnostic</pre>
+      <pre>../../../third_party/cores/ariane/core/cvfpu/src/fpnew_pkg.sv:100:9: warning: unreachable code</pre>
+      <pre>        return INT8;</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:202:16: warning: unreachable code</pre>
       <pre>        endcase;</pre>
       <pre>               ^</pre>
@@ -422,104 +425,272 @@
       <pre>../../../third_party/cores/ariane/core/scoreboard.sv:304:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : regs</pre>
       <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:304:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : regs</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 689 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>             ^</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 1301 middle lines omitted for size; grading used the full log] ...</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_regbank_wbyteenable_1rw.sv:52:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:121:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      flush_on_load_port_assert :</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:152:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : flush_ff</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:152:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : flush_ff</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:347:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : amo_pending_ff</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:347:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : amo_pending_ff</pre>
+      <pre>                 ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:360:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      forward_one_request_assert :</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv:39:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>    always_ff @(posedge clk)</pre>
       <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv:134:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv:134:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv:152:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_data_upsize.sv:152:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:155:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:155:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:195:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv:40:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk)</pre>
+      <pre>                ^</pre>
+      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:167:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:167:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:183:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:183:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/common/local/util/instr_tracer.sv:98:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>      @(posedge pck) if (rstn !== 1&#39;b1) begin</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
       <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride.sv:195:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
       <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hwpf_stride/hwpf_stride_wrapper.sv:168:20: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>                   ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:239:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    assert property ( @(posedge clk_i) disable iff (!rst_ni)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>               ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:239:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>    assert property ( @(posedge clk_i) disable iff (!rst_ni)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_mmu.sv:738:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_mmu.sv:738:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_ptw.sv:658:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_ptw.sv:658:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:486:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:486:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:525:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  assert property (@(posedge clk_i) (countSetBits(lu_hit) &lt;= 1))</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:530:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  assert property (@(posedge clk_i) (countSetBits(replace_en) &lt;= 1))</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_shared_tlb.sv:363:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_shared_tlb.sv:363:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
+      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
+      <pre>             ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/common_cells/src/lfsr.sv:309:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  all_zero: assert property (</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/common_cells/src/lfsr.sv:309:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  all_zero: assert property (</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/csr_regfile.sv:3040:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  assert property (@(posedge clk_i) disable iff (!rst_ni !== &#39;0) !(eret_o &amp;&amp; ex_i.valid))</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/issue_read_operands.sv:1108:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    assert property (@(posedge clk_i) (branch_valid_q) |-&gt; (!$isunknown(</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/load_unit.sv:639:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  addr_offset0 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/load_unit.sv:643:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  addr_offset1 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/load_unit.sv:647:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  addr_offset2 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:327:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  assert property (</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:331:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    assert property (</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:337:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    assert property (</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/scoreboard.sv:346:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>      assert property (</pre>
+      <pre>      ^</pre>
+      <pre>../../../third_party/cores/ariane/core/store_buffer.sv:300:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  commit_and_flush :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/store_buffer.sv:304:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  speculative_buffer_overflow :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/store_buffer.sv:309:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  speculative_buffer_underflow :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/store_buffer.sv:313:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  commit_buffer_overflow :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:222:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  full_write :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:226:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  empty_read :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:222:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  full_write :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:226:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  empty_read :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:222:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  full_write :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cva6_fifo_v3.sv:226:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  empty_read :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/frontend/instr_queue.sv:554:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  replay_address_fifo :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/frontend/instr_queue.sv:558:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  output_select_onehot :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_icache.sv:539:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  repl_inval0 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_icache.sv:544:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  repl_inval1 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_icache.sv:549:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  invalid_state :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_icache.sv:554:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  hot1 :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_icache.sv:584:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>  tag_write_duplicate :</pre>
+      <pre>  ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv:169:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        rptr_ahead_wptr_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv:169:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        rptr_ahead_wptr_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv:169:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        rptr_ahead_wptr_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv:169:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        rptr_ahead_wptr_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fifo_reg.sv:169:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>        rptr_ahead_wptr_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>        ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv:80:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv:80:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv:80:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_fxarb.sv:80:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv:114:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv:116:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_q_exactly_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv:114:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_at_most_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/hpdcache_rrarb.sv:116:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
+      <pre>    gnt_q_exactly_one_requester: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
+      <pre>    ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache.sv:1287:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv:574:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv:574:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv:587:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv:656:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_cmo.sv:666:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv:156:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_core_arbiter.sv:156:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:867:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:874:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:874:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:890:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:921:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:921:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:1627:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:1627:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:1710:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
@@ -532,21 +703,6 @@
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_ctrl.sv:1753:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:384:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:384:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:1005:21: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always_ff @(posedge clk_i)</pre>
-      <pre>                    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:1031:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:1057:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:1120:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>        check_dirty_state: assert property (@(posedge clk_i)</pre>
       <pre>        ^</pre>
@@ -577,54 +733,9 @@
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_memctrl.sv:1139:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    concurrent_data_access_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:304:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:312:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:312:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:722:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:722:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_miss_handler.sv:731:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv:293:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv:293:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv:405:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv:405:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_mshr.sv:428:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    one_command_assert: assert property (@(posedge clk_i) disable iff (!rst_ni)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:614:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:614:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:646:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:646:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:657:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:674:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
@@ -661,33 +772,6 @@
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_rtab.sv:723:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:839:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:849:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:849:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:878:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:878:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:890:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:899:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:908:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:908:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:928:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
@@ -706,15 +790,6 @@
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:952:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property (@(posedge clk_i) disable iff (rst_ni !== 1)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv:700:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i) wbuf_data_q &lt;= wbuf_data_d;</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv:702:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv:702:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni)</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_wbuf.sv:727:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    ack_sent_assert: assert property (@(posedge clk_i) disable iff (rst_ni !== 1&#39;b1)</pre>
       <pre>    ^</pre>
@@ -733,99 +808,24 @@
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_subsystem.sv:561:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    a_invalid_read_data :</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv:339:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : icache_miss_pending_ff</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_subsystem_axi_arbiter.sv:339:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin : icache_miss_pending_ff</pre>
-      <pre>             ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:121:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>      flush_on_load_port_assert :</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:152:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : flush_ff</pre>
-      <pre>                 ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:152:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : flush_ff</pre>
-      <pre>                 ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:347:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : amo_pending_ff</pre>
-      <pre>                 ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:347:18: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      always_ff @(posedge clk_i or negedge rst_ni) begin : amo_pending_ff</pre>
-      <pre>                 ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/cva6_hpdcache_if_adapter.sv:360:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>      forward_one_request_assert :</pre>
       <pre>      ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_1rw.sv:39:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/common/macros/behav/hpdcache_sram_wbyteenable_1rw.sv:40:17: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk)</pre>
-      <pre>                ^</pre>
-      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:167:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:167:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:183:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/pmp/src/pmp_data_if.sv:183:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/common/local/util/instr_tracer.sv:98:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge pck) if (rstn !== 1&#39;b1) begin</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:239:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property ( @(posedge clk_i) disable iff (!rst_ni)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>               ^</pre>
-      <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:130:16: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>               ^</pre>
       <pre>../../../third_party/cores/ariane/vendor/pulp-platform/tech_cells_generic/src/rtl/tc_sram.sv:239:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>    assert property ( @(posedge clk_i) disable iff (!rst_ni)</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_mmu.sv:738:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_mmu.sv:738:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_ptw.sv:658:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_ptw.sv:658:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:486:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:486:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
       <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:525:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  assert property (@(posedge clk_i) (countSetBits(lu_hit) &lt;= 1))</pre>
       <pre>  ^</pre>
       <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_tlb.sv:530:3: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>  assert property (@(posedge clk_i) (countSetBits(replace_en) &lt;= 1))</pre>
       <pre>  ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_shared_tlb.sv:363:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
-      <pre>../../../third_party/cores/ariane/core/cva6_mmu/cva6_shared_tlb.sv:363:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  always_ff @(posedge clk_i or negedge rst_ni) begin</pre>
-      <pre>             ^</pre>
       <pre></pre>
     </section>
   </body>

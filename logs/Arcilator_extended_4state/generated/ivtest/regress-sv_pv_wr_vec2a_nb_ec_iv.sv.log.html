@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:47:48</dd></div>
-        <div><dt>time elapsed</dt><dd>0.110s</dd></div>
-        <div><dt>ram usage</dt><dd>32256 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 23:15:34</dd></div>
+        <div><dt>time elapsed</dt><dd>0.117s</dd></div>
+        <div><dt>ram usage</dt><dd>29568 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -89,20 +89,20 @@
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
       <pre>    x[0][-1:-2] &lt;= @e 2&#39;b11;</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:5: note: see current operation: %355 = &#34;moore.extract_ref&#34;(%96) &lt;{lowBit = -2 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:48:5: note: see current operation: %361 = &#34;moore.extract_ref&#34;(%102) &lt;{lowBit = -2 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:5: remark: out-of-range reference discards writes (IEEE 1800-2017 11.5.1); routed to a scratch signal</pre>
       <pre>    x[0][6:5] &lt;= @e 2&#39;b11;</pre>
       <pre>    ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:5: note: see current operation: %416 = &#34;moore.extract_ref&#34;(%96) &lt;{lowBit = 5 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
+      <pre>../../../third_party/tools/icarus/ivtest/ivltests/pv_wr_vec2a_nb_ec.v:54:5: note: see current operation: %422 = &#34;moore.extract_ref&#34;(%102) &lt;{lowBit = 5 : i32}&gt; : (!moore.ref&lt;i4&gt;) -&gt; !moore.ref&lt;i2&gt;</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
-      <pre><redacted-local-path> error: failed to legalize operation &#39;llhd.sig.extract&#39;: %66 = &#34;llhd.sig.extract&#34;(%65, %57) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
-      <pre>      %23 = llhd.sig.extract %22 from %c1_i2 : &lt;i4&gt; -&gt; &lt;i2&gt;</pre>
+      <pre><redacted-local-path> error: failed to legalize operation &#39;llhd.sig.extract&#39;: %69 = &#34;llhd.sig.extract&#34;(%68, %60) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
+      <pre>      %24 = llhd.sig.extract %23 from %c1_i2 : &lt;i4&gt; -&gt; &lt;i2&gt;</pre>
       <pre>            ^</pre>
-      <pre><redacted-local-path> note: see current operation: %66 = &#34;llhd.sig.extract&#34;(%65, %57) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %69 = &#34;llhd.sig.extract&#34;(%68, %60) : (!llhd.ref&lt;i4&gt;, i2) -&gt; !llhd.ref&lt;i2&gt;</pre>
       <pre>+ exit 1</pre>
       <pre></pre>
     </section>

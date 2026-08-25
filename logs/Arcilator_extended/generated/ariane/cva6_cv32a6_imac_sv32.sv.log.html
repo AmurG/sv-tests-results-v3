@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>CVA6 32-bit RV32IMAC, Sv32 MMU</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>cva6 ariane</dd></div>
+        <div><dt>tags</dt><dd>ariane cva6</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -248,9 +248,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:22:13</dd></div>
-        <div><dt>time elapsed</dt><dd>21.439s</dd></div>
-        <div><dt>ram usage</dt><dd>1588824 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 07:56:43</dd></div>
+        <div><dt>time elapsed</dt><dd>20.892s</dd></div>
+        <div><dt>ram usage</dt><dd>1588396 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -269,6 +269,9 @@
       <pre>        temp_stored_vpn = {tags_q[i].vpn[2], tags_q[i].vpn[1], tags_q[i].vpn[0]};</pre>
       <pre>                                         ^</pre>
       <pre>&lt;unknown&gt;:0: warning: skipping statement invalidated by a downgraded diagnostic</pre>
+      <pre>../../../third_party/cores/ariane/core/cvfpu/src/fpnew_pkg.sv:100:9: warning: unreachable code</pre>
+      <pre>        return INT8;</pre>
+      <pre>        ^</pre>
       <pre>../../../third_party/cores/ariane/core/cache_subsystem/hpdcache/rtl/src/hpdcache_uncached.sv:202:16: warning: unreachable code</pre>
       <pre>        endcase;</pre>
       <pre>               ^</pre>

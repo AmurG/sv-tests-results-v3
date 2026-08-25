@@ -51,9 +51,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:08:40</dd></div>
-        <div><dt>time elapsed</dt><dd>148.404s</dd></div>
-        <div><dt>ram usage</dt><dd>1390908 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 22:34:46</dd></div>
+        <div><dt>time elapsed</dt><dd>154.027s</dd></div>
+        <div><dt>ram usage</dt><dd>1390636 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -159,27 +159,6 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>                  wait(top.phase_timeout != 0);</pre>
       <pre>                  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/dut/mem_ss.sv:80:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(negedge HCLK) begin</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_monitor_bfm.sv:60:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff((HREADY == 1) &amp;&amp; (HTRANS == AHB_NON_SEQ)));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_monitor_bfm.sv:63:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_driver_bfm.sv:64:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HRESETn);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_driver_bfm.sv:68:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_driver_bfm.sv:72:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_register_mem_example/agents/ahb_agent/ahb_driver_bfm.sv:79:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge HCLK iff(HREADY == 1));</pre>
-      <pre>    ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ ulimit -v 10485760</pre>
@@ -268,7 +247,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=mem_ss_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=mem_ss_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787368018</pre>
+      <pre>+ __svtests_variant_t0=1787610780</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=mem_ss_test</pre>
@@ -344,8 +323,8 @@
       <pre></pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre>+ date +%s</pre>
-      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 102</pre>
-      <pre>[Arcilator] simvariant 1/1 wall 102s</pre>
+      <pre>+ printf [Arcilator] simvariant %s wall %ss\n 1/1 106</pre>
+      <pre>[Arcilator] simvariant 1/1 wall 106s</pre>
       <pre>+ exit 0</pre>
       <pre></pre>
     </section>

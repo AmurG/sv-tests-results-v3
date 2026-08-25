@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>UVM example - uvm_use_models_pipelined_item_done</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm-1.2 uvm-examples</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm-1.2</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -35,9 +35,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:05:25</dd></div>
-        <div><dt>time elapsed</dt><dd>45.179s</dd></div>
-        <div><dt>ram usage</dt><dd>207848 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 22:31:25</dd></div>
+        <div><dt>time elapsed</dt><dd>45.825s</dd></div>
+        <div><dt>ram usage</dt><dd>206956 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -132,39 +132,6 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>                  wait(top.phase_timeout != 0);</pre>
       <pre>                  ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/mbus_slave/mbus_slave.sv:115:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(negedge bus.MCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/mbus_slave/mbus_slave.sv:201:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(negedge bus.MCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/mbus_slave/mbus_slave.sv:286:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(negedge bus.MCLK)</pre>
-      <pre>         ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:44:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge MBUS.MRESETN);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:45:5: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>  @(posedge MBUS.MCLK);</pre>
-      <pre>    ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:69:7: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    @(posedge MBUS.MCLK);</pre>
-      <pre>      ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:71:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge MBUS.MCLK);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:80:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge MBUS.MCLK);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:82:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge MBUS.MCLK);</pre>
-      <pre>          ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:89:9: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>      @(posedge MBUS.MCLK);</pre>
-      <pre>        ^</pre>
-      <pre>../../../third_party/tests/uvm-examples/uvm_use_models_pipelined_item_done/pipelined_item_done/mbus_pipelined_agent/mbus_pipelined_driver.svh:91:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        @(posedge MBUS.MCLK);</pre>
-      <pre>          ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ ulimit -v 10485760</pre>

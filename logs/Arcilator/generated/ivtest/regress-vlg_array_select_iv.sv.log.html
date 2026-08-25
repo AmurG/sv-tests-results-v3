@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:37:04</dd></div>
-        <div><dt>time elapsed</dt><dd>6.438s</dd></div>
-        <div><dt>ram usage</dt><dd>202148 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 23:02:57</dd></div>
+        <div><dt>time elapsed</dt><dd>6.659s</dd></div>
+        <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -52,13 +52,13 @@
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;arr&#39; of type &#39;!hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %arr = llhd.sig %21 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>    %arr = llhd.sig %16 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>           ^</pre>
-      <pre><redacted-local-path> note: see current operation: %arr = llhd.sig %8 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %arr = llhd.sig %7 : !hw.array&lt;8xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre><redacted-local-path> warning: four-valued aggregate signal &#39;a&#39; of type &#39;!hw.array&lt;4xstruct&lt;value: i3, unknown: i3&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
-      <pre>    %a = llhd.sig %25 : !hw.array&lt;4xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre>    %a = llhd.sig %19 : !hw.array&lt;4xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre>         ^</pre>
-      <pre><redacted-local-path> note: see current operation: %a = llhd.sig %10 : !hw.array&lt;4xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
+      <pre><redacted-local-path> note: see current operation: %a = llhd.sig %9 : !hw.array&lt;4xstruct&lt;value: i3, unknown: i3&gt;&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -138,11 +138,6 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>Failed simple real array test, got 8.000000.</pre>
-      <pre>Failed simple array vector test, got 00001000.</pre>
-      <pre>Failed array vector plus constant test, got 00001001.</pre>
-      <pre>Failed array vector plus signed constant test, got 00001001.</pre>
-      <pre>Failed array vector bit select test 1, got 00000000.</pre>
       <pre>Failed array vector bit select test 3, got 00000000.</pre>
       <pre>Failed: reg array select driving array select, got 00000001</pre>
       <pre>Failed: wire array select driving array select, got 00000001</pre>

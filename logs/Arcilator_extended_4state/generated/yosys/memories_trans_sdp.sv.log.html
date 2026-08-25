@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:36:26</dd></div>
-        <div><dt>time elapsed</dt><dd>0.076s</dd></div>
-        <div><dt>ram usage</dt><dd>29568 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:06:13</dd></div>
+        <div><dt>time elapsed</dt><dd>0.113s</dd></div>
+        <div><dt>ram usage</dt><dd>33152 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -48,12 +48,13 @@
       <pre>../../../third_party/tools/yosys/tests/memories/trans_sdp.v:10:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>always @(posedge clk) begin</pre>
       <pre>         ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/memories/trans_sdp.v:10:10: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>always @(posedge clk) begin</pre>
-      <pre>         ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> warning: four-valued aggregate signal &#39;mem&#39; of type &#39;!hw.array&lt;256xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; is not observable: the {value, unknown} planes of its elements are interleaved in storage and cannot be rendered as one waveform variable; the signal is omitted from the waveform (the two-valued path exports it)</pre>
+      <pre>    %mem = llhd.sig %3 : !hw.array&lt;256xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %mem = llhd.sig %6 : !hw.array&lt;256xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre></pre>
     </section>
   </body>

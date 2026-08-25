@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>CVA6 64-bit testharness with SoC peripherals</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>cva6 ariane</dd></div>
+        <div><dt>tags</dt><dd>ariane cva6</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -355,9 +355,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code>VERILATOR</code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:42:58</dd></div>
-        <div><dt>time elapsed</dt><dd>4.338s</dd></div>
-        <div><dt>ram usage</dt><dd>322596 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 09:40:53</dd></div>
+        <div><dt>time elapsed</dt><dd>4.407s</dd></div>
+        <div><dt>ram usage</dt><dd>320724 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -369,6 +369,9 @@
       <pre>../../../third_party/cores/ariane/core/cva6.sv:1790:12: warning: initializing a static variable in a procedural context requires an explicit &#39;static&#39; keyword [-Wexplicit-static]</pre>
       <pre>      byte mode = &#34;&#34;;</pre>
       <pre>           ^</pre>
+      <pre>../../../third_party/cores/ariane/core/cvfpu/src/fpnew_pkg.sv:100:9: warning: unreachable code</pre>
+      <pre>        return INT8;</pre>
+      <pre>        ^</pre>
       <pre>&lt;unknown&gt;:0: warning: in ct_vfdsu_srt_radix16_bound_table: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in ct_vfdsu_srt_radix16_with_sqrt: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>
       <pre>&lt;unknown&gt;:0: warning: in tc_sram: x/z literal &#39;x&#39; is projected onto the two-valued runtime value model: every x and z bit becomes 0. Comparisons, $isunknown/$countbits and net resolution downstream of this value do not see an unknown bit (IEEE 1800-2023 6.3.1); a constant-folded copy of the same expression may answer differently</pre>

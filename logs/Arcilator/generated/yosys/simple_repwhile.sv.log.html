@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:36:26</dd></div>
-        <div><dt>time elapsed</dt><dd>0.081s</dd></div>
-        <div><dt>ram usage</dt><dd>30464 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:06:14</dd></div>
+        <div><dt>time elapsed</dt><dd>0.088s</dd></div>
+        <div><dt>ram usage</dt><dd>31360 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -57,13 +57,13 @@
       <pre>               ^</pre>
       <pre><redacted-local-path> note: see current operation: %x_table = llhd.sig %4 : !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre><redacted-local-path> warning: nonblocking drive of aggregate type &#39;!hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;&#39; (128 bytes) exceeds the NBA queue&#39;s inline emission budget of 64 bytes; DEGRADING to an immediate (blocking) store -- readers woken in the same delta cycle will observe the new value</pre>
-      <pre>      llhd.drv %y_table, %11 after %0 if %12 : !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
+      <pre>      llhd.drv %y_table, %16 after %0 if %17 : !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;</pre>
       <pre>      ^</pre>
-      <pre><redacted-local-path> note: see current operation: &#34;llhd.drv&#34;(%19, %1208, %35, %690) {llhd.nba} : (!llhd.ref&lt;!hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;, !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;, !llhd.time, i1) -&gt; ()</pre>
+      <pre><redacted-local-path> note: see current operation: &#34;llhd.drv&#34;(%27, %1347, %42, %699) {llhd.nba} : (!llhd.ref&lt;!hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;&gt;, !hw.array&lt;64xstruct&lt;value: i8, unknown: i8&gt;&gt;, !llhd.time, i1) -&gt; ()</pre>
       <pre><redacted-local-path> warning: nonblocking drive of aggregate type &#39;!hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;&#39; (512 bytes) exceeds the NBA queue&#39;s inline emission budget of 64 bytes; DEGRADING to an immediate (blocking) store -- readers woken in the same delta cycle will observe the new value</pre>
-      <pre>      llhd.drv %x_table, %13 after %0 if %14 : !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
+      <pre>      llhd.drv %x_table, %18 after %0 if %19 : !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;</pre>
       <pre>      ^</pre>
-      <pre><redacted-local-path> note: see current operation: &#34;llhd.drv&#34;(%18, %886, %35, %691) {llhd.nba} : (!llhd.ref&lt;!hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;&gt;, !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;, !llhd.time, i1) -&gt; ()</pre>
+      <pre><redacted-local-path> note: see current operation: &#34;llhd.drv&#34;(%26, %895, %42, %700) {llhd.nba} : (!llhd.ref&lt;!hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;&gt;, !hw.array&lt;64xstruct&lt;value: i32, unknown: i32&gt;&gt;, !llhd.time, i1) -&gt; ()</pre>
       <pre></pre>
     </section>
   </body>

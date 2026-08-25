@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
+    <header class="test-failed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>property_local_var_test_uvm</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>property with local variables in UVM</dd></div>
-        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
         <div><dt>tags</dt><dd>uvm uvm-assertions</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 03:18:56</dd></div>
-        <div><dt>time elapsed</dt><dd>41.886s</dd></div>
-        <div><dt>ram usage</dt><dd>208768 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 22:45:56</dd></div>
+        <div><dt>time elapsed</dt><dd>43.252s</dd></div>
+        <div><dt>ram usage</dt><dd>207852 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -123,9 +123,6 @@
       <pre>../../../third_party/tests/uvm/src/base/uvm_phase_hopper.svh:555:19: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>                  wait(top.phase_timeout != 0);</pre>
       <pre>                  ^</pre>
-      <pre>../../../tests/chapter-16/16.10--property-local-var-uvm.sv:40:14: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>    always @(posedge clk) begin</pre>
-      <pre>             ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ ulimit -v 10485760</pre>
@@ -234,12 +231,18 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(78) @ 0: env [SEQUENCE_LOCAL_VAR_UVM] Started run phase</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 450: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 550: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 650: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 750: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 850: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(82) @ 950: env [SEQUENCE_LOCAL_VAR_UVM] Finished run phase</pre>
+      <pre>UVM_INFO ../../../tests/chapter-16/16.10--property-local-var-uvm.sv(110) @ 950: reporter [SEQUENCE_LOCAL_VAR_UVM] property check failed :assert: (False)</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 950: reporter [UVM/REPORT/SERVER] </pre>
       <pre>--- UVM Report Summary ---</pre>
       <pre></pre>
       <pre>** Report counts by severity</pre>
-      <pre>UVM_INFO :    7</pre>
+      <pre>UVM_INFO :   13</pre>
       <pre>UVM_WARNING :    2</pre>
       <pre>UVM_ERROR :    0</pre>
       <pre>UVM_FATAL :    0</pre>
@@ -247,11 +250,13 @@
       <pre>[NO_DPI_USED]     1</pre>
       <pre>[NO_VISIT_CHECK]     1</pre>
       <pre>[RNTST]     1</pre>
-      <pre>[SEQUENCE_LOCAL_VAR_UVM]     4</pre>
+      <pre>[SEQUENCE_LOCAL_VAR_UVM]    10</pre>
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
       <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre></pre>
+      <pre>[sv-tests strict] Arcilator produced an assertion-output mismatch while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

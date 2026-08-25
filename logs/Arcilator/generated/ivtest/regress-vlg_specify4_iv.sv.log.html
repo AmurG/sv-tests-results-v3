@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:11:58</dd></div>
-        <div><dt>time elapsed</dt><dd>6.297s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 23:40:34</dd></div>
+        <div><dt>time elapsed</dt><dd>6.390s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -50,9 +50,6 @@
       <pre>      ^</pre>
       <pre>&lt;unknown&gt;:0: warning: ignore-timing-annotations: dropped 1 timing annotation in this run; the design simulates with zero path delay everywhere those annotations applied</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/specify4.v:26:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
-      <pre>   always @(posedge c) q &lt;= d;</pre>
-      <pre>            ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/specify4.v:26:13: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>   always @(posedge c) q &lt;= d;</pre>
       <pre>            ^</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
@@ -139,7 +136,7 @@
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
-      <pre>                  15 q=x, d=0, c=0</pre>
+      <pre>                  15 q=0, d=0, c=0</pre>
       <pre>                  20 q=0, d=0, c=1</pre>
       <pre>                  25 q=0, d=1, c=0</pre>
       <pre>                  30 q=1, d=1, c=1</pre>

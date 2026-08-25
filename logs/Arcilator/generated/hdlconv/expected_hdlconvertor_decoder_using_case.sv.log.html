@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:36:21</dd></div>
-        <div><dt>time elapsed</dt><dd>0.035s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:06:09</dd></div>
+        <div><dt>time elapsed</dt><dd>0.036s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
     </section>
@@ -237,14 +237,14 @@
       <pre>      %100 = moore.case_eq %7, %99 : l4</pre>
       <pre>      %101 = moore.to_builtin_int %100 : i1</pre>
       <pre>      cf.cond_br %101, ^bb32, ^bb33</pre>
-      <pre>    ^bb32:  // 2 preds: ^bb31, ^bb33</pre>
+      <pre>    ^bb32:  // pred: ^bb31</pre>
       <pre>      %102 = moore.constant -32768 : i16</pre>
       <pre>      %103 = moore.constant -32768 : l16</pre>
       <pre>      moore.blocking_assign %decoder_out, %103 : l16</pre>
       <pre>      cf.br ^bb34</pre>
       <pre>    ^bb33:  // pred: ^bb31</pre>
-      <pre>      cf.br ^bb32</pre>
-      <pre>    ^bb34:  // 16 preds: ^bb2, ^bb4, ^bb6, ^bb8, ^bb10, ^bb12, ^bb14, ^bb16, ^bb18, ^bb20, ^bb22, ^bb24, ^bb26, ^bb28, ^bb30, ^bb32</pre>
+      <pre>      cf.br ^bb34</pre>
+      <pre>    ^bb34:  // 17 preds: ^bb2, ^bb4, ^bb6, ^bb8, ^bb10, ^bb12, ^bb14, ^bb16, ^bb18, ^bb20, ^bb22, ^bb24, ^bb26, ^bb28, ^bb30, ^bb32, ^bb33</pre>
       <pre>      cf.br ^bb35</pre>
       <pre>    ^bb35:  // 2 preds: ^bb0, ^bb34</pre>
       <pre>      moore.return</pre>

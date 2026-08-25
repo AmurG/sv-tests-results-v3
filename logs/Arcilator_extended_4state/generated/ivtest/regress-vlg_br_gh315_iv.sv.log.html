@@ -5,14 +5,14 @@
     <link rel="stylesheet" type="text/css" href="../../../../log.css">
   </head>
   <body>
-    <header class="test-passed">
+    <header class="test-failed">
         <a href="https://amurg.github.io/sv-tests-results-v3/" target="_blank"><h1>Arcilator</h1></a>
         <h2>regress-vlg_br_gh315_iv</h2>
     </header>
     <section class="property-list">
       <dl>
         <div><dt>description</dt><dd>Test imported from ivtest</dd></div>
-        <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
+        <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
         <div><dt>tags</dt><dd>ivtest</dd></div>
         <div>
           <dt>incdirs</dt>
@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:15:07</dd></div>
-        <div><dt>time elapsed</dt><dd>6.209s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-24 23:43:42</dd></div>
+        <div><dt>time elapsed</dt><dd>6.417s</dd></div>
         <div><dt>ram usage</dt><dd>201600 KB</dd></div>
       </dl>
     </section>
@@ -161,7 +161,13 @@
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
       <pre>disable output , set dir a-&gt;b</pre>
       <pre>enable output - B will change immediately</pre>
-      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 2, sim time 60000000 fs; natural end of simulation</pre>
+      <pre>    50 ERROR TOO QUICK - EXPECTED nOE-&gt;B = 16ns - BUT TOOK 0                   </pre>
+      <pre>change A - B will change immediately (but C is delayed as expected by 100)</pre>
+      <pre>   100 ERROR TOO QUICK - EXPECTED A-&gt;B = 10ns - BUT TOOK 0                   </pre>
+      <pre>FAILED</pre>
+      <pre>[Arcilator] event queue quiescent (no scheduled events) at step 3, sim time 110000000 fs; natural end of simulation</pre>
+      <pre></pre>
+      <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>
     </section>
   </body>

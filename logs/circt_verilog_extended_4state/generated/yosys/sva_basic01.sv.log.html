@@ -32,8 +32,8 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-22 04:44:42</dd></div>
-        <div><dt>time elapsed</dt><dd>0.041s</dd></div>
+        <div><dt>completed</dt><dd>2026-08-25 00:14:15</dd></div>
+        <div><dt>time elapsed</dt><dd>0.042s</dd></div>
         <div><dt>ram usage</dt><dd>23296 KB</dd></div>
       </dl>
     </section>
@@ -49,9 +49,6 @@
       <pre>../../../third_party/tools/yosys/tests/sva/basic01.sv:14:2: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). This is the value plane only; the unknown plane is dropped</pre>
       <pre>        a_wr: assert property ( @(posedge clock) write |=&gt; ready );</pre>
       <pre>        ^</pre>
-      <pre>../../../third_party/tools/yosys/tests/sva/basic01.sv:4:11: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
-      <pre>        always @(posedge clock) begin</pre>
-      <pre>                 ^</pre>
       <pre>../../../third_party/tools/yosys/tests/sva/basic01.sv:10:2: warning: four-valued value is projected onto the two-valued runtime value model at a conversion boundary: every x and z bit becomes 0 from here on (IEEE 1800-2023 6.3.1). Only the value plane survives</pre>
       <pre>        a_rw: assert property ( @(posedge clock) !(read &amp;&amp; write) );</pre>
       <pre>        ^</pre>
