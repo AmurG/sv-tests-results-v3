@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>UVM example - uart_example</dd></div>
         <div><dt>rc</dt><dd>71 (means success: 0)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-examples</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -59,9 +59,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:14:02</dd></div>
-        <div><dt>time elapsed</dt><dd>900.198s</dd></div>
-        <div><dt>ram usage</dt><dd>243564 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:36:35</dd></div>
+        <div><dt>time elapsed</dt><dd>900.205s</dd></div>
+        <div><dt>ram usage</dt><dd>242816 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -201,6 +201,10 @@
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
       <pre>[Arcilator] arc lower-to-llvm stage</pre>
       <pre>+ <redacted-local-path> --observe-ports --observe-wires --observe-registers --observe-named-values --state-file <redacted-local-path> --emit-llvm <redacted-local-path> -o <redacted-local-path></pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: next-value is not a linear mux/array_inject chain rooted at the register</pre>
+      <pre>    %data_fifo = seq.firreg %74 clock %62 {llhd.nba} : !hw.array&lt;16xi8&gt;</pre>
+      <pre>                 ^</pre>
+      <pre><redacted-local-path> note: see current operation: %data_fifo = seq.firreg %74 clock %62 {llhd.nba} : !hw.array&lt;16xi8&gt;</pre>
       <pre>+ echo [Arcilator] header-gen stage</pre>
       <pre>[Arcilator] header-gen stage</pre>
       <pre>+ python3 <redacted-local-path> <redacted-local-path></pre>
@@ -264,6 +268,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -276,12 +283,12 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ status=0</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/6 as driver argv +UVM_TESTNAME=uart_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/6 as driver argv +UVM_TESTNAME=uart_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648399</pre>
+      <pre>+ __svtests_variant_t0=1787840553</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=uart_test</pre>
@@ -306,12 +313,12 @@
       <pre>UVM_INFO @ 0: reporter [RNTST] Running test uart_test...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/baud_rate_checker.svh(140) @ 171: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_modem_scoreboard.svh(207) @ 171: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_rx_scoreboard.svh(152) @ 171: uvm_test_top.m_env.rx_sb [report_phase] 0 characters received by the UART with 0 inserted errors</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_tx_scoreboard.svh(133) @ 171: uvm_test_top.m_env.tx_sb [report_phase] 1 characters transmitted from the UART with no errors</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/tests/uart_test.svh(44) @ 171: uvm_test_top [*** UVM TEST PASSED ***] Register RW paths checked</pre>
-      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 171: reporter [UVM/REPORT/SERVER] </pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/baud_rate_checker.svh(140) @ 277: uvm_test_top.m_env.br_sb [report_phase] No baud rate errors detected</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_modem_scoreboard.svh(207) @ 277: uvm_test_top.m_env.modem_sb [uart_modem_scoreboard::report_phase] No modem errors observed</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_rx_scoreboard.svh(152) @ 277: uvm_test_top.m_env.rx_sb [report_phase] 0 characters received by the UART with 0 inserted errors</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/env/uart_tx_scoreboard.svh(133) @ 277: uvm_test_top.m_env.tx_sb [report_phase] 1 characters transmitted from the UART with no errors</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uart_example/uvm_tb/tests/uart_test.svh(44) @ 277: uvm_test_top [*** UVM TEST PASSED ***] Register RW paths checked</pre>
+      <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 277: reporter [UVM/REPORT/SERVER] </pre>
       <pre>--- UVM Report Summary ---</pre>
       <pre></pre>
       <pre>** Report counts by severity</pre>
@@ -337,7 +344,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/6 as driver argv +UVM_TESTNAME=baud_rate_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 2/6 as driver argv +UVM_TESTNAME=baud_rate_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648399</pre>
+      <pre>+ __svtests_variant_t0=1787840553</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=baud_rate_test</pre>

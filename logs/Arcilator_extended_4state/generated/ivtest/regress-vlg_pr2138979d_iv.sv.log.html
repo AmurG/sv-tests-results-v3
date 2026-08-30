@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:56:08</dd></div>
-        <div><dt>time elapsed</dt><dd>6.714s</dd></div>
-        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 15:19:54</dd></div>
+        <div><dt>time elapsed</dt><dd>7.087s</dd></div>
+        <div><dt>ram usage</dt><dd>207872 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -113,6 +113,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -125,7 +128,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -206,10 +209,7 @@
       <pre>y_neq_uu = 1   y_neq_us = 1   y_neq_su = 1   y_neq_ss = 1</pre>
       <pre>z_neq_uu = 1   z_neq_us = 1   z_neq_su = 1   z_neq_ss = 1</pre>
       <pre>y_sgn_u  = 1111111111111001   y_sgn_s  = 1111111111111001</pre>
-      <pre>z_sgn_u  = 1111111111111001   z_sgn_s  = 1111111111111001</pre>
-      <pre>y_add_uu = 0000000011101110   y_add_us = 0000000011101110   y_add_su = 0000000011101110   y_add_ss = 1111111111101110</pre>
-      <pre>z_add_uu = 0000000011101110   z_add_us = 0000000011101110   z_add_su = 0000000011101110   z_add_ss = 1111111111101110</pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 1720 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 1723 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>y_ltn_uu = 0   y_ltn_us = 0   y_ltn_su = 0   y_ltn_ss = 1</pre>
       <pre>z_ltn_uu = 0   z_ltn_us = 0   z_ltn_su = 0   z_ltn_ss = 1</pre>
       <pre>y_leq_uu = 0   y_leq_us = 0   y_leq_su = 0   y_leq_ss = 1</pre>

@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>UVM example - uvm_priority_grab_lock</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-examples</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:01:04</dd></div>
-        <div><dt>time elapsed</dt><dd>42.876s</dd></div>
-        <div><dt>ram usage</dt><dd>207872 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:23:37</dd></div>
+        <div><dt>time elapsed</dt><dd>42.295s</dd></div>
+        <div><dt>ram usage</dt><dd>213916 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -163,6 +163,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -175,12 +178,12 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ status=0</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/6 as driver argv +ARB_TYPE=SEQ_ARB_FIFO</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_FIFO</pre>
@@ -284,7 +287,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
       <pre>[Arcilator] running sv-tests simvariant 2/6 as driver argv +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_WEIGHTED</pre>
@@ -387,7 +390,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
       <pre>[Arcilator] running sv-tests simvariant 3/6 as driver argv +ARB_TYPE=SEQ_ARB_RANDOM</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_RANDOM</pre>
@@ -491,7 +494,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
       <pre>[Arcilator] running sv-tests simvariant 4/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_STRICT_FIFO</pre>
@@ -595,7 +598,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
       <pre>[Arcilator] running sv-tests simvariant 5/6 as driver argv +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_STRICT_RANDOM</pre>
@@ -699,7 +702,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
       <pre>[Arcilator] running sv-tests simvariant 6/6 as driver argv +ARB_TYPE=SEQ_ARB_USER</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648464</pre>
+      <pre>+ __svtests_variant_t0=1787840617</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +ARB_TYPE=SEQ_ARB_USER</pre>

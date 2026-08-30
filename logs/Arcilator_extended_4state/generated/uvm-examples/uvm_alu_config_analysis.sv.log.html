@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>UVM example - uvm_alu_config_analysis</dd></div>
         <div><dt>rc</dt><dd>0 (means success: 1)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-examples</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -41,9 +41,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:06:39</dd></div>
-        <div><dt>time elapsed</dt><dd>49.684s</dd></div>
-        <div><dt>ram usage</dt><dd>211456 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:29:13</dd></div>
+        <div><dt>time elapsed</dt><dd>49.692s</dd></div>
+        <div><dt>ram usage</dt><dd>215820 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -187,6 +187,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -199,12 +202,12 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ status=0</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=test_all_parallel</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/1 as driver argv +UVM_TESTNAME=test_all_parallel</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648796</pre>
+      <pre>+ __svtests_variant_t0=1787840950</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=test_all_parallel</pre>
@@ -215,10 +218,7 @@
       <pre>  standard.  See the DEVIATIONS.md file contained in the release</pre>
       <pre>  for more details.</pre>
       <pre></pre>
-      <pre>----------------------------------------------------------------</pre>
-      <pre>Accellera:1800.2:UVM:2020.3.1</pre>
-      <pre></pre>
-      <pre>... [sv-tests hybrid publication: log truncated here — 2231 middle lines omitted for size; grading used the full log] ...</pre>
+      <pre>... [sv-tests hybrid publication: log truncated here — 2234 middle lines omitted for size; grading used the full log] ...</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 125400: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1105 alu_txns,</pre>
       <pre>     Current coverage MUL = 66.666667%</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_alu_config_analysis/agent/alu_fc_monitor.svh(118) @ 125600: uvm_test_top.t_env.alu_if_agent.fcm [cov_msg] 1106 alu_txns,</pre>

@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:45:49</dd></div>
-        <div><dt>time elapsed</dt><dd>6.600s</dd></div>
-        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 15:10:02</dd></div>
+        <div><dt>time elapsed</dt><dd>6.982s</dd></div>
+        <div><dt>ram usage</dt><dd>206844 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -117,6 +117,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -129,47 +132,47 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
       <pre>p_big/big: 0123, p_ltl/ltl: 3210, base: -1</pre>
       <pre></pre>
-      <pre>p_big[-2+:4]: 0110, p_ltl[-2+:4]: 0001</pre>
+      <pre>p_big[-2+:4]: , p_ltl[-2+:4]: </pre>
       <pre>p_big[-1+:4]: 3, p_ltl[-1+:4]: 3</pre>
       <pre>p_big[3+:4]: 2, p_ltl[3+:4]: 2</pre>
       <pre>p_big[7+:4]: 1, p_ltl[7+:4]: 1</pre>
       <pre>p_big[11+:4]: 0, p_ltl[11+:4]: 0</pre>
-      <pre>p_big[12+:4]: 0000, p_ltl[12+:4]: 0000</pre>
+      <pre>p_big[12+:4]: , p_ltl[12+:4]: </pre>
       <pre>p_big[0+:4]: 0000, p_ltl[0+:4]: 0000</pre>
       <pre>FAILED: big endian parameter constant +: indexed select.</pre>
       <pre>FAILED: little endian parameter constant +: indexed select.</pre>
       <pre></pre>
-      <pre>p_big[1-:4]: 0110, p_ltl[1-:4]: 0001</pre>
+      <pre>p_big[1-:4]: , p_ltl[1-:4]: </pre>
       <pre>p_big[2-:4]: 3, p_ltl[2-:4]: 3</pre>
       <pre>p_big[6-:4]: 2, p_ltl[6-:4]: 2</pre>
       <pre>p_big[10-:4]: 1, p_ltl[10-:4]: 1</pre>
       <pre>p_big[14-:4]: 0, p_ltl[14-:4]: 0</pre>
-      <pre>p_big[15-:4]: 0000, p_ltl[15-:4]: 0000</pre>
+      <pre>p_big[15-:4]: , p_ltl[15-:4]: </pre>
       <pre>p_big[0-:4]: 0000, p_ltl[0-:4]: 0000</pre>
       <pre>FAILED: big endian parameter constant -: indexed select.</pre>
       <pre>FAILED: little endian parameter constant -: indexed select.</pre>
       <pre></pre>
-      <pre>p_base[-1+:4]: 0110</pre>
+      <pre>p_base[-1+:4]: </pre>
       <pre>p_base[0+:4]: 3</pre>
       <pre>p_base[4+:4]: 2</pre>
       <pre>p_base[8+:4]: 1</pre>
       <pre>p_base[12+:4]: 0</pre>
-      <pre>p_base[13+:4]: 0000</pre>
+      <pre>p_base[13+:4]: </pre>
       <pre>p_base[x+:4]: 0000</pre>
       <pre>FAILED: base parameter constant +: indexed select.</pre>
       <pre></pre>
-      <pre>p_base[2-:4]: 0110</pre>
+      <pre>p_base[2-:4]: </pre>
       <pre>p_base[3-:4]: 3</pre>
       <pre>p_base[7-:4]: 2</pre>
       <pre>p_base[11-:4]: 1</pre>
       <pre>p_base[15-:4]: 0</pre>
-      <pre>p_base[16-:4]: 0000</pre>
+      <pre>p_base[16-:4]: </pre>
       <pre>p_base[x-:4]: 0000</pre>
       <pre>FAILED: base parameter constant -: indexed select.</pre>
       <pre></pre>

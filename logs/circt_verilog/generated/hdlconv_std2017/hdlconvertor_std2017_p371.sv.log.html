@@ -32,7 +32,7 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 10:45:51</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 16:12:04</dd></div>
         <div><dt>time elapsed</dt><dd>0.026s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
@@ -80,6 +80,8 @@
       <pre>      moore.return</pre>
       <pre>    }</pre>
       <pre>    moore.procedure always {</pre>
+      <pre>      moore.builtin.deferred_flush 0</pre>
+      <pre>      moore.builtin.deferred_flush 0</pre>
       <pre>      %0 = moore.read %a_1 : &lt;l1&gt;</pre>
       <pre>      %1 = moore.read %c : &lt;l1&gt;</pre>
       <pre>      %2 = moore.and %0, %1 : l1</pre>
@@ -91,18 +93,20 @@
       <pre>      %6 = moore.fmt.literal &#34;Pass&#34;</pre>
       <pre>      %7 = moore.fmt.literal &#34;\0A&#34;</pre>
       <pre>      %8 = moore.fmt.concat (%6, %7)</pre>
-      <pre>      moore.builtin.display %8</pre>
+      <pre>      moore.builtin.deferred_report 0, 0, %8</pre>
       <pre>      cf.br ^bb3</pre>
       <pre>    ^bb2:  // pred: ^bb0</pre>
       <pre>      %9 = moore.fmt.literal &#34;Fail&#34;</pre>
       <pre>      %10 = moore.fmt.literal &#34;\0A&#34;</pre>
       <pre>      %11 = moore.fmt.concat (%9, %10)</pre>
-      <pre>      moore.builtin.display %11</pre>
+      <pre>      moore.builtin.deferred_report 0, 0, %11</pre>
       <pre>      cf.br ^bb3</pre>
       <pre>    ^bb3:  // 2 preds: ^bb1, ^bb2</pre>
       <pre>      moore.return</pre>
       <pre>    }</pre>
       <pre>    moore.procedure always {</pre>
+      <pre>      moore.builtin.deferred_flush 1</pre>
+      <pre>      moore.builtin.deferred_flush 1</pre>
       <pre>      %0 = moore.read %a_1 : &lt;l1&gt;</pre>
       <pre>      %1 = moore.read %c : &lt;l1&gt;</pre>
       <pre>      %2 = moore.and %0, %1 : l1</pre>
@@ -114,13 +118,13 @@
       <pre>      %6 = moore.fmt.literal &#34;Pass&#34;</pre>
       <pre>      %7 = moore.fmt.literal &#34;\0A&#34;</pre>
       <pre>      %8 = moore.fmt.concat (%6, %7)</pre>
-      <pre>      moore.builtin.display %8</pre>
+      <pre>      moore.builtin.deferred_report 0, 1, %8 {isFinal}</pre>
       <pre>      cf.br ^bb3</pre>
       <pre>    ^bb2:  // pred: ^bb0</pre>
       <pre>      %9 = moore.fmt.literal &#34;Fail&#34;</pre>
       <pre>      %10 = moore.fmt.literal &#34;\0A&#34;</pre>
       <pre>      %11 = moore.fmt.concat (%9, %10)</pre>
-      <pre>      moore.builtin.display %11</pre>
+      <pre>      moore.builtin.deferred_report 0, 1, %11 {isFinal}</pre>
       <pre>      cf.br ^bb3</pre>
       <pre>    ^bb3:  // 2 preds: ^bb1, ^bb2</pre>
       <pre>      moore.return</pre>

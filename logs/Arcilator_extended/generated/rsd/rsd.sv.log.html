@@ -182,9 +182,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:20:52</dd></div>
-        <div><dt>time elapsed</dt><dd>7.464s</dd></div>
-        <div><dt>ram usage</dt><dd>234840 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:43:36</dd></div>
+        <div><dt>time elapsed</dt><dd>7.121s</dd></div>
+        <div><dt>ram usage</dt><dd>237428 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -269,6 +269,26 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %loadQueue = seq.firreg %105 clock %104 {llhd.nba} : !hw.array&lt;16xstruct&lt;regValid: i1, finished: i1, address: i20, wordRE: i1, pc: i19&gt;&gt;</pre>
+      <pre>                 ^</pre>
+      <pre><redacted-local-path> note: see current operation: %loadQueue = seq.firreg %105 clock %104 {llhd.nba} : !hw.array&lt;16xstruct&lt;regValid: i1, finished: i1, address: i20, wordRE: i1, pc: i19&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %storeQueue = seq.firreg %163 clock %162 {llhd.nba} : !hw.array&lt;16xstruct&lt;regValid: i1, finished: i1, address: i20, wordWE: i1, byteWE: i4&gt;&gt;</pre>
+      <pre>                  ^</pre>
+      <pre><redacted-local-path> note: see current operation: %storeQueue = seq.firreg %163 clock %162 {llhd.nba} : !hw.array&lt;16xstruct&lt;regValid: i1, finished: i1, address: i20, wordWE: i1, byteWE: i4&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %btbQueue = seq.firreg %50 clock %19 {llhd.nba} : !hw.array&lt;32xstruct&lt;btbWA: i32, btbWV: !hw.struct&lt;valid: i1, tag: i4, data: i13, isCondBr: i1&gt;&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %btbQueue = seq.firreg %50 clock %19 {llhd.nba} : !hw.array&lt;32xstruct&lt;btbWA: i32, btbWV: !hw.struct&lt;valid: i1, tag: i4, data: i13, isCondBr: i1&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %phtQueue = seq.firreg %47 clock %16 {llhd.nba} : !hw.array&lt;32xstruct&lt;phtWA: i32, phtWV: i2&gt;&gt;</pre>
+      <pre>                ^</pre>
+      <pre><redacted-local-path> note: see current operation: %phtQueue = seq.firreg %47 clock %16 {llhd.nba} : !hw.array&lt;32xstruct&lt;phtWA: i32, phtWV: i2&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %opId_1 = seq.firreg %93 clock %41 {llhd.nba, name = &#34;opId&#34;} : !hw.array&lt;16xstruct&lt;sid: i10, mid: i2&gt;&gt;</pre>
+      <pre>              ^</pre>
+      <pre><redacted-local-path> note: see current operation: %opId_1 = seq.firreg %93 clock %41 {llhd.nba, name = &#34;opId&#34;} : !hw.array&lt;16xstruct&lt;sid: i10, mid: i2&gt;&gt;</pre>
       <pre></pre>
     </section>
   </body>

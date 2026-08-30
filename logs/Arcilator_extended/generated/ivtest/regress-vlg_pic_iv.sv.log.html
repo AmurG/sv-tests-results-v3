@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 10:05:44</dd></div>
-        <div><dt>time elapsed</dt><dd>7.438s</dd></div>
-        <div><dt>ram usage</dt><dd>203204 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 15:31:13</dd></div>
+        <div><dt>time elapsed</dt><dd>7.900s</dd></div>
+        <div><dt>ram usage</dt><dd>210560 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -113,6 +113,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -125,7 +128,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -152,181 +155,15 @@
       <pre>               10150: portb changes to: 31</pre>
       <pre>               10650: portb changes to: 34</pre>
       <pre>               11150: portb changes to: 36</pre>
-      <pre>               12350: portc changes to: 01</pre>
+      <pre>               12350: portc changes to: 07</pre>
       <pre>               12550: portb changes to: 3d</pre>
-      <pre>               13050: portb changes to: 3e</pre>
-      <pre>               13550: portb changes to: 3f</pre>
-      <pre>               14050: portb changes to: 41</pre>
-      <pre>               14550: portb changes to: 42</pre>
-      <pre>               15050: portb changes to: 43</pre>
-      <pre>               15550: portb changes to: 44</pre>
-      <pre>               16050: portb changes to: 46</pre>
-      <pre>               16550: portb changes to: 47</pre>
-      <pre>               17050: portb changes to: 48</pre>
-      <pre>               17550: portb changes to: 49</pre>
-      <pre>               18050: portb changes to: 4b</pre>
-      <pre>               18550: portb changes to: 4c</pre>
-      <pre>               19050: portb changes to: 4d</pre>
-      <pre>               19550: portb changes to: 4e</pre>
-      <pre>               20050: portb changes to: 50</pre>
-      <pre>               20550: portb changes to: 51</pre>
-      <pre>               21050: portb changes to: 52</pre>
-      <pre>               21550: portb changes to: 53</pre>
-      <pre>               22050: portb changes to: 55</pre>
-      <pre>               23250: portc changes to: 02</pre>
-      <pre>               23450: portb changes to: 58</pre>
-      <pre>               23950: portb changes to: 59</pre>
-      <pre>               24450: portb changes to: 5a</pre>
-      <pre>               25450: portb changes to: 5b</pre>
-      <pre>               26450: portb changes to: 5c</pre>
-      <pre>               26950: portb changes to: 5d</pre>
-      <pre>               27950: portb changes to: 5e</pre>
-      <pre>               28450: portb changes to: 5f</pre>
-      <pre>               29450: portb changes to: 60</pre>
-      <pre>               30450: portb changes to: 61</pre>
-      <pre>               30950: portb changes to: 62</pre>
-      <pre>               31950: portb changes to: 63</pre>
-      <pre>               32450: portb changes to: 64</pre>
-      <pre>               34150: portc changes to: 03</pre>
-      <pre>               34350: portb changes to: 66</pre>
-      <pre>               35850: portb changes to: 67</pre>
-      <pre>               37350: portb changes to: 68</pre>
-      <pre>               38850: portb changes to: 69</pre>
-      <pre>               40850: portb changes to: 6a</pre>
-      <pre>               42350: portb changes to: 6b</pre>
-      <pre>               43850: portb changes to: 6c</pre>
-      <pre>               45050: portc changes to: 04</pre>
-      <pre>               45250: portb changes to: 6d</pre>
-      <pre>               48750: portb changes to: 6e</pre>
-      <pre>               51750: portb changes to: 6f</pre>
-      <pre>               55950: portc changes to: 05</pre>
-      <pre>               56150: portb changes to: 70</pre>
-      <pre>               58150: portb changes to: 71</pre>
-      <pre>               64650: portb changes to: 72</pre>
-      <pre>               66850: portc changes to: 06</pre>
-      <pre>               77750: portc changes to: 07</pre>
-      <pre>               77950: portb changes to: 73</pre>
-      <pre>               88650: portc changes to: 00</pre>
-      <pre>               88850: portb changes to: 74</pre>
-      <pre>               89350: portb changes to: 76</pre>
-      <pre>               89850: portb changes to: 79</pre>
-      <pre>               90350: portb changes to: 7b</pre>
-      <pre>               90850: portb changes to: 7e</pre>
-      <pre>               91350: portb changes to: 80</pre>
-      <pre>               91850: portb changes to: 83</pre>
-      <pre>               92350: portb changes to: 85</pre>
-      <pre>               92850: portb changes to: 88</pre>
-      <pre>               93350: portb changes to: 8a</pre>
-      <pre>               93850: portb changes to: 8d</pre>
-      <pre>               94350: portb changes to: 8f</pre>
-      <pre>               94850: portb changes to: 92</pre>
-      <pre>               95350: portb changes to: 94</pre>
-      <pre>               95850: portb changes to: 97</pre>
-      <pre>               96350: portb changes to: 99</pre>
-      <pre>               96850: portb changes to: 9c</pre>
-      <pre>               97350: portb changes to: 9e</pre>
-      <pre>               97850: portb changes to: a1</pre>
-      <pre>               98350: portb changes to: a3</pre>
-      <pre>               99550: portc changes to: 01</pre>
-      <pre>               99750: portb changes to: aa</pre>
-      <pre>              100250: portb changes to: ab</pre>
-      <pre>              100750: portb changes to: ac</pre>
-      <pre>              101250: portb changes to: ae</pre>
-      <pre>              101750: portb changes to: af</pre>
-      <pre>              102250: portb changes to: b0</pre>
-      <pre>              102750: portb changes to: b1</pre>
-      <pre>              103250: portb changes to: b3</pre>
-      <pre>              103750: portb changes to: b4</pre>
-      <pre>              104250: portb changes to: b5</pre>
-      <pre>              104750: portb changes to: b6</pre>
-      <pre>              105250: portb changes to: b8</pre>
-      <pre>              105750: portb changes to: b9</pre>
-      <pre>              106250: portb changes to: ba</pre>
-      <pre>              106750: portb changes to: bb</pre>
-      <pre>              107250: portb changes to: bd</pre>
-      <pre>              107750: portb changes to: be</pre>
-      <pre>              108250: portb changes to: bf</pre>
-      <pre>              108750: portb changes to: c0</pre>
-      <pre>              109250: portb changes to: c2</pre>
-      <pre>              110450: portc changes to: 02</pre>
-      <pre>              110650: portb changes to: c5</pre>
-      <pre>              111150: portb changes to: c6</pre>
-      <pre>              111650: portb changes to: c7</pre>
-      <pre>              112650: portb changes to: c8</pre>
-      <pre>              113650: portb changes to: c9</pre>
-      <pre>              114150: portb changes to: ca</pre>
-      <pre>              115150: portb changes to: cb</pre>
-      <pre>              115650: portb changes to: cc</pre>
-      <pre>              116650: portb changes to: cd</pre>
-      <pre>              117650: portb changes to: ce</pre>
-      <pre>              118150: portb changes to: cf</pre>
-      <pre>              119150: portb changes to: d0</pre>
-      <pre>              119650: portb changes to: d1</pre>
-      <pre>              121350: portc changes to: 03</pre>
-      <pre>              121550: portb changes to: d3</pre>
-      <pre>              122050: portb changes to: d4</pre>
-      <pre>              124050: portb changes to: d5</pre>
-      <pre>              125550: portb changes to: d6</pre>
-      <pre>              127050: portb changes to: d7</pre>
-      <pre>              128550: portb changes to: d8</pre>
-      <pre>              130050: portb changes to: d9</pre>
-      <pre>              132250: portc changes to: 04</pre>
-      <pre>              132450: portb changes to: da</pre>
-      <pre>              134950: portb changes to: db</pre>
-      <pre>              138450: portb changes to: dc</pre>
-      <pre>              141450: portb changes to: dd</pre>
-      <pre>              143150: portc changes to: 05</pre>
-      <pre>              147850: portb changes to: de</pre>
-      <pre>              154050: portc changes to: 06</pre>
-      <pre>              154250: portb changes to: df</pre>
-      <pre>              164950: portc changes to: 07</pre>
-      <pre>              175850: portc changes to: 00</pre>
-      <pre>              176050: portb changes to: e0</pre>
-      <pre>              176550: portb changes to: e2</pre>
-      <pre>              177050: portb changes to: e5</pre>
-      <pre>              177550: portb changes to: e7</pre>
-      <pre>              178050: portb changes to: ea</pre>
-      <pre>              178550: portb changes to: ec</pre>
-      <pre>              179050: portb changes to: ef</pre>
-      <pre>              179550: portb changes to: f1</pre>
-      <pre>              180050: portb changes to: f4</pre>
-      <pre>              180550: portb changes to: f6</pre>
-      <pre>              181050: portb changes to: f9</pre>
-      <pre>              181550: portb changes to: fb</pre>
-      <pre>              182050: portb changes to: fe</pre>
-      <pre>              182550: portb changes to: 00</pre>
-      <pre>              183050: portb changes to: 03</pre>
-      <pre>              183550: portb changes to: 05</pre>
-      <pre>              184050: portb changes to: 08</pre>
-      <pre>              184550: portb changes to: 0a</pre>
-      <pre>              185050: portb changes to: 0d</pre>
-      <pre>              185550: portb changes to: 0f</pre>
-      <pre>              186750: portc changes to: 01</pre>
-      <pre>              186950: portb changes to: 16</pre>
-      <pre>              187450: portb changes to: 17</pre>
-      <pre>              187950: portb changes to: 18</pre>
-      <pre>              188450: portb changes to: 1a</pre>
-      <pre>              188950: portb changes to: 1b</pre>
-      <pre>              189450: portb changes to: 1c</pre>
-      <pre>              189950: portb changes to: 1d</pre>
-      <pre>              190450: portb changes to: 1f</pre>
-      <pre>              190950: portb changes to: 20</pre>
-      <pre>              191450: portb changes to: 21</pre>
-      <pre>              191950: portb changes to: 22</pre>
-      <pre>              192450: portb changes to: 24</pre>
-      <pre>              192950: portb changes to: 25</pre>
-      <pre>              193450: portb changes to: 26</pre>
-      <pre>              193950: portb changes to: 27</pre>
-      <pre>              194450: portb changes to: 29</pre>
-      <pre>              194950: portb changes to: 2a</pre>
-      <pre>              195450: portb changes to: 2b</pre>
-      <pre>              195950: portb changes to: 2c</pre>
-      <pre>              196450: portb changes to: 2e</pre>
-      <pre>              197650: portc changes to: 02</pre>
-      <pre>              197850: portb changes to: 31</pre>
-      <pre>              198350: portb changes to: 32</pre>
-      <pre>              198850: portb changes to: 33</pre>
-      <pre>              199850: portb changes to: 34</pre>
+      <pre>               26450: portb changes to: 3e</pre>
+      <pre>               51750: portb changes to: 3f</pre>
+      <pre>               77950: portb changes to: 40</pre>
+      <pre>              103250: portb changes to: 41</pre>
+      <pre>              128550: portb changes to: 42</pre>
+      <pre>              154250: portb changes to: 43</pre>
+      <pre>              180050: portb changes to: 44</pre>
       <pre>Maximum cycles (2000) Exceeded.  Halting simulation.</pre>
       <pre></pre>
     </section>

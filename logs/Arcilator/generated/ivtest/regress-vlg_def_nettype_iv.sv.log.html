@@ -32,9 +32,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 10:39:10</dd></div>
-        <div><dt>time elapsed</dt><dd>8.006s</dd></div>
-        <div><dt>ram usage</dt><dd>202496 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 16:05:40</dd></div>
+        <div><dt>time elapsed</dt><dd>8.314s</dd></div>
+        <div><dt>ram usage</dt><dd>207872 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -56,11 +56,9 @@
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/def_nettype.v:122:10: warning: honest x-init: duplicate continuous drivers of a &#39;tri0&#39; net (wired resolution not modeled) keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
       <pre>  assign tmp = in0;</pre>
       <pre>         ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/def_nettype.v:122:10: note: see current operation: &#34;moore.assign&#34;(%32, %34) : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>../../../third_party/tools/icarus/ivtest/ivltests/def_nettype.v:169:10: warning: honest x-init: duplicate continuous drivers of a &#39;tri1&#39; net (wired resolution not modeled) keep the legacy lowering without drive-strength resolution; the multiply-driven value may diverge from strength-resolved simulation (reported once per construct)</pre>
       <pre>  assign tmp = in0;</pre>
       <pre>         ^</pre>
-      <pre>../../../third_party/tools/icarus/ivtest/ivltests/def_nettype.v:169:10: note: see current operation: &#34;moore.assign&#34;(%32, %34) : (!moore.ref&lt;l1&gt;, !moore.l1) -&gt; ()</pre>
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ echo [Arcilator] arc lower-to-llvm stage</pre>
@@ -129,6 +127,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -141,7 +142,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -149,30 +150,18 @@
       <pre>FAILED &#34;tri1(0,1)&#34;, expected x, got 1</pre>
       <pre>FAILED &#34;tri0(0,z)&#34;, expected 0, got z</pre>
       <pre>FAILED &#34;tri1(0,z)&#34;, expected 0, got z</pre>
-      <pre>FAILED &#34;trior(0,z)&#34;, expected 0, got x</pre>
-      <pre>FAILED &#34;wor(0,z)&#34;, expected 0, got x</pre>
       <pre>FAILED &#34;tri0(1,0)&#34;, expected x, got 0</pre>
       <pre>FAILED &#34;tri1(1,0)&#34;, expected x, got 0</pre>
       <pre>FAILED &#34;tri0(1,z)&#34;, expected 1, got z</pre>
       <pre>FAILED &#34;tri1(1,z)&#34;, expected 1, got z</pre>
-      <pre>FAILED &#34;triand(1,z)&#34;, expected 1, got x</pre>
-      <pre>FAILED &#34;wand(1,z)&#34;, expected 1, got x</pre>
       <pre>FAILED &#34;tri0(x,0)&#34;, expected x, got 0</pre>
       <pre>FAILED &#34;tri1(x,0)&#34;, expected x, got 0</pre>
       <pre>FAILED &#34;tri0(x,1)&#34;, expected x, got 1</pre>
       <pre>FAILED &#34;tri1(x,1)&#34;, expected x, got 1</pre>
       <pre>FAILED &#34;tri0(x,z)&#34;, expected x, got z</pre>
       <pre>FAILED &#34;tri1(x,z)&#34;, expected x, got z</pre>
-      <pre>FAILED &#34;trior(z,0)&#34;, expected 0, got x</pre>
-      <pre>FAILED &#34;wor(z,0)&#34;, expected 0, got x</pre>
-      <pre>FAILED &#34;triand(z,1)&#34;, expected 1, got x</pre>
-      <pre>FAILED &#34;wand(z,1)&#34;, expected 1, got x</pre>
       <pre>FAILED &#34;tri0(z,z)&#34;, expected 0, got z</pre>
       <pre>FAILED &#34;tri1(z,z)&#34;, expected 1, got z</pre>
-      <pre>FAILED &#34;triand(z,z)&#34;, expected z, got x</pre>
-      <pre>FAILED &#34;trior(z,z)&#34;, expected z, got x</pre>
-      <pre>FAILED &#34;wand(z,z)&#34;, expected z, got x</pre>
-      <pre>FAILED &#34;wor(z,z)&#34;, expected z, got x</pre>
       <pre>[Arcilator] event queue quiescent (no scheduled events) at step 18, sim time 110000000 fs; natural end of simulation</pre>
       <pre></pre>
       <pre>[sv-tests strict] Arcilator produced a self-reported failure line while returning status 0; treating execution as failed for dashboard accounting.</pre>

@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>assert0 test with UVM</dd></div>
         <div><dt>rc</dt><dd>1 (means success: 0)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-assertions</dd></div>
+        <div><dt>tags</dt><dd>uvm-assertions uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -33,9 +33,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:18:10</dd></div>
-        <div><dt>time elapsed</dt><dd>42.010s</dd></div>
-        <div><dt>ram usage</dt><dd>207872 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:40:44</dd></div>
+        <div><dt>time elapsed</dt><dd>41.852s</dd></div>
+        <div><dt>ram usage</dt><dd>213928 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -177,6 +177,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -189,7 +192,7 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path></pre>
@@ -216,7 +219,6 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.2--assert0-uvm.sv(56) @ 0: env [ASSERT0_UVM] Started run phase</pre>
-      <pre>Error: assert failed :assert: (False)</pre>
       <pre>UVM_INFO ../../../tests/chapter-16/16.2--assert0-uvm.sv(63) @ 0: env [ASSERT0_UVM] Finished run phase</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_report_server.svh(1009) @ 0: reporter [UVM/REPORT/SERVER] </pre>
       <pre>--- UVM Report Summary ---</pre>
@@ -234,7 +236,7 @@
       <pre>[UVM/COMP/NAMECHECK]     1</pre>
       <pre>[UVM/RELNOTES]     1</pre>
       <pre></pre>
-      <pre>[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
+      <pre>Error: assert failed :assert: (False)[arc-runtime] note: NBA write to storage outside every model state block; committing at eval entry (legacy order)</pre>
       <pre></pre>
       <pre>[sv-tests strict] CIRCT-backed runner produced fatal diagnostics while returning status 0; treating execution as failed for dashboard accounting.</pre>
       <pre></pre>

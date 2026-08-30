@@ -248,9 +248,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:19:42</dd></div>
-        <div><dt>time elapsed</dt><dd>12.915s</dd></div>
-        <div><dt>ram usage</dt><dd>259372 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:42:28</dd></div>
+        <div><dt>time elapsed</dt><dd>12.110s</dd></div>
+        <div><dt>ram usage</dt><dd>259672 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -283,6 +283,34 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %mem_q = seq.firreg %493 clock %494 reset async %495, %486 {llhd.nba} : !hw.array&lt;8xstruct&lt;issued: i1, cancelled: i1, is_rd_fpr_flag: i1, sbe: !hw.struct&lt;pc: i32, trans_id: i3, fu: i4, op: i8, rs1: i5, rs2: i5, rd: i5, result: i32, valid: i1, use_imm: i1, use_zimm: i1, use_pc: i1, ex: !hw.struct&lt;cause: i32, tval: i32, tval2: i34, tinst: i32, gva: i1, valid: i1&gt;, bp: !hw.struct&lt;cf: i3, predict_address: i32&gt;, is_compressed: i1, is_macro_instr: i1, is_last_macro_instr: i1, is_double_rd_macro_instr: i1, vfp: i1, is_zcmt: i1&gt;&gt;&gt;</pre>
+      <pre>             ^</pre>
+      <pre><redacted-local-path> note: see current operation: %mem_q = seq.firreg %493 clock %494 reset async %495, %486 {llhd.nba} : !hw.array&lt;8xstruct&lt;issued: i1, cancelled: i1, is_rd_fpr_flag: i1, sbe: !hw.struct&lt;pc: i32, trans_id: i3, fu: i4, op: i8, rs1: i5, rs2: i5, rd: i5, result: i32, valid: i1, use_imm: i1, use_zimm: i1, use_pc: i1, ex: !hw.struct&lt;cause: i32, tval: i32, tval2: i34, tinst: i32, gva: i1, valid: i1&gt;, bp: !hw.struct&lt;cf: i3, predict_address: i32&gt;, is_compressed: i1, is_macro_instr: i1, is_last_macro_instr: i1, is_double_rd_macro_instr: i1, vfp: i1, is_zcmt: i1&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %gen_fifo.fifo_mem_q = seq.firreg %25 clock %24 {llhd.nba} : !hw.array&lt;8xstruct&lt;data_ptr: i3, data_tag: i32&gt;&gt;</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %gen_fifo.fifo_mem_q = seq.firreg %25 clock %24 {llhd.nba} : !hw.array&lt;8xstruct&lt;data_ptr: i3, data_tag: i32&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %gen_fifo.fifo_mem_q = seq.firreg %25 clock %24 {llhd.nba} : !hw.array&lt;8xstruct&lt;meta_tag: i32, meta_id: i3, meta_uc: i1&gt;&gt;</pre>
+      <pre>                           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %gen_fifo.fifo_mem_q = seq.firreg %25 clock %24 {llhd.nba} : !hw.array&lt;8xstruct&lt;meta_tag: i32, meta_id: i3, meta_uc: i1&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %wbuf_data_q = seq.firreg %381 clock %422 {llhd.nba} : !hw.array&lt;8xstruct&lt;data: !hw.array&lt;1xi32&gt;, be: !hw.array&lt;1xi4&gt;&gt;&gt;</pre>
+      <pre>                   ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wbuf_data_q = seq.firreg %381 clock %422 {llhd.nba} : !hw.array&lt;8xstruct&lt;data: !hw.array&lt;1xi32&gt;, be: !hw.array&lt;1xi4&gt;&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: register has a reset</pre>
+      <pre>    %wbuf_dir_state_q = seq.firreg %7 clock %422 reset async %423, %6 {llhd.nba} : !hw.array&lt;8xi2&gt;</pre>
+      <pre>                        ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wbuf_dir_state_q = seq.firreg %7 clock %422 reset async %423, %6 {llhd.nba} : !hw.array&lt;8xi2&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %mem = seq.firreg %12 clock %9 {llhd.nba} : !hw.array&lt;256xarray&lt;1xi26&gt;&gt;</pre>
+      <pre>           ^</pre>
+      <pre><redacted-local-path> note: see current operation: %mem = seq.firreg %12 clock %9 {llhd.nba} : !hw.array&lt;256xarray&lt;1xi26&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: register has a reset</pre>
+      <pre>    %shared_tag_valid_q = seq.firreg %121 clock %90 reset async %91, %4 {llhd.nba} : !hw.array&lt;64xi2&gt;</pre>
+      <pre>                          ^</pre>
+      <pre><redacted-local-path> note: see current operation: %shared_tag_valid_q = seq.firreg %121 clock %90 reset async %91, %4 {llhd.nba} : !hw.array&lt;64xi2&gt;</pre>
       <pre></pre>
     </section>
   </body>

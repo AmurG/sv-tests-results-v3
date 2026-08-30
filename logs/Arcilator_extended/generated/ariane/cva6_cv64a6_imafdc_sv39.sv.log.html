@@ -248,9 +248,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:19:07</dd></div>
-        <div><dt>time elapsed</dt><dd>19.261s</dd></div>
-        <div><dt>ram usage</dt><dd>369540 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:41:55</dd></div>
+        <div><dt>time elapsed</dt><dd>18.550s</dd></div>
+        <div><dt>ram usage</dt><dd>368916 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -273,6 +273,14 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: element type is not a signless integer (nested arrays and multi-plane element types are unsupported)</pre>
+      <pre>    %wbuffer_q = seq.firreg %21 clock %248 reset async %249, %246 {llhd.nba} : !hw.array&lt;8xstruct&lt;wtag: i53, data: i64, user: i64, dirty: i8, valid: i8, txblock: i8, checked: i1, hit_oh: i8&gt;&gt;</pre>
+      <pre>                 ^</pre>
+      <pre><redacted-local-path> note: see current operation: %wbuffer_q = seq.firreg %21 clock %248 reset async %249, %246 {llhd.nba} : !hw.array&lt;8xstruct&lt;wtag: i53, data: i64, user: i64, dirty: i8, valid: i8, txblock: i8, checked: i1, hit_oh: i8&gt;&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: register has a reset</pre>
+      <pre>    %shared_tag_valid_q = seq.firreg %92 clock %66 reset async %67, %1 {llhd.nba} : !hw.array&lt;64xi2&gt;</pre>
+      <pre>                          ^</pre>
+      <pre><redacted-local-path> note: see current operation: %shared_tag_valid_q = seq.firreg %92 clock %66 reset async %67, %1 {llhd.nba} : !hw.array&lt;64xi2&gt;</pre>
       <pre></pre>
     </section>
   </body>

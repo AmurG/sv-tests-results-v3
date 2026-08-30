@@ -13,7 +13,7 @@
       <dl>
         <div><dt>description</dt><dd>UVM example - uvm_c_stimulus_bl_example</dd></div>
         <div><dt>rc</dt><dd>134 (means success: 0)</dd></div>
-        <div><dt>tags</dt><dd>uvm uvm-examples</dd></div>
+        <div><dt>tags</dt><dd>uvm-examples uvm</dd></div>
         <div>
           <dt>incdirs</dt>
           <dd><ul>
@@ -62,9 +62,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 08:58:18</dd></div>
-        <div><dt>time elapsed</dt><dd>55.541s</dd></div>
-        <div><dt>ram usage</dt><dd>231808 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:20:50</dd></div>
+        <div><dt>time elapsed</dt><dd>54.897s</dd></div>
+        <div><dt>ram usage</dt><dd>215588 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -247,6 +247,9 @@
       <pre><redacted-local-path> warning: &#39;state&#39; has C-linkage specified, but returns user-defined type &#39;circt_sv_monitor::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline State &amp;state() {</pre>
       <pre>              ^</pre>
+      <pre><redacted-local-path> warning: &#39;deferredState&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_deferred::State &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
+      <pre>inline State &amp;deferredState() {</pre>
+      <pre>              ^</pre>
       <pre><redacted-local-path> warning: &#39;assertFailCount&#39; has C-linkage specified, but returns user-defined type &#39;int &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline int &amp;assertFailCount() {</pre>
       <pre>            ^</pre>
@@ -259,12 +262,12 @@
       <pre><redacted-local-path> warning: &#39;schedStats&#39; has C-linkage specified, but returns user-defined type &#39;circt_uvm_rt::SchedStats &amp;&#39; which is incompatible with C [-Wreturn-type-c-linkage]</pre>
       <pre>inline SchedStats &amp;schedStats() {</pre>
       <pre>                   ^</pre>
-      <pre>20 warnings generated.</pre>
+      <pre>21 warnings generated.</pre>
       <pre>+ status=0</pre>
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 1/2 as driver argv +UVM_TESTNAME=spi_c_int_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 1/2 as driver argv +UVM_TESTNAME=spi_c_int_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648298</pre>
+      <pre>+ __svtests_variant_t0=1787840450</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=spi_c_int_test</pre>
@@ -290,7 +293,7 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_c_stimulus_bl_example/block_level_example/uvm_tb/test/spi_c_int_test.svh(56) @ 0: uvm_test_top [run_phase] starting c code</pre>
-      <pre>[circt-uvm-rt] FATAL: DPI-C export task &#39;c_reg_write&#39; called from C: time-consuming exported tasks require scheduler re-entry, which is not supported yet</pre>
+      <pre>[circt-uvm-rt] FATAL: DPI-C export task &#39;c_reg_write&#39; called from C suspended at pc 2 on an event or condition wait instead of completing: time-consuming exported tasks require scheduler re-entry, which is not supported yet</pre>
       <pre>Aborted (core dumped)</pre>
       <pre>+ exit 134</pre>
       <pre>+ status=134</pre>
@@ -300,7 +303,7 @@
       <pre>+ printf %s\n [Arcilator] running sv-tests simvariant 2/2 as driver argv +UVM_TESTNAME=spi_c_poll_test</pre>
       <pre>[Arcilator] running sv-tests simvariant 2/2 as driver argv +UVM_TESTNAME=spi_c_poll_test</pre>
       <pre>+ date +%s</pre>
-      <pre>+ __svtests_variant_t0=1787648298</pre>
+      <pre>+ __svtests_variant_t0=1787840450</pre>
       <pre>+ echo [Arcilator] native run stage</pre>
       <pre>[Arcilator] native run stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> +UVM_TESTNAME=spi_c_poll_test</pre>
@@ -326,7 +329,7 @@
       <pre>UVM_INFO ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(345) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled</pre>
       <pre>UVM_WARNING ../../../third_party/tests/uvm/src/base/uvm_traversal.svh(314) @ 0: reporter [NO_VISIT_CHECK] Because UVM_REGEX_NO_DPI is defined, no uvm component name constraints will be checked</pre>
       <pre>UVM_INFO ../../../third_party/tests/uvm-examples/uvm_c_stimulus_bl_example/block_level_example/uvm_tb/test/spi_c_poll_test.svh(54) @ 0: uvm_test_top [run_phase] starting c code</pre>
-      <pre>[circt-uvm-rt] FATAL: DPI-C export task &#39;c_reg_write&#39; called from C: time-consuming exported tasks require scheduler re-entry, which is not supported yet</pre>
+      <pre>[circt-uvm-rt] FATAL: DPI-C export task &#39;c_reg_write&#39; called from C suspended at pc 2 on an event or condition wait instead of completing: time-consuming exported tasks require scheduler re-entry, which is not supported yet</pre>
       <pre>Aborted (core dumped)</pre>
       <pre>+ exit 134</pre>
       <pre>+ status=134</pre>

@@ -330,9 +330,9 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 09:18:31</dd></div>
-        <div><dt>time elapsed</dt><dd>12.281s</dd></div>
-        <div><dt>ram usage</dt><dd>315356 KB</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 14:41:21</dd></div>
+        <div><dt>time elapsed</dt><dd>12.478s</dd></div>
+        <div><dt>ram usage</dt><dd>318088 KB</dd></div>
       </dl>
     </section>
     <section class="log">
@@ -367,6 +367,14 @@
       <pre>+ echo [Arcilator] Arcilator backend stage</pre>
       <pre>[Arcilator] Arcilator backend stage</pre>
       <pre>+ <redacted-local-path> <redacted-local-path> --disable-output</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: next-value is not a linear mux/array_inject chain rooted at the register</pre>
+      <pre>    %tag_v_r = seq.firreg %127 clock %84 {llhd.nba} : !hw.array&lt;8xi20&gt;</pre>
+      <pre>               ^</pre>
+      <pre><redacted-local-path> note: see current operation: %tag_v_r = seq.firreg %127 clock %84 {llhd.nba} : !hw.array&lt;8xi20&gt;</pre>
+      <pre><redacted-local-path> remark: array register not converted to a memory: next-value is not a linear mux/array_inject chain rooted at the register</pre>
+      <pre>    %track_data_v_r = seq.firreg %128 clock %84 {llhd.nba} : !hw.array&lt;8xi4&gt;</pre>
+      <pre>                      ^</pre>
+      <pre><redacted-local-path> note: see current operation: %track_data_v_r = seq.firreg %128 clock %84 {llhd.nba} : !hw.array&lt;8xi4&gt;</pre>
       <pre></pre>
     </section>
   </body>

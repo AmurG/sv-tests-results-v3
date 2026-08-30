@@ -32,7 +32,7 @@
           </ul></dd>
         </div>
         <div><dt>defines</dt><dd><code></code></dd></div>
-        <div><dt>completed</dt><dd>2026-08-25 10:45:53</dd></div>
+        <div><dt>completed</dt><dd>2026-08-27 16:12:07</dd></div>
         <div><dt>time elapsed</dt><dd>0.029s</dd></div>
         <div><dt>ram usage</dt><dd>17920 KB</dd></div>
       </dl>
@@ -153,7 +153,7 @@
       <pre>      moore.blocking_assign %in1, %40 : l1</pre>
       <pre>      moore.return</pre>
       <pre>    }</pre>
-      <pre>    moore.procedure always_comb {</pre>
+      <pre>    moore.procedure always_comb attributes {moore.monitor_proc} {</pre>
       <pre>      %8 = moore.fmt.hier_path</pre>
       <pre>      %9 = moore.fmt.literal &#34;: &#34;</pre>
       <pre>      %10 = moore.builtin.time</pre>
@@ -264,7 +264,7 @@
       <pre>      moore.blocking_assign %in2, %40 : l1</pre>
       <pre>      moore.return</pre>
       <pre>    }</pre>
-      <pre>    moore.procedure always_comb {</pre>
+      <pre>    moore.procedure always_comb attributes {moore.monitor_proc} {</pre>
       <pre>      %8 = moore.fmt.hier_path</pre>
       <pre>      %9 = moore.fmt.literal &#34;: &#34;</pre>
       <pre>      %10 = moore.builtin.time</pre>
